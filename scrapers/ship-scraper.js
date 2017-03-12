@@ -1,18 +1,20 @@
 const fs = require('fs');
 
-// regex
+// regular expressions
 const shipReg =  /ship "([\s\S]*?)((?=ship ".*)|(?:description .*))/g;
 
 // ship selector
 // /ship "([\s\S]*?)(?:description .*)/g /ship "([\s\S]*?)(?:description .*)/g
 
-// "?attr"? (.*) // attribute selector
+// attribute selector
+// "?attr"? (.*)
 // "?attr"? "?([\d?\w?\s?]*)
 // "?category"? "?([\d?\w? ?]*)
 
 // outfit selector
 // outfits([\s\S]*?)(?=\s*?\t*?(engine|gun|explode|turret))
 
+// ships by faction
 const ships = {
   coalition: {},
   drak: {},
@@ -27,6 +29,7 @@ const ships = {
 };
 
 
+// get an attribute's value
 const attrSelector = (attribute, ship, trim) => {
   const attrRegex = new RegExp(`"?${attribute}"? (.*)`, 'gi');
   const result = attrRegex.exec(ship);
@@ -36,25 +39,31 @@ const attrSelector = (attribute, ship, trim) => {
   } else {
     return false;
   }
-
-  
 };
 
+
+// return all outfits in an array
 const outfitSelector = (ship) => {
   const result = (/outfits([\s\S]*?)(?=\s*?\t*?(engine|gun|explode|turret))/).exec(ship);
+
   return result != null ? result[1].replace(/\t|"/g, '').trim().split('\n') : false;
 };
 
+
+// return the layout in arrays
 const layoutSelector = (ship, retry) => {
   try {
+    // num selectors
     const engines = ship.match(/engine (-?\d.*)/g);
     const guns = ship.match(/gun (-?\d.*)/g);
     const turrets = ship.match(/turret (-?\d.*)/g);
     const fighter = ship.match(/fighter (-?\d.*)/g);
 
+    // string selectors
     const explosions = ship.match(/explode (".*)/g);
 
     return {
+      // return number only for engine
       engines: Array.isArray(engines) ? engines.map( item => item.replace(/[a-zA-Z]*/g, '').trim()) : engines,
       explosions,
       fighter,
@@ -62,7 +71,7 @@ const layoutSelector = (ship, retry) => {
       turrets,
     };
   } catch (err) {
-    //console.log('layout error: ', ship, err)
+    // retry once assuming it's an array (works for drak)
     if(!retry) {
       console.warn('a ship failed retrying..');
       layoutSelector(ship[0], true);
@@ -72,6 +81,8 @@ const layoutSelector = (ship, retry) => {
   }
 };
 
+
+// create a ship object from string of data
 const scrapeShip = (data) => {
   return {
     name: attrSelector('ship', data, true),
@@ -110,13 +121,18 @@ const scrapeShip = (data) => {
   };
 };
 
+
+// generate ships from array of strings, put into ships[faction]
 const shipGenerator = (faction, data) => {
   if( data && data.length > 1 && Array.isArray(data) ) {
+    // for many ships
     for (var i=0; i<data.length; i++) {
       const ship = scrapeShip(data[i]);
+
       ships[faction][ship.name.toLowerCase()] = ship;
     }
   } else if(data) {
+    // for single ship
     const ship = scrapeShip(data);
     
     ships[faction][ship.name.toLowerCase()] = ship;
@@ -124,15 +140,22 @@ const shipGenerator = (faction, data) => {
 };
 
 
+// read file, find all ships as strings, generate ships
 const scrapeFaction = (faction, fileName, single) => {
-  let fileText = !single ? fs.readFileSync(`${__dirname}/data/ships/${fileName}.txt`, 'utf8') :
-                  fs.readFileSync(`${__dirname}/data/singles/${fileName}.txt`, 'utf8');
-  let shipScrape = fileText.match(shipReg);
+  // different paths for files with ships only and ones with
+  // outfits, ships, and whatever
+  const fileText = !single ? 
+  fs.readFileSync(`${__dirname}/data/ships/${fileName}.txt`, 'utf8') :
+  fs.readFileSync(`${__dirname}/data/singles/${fileName}.txt`, 'utf8');
+
+  // array of ship strings
+  const shipScrape = fileText.match(shipReg);
 
   shipGenerator(faction, shipScrape);
 };
 
 
+// scrape all current factions then write to file
 const scrapeAllShips = () => {
   scrapeFaction('coalition', 'coalition ships');
   scrapeFaction('drak', 'drak', true);
@@ -147,11 +170,10 @@ const scrapeAllShips = () => {
 };
 
 
-const writeToFile = (obj) => {
-  const json = JSON.stringify(obj);
-  fs.writeFileSync('./json/ships.json', json);
+module.exports = {
+  ships,
+  scrapeShip,
+  shipGenerator,
+  scrapeFaction,
+  scrapeAllShips
 };
-
-
-scrapeAllShips();
-writeToFile(ships);

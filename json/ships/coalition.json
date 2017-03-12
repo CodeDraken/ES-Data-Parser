@@ -1,0 +1,1290 @@
+{
+    "arach courier": {
+        "name": "Arach Courier",
+        "sprite": "ship/arach courier",
+        "attributes": {
+            "automation": false,
+            "bunks": "1",
+            "cargoSpace": "78",
+            "category": "Light Freighter",
+            "cost": "723000",
+            "drag": "2.9",
+            "engineCap": "40",
+            "fuelCap": "300",
+            "heat": ".65",
+            "hull": "2000",
+            "mass": "100",
+            "outfitSpace": "148",
+            "requiredCrew": "1",
+            "shields": "1200",
+            "weaponCap": "39",
+            "weapon": {
+                "blastRadius": "20",
+                "hitForce": "300",
+                "hullDamage": "100",
+                "shieldDamage": "200"
+            }
+        },
+        "outfits": [
+            "Small Collector Module",
+            "Small Battery Module",
+            "Small Repair Module",
+            "",
+            "Small Thrust Module 2",
+            "Small Steering Module 2",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-27 58 .6",
+                "-15 58 .8",
+                "15 58 .8",
+                "27 58 .6"
+            ],
+            "explosions": [
+                "explode \"tiny explosion\" 10",
+                "explode \"small explosion\" 10"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -14 -38",
+                "gun 14 -38"
+            ],
+            "turrets": null
+        },
+        "description": "`These hardy little cargo ships are the perfect size for young Arachi just setting out into the sky with dreams of one day building their own merchant fleets. Of course, an Arach lucky enough to be born into one of the great Houses can probably find a patron to buy them a much larger ship instead.`"
+    },
+    "arach freighter": {
+        "name": "Arach Freighter",
+        "sprite": "ship/arach freighter",
+        "attributes": {
+            "automation": false,
+            "bunks": "10",
+            "cargoSpace": "310",
+            "category": "Light Freighter",
+            "cost": "4580000",
+            "drag": "10.6",
+            "engineCap": "92",
+            "fuelCap": "500",
+            "heat": ".55",
+            "hull": "8500",
+            "mass": "380",
+            "outfitSpace": "349",
+            "requiredCrew": "3",
+            "shields": "3400",
+            "weaponCap": "132",
+            "weapon": {
+                "blastRadius": "80",
+                "hitForce": "1200",
+                "hullDamage": "400",
+                "shieldDamage": "800"
+            }
+        },
+        "outfits": [
+            "Small Collector Module 3",
+            "Small Battery Module 2",
+            "Small Shield Module",
+            "Small Repair Module 2",
+            "",
+            "Large Thrust Module",
+            "Small Thrust Module 2",
+            "Large Steering Module",
+            "Small Steering Module 2",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-18 141 .7",
+                "0 143 1",
+                "18 141 .7"
+            ],
+            "explosions": [
+                "explode \"tiny explosion\" 10",
+                "explode \"small explosion\" 15",
+                "explode \"medium explosion\" 15"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -19 -112",
+                "gun 19 -112"
+            ],
+            "turrets": [
+                "turret -41 37",
+                "turret 41 37"
+            ]
+        },
+        "description": "`Arach cargo ship hulls are legendary for their durability. It is not uncommon for a large Arach family to convert a freighter that is no longer space-worthy into a planet-side dwelling, and even in the harshest of conditions these converted houses can last for hundreds of years with little or no exterior maintenance.`"
+    },
+    "arach hulk": {
+        "name": "Arach Hulk",
+        "sprite": "ship/arach hulk",
+        "attributes": {
+            "automation": false,
+            "bunks": "14",
+            "cargoSpace": "541",
+            "category": "Heavy Freighter",
+            "cost": "9978000",
+            "drag": "18.9",
+            "engineCap": "148",
+            "fuelCap": "500",
+            "heat": ".50",
+            "hull": "13800",
+            "mass": "670",
+            "outfitSpace": "520",
+            "requiredCrew": "8",
+            "shields": "5700",
+            "weaponCap": "208",
+            "weapon": {
+                "blastRadius": "120",
+                "hitForce": "1800",
+                "hullDamage": "600",
+                "shieldDamage": "1200"
+            }
+        },
+        "outfits": [
+            "Large Collector Module",
+            "Large Battery Module",
+            "Small Battery Module",
+            "Small Shield Module 2",
+            "Large Repair Module",
+            "",
+            "Large Thrust Module 2",
+            "Small Thrust Module 2",
+            "Large Steering Module 2",
+            "Small Steering Module 2",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-13 198 .7",
+                "0 199 1",
+                "13 198 .7"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 10",
+                "explode \"medium explosion\" 20",
+                "explode \"large explosion\" 30",
+                "explode \"huge explosion\" 10"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -27 -88",
+                "gun 27 -88"
+            ],
+            "turrets": [
+                "turret 0 -65",
+                "turret -90 88",
+                "turret 90 88",
+                "turret 0 189"
+            ]
+        },
+        "description": "`The Arachi believe that efficient functionality is the highest form of beauty, and none of their ships demonstrate that principle more clearly than the ugly yet utilitarian Hulk, designed with detachable side pods that can be swapped out on a planet in a matter of minutes if the captain is in a hurry to reach the next destination.`"
+    },
+    "arach spindle": {
+        "name": "Arach Spindle",
+        "sprite": "ship/arach spindle",
+        "attributes": {
+            "automation": false,
+            "bunks": "14",
+            "cargoSpace": "280",
+            "category": "Heavy Freighter",
+            "cost": "6652000",
+            "drag": "10.8",
+            "engineCap": "148",
+            "fuelCap": "500",
+            "heat": ".55",
+            "hull": "9700",
+            "mass": "340",
+            "outfitSpace": "434",
+            "requiredCrew": "4",
+            "shields": "5000",
+            "weaponCap": "138",
+            "weapon": {
+                "blastRadius": "100",
+                "hitForce": "1500",
+                "hullDamage": "500",
+                "shieldDamage": "1000"
+            }
+        },
+        "outfits": [
+            "Large Collector Module",
+            "Large Battery Module",
+            "Small Battery Module",
+            "Small Shield Module 2",
+            "Small Repair Module 3",
+            "Cooling Module",
+            "",
+            "Large Thrust Module 2",
+            "Small Thrust Module 3",
+            "Large Steering Module 2",
+            "Small Steering Module 1",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-13 198 .7",
+                "0 199 1",
+                "13 198 .7"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 10",
+                "explode \"medium explosion\" 20",
+                "explode \"large explosion\" 20"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -27 -88",
+                "gun 27 -88"
+            ],
+            "turrets": [
+                "turret 0 -65",
+                "turret 0 189"
+            ]
+        },
+        "description": "`The Arach Hulk is an ungainly, lumbering behemoth of a ship, but with its side pods removed it becomes the much more maneuverable Spindle. Because of its much lower cargo space, usually the only reason a fleet would include a Spindle is if they are planning on picking up new cargo pods at their destination.`"
+    },
+    "arach transport": {
+        "name": "Arach Transport",
+        "sprite": "ship/arach transport",
+        "attributes": {
+            "automation": false,
+            "bunks": "5",
+            "cargoSpace": "190",
+            "category": "Light Freighter",
+            "cost": "2772000",
+            "drag": "7.2",
+            "engineCap": "70",
+            "fuelCap": "400",
+            "heat": ".60",
+            "hull": "4800",
+            "mass": "280",
+            "outfitSpace": "281",
+            "requiredCrew": "2",
+            "shields": "2300",
+            "weaponCap": "96",
+            "weapon": {
+                "blastRadius": "40",
+                "hitForce": "600",
+                "hullDamage": "200",
+                "shieldDamage": "400"
+            }
+        },
+        "outfits": [
+            "Small Collector Module 2",
+            "Small Battery Module",
+            "Small Shield Module",
+            "Small Repair Module",
+            "",
+            "Large Thrust Module",
+            "Large Steering Module",
+            "Small Steering Module",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-14 117 .4",
+                "-7 117 .9",
+                "7 117 .9",
+                "14 117 .4"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 10",
+                "explode \"medium explosion\" 30",
+                "explode \"large explosion\" 5"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -22 13",
+                "gun 22 13"
+            ],
+            "turrets": [
+                "turret 0 -77"
+            ]
+        },
+        "description": "`The Arach Transport is the oldest of their ship designs, dating back to the time when they first joined the Coalition in overthrowing the Quarg and capturing their ringworlds. Back then, Transports were occasionally used as warships, but now, thousands of years later, they are considered outdated compared to the latest Heliarch military ships.`"
+    },
+    "heliarch interdictor": {
+        "name": "Heliarch Interdictor",
+        "sprite": "ship/heliarch interdictor",
+        "attributes": {
+            "automation": false,
+            "bunks": "70",
+            "cargoSpace": "79",
+            "category": "Medium Warship",
+            "cost": "35487000",
+            "drag": "7.4",
+            "engineCap": "135",
+            "fuelCap": "800",
+            "heat": ".70",
+            "hull": "54600",
+            "mass": "520",
+            "outfitSpace": "544",
+            "requiredCrew": "42",
+            "shields": "65300",
+            "weaponCap": "179",
+            "weapon": {
+                "blastRadius": "250",
+                "hitForce": "3800",
+                "hullDamage": "1500",
+                "shieldDamage": "3000"
+            }
+        },
+        "outfits": [
+            "Finisher Pod 2",
+            "Finisher Torpedo 80",
+            "Heliarch Attractor",
+            "Heliarch Repulsor",
+            "",
+            "Large Reactor Module",
+            "Large Battery Module",
+            "Large Shield Module 2",
+            "Large Repair Module",
+            "Cooling Module",
+            "",
+            "Large Thrust Module 2",
+            "Large Steering Module 2",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-30 163 .5",
+                "-20 163 .85",
+                "20 163 .85",
+                "30 163 .5"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 20",
+                "explode \"medium explosion\" 50",
+                "explode \"large explosion\" 30",
+                "explode \"huge explosion\" 10"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -20 -98 \"Finisher Pod\"",
+                "gun 20 -98 \"Finisher Pod\""
+            ],
+            "turrets": [
+                "turret -8 -63 \"Heliarch Attractor\"",
+                "turret 8 -63 \"Heliarch Repulsor\""
+            ]
+        },
+        "description": "`Anyone who incurs the wrath of the Heliarchs cannot count on making a fast getaway thanks to the Interdictors, which were primarily designed to carry a pair of attractor and repulsor beams that can hold a ship a safe distance away while pushing it around enough to prevent it from getting a hyperspace lock to jump out of the system.`"
+    },
+    "heliarch interdictor heliarch interdictor (bombardment)": {
+        "name": "Heliarch Interdictor Heliarch Interdictor (Bombardment)",
+        "sprite": false,
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": false,
+            "cost": false,
+            "drag": false,
+            "engineCap": false,
+            "fuelCap": false,
+            "heat": false,
+            "hull": false,
+            "mass": false,
+            "outfitSpace": false,
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": false,
+                "hitForce": false,
+                "hullDamage": false,
+                "shieldDamage": false
+            }
+        },
+        "outfits": false,
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "heliarch neutralizer": {
+        "name": "Heliarch Neutralizer",
+        "sprite": "ship/heliarch neutralizer",
+        "attributes": {
+            "automation": false,
+            "bunks": "24",
+            "cargoSpace": "36",
+            "category": "Light Warship",
+            "cost": "18847000",
+            "drag": "4.1",
+            "engineCap": "102",
+            "fuelCap": "1000",
+            "heat": ".75",
+            "hull": "32800",
+            "mass": "270",
+            "outfitSpace": "367",
+            "requiredCrew": "17",
+            "shields": "36400",
+            "weaponCap": "72",
+            "weapon": {
+                "blastRadius": "150",
+                "hitForce": "2100",
+                "hullDamage": "900",
+                "shieldDamage": "1800"
+            }
+        },
+        "outfits": [
+            "Ion Rain Gun 4",
+            "",
+            "Small Reactor Module 2",
+            "Large Battery Module",
+            "Large Shield Module",
+            "Large Repair Module",
+            "Cooling Module",
+            "",
+            "Large Thrust Module",
+            "Small Thrust Module 2",
+            "Large Steering Module",
+            "Small Steering Module 2",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-17 82 .7",
+                "0 74 1",
+                "17 82 .7"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 30",
+                "explode \"medium explosion\" 40",
+                "explode \"large explosion\" 20"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -16 -59 \"Ion Rain Gun\"",
+                "gun 16 -59 \"Ion Rain Gun\"",
+                "gun -22 -57 \"Ion Rain Gun\"",
+                "gun 22 -57 \"Ion Rain Gun\""
+            ],
+            "turrets": null
+        },
+        "description": "`The most common Heliarch patrol ship, Neutralizers are designed to be just strong enough to keep an enemy vessel occupied until reinforcements can arrive.`"
+    },
+    "heliarch neutralizer heliarch neutralizer (missile)": {
+        "name": "Heliarch Neutralizer Heliarch Neutralizer (Missile)",
+        "sprite": false,
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": false,
+            "cost": false,
+            "drag": false,
+            "engineCap": false,
+            "fuelCap": false,
+            "heat": false,
+            "hull": false,
+            "mass": false,
+            "outfitSpace": false,
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": false,
+                "hitForce": false,
+                "hullDamage": false,
+                "shieldDamage": false
+            }
+        },
+        "outfits": [
+            "Finisher Pod 2",
+            "Finisher Torpedo 80",
+            "",
+            "Small Reactor Module",
+            "Large Battery Module",
+            "Large Shield Module",
+            "Large Repair Module",
+            "Cooling Module",
+            "",
+            "Large Thrust Module",
+            "Small Thrust Module 2",
+            "Large Steering Module",
+            "Small Steering Module 2",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "heliarch neutralizer heliarch neutralizer (nimble)": {
+        "name": "Heliarch Neutralizer Heliarch Neutralizer (Nimble)",
+        "sprite": false,
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": false,
+            "cost": false,
+            "drag": false,
+            "engineCap": false,
+            "fuelCap": false,
+            "heat": false,
+            "hull": false,
+            "mass": false,
+            "outfitSpace": false,
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": false,
+                "hitForce": false,
+                "hullDamage": false,
+                "shieldDamage": false
+            }
+        },
+        "outfits": false,
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "heliarch neutralizer heliarch neutralizer (scrappy)": {
+        "name": "Heliarch Neutralizer Heliarch Neutralizer (Scrappy)",
+        "sprite": false,
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": false,
+            "cost": false,
+            "drag": false,
+            "engineCap": false,
+            "fuelCap": false,
+            "heat": false,
+            "hull": false,
+            "mass": false,
+            "outfitSpace": false,
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": false,
+                "hitForce": false,
+                "hullDamage": false,
+                "shieldDamage": false
+            }
+        },
+        "outfits": false,
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "heliarch punisher": {
+        "name": "Heliarch Punisher",
+        "sprite": "ship/heliarch punisher",
+        "attributes": {
+            "automation": false,
+            "bunks": "145",
+            "cargoSpace": "94",
+            "category": "Heavy Warship",
+            "cost": "58487000",
+            "drag": "12.2",
+            "engineCap": "187",
+            "fuelCap": "600",
+            "heat": ".60",
+            "hull": "85000",
+            "mass": "780",
+            "outfitSpace": "885",
+            "requiredCrew": "96",
+            "shields": "108000",
+            "weaponCap": "324",
+            "weapon": {
+                "blastRadius": "400",
+                "hitForce": "6000",
+                "hullDamage": "2400",
+                "shieldDamage": "4800"
+            }
+        },
+        "outfits": [
+            "Ion Rain Gun 4",
+            "Finisher Pod 2",
+            "Finisher Torpedo 80",
+            "Bombardment Turret 4",
+            "",
+            "Large Reactor Module 2",
+            "Large Battery Module",
+            "Large Shield Module 3",
+            "Large Repair Module 2",
+            "Cooling Module 3",
+            "",
+            "Large Thrust Module 2",
+            "Small Thrust Module 2",
+            "Large Steering Module 2",
+            "Small Steering Module 2",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-24 184 .6",
+                "0 187 1.1",
+                "24 184 .6"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 20",
+                "explode \"medium explosion\" 60",
+                "explode \"large explosion\" 40",
+                "explode \"huge explosion\" 20"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -21 -121 \"Ion Rain Gun\"",
+                "gun 21 -121 \"Ion Rain Gun\"",
+                "gun -27 -118 \"Ion Rain Gun\"",
+                "gun 27 -118 \"Ion Rain Gun\"",
+                "gun -43 -43 \"Finisher Pod\"",
+                "gun 43 -43 \"Finisher Pod\""
+            ],
+            "turrets": [
+                "turret -13 -42 \"Bombardment Turret\"",
+                "turret 13 -42 \"Bombardment Turret\"",
+                "turret 0 -35 \"Bombardment Turret\"",
+                "turret 0 164 \"Bombardment Turret\""
+            ]
+        },
+        "description": "`Although not quite as strong or powerful as the Quarg ships that they are designed to oppose, Heliarch Punishers are versatile and durable ships. Rumors say that the Heliarchs have a small stash of stolen Quarg Skylances that they can outfit the Punishers with in times of war.`"
+    },
+    "heliarch punisher heliarch punisher (interdicting)": {
+        "name": "Heliarch Punisher Heliarch Punisher (Interdicting)",
+        "sprite": false,
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": false,
+            "cost": false,
+            "drag": false,
+            "engineCap": false,
+            "fuelCap": false,
+            "heat": false,
+            "hull": false,
+            "mass": false,
+            "outfitSpace": false,
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": false,
+                "hitForce": false,
+                "hullDamage": false,
+                "shieldDamage": false
+            }
+        },
+        "outfits": [
+            "Bombardment Cannon 4",
+            "Finisher Pod 2",
+            "Finisher Torpedo 80",
+            "Heliarch Attractor 2",
+            "Heliarch Repulsor",
+            "Bombardment Turret",
+            "",
+            "Large Reactor Module 2",
+            "Large Battery Module",
+            "Large Shield Module 3",
+            "Large Repair Module 2",
+            "Cooling Module 3",
+            "",
+            "Large Thrust Module 2",
+            "Small Thrust Module 2",
+            "Large Steering Module 2",
+            "Small Steering Module 2",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "heliarch punisher heliarch punisher (missile)": {
+        "name": "Heliarch Punisher Heliarch Punisher (Missile)",
+        "sprite": false,
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": false,
+            "cost": false,
+            "drag": false,
+            "engineCap": false,
+            "fuelCap": false,
+            "heat": false,
+            "hull": false,
+            "mass": false,
+            "outfitSpace": false,
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": false,
+                "hitForce": false,
+                "hullDamage": false,
+                "shieldDamage": false
+            }
+        },
+        "outfits": [
+            "Finisher Pod 6",
+            "Finisher Torpedo 240",
+            "Heliarch Repulsor",
+            "",
+            "Large Reactor Module",
+            "Small Reactor Module",
+            "Large Battery Module",
+            "Large Shield Module 5",
+            "Large Repair Module 2",
+            "Cooling Module 2",
+            "",
+            "Large Thrust Module 4",
+            "Large Steering Module 2",
+            "Small Steering Module",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "heliarch punisher heliarch punisher (scrappy)": {
+        "name": "Heliarch Punisher Heliarch Punisher (Scrappy)",
+        "sprite": false,
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": false,
+            "cost": false,
+            "drag": false,
+            "engineCap": false,
+            "fuelCap": false,
+            "heat": false,
+            "hull": false,
+            "mass": "Expansion\" 3",
+            "outfitSpace": false,
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": false,
+                "hitForce": false,
+                "hullDamage": false,
+                "shieldDamage": false
+            }
+        },
+        "outfits": false,
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "kimek briar": {
+        "name": "Kimek Briar",
+        "sprite": "ship/kimek briar",
+        "attributes": {
+            "automation": false,
+            "bunks": "25",
+            "cargoSpace": "21",
+            "category": "Transport",
+            "cost": "1532000",
+            "drag": "3.8",
+            "engineCap": "60",
+            "fuelCap": "700",
+            "heat": ".75",
+            "hull": "1700",
+            "mass": "180",
+            "outfitSpace": "245",
+            "requiredCrew": "3",
+            "shields": "3600",
+            "weaponCap": "89",
+            "weapon": {
+                "blastRadius": "34",
+                "hitForce": "510",
+                "hullDamage": "170",
+                "shieldDamage": "340"
+            }
+        },
+        "outfits": [
+            "Small Collector Module 2",
+            "Small Battery Module 2",
+            "Small Shield Module 2",
+            "",
+            "Large Thrust Module",
+            "Large Steering Module",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-12 85 .5",
+                "0 89 1.2",
+                "12 85 .5"
+            ],
+            "explosions": [
+                "explode \"tiny explosion\" 5",
+                "explode \"small explosion\" 20",
+                "explode \"medium explosion\" 5"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -10 -52",
+                "gun 10 -52"
+            ],
+            "turrets": [
+                "turret 0 -14"
+            ]
+        },
+        "description": "`With more than twice the population of the Saryds and Arachi combined, the Kimek are constantly in need of transport ships to carry individuals from one world to another.`"
+    },
+    "kimek spire": {
+        "name": "Kimek Spire",
+        "sprite": "ship/kimek spire",
+        "attributes": {
+            "automation": false,
+            "bunks": "197",
+            "cargoSpace": "64",
+            "category": "Transport",
+            "cost": "9375000",
+            "drag": "8.4",
+            "engineCap": "129",
+            "fuelCap": "800",
+            "heat": ".60",
+            "hull": "4900",
+            "mass": "570",
+            "outfitSpace": "489",
+            "requiredCrew": "19",
+            "shields": "14200",
+            "weaponCap": "256",
+            "weapon": {
+                "blastRadius": "140",
+                "hitForce": "2100",
+                "hullDamage": "700",
+                "shieldDamage": "1400"
+            }
+        },
+        "outfits": [
+            "Large Collector Module",
+            "Small Collector Module",
+            "Large Battery Module",
+            "Large Shield Module",
+            "Small Shield Module",
+            "",
+            "Large Thrust Module 2",
+            "Large Steering Module 2",
+            "Small Steering Module",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-22 221 .6",
+                "-10 219 .8",
+                "10 219 .8",
+                "22 221 .6"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 10",
+                "explode \"medium explosion\" 30",
+                "explode \"large explosion\" 20",
+                "explode \"huge explosion\" 5"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -14 -183",
+                "gun 14 -183"
+            ],
+            "turrets": [
+                "turret 0 -153",
+                "turret 0 -43",
+                "turret -42 131",
+                "turret 42 131"
+            ]
+        },
+        "description": "`The Spire is the largest passenger transport in Coalition space, able to carry nearly two hundred individuals... as long as they're comfortable staying in the tiny bunk rooms that are primarily designed to meet the needs of a Kimek. Most of the ceilings are too short for a Saryd to stand up straight, and the beds are too small for an Arach to stretch their legs out comfortably.`"
+    },
+    "kimek thistle": {
+        "name": "Kimek Thistle",
+        "sprite": "ship/kimek thistle",
+        "attributes": {
+            "automation": false,
+            "bunks": "52",
+            "cargoSpace": "29",
+            "category": "Transport",
+            "cost": "2904000",
+            "drag": "5.8",
+            "engineCap": "87",
+            "fuelCap": "700",
+            "heat": ".70",
+            "hull": "2800",
+            "mass": "270",
+            "outfitSpace": "321",
+            "requiredCrew": "7",
+            "shields": "7500",
+            "weaponCap": "118",
+            "weapon": {
+                "blastRadius": "60",
+                "hitForce": "900",
+                "hullDamage": "300",
+                "shieldDamage": "600"
+            }
+        },
+        "outfits": [
+            "Large Collector Module",
+            "Small Battery Module",
+            "Small Shield Module 3",
+            "",
+            "Large Thrust Module",
+            "Small Thrust Module 2",
+            "Large Steering Module",
+            "Small Steering Module",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-13 120 .7",
+                "0 123 1",
+                "13 120 .7"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 10",
+                "explode \"medium explosion\" 30",
+                "explode \"large explosion\" 10"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -11 -92",
+                "gun 11 -92"
+            ],
+            "turrets": [
+                "turret -13 3",
+                "turret 13 3"
+            ]
+        },
+        "description": "`The Kimek love traveling so much that some of them will happily spend months at a time in a transport this size, and the passengers often grow into a tight-knit community by the end of their journeys together.`"
+    },
+    "kimek thorn": {
+        "name": "Kimek Thorn",
+        "sprite": "ship/kimek thorn",
+        "attributes": {
+            "automation": false,
+            "bunks": "7",
+            "cargoSpace": "12",
+            "category": "Transport",
+            "cost": "440000",
+            "drag": "1.8",
+            "engineCap": "38",
+            "fuelCap": "600",
+            "heat": ".80",
+            "hull": "800",
+            "mass": "80",
+            "outfitSpace": "133",
+            "requiredCrew": "1",
+            "shields": "1400",
+            "weaponCap": "40",
+            "weapon": {
+                "blastRadius": "14",
+                "hitForce": "210",
+                "hullDamage": "70",
+                "shieldDamage": "140"
+            }
+        },
+        "outfits": [
+            "Small Collector Module",
+            "Small Battery Module",
+            "Small Shield Module",
+            "",
+            "Small Thrust Module 2",
+            "Small Steering Module 2",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-8 41 .7",
+                "0 43 1",
+                "8 41 .7"
+            ],
+            "explosions": [
+                "explode \"tiny explosion\" 10",
+                "explode \"small explosion\" 5"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -8 -23",
+                "gun 8 -23"
+            ],
+            "turrets": null
+        },
+        "description": "`The Thorn is the Kimek equivalent of a shuttle, and thanks to their speed and maneuverability they are used throughout Coalition space for transferring passengers from one ship to another or from a planet into orbit.`"
+    },
+    "saryd runabout": {
+        "name": "Saryd Runabout",
+        "sprite": "ship/saryd runabout",
+        "attributes": {
+            "automation": false,
+            "bunks": "13",
+            "cargoSpace": "42",
+            "category": "Light Freighter",
+            "cost": "942000",
+            "drag": "2.8",
+            "engineCap": "42",
+            "fuelCap": "400",
+            "heat": ".70",
+            "hull": "1400",
+            "mass": "140",
+            "outfitSpace": "172",
+            "requiredCrew": "2",
+            "shields": "2000",
+            "weaponCap": "44",
+            "weapon": {
+                "blastRadius": "22",
+                "hitForce": "330",
+                "hullDamage": "110",
+                "shieldDamage": "220"
+            }
+        },
+        "outfits": [
+            "Small Collector Module 2",
+            "Small Battery Module",
+            "Small Shield Module",
+            "",
+            "Small Thrust Module 2",
+            "Small Steering Module 3",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-14 52 1",
+                "14 52 1"
+            ],
+            "explosions": [
+                "explode \"tiny explosion\" 10",
+                "explode \"small explosion\" 10"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -21 -4",
+                "gun 21 -4"
+            ],
+            "turrets": null
+        },
+        "description": "`Saryds place high value both on solitude, but also on community and collaboration. So, it is not surprising that their smallest spacefaring vessel requires a team of at least two individuals to operate it. It is quite common for a lone Saryd to take on a Kimek or Arach copilot as a way of building cross-species friendships.`"
+    },
+    "saryd sojourner": {
+        "name": "Saryd Sojourner",
+        "sprite": "ship/saryd sojourner",
+        "attributes": {
+            "automation": false,
+            "bunks": "84",
+            "cargoSpace": "260",
+            "category": "Heavy Freighter",
+            "cost": "11075000",
+            "drag": "12.9",
+            "engineCap": "156",
+            "fuelCap": "800",
+            "heat": ".50",
+            "hull": "7700",
+            "mass": "640",
+            "outfitSpace": "568",
+            "requiredCrew": "17",
+            "shields": "13000",
+            "weaponCap": "202",
+            "weapon": {
+                "blastRadius": "200",
+                "hitForce": "3000",
+                "hullDamage": "1000",
+                "shieldDamage": "2000"
+            }
+        },
+        "outfits": [
+            "Large Collector Module",
+            "Small Collector Module 3",
+            "Large Battery Module",
+            "Large Shield Module",
+            "Small Repair Module 2",
+            "",
+            "Large Thrust Module 2",
+            "Small Thrust Module 3",
+            "Large Steering Module 2",
+            "Small Steering Module",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-24 176 .6",
+                "-11 181 .8",
+                "11 181 .8",
+                "24 176 .6"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 20",
+                "explode \"medium explosion\" 30",
+                "explode \"large explosion\" 10",
+                "explode \"huge explosion\" 10"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -23 -104",
+                "gun 23 -104"
+            ],
+            "turrets": [
+                "turret -17 -104",
+                "turret 17 -104",
+                "turret 0 -96",
+                "turret 0 157"
+            ]
+        },
+        "description": "`When the first wars were fought against the Quarg, the Saryds had been spacefaring for more than ten thousand Earth years, and their starship technology was considerably more advanced than the Kimek or the Arachi. At that time, ships similar to the modern Sojourner were the most powerful capital ships in the Coalition fleet.`"
+    },
+    "saryd traveler": {
+        "name": "Saryd Traveler",
+        "sprite": "ship/saryd traveler",
+        "attributes": {
+            "automation": false,
+            "bunks": "45",
+            "cargoSpace": "137",
+            "category": "Heavy Freighter",
+            "cost": "3385000",
+            "drag": "5.5",
+            "engineCap": "79",
+            "fuelCap": "600",
+            "heat": ".60",
+            "hull": "4000",
+            "mass": "350",
+            "outfitSpace": "466",
+            "requiredCrew": "10",
+            "shields": "6500",
+            "weaponCap": "177",
+            "weapon": {
+                "blastRadius": "72",
+                "hitForce": "1080",
+                "hullDamage": "360",
+                "shieldDamage": "720"
+            }
+        },
+        "outfits": [
+            "Small Collector Module 3",
+            "Small Battery Module 2",
+            "Small Shield Module 2",
+            "Small Repair Module",
+            "",
+            "Large Thrust Module",
+            "Small Thrust Module",
+            "Large Steering Module",
+            "Small Steering Module",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-30 87 .7",
+                "-21 86 .7",
+                "21 86 .7",
+                "30 87 .7"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 30",
+                "explode \"medium explosion\" 20",
+                "explode \"large explosion\" 10"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -32 -18",
+                "gun 32 -18",
+                "gun -22 -18",
+                "gun 22 -18"
+            ],
+            "turrets": [
+                "turret -41 9",
+                "turret 41 9"
+            ]
+        },
+        "description": "`Travelers were originally designed as science vessels, thousands of years ago before the Saryds had catalogued all the life forms and physical phenomena of every world in Coalition space. Today, many Saryd communities still choose to live in a Traveler and journey together from system to system rather than putting down roots on a planet.`"
+    },
+    "saryd visitor": {
+        "name": "Saryd Visitor",
+        "sprite": "ship/saryd visitor",
+        "attributes": {
+            "automation": false,
+            "bunks": "29",
+            "cargoSpace": "98",
+            "category": "Light Freighter",
+            "cost": "1982000",
+            "drag": "4.4",
+            "engineCap": "57",
+            "fuelCap": "400",
+            "heat": ".65",
+            "hull": "2400",
+            "mass": "270",
+            "outfitSpace": "320",
+            "requiredCrew": "5",
+            "shields": "4000",
+            "weaponCap": "90",
+            "weapon": {
+                "blastRadius": "42",
+                "hitForce": "630",
+                "hullDamage": "210",
+                "shieldDamage": "420"
+            }
+        },
+        "outfits": [
+            "Small Collector Module 2",
+            "Small Battery Module 2",
+            "Small Shield Module",
+            "Small Repair Module",
+            "",
+            "Small Thrust Module 3",
+            "Large Steering Module",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-23 75 .6",
+                "-11 78 .8",
+                "11 78 .8",
+                "23 75 .6"
+            ],
+            "explosions": [
+                "explode \"tiny explosion\" 20",
+                "explode \"small explosion\" 30",
+                "explode \"medium explosion\" 5"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -15 -51",
+                "gun 15 -51"
+            ],
+            "turrets": [
+                "turret 0 26"
+            ]
+        },
+        "description": "`Rather than specializing in carrying passengers or carrying cargo, Saryds seek to make their ships as well-balanced and versatile as possible. As a result, the crew of a typical Visitor can count on performing a different sort of job every week.`"
+    }
+}

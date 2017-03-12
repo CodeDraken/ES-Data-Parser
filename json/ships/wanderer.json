@@ -1,0 +1,1067 @@
+{
+    "earth shaper": {
+        "name": "Earth Shaper",
+        "sprite": "ship/earth shaper",
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": "27",
+            "category": "Light Freighter",
+            "cost": "500000",
+            "drag": ".9",
+            "engineCap": "26",
+            "fuelCap": "300",
+            "heat": ".9",
+            "hull": "3300",
+            "mass": "30",
+            "outfitSpace": "59",
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": "10",
+                "hitForce": "250",
+                "hullDamage": "150",
+                "shieldDamage": "100"
+            }
+        },
+        "outfits": [
+            "Small Biochemical Cell",
+            "",
+            "Type 1 Radiant Thruster",
+            "Type 1 Radiant Steering",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-9 30",
+                "9 30"
+            ],
+            "explosions": [
+                "explode \"tiny explosion\" 20",
+                "explode \"small explosion\" 10"
+            ],
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": "\"The Earth Shaper is a robotic drone that the Wanderers use for mining, exploring, surveying, and terraforming.\""
+    },
+    "flycatcher": {
+        "name": "Flycatcher",
+        "sprite": "ship/flycatcher",
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": "Drone",
+            "cost": "830000",
+            "drag": ".6",
+            "engineCap": "26",
+            "fuelCap": false,
+            "heat": ".9",
+            "hull": "4700",
+            "mass": "40",
+            "outfitSpace": "86",
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": "28",
+            "weapon": {
+                "blastRadius": "10",
+                "hitForce": "250",
+                "hullDamage": "150",
+                "shieldDamage": "100"
+            }
+        },
+        "outfits": [
+            "Wanderer Anti-Missile",
+            "",
+            "Small Biochemical Cell 2",
+            "",
+            "Type 1 Radiant Thruster",
+            "Type 1 Radiant Steering"
+        ],
+        "layout": {
+            "engines": [
+                "-9 28",
+                "9 28"
+            ],
+            "explosions": [
+                "explode \"tiny explosion\" 30",
+                "explode \"small explosion\" 20"
+            ],
+            "fighter": null,
+            "guns": null,
+            "turrets": [
+                "turret 0 4"
+            ]
+        },
+        "description": "\"Flycatcher drones are used by the Wanderers to keep their star systems safe. Rather than carrying weapons of its own, a stock Flycatcher just carries an anti-missile turret for defending other ships.\""
+    },
+    "summer leaf": {
+        "name": "Summer Leaf",
+        "sprite": "ship/summer leaf",
+        "attributes": {
+            "automation": false,
+            "bunks": "15",
+            "cargoSpace": "41",
+            "category": "Light Warship",
+            "cost": "9500000",
+            "drag": "2.6",
+            "engineCap": "103",
+            "fuelCap": "800",
+            "heat": ".8",
+            "hull": "6700",
+            "mass": "110",
+            "outfitSpace": "320",
+            "requiredCrew": "6",
+            "shields": "14400",
+            "weaponCap": "84",
+            "weapon": {
+                "blastRadius": "70",
+                "hitForce": "1050",
+                "hullDamage": "350",
+                "shieldDamage": "700"
+            }
+        },
+        "outfits": [
+            "Sunbeam 2",
+            "",
+            "Yellow Sun Reactor",
+            "Bright Cloud Shielding",
+            "Wanderer Ramscoop",
+            "",
+            "Type 3 Radiant Thruster",
+            "Type 3 Radiant Steering",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-18 64",
+                "18 64"
+            ],
+            "explosions": [
+                "explode \"tiny explosion\" 40",
+                "explode \"small explosion\" 20",
+                "explode \"medium explosion\" 10"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -29 -9",
+                "gun 29 -9"
+            ],
+            "turrets": null
+        },
+        "description": "\"The Summer Leaf is mostly used by the Wanderers as a light transport, but it is also quite effective in combat.\""
+    },
+    "autumn leaf": {
+        "name": "Autumn Leaf",
+        "sprite": "ship/autumn leaf",
+        "attributes": {
+            "automation": false,
+            "bunks": "16",
+            "cargoSpace": "45",
+            "category": "Light Warship",
+            "cost": "12500000",
+            "drag": "2.9",
+            "engineCap": "117",
+            "fuelCap": "1000",
+            "heat": ".8",
+            "hull": "7400",
+            "mass": "130",
+            "outfitSpace": "361",
+            "requiredCrew": "8",
+            "shields": "18700",
+            "weaponCap": "103",
+            "weapon": {
+                "blastRadius": "80",
+                "hitForce": "1200",
+                "hullDamage": "400",
+                "shieldDamage": "800"
+            }
+        },
+        "outfits": [
+            "Sunbeam 2",
+            "Wanderer Anti-Missile",
+            "",
+            "White Sun Reactor",
+            "Bright Cloud Shielding",
+            "Wanderer Ramscoop",
+            "",
+            "Type 3 Radiant Thruster",
+            "Type 4 Radiant Steering",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-18 64",
+                "18 64"
+            ],
+            "explosions": [
+                "explode \"tiny explosion\" 50",
+                "explode \"small explosion\" 30",
+                "explode \"medium explosion\" 20"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -25 -22",
+                "gun 25 -22"
+            ],
+            "turrets": [
+                "turret 0 28"
+            ]
+        },
+        "description": "\"The Autumn Leaf is based on the Wanderer Summer Leaf light warship, but slightly larger and better equipped for combat. Unlike Wanderer peacetime ships, it is equipped with a turret mount in addition to the ports for fixed guns.\""
+    },
+    "strong wind": {
+        "name": "Strong Wind",
+        "sprite": "ship/strong wind",
+        "attributes": {
+            "automation": false,
+            "bunks": "39",
+            "cargoSpace": "68",
+            "category": "Medium Warship",
+            "cost": "16100000",
+            "drag": "4.7",
+            "engineCap": "114",
+            "fuelCap": "400",
+            "heat": ".7",
+            "hull": "19600",
+            "mass": "260",
+            "outfitSpace": "493",
+            "requiredCrew": "17",
+            "shields": "28500",
+            "weaponCap": "198",
+            "weapon": {
+                "blastRadius": "200",
+                "hitForce": "3000",
+                "hullDamage": "1000",
+                "shieldDamage": "2000"
+            }
+        },
+        "outfits": [
+            "Sunbeam 4",
+            "Thunderhead Launcher 2",
+            "Thunderhead Missile 80",
+            "",
+            "White Sun Reactor",
+            "Dark Storm Shielding",
+            "Wanderer Ramscoop",
+            "",
+            "Type 3 Radiant Thruster",
+            "Type 4 Radiant Steering",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-30 127",
+                "30 127"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 60",
+                "explode \"medium explosion\" 40",
+                "explode \"large explosion\" 20"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -64 13 \"Sunbeam\"",
+                "gun 64 13 \"Sunbeam\"",
+                "gun -57 21 \"Sunbeam\"",
+                "gun 57 21 \"Sunbeam\"",
+                "gun -32 57 \"Thunderhead Launcher\"",
+                "gun 32 57 \"Thunderhead Launcher\""
+            ],
+            "turrets": null
+        },
+        "description": "\"The Strong Wind was originally designed for science and exploration, but recently the Wanderers have modified the design to allow it to be used as a warship.\""
+    },
+    "tempest": {
+        "name": "Tempest",
+        "sprite": "ship/tempest",
+        "attributes": {
+            "automation": false,
+            "bunks": "53",
+            "cargoSpace": "47",
+            "category": "Medium Warship",
+            "cost": "19700000",
+            "drag": "6.2",
+            "engineCap": "122",
+            "fuelCap": "600",
+            "heat": "0.65",
+            "hull": "25900",
+            "mass": "320",
+            "outfitSpace": "607",
+            "requiredCrew": "38",
+            "shields": "42100",
+            "weaponCap": "271",
+            "weapon": {
+                "blastRadius": "280",
+                "hitForce": "4200",
+                "hullDamage": "1400",
+                "shieldDamage": "2800"
+            }
+        },
+        "outfits": [
+            "Sunbeam 2",
+            "Thunderhead Launcher 2",
+            "Thunderhead Missile 80",
+            "Dual Sunbeam Turret",
+            "Wanderer Anti-Missile 2",
+            "",
+            "Yellow Sun Reactor 2",
+            "Dark Storm Shielding",
+            "Wanderer Ramscoop",
+            "",
+            "Type 4 Radiant Thruster",
+            "Type 4 Radiant Steering",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-22 129",
+                "22 129"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 80",
+                "explode \"medium explosion\" 50",
+                "explode \"large explosion\" 25"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -16 -100 \"Sunbeam\"",
+                "gun 16 -100 \"Sunbeam\"",
+                "gun -21 -83 \"Thunderhead Launcher\"",
+                "gun 21 -83 \"Thunderhead Launcher\""
+            ],
+            "turrets": [
+                "turret 0 -37 \"Dual Sunbeam Turret\"",
+                "turret -32 87 \"Wanderer Anti-Missile\"",
+                "turret 32 87 \"Wanderer Anti-Missile\""
+            ]
+        },
+        "description": "\"In response to the Unfettered invasion, the Wanderers have begun digging up ancient warship designs from their archives and putting them back into production. The Tempest is the first purpose-built warship they have manufactured in tens of thousands of years.\""
+    },
+    "tempest tempest (heavy)": {
+        "name": "Tempest Tempest (Heavy)",
+        "sprite": false,
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": false,
+            "cost": false,
+            "drag": false,
+            "engineCap": false,
+            "fuelCap": false,
+            "heat": false,
+            "hull": false,
+            "mass": "Expansion\"",
+            "outfitSpace": false,
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": false,
+                "hitForce": false,
+                "hullDamage": false,
+                "shieldDamage": false
+            }
+        },
+        "outfits": [
+            "Sunbeam 4",
+            "Dual Sunbeam Turret",
+            "Wanderer Anti-Missile 2",
+            "",
+            "White Sun Reactor",
+            "Red Sun Reactor",
+            "Dark Storm Shielding",
+            "Mass Expansion",
+            "Wanderer Ramscoop",
+            "",
+            "Type 3 Radiant Thruster",
+            "Type 4 Radiant Steering",
+            "Type 2 Radiant Steering",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "tempest tempest (missile)": {
+        "name": "Tempest Tempest (Missile)",
+        "sprite": false,
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": false,
+            "cost": false,
+            "drag": false,
+            "engineCap": false,
+            "fuelCap": false,
+            "heat": false,
+            "hull": false,
+            "mass": false,
+            "outfitSpace": false,
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": false,
+                "hitForce": false,
+                "hullDamage": false,
+                "shieldDamage": false
+            }
+        },
+        "outfits": [
+            "Thunderhead Launcher 4",
+            "Thunderhead Missile 160",
+            "Dual Sunbeam Turret 2",
+            "",
+            "White Sun Reactor",
+            "Small Biochemical Cell",
+            "Dark Storm Shielding",
+            "Wanderer Ramscoop",
+            "",
+            "Type 4 Radiant Thruster",
+            "Type 4 Radiant Steering",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "derecho": {
+        "name": "Derecho",
+        "sprite": "ship/derecho",
+        "attributes": {
+            "automation": false,
+            "bunks": "82",
+            "cargoSpace": "56",
+            "category": "Heavy Warship",
+            "cost": "30500000",
+            "drag": "8.7",
+            "engineCap": "164",
+            "fuelCap": "500",
+            "heat": "0.6",
+            "hull": "32700",
+            "mass": "540",
+            "outfitSpace": "796",
+            "requiredCrew": "53",
+            "shields": "53200",
+            "weaponCap": "342",
+            "weapon": {
+                "blastRadius": "340",
+                "hitForce": "5100",
+                "hullDamage": "1700",
+                "shieldDamage": "3400"
+            }
+        },
+        "outfits": [
+            "Sunbeam 2",
+            "Thunderhead Launcher 2",
+            "Thunderhead Missile 80",
+            "Dual Sunbeam Turret 2",
+            "Wanderer Anti-Missile 2",
+            "",
+            "Blue Sun Reactor",
+            "Red Sun Reactor",
+            "Dark Storm Shielding",
+            "Bright Cloud Shielding",
+            "Wanderer Heat Sink",
+            "Wanderer Ramscoop",
+            "",
+            "Type 4 Radiant Thruster",
+            "Type 1 Radiant Thruster",
+            "Type 4 Radiant Steering",
+            "Type 3 Radiant Steering",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-16 177",
+                "16 177"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 40",
+                "explode \"medium explosion\" 70",
+                "explode \"large explosion\" 50",
+                "explode \"huge explosion\" 20"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -12 -156 \"Sunbeam\"",
+                "gun 12 -156 \"Sunbeam\"",
+                "gun -17 -134 \"Thunderhead Launcher\"",
+                "gun 17 -134 \"Thunderhead Launcher\""
+            ],
+            "turrets": [
+                "turret -28 -45 \"Dual Sunbeam Turret\"",
+                "turret 28 -45 \"Dual Sunbeam Turret\"",
+                "turret -38 95 \"Wanderer Anti-Missile\"",
+                "turret 38 95 \"Wanderer Anti-Missile\""
+            ]
+        },
+        "description": "\"Like a latent gene waiting to express itself, the knowledge of how to wage war in space has been passed down through hundreds of generations of Wanderers. Based on one of their ancient designs, the Derecho has a mixture of agility and raw firepower that is well-suited to their present, rapidly changing situation.\""
+    },
+    "derecho derecho (turret)": {
+        "name": "Derecho Derecho (Turret)",
+        "sprite": false,
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": false,
+            "cost": false,
+            "drag": false,
+            "engineCap": false,
+            "fuelCap": false,
+            "heat": false,
+            "hull": false,
+            "mass": false,
+            "outfitSpace": false,
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": false,
+                "hitForce": false,
+                "hullDamage": false,
+                "shieldDamage": false
+            }
+        },
+        "outfits": false,
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "derecho derecho (tough)": {
+        "name": "Derecho Derecho (Tough)",
+        "sprite": false,
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": false,
+            "cost": false,
+            "drag": false,
+            "engineCap": false,
+            "fuelCap": false,
+            "heat": false,
+            "hull": false,
+            "mass": "Expansion\"",
+            "outfitSpace": false,
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": false,
+                "hitForce": false,
+                "hullDamage": false,
+                "shieldDamage": false
+            }
+        },
+        "outfits": [
+            "Sunbeam 4",
+            "Dual Sunbeam Turret 2",
+            "",
+            "Blue Sun Reactor",
+            "Yellow Sun Reactor",
+            "Dark Storm Shielding 2",
+            "Wanderer Ramscoop",
+            "Mass Expansion",
+            "",
+            "Type 4 Radiant Thruster",
+            "Type 4 Radiant Steering 2",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "hurricane": {
+        "name": "Hurricane",
+        "sprite": "ship/hurricane",
+        "attributes": {
+            "automation": false,
+            "bunks": "117",
+            "cargoSpace": "98",
+            "category": "Heavy Warship",
+            "cost": "39100000",
+            "drag": "11.9",
+            "engineCap": "140",
+            "fuelCap": "500",
+            "heat": "0.55",
+            "hull": "46500",
+            "mass": "770",
+            "outfitSpace": "960",
+            "requiredCrew": "76",
+            "shields": "72400",
+            "weaponCap": "428",
+            "weapon": {
+                "blastRadius": "400",
+                "hitForce": "6000",
+                "hullDamage": "2000",
+                "shieldDamage": "4000"
+            }
+        },
+        "outfits": [
+            "Sunbeam 6",
+            "Dual Sunbeam Turret 2",
+            "Wanderer Anti-Missile 2",
+            "",
+            "Blue Sun Reactor",
+            "White Sun Reactor",
+            "Dark Storm Shielding 2",
+            "Wanderer Heat Sink",
+            "Wanderer Ramscoop",
+            "",
+            "Type 4 Radiant Thruster",
+            "Type 4 Radiant Steering",
+            "Type 2 Radiant Steering",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "-23 181",
+                "23 181"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 20",
+                "explode \"medium explosion\" 80",
+                "explode \"large explosion\" 70",
+                "explode \"huge explosion\" 30"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -68 5",
+                "gun 68 5",
+                "gun -85 21",
+                "gun 85 21",
+                "gun -62 32",
+                "gun 62 32"
+            ],
+            "turrets": [
+                "turret -27 -80 \"Dual Sunbeam Turret\"",
+                "turret 27 -80 \"Dual Sunbeam Turret\"",
+                "turret 0 -33",
+                "turret -39 140 \"Wanderer Anti-Missile\"",
+                "turret 39 140 \"Wanderer Anti-Missile\""
+            ]
+        },
+        "description": "\"The Hurricane is not built for speed, elegance, or versatility, but for one simple purpose: to be durable enough to serve as a rearguard, absorbing an enemy's attacks for long enough to allow the fleet it is guarding to escape.\""
+    },
+    "hurricane hurricane (turret)": {
+        "name": "Hurricane Hurricane (Turret)",
+        "sprite": false,
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": false,
+            "cost": false,
+            "drag": false,
+            "engineCap": false,
+            "fuelCap": false,
+            "heat": false,
+            "hull": false,
+            "mass": "Expansion\" 2",
+            "outfitSpace": false,
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": false,
+                "hitForce": false,
+                "hullDamage": false,
+                "shieldDamage": false
+            }
+        },
+        "outfits": false,
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "hurricane hurricane (tough)": {
+        "name": "Hurricane Hurricane (Tough)",
+        "sprite": false,
+        "attributes": {
+            "automation": false,
+            "bunks": false,
+            "cargoSpace": false,
+            "category": false,
+            "cost": false,
+            "drag": false,
+            "engineCap": false,
+            "fuelCap": false,
+            "heat": false,
+            "hull": false,
+            "mass": "Expansion\" 2",
+            "outfitSpace": false,
+            "requiredCrew": false,
+            "shields": false,
+            "weaponCap": false,
+            "weapon": {
+                "blastRadius": false,
+                "hitForce": false,
+                "hullDamage": false,
+                "shieldDamage": false
+            }
+        },
+        "outfits": [
+            "Sunbeam 2",
+            "Thunderhead Launcher 4",
+            "Thunderhead Missile 160",
+            "Dual Sunbeam Turret 2",
+            "Wanderer Anti-Missile 2",
+            "",
+            "Blue Sun Reactor",
+            "White Sun Reactor",
+            "Dark Storm Shielding 4",
+            "Wanderer Ramscoop",
+            "Mass Expansion 2",
+            "",
+            "Type 4 Radiant Thruster",
+            "Type 1 Radiant Thruster",
+            "Type 4 Radiant Steering",
+            "Type 1 Radiant Steering",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "deep river": {
+        "name": "Deep River",
+        "sprite": "ship/deep river",
+        "attributes": {
+            "automation": false,
+            "bunks": "22",
+            "cargoSpace": "760",
+            "category": "Heavy Freighter",
+            "cost": "18300000",
+            "drag": "9.4",
+            "engineCap": "83",
+            "fuelCap": "500",
+            "heat": ".6",
+            "hull": "47500",
+            "mass": "750",
+            "outfitSpace": "363",
+            "requiredCrew": "13",
+            "shields": "17600",
+            "weaponCap": "177",
+            "weapon": {
+                "blastRadius": "280",
+                "hitForce": "4200",
+                "hullDamage": "1400",
+                "shieldDamage": "2800"
+            }
+        },
+        "outfits": [
+            "Thunderhead Launcher 6",
+            "Thunderhead Missile 240",
+            "",
+            "Large Biochemical Cell",
+            "Bright Cloud Shielding",
+            "Wanderer Ramscoop",
+            "",
+            "Type 2 Radiant Thruster",
+            "Type 3 Radiant Steering",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "53 345 .7",
+                "0 345",
+                "-53 345 .7"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 80",
+                "explode \"medium explosion\" 60",
+                "explode \"large explosion\" 30",
+                "explode \"huge explosion\" 20"
+            ],
+            "fighter": null,
+            "guns": [
+                "gun -56 -217",
+                "gun -40 -217",
+                "gun -18 -217",
+                "gun 18 -217",
+                "gun 40 -217",
+                "gun 56 -217"
+            ],
+            "turrets": null
+        },
+        "description": "\"The Deep River is a bulk freighter, designed to carry cargo in detachable pods.\""
+    },
+    "deep river deep river 0": {
+        "name": "Deep River Deep River 0",
+        "sprite": "ship/deep river 0",
+        "attributes": {
+            "automation": false,
+            "bunks": "22",
+            "cargoSpace": "0",
+            "category": "Heavy Freighter",
+            "cost": "8300000",
+            "drag": "7.4",
+            "engineCap": "83",
+            "fuelCap": "500",
+            "heat": ".6",
+            "hull": "47500",
+            "mass": "350",
+            "outfitSpace": "363",
+            "requiredCrew": "13",
+            "shields": "17600",
+            "weaponCap": "177",
+            "weapon": {
+                "blastRadius": "280",
+                "hitForce": "4200",
+                "hullDamage": "1400",
+                "shieldDamage": "2800"
+            }
+        },
+        "outfits": false,
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "deep river deep river 1": {
+        "name": "Deep River Deep River 1",
+        "sprite": "ship/deep river 1",
+        "attributes": {
+            "automation": false,
+            "bunks": "22",
+            "cargoSpace": "152",
+            "category": "Heavy Freighter",
+            "cost": "10300000",
+            "drag": "7.8",
+            "engineCap": "83",
+            "fuelCap": "500",
+            "heat": ".6",
+            "hull": "47500",
+            "mass": "430",
+            "outfitSpace": "363",
+            "requiredCrew": "13",
+            "shields": "17600",
+            "weaponCap": "177",
+            "weapon": {
+                "blastRadius": "280",
+                "hitForce": "4200",
+                "hullDamage": "1400",
+                "shieldDamage": "2800"
+            }
+        },
+        "outfits": false,
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "deep river deep river 2": {
+        "name": "Deep River Deep River 2",
+        "sprite": "ship/deep river 2",
+        "attributes": {
+            "automation": false,
+            "bunks": "22",
+            "cargoSpace": "304",
+            "category": "Heavy Freighter",
+            "cost": "12300000",
+            "drag": "8.2",
+            "engineCap": "83",
+            "fuelCap": "500",
+            "heat": ".6",
+            "hull": "47500",
+            "mass": "510",
+            "outfitSpace": "363",
+            "requiredCrew": "13",
+            "shields": "17600",
+            "weaponCap": "177",
+            "weapon": {
+                "blastRadius": "280",
+                "hitForce": "4200",
+                "hullDamage": "1400",
+                "shieldDamage": "2800"
+            }
+        },
+        "outfits": false,
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "deep river deep river 3": {
+        "name": "Deep River Deep River 3",
+        "sprite": "ship/deep river 3",
+        "attributes": {
+            "automation": false,
+            "bunks": "22",
+            "cargoSpace": "456",
+            "category": "Heavy Freighter",
+            "cost": "14300000",
+            "drag": "8.6",
+            "engineCap": "83",
+            "fuelCap": "500",
+            "heat": ".6",
+            "hull": "47500",
+            "mass": "590",
+            "outfitSpace": "363",
+            "requiredCrew": "13",
+            "shields": "17600",
+            "weaponCap": "177",
+            "weapon": {
+                "blastRadius": "280",
+                "hitForce": "4200",
+                "hullDamage": "1400",
+                "shieldDamage": "2800"
+            }
+        },
+        "outfits": false,
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "deep river deep river 4": {
+        "name": "Deep River Deep River 4",
+        "sprite": "ship/deep river 4",
+        "attributes": {
+            "automation": false,
+            "bunks": "22",
+            "cargoSpace": "608",
+            "category": "Heavy Freighter",
+            "cost": "16300000",
+            "drag": "9.0",
+            "engineCap": "83",
+            "fuelCap": "500",
+            "heat": ".6",
+            "hull": "47500",
+            "mass": "670",
+            "outfitSpace": "363",
+            "requiredCrew": "13",
+            "shields": "17600",
+            "weaponCap": "177",
+            "weapon": {
+                "blastRadius": "280",
+                "hitForce": "4200",
+                "hullDamage": "1400",
+                "shieldDamage": "2800"
+            }
+        },
+        "outfits": false,
+        "layout": {
+            "engines": null,
+            "explosions": null,
+            "fighter": null,
+            "guns": null,
+            "turrets": null
+        },
+        "description": false
+    },
+    "deep river transport": {
+        "name": "Deep River Transport",
+        "sprite": "ship/deep river",
+        "attributes": {
+            "automation": false,
+            "bunks": "166",
+            "cargoSpace": "40",
+            "category": "Heavy Freighter",
+            "cost": "18300000",
+            "drag": "9.4",
+            "engineCap": "83",
+            "fuelCap": "500",
+            "heat": ".6",
+            "hull": "47500",
+            "mass": "750",
+            "outfitSpace": "321",
+            "requiredCrew": "13",
+            "shields": "17600",
+            "weaponCap": "114",
+            "weapon": {
+                "blastRadius": "280",
+                "hitForce": "4200",
+                "hullDamage": "1400",
+                "shieldDamage": "2800"
+            }
+        },
+        "outfits": [
+            "Wanderer Anti-Missile 4",
+            "",
+            "Yellow Sun Reactor",
+            "Dark Storm Shielding",
+            "Wanderer Ramscoop",
+            "",
+            "Type 2 Radiant Thruster",
+            "Type 4 Radiant Steering",
+            "Hyperdrive"
+        ],
+        "layout": {
+            "engines": [
+                "53 345 .7",
+                "0 345",
+                "-53 345 .7"
+            ],
+            "explosions": [
+                "explode \"small explosion\" 80",
+                "explode \"medium explosion\" 60",
+                "explode \"large explosion\" 30",
+                "explode \"huge explosion\" 20"
+            ],
+            "fighter": null,
+            "guns": null,
+            "turrets": [
+                "turret -36 -205 \"Wanderer Anti-Missile\"",
+                "turret 36 -205 \"Wanderer Anti-Missile\"",
+                "turret -36 330 \"Wanderer Anti-Missile\"",
+                "turret 36 330 \"Wanderer Anti-Missile\""
+            ]
+        },
+        "description": "\"This is a Deep River freighter that has been converted into a transport ship for refugees.\""
+    }
+}

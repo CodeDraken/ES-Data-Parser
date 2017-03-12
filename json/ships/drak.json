@@ -1,0 +1,42 @@
+{
+    "archon": {
+        "name": "Archon",
+        "sprite": "ship/archon",
+        "attributes": {
+            "automation": false,
+            "bunks": "1",
+            "cargoSpace": "0",
+            "category": "Heavy Warship",
+            "cost": "1000000000",
+            "drag": "27",
+            "engineCap": "200",
+            "fuelCap": "800",
+            "heat": "40",
+            "hull": "1000000",
+            "mass": "1000",
+            "outfitSpace": "800",
+            "requiredCrew": "1",
+            "shields": "4000000",
+            "weaponCap": "600",
+            "weapon": {
+                "blastRadius": "200",
+                "hitForce": "30000",
+                "hullDamage": "10000",
+                "shieldDamage": "20000"
+            }
+        },
+        "outfits": [
+            "Drak Antimatter Cannon",
+            "Drak Anti-Missile Field 2",
+            "Drak Draining Field",
+            "Drak Distancer 2",
+            "Drak Turret 3",
+            "",
+            "Medium Graviton Thruster",
+            "Medium Graviton Steering",
+            "Hyperdrive",
+            "Jump Drive"
+        ],
+        "description": "\"\""
+    }
+}
