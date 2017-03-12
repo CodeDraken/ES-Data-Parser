@@ -2,11 +2,11 @@ const fs = require('fs');
 
 // regex
 const 
-  shipReg = /ship "([\s\S]*?)(?:description .*)/g,
+  shipReg =  /ship "([\s\S]*?)((?=ship ".*)|(?:description .*))/g ,
   nameReg = /ship/;
 
 // ship selector
-// /ship "([\s\S]*?)(?:description .*)/g
+// /ship "([\s\S]*?)(?:description .*)/g /ship "([\s\S]*?)(?:description .*)/g
 
 // "?attr"? (.*) // attribute selector
 // "?attr"? "?([\d?\w?\s?]*)
@@ -17,8 +17,10 @@ const
 
 const ships = {
   coalition: {},
+  drak: {},
   generic: {},
   hai: {},
+  kestrel: {},
   korath: {},
   marauders: {},
   pug: {},
@@ -45,25 +47,30 @@ const outfitSelector = (ship) => {
   return result != null ? result[1].replace(/\t|"/g, '').trim().split('\n') : false;
 };
 
-const layoutSelector = (ship) => {
+const layoutSelector = (ship, retry) => {
   try {
     const engines = ship.match(/engine (-?\d.*)/g);
     const guns = ship.match(/gun (-?\d.*)/g);
     const turrets = ship.match(/turret (-?\d.*)/g);
+    const explosions = ship.match(/explode (".*)/g);
 
     return {
-      engines: Array.isArray(engines) ? engines.map( item => item.replace(/[a-zA-Z]*/g, '').trim()) : engines.trim(),
+      engines: Array.isArray(engines) ? engines.map( item => item.replace(/[a-zA-Z]*/g, '').trim()) : engines,
       guns,
       turrets,
+      explosions
     };
   } catch (err) {
-    console.log('layout error: ', err)
-    return '';
+    //console.log('layout error: ', ship, err)
+    if(!retry) {
+      console.log('a ship failed retrying..');
+      layoutSelector(ship[0], true);
+    }
   }
 };
 
 const shipGenerator = (faction, data) => {
-  if(data.length > 1 &&  Array.isArray(data)) {
+  if( data && data.length > 1 && Array.isArray(data) ) {
     for (var i=0; i<data.length; i++) {
       const ship = {
           name: attrSelector('ship', data[i], true),
@@ -96,7 +103,7 @@ const shipGenerator = (faction, data) => {
       };
       ships[faction][ship.name.toLowerCase()] = ship;
     }
-  } else {
+  } else if(data) {
     const ship = {
         name: attrSelector('ship', data, true),
         sprite: attrSelector('sprite', data, true),
@@ -132,8 +139,9 @@ const shipGenerator = (faction, data) => {
 }
 
 
-const scrapeFaction = (faction, fileName) => {
-  let fileText = fs.readFileSync(`${__dirname}/ships/${fileName}.txt`, 'utf8');
+const scrapeFaction = (faction, fileName, single) => {
+   let fileText = !single ? fs.readFileSync(`${__dirname}/data/ships/${fileName}.txt`, 'utf8') :
+                  fs.readFileSync(`${__dirname}/data/singles/${fileName}.txt`, 'utf8');
   let shipScrape = fileText.match(shipReg);
 
   shipGenerator(faction, shipScrape);
@@ -142,10 +150,13 @@ const scrapeFaction = (faction, fileName) => {
 
 const scrapeAllShips = () => {
   scrapeFaction('coalition', 'coalition ships');
+  scrapeFaction('drak', 'drak', true);
   scrapeFaction('generic', 'ships');
   scrapeFaction('hai', 'hai ships');
+  scrapeFaction('kestrel', 'kestrel');
   scrapeFaction('korath', 'korath ships');
   scrapeFaction('marauders', 'marauders');
+  scrapeFaction('pug', 'pug', true);
   scrapeFaction('quarg', 'quarg ships');
   scrapeFaction('wanderer', 'wanderer ships');
 }
@@ -153,7 +164,7 @@ const scrapeAllShips = () => {
 
 const writeToFile = (obj) => {
   const json = JSON.stringify(obj);
-  fs.writeFileSync('./ships.json', json);
+  fs.writeFileSync('./json/ships.json', json);
 }
 
 
