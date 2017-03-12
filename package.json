@@ -1,0 +1,20 @@
+{
+  "name": "endless-sky-scraper",
+  "version": "1.0.0",
+  "description": "Scrape data from files",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "game",
+    "scraper"
+  ],
+  "author": "CodeDraken",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
