@@ -1,5 +1,7 @@
 const fs = require('fs');
 
+const attrSelector = require('../util/attributeSelector');
+
 // regular expressions
 const shipReg =  /ship "([\s\S]*?)((?=ship ".*)|(?:description .*))/g;
 
@@ -27,20 +29,6 @@ const ships = {
   quarg: {},
   wanderer: {}
 };
-
-
-// get an attribute's value
-const attrSelector = (attribute, ship, trim) => {
-  const attrRegex = new RegExp(`"?${attribute}"? (.*)`, 'gi');
-  const result = attrRegex.exec(ship);
-
-  if(result !== null) {
-    return trim === true ? result[1].replace(/"+/g, '') : result[1];
-  } else {
-    return false;
-  }
-};
-
 
 // return all outfits in an array
 const outfitSelector = (ship) => {
@@ -156,6 +144,8 @@ const scrapeFaction = (faction, fileName, single) => {
 
 
 // scrape all current factions then write to file
+// TODO use readdir to read directory -> array -> scrapeFaction each item
+// dynamically generate ships object and scrape
 const scrapeAllShips = () => {
   scrapeFaction('coalition', 'coalition ships');
   scrapeFaction('drak', 'drak', true);
@@ -171,9 +161,9 @@ const scrapeAllShips = () => {
 
 
 module.exports = {
-  ships,
   scrapeShip,
-  shipGenerator,
   scrapeFaction,
-  scrapeAllShips
+  scrapeAllShips,
+  shipGenerator,
+  ships
 };
