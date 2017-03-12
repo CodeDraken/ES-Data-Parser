@@ -1,9 +1,7 @@
 const fs = require('fs');
 
 // regex
-const 
-  shipReg =  /ship "([\s\S]*?)((?=ship ".*)|(?:description .*))/g ,
-  nameReg = /ship/;
+const shipReg =  /ship "([\s\S]*?)((?=ship ".*)|(?:description .*))/g;
 
 // ship selector
 // /ship "([\s\S]*?)(?:description .*)/g /ship "([\s\S]*?)(?:description .*)/g
@@ -63,7 +61,7 @@ const layoutSelector = (ship, retry) => {
   } catch (err) {
     //console.log('layout error: ', ship, err)
     if(!retry) {
-      console.log('a ship failed retrying..');
+      print('a ship failed retrying..');
       layoutSelector(ship[0], true);
     }
   }
@@ -73,79 +71,79 @@ const shipGenerator = (faction, data) => {
   if( data && data.length > 1 && Array.isArray(data) ) {
     for (var i=0; i<data.length; i++) {
       const ship = {
-          name: attrSelector('ship', data[i], true),
-          sprite: attrSelector('sprite', data[i], true),
+        name: attrSelector('ship', data[i], true),
+        sprite: attrSelector('sprite', data[i], true),
 
-          attributes: {
-            category: attrSelector('category', data[i], true),
-            cost: attrSelector('cost', data[i]),
-            hull: attrSelector('hull', data[i]),
-            mass: attrSelector('mass', data[i]),
-            drag: attrSelector('drag', data[i]),
-            heat: attrSelector('heat dissipation', data[i]),
-            outfitSpace: attrSelector('outfit space', data[i]),
-            weaponCap: attrSelector('weapon capacity', data[i]),
-            engineCap: attrSelector('engine capacity', data[i]),
-            automation: attrSelector('automation', data[i]),
-            weapon: {
-              blastRadius: attrSelector('blast radius', data[i]),
-              shieldDamage: attrSelector('shield damage', data[i]),
-              hullDamage: attrSelector('hull damage', data[i]),
-              hitForce: attrSelector('hit force', data[i])
-            }
-          },
+        attributes: {
+          category: attrSelector('category', data[i], true),
+          cost: attrSelector('cost', data[i]),
+          hull: attrSelector('hull', data[i]),
+          mass: attrSelector('mass', data[i]),
+          drag: attrSelector('drag', data[i]),
+          heat: attrSelector('heat dissipation', data[i]),
+          outfitSpace: attrSelector('outfit space', data[i]),
+          weaponCap: attrSelector('weapon capacity', data[i]),
+          engineCap: attrSelector('engine capacity', data[i]),
+          automation: attrSelector('automation', data[i]),
+          weapon: {
+            blastRadius: attrSelector('blast radius', data[i]),
+            shieldDamage: attrSelector('shield damage', data[i]),
+            hullDamage: attrSelector('hull damage', data[i]),
+            hitForce: attrSelector('hit force', data[i])
+          }
+        },
 
-          outfits: outfitSelector(data[i]),
+        outfits: outfitSelector(data[i]),
 
-          layout: layoutSelector(data[i]),
-          
-          description: attrSelector('description', data[i])
+        layout: layoutSelector(data[i]),
+        
+        description: attrSelector('description', data[i])
       };
       ships[faction][ship.name.toLowerCase()] = ship;
     }
   } else if(data) {
     const ship = {
-        name: attrSelector('ship', data, true),
-        sprite: attrSelector('sprite', data, true),
+      name: attrSelector('ship', data, true),
+      sprite: attrSelector('sprite', data, true),
 
-        attributes: {
-          category: attrSelector('category', data, true),
-          cost: attrSelector('cost', data),
-          hull: attrSelector('hull', data),
-          mass: attrSelector('mass', data),
-          drag: attrSelector('drag', data),
-          heat: attrSelector('heat dissipation', data),
-          outfitSpace: attrSelector('outfit space', data),
-          weaponCap: attrSelector('weapon capacity', data),
-          engineCap: attrSelector('engine capacity', data),
-          automation: attrSelector('automation', data),
-          weapon: {
-            blastRadius: attrSelector('blast radius', data),
-            shieldDamage: attrSelector('shield damage', data),
-            hullDamage: attrSelector('hull damage', data),
-            hitForce: attrSelector('hit force', data)
-          }
-        },
+      attributes: {
+        category: attrSelector('category', data, true),
+        cost: attrSelector('cost', data),
+        hull: attrSelector('hull', data),
+        mass: attrSelector('mass', data),
+        drag: attrSelector('drag', data),
+        heat: attrSelector('heat dissipation', data),
+        outfitSpace: attrSelector('outfit space', data),
+        weaponCap: attrSelector('weapon capacity', data),
+        engineCap: attrSelector('engine capacity', data),
+        automation: attrSelector('automation', data),
+        weapon: {
+          blastRadius: attrSelector('blast radius', data),
+          shieldDamage: attrSelector('shield damage', data),
+          hullDamage: attrSelector('hull damage', data),
+          hitForce: attrSelector('hit force', data)
+        }
+      },
 
-        outfits: outfitSelector(data),
+      outfits: outfitSelector(data),
 
-        layout: layoutSelector(data),
-        
-        description: attrSelector('description', data)
+      layout: layoutSelector(data),
+      
+      description: attrSelector('description', data)
     };
     
     ships[faction][ship.name.toLowerCase()] = ship;
   }
-}
+};
 
 
 const scrapeFaction = (faction, fileName, single) => {
-   let fileText = !single ? fs.readFileSync(`${__dirname}/data/ships/${fileName}.txt`, 'utf8') :
+  let fileText = !single ? fs.readFileSync(`${__dirname}/data/ships/${fileName}.txt`, 'utf8') :
                   fs.readFileSync(`${__dirname}/data/singles/${fileName}.txt`, 'utf8');
   let shipScrape = fileText.match(shipReg);
 
   shipGenerator(faction, shipScrape);
-}
+};
 
 
 const scrapeAllShips = () => {
@@ -159,13 +157,13 @@ const scrapeAllShips = () => {
   scrapeFaction('pug', 'pug', true);
   scrapeFaction('quarg', 'quarg ships');
   scrapeFaction('wanderer', 'wanderer ships');
-}
+};
 
 
 const writeToFile = (obj) => {
   const json = JSON.stringify(obj);
   fs.writeFileSync('./json/ships.json', json);
-}
+};
 
 
 scrapeAllShips();
