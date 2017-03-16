@@ -9,7 +9,7 @@ const scrapeWriteAll = (type) => {
     const ships = shipScraper.ships;
     
     // all ships, 1 file
-    jsonToFile('./json/ships/all-ships.json', ships);
+    jsonToFile('./json/ships/all_ships.json', ships);
 
     // individual faction files
     for (var faction in ships) {
