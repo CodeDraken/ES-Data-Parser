@@ -233,10 +233,10 @@ const generateShip = (mass, equation) => {
     weaponCap: Math.ceil(equation.weaponCap[0] * mass + equation.weaponCap[1]),
 
     weapon: {
-      blastRadius: equation.weapon.blastRadius[0] * mass + equation.weapon.blastRadius[1],
-      hitForce: equation.weapon.hitForce[0] * mass + equation.weapon.hitForce[1],
-      hullDamage: equation.weapon.hullDamage[0] * mass + equation.weapon.hullDamage[1],
-      shieldDamage: equation.weapon.shieldDamage[0] * mass + equation.weapon.shieldDamage[1],
+      blastRadius: Math.ceil(equation.weapon.blastRadius[0] * mass + equation.weapon.blastRadius[1]),
+      hitForce: Math.ceil(equation.weapon.hitForce[0] * mass + equation.weapon.hitForce[1]),
+      hullDamage: Math.ceil(equation.weapon.hullDamage[0] * mass + equation.weapon.hullDamage[1]),
+      shieldDamage: Math.ceil(equation.weapon.shieldDamage[0] * mass + equation.weapon.shieldDamage[1]),
     }
   };
 };
@@ -256,8 +256,17 @@ const generateAllEquations = () => {
   jsonToFile(path.join(__dirname, '../json/', 'generation_equations.json'), equations);
 };
 
+
+
+// testing
+
 // generateAllEquations();
 // console.log(generateShip(50, equations.generic.Interceptor));
+
+// generateEquations('wanderer', 'Medium Warship');
+// console.log(generateShip(300, equations.wanderer['Medium Warship']))
+
+
 
 module.exports = {
   generateShip,
