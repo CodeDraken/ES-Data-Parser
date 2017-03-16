@@ -172,15 +172,33 @@ const testData = (ships, attribute, subProp = false) => {
   let data = [];
 
   for (var i=0; i<ships.length; i++) {
+    let mass = ships[i].attributes.mass;
     // x, y
     let match = !subProp ?
-      [ships[i].attributes.mass, ships[i].attributes[attribute]] :
-      [ships[i].attributes.mass, ships[i].attributes[subProp][attribute]];
+      [mass, ships[i].attributes[attribute]] :
+      [mass, ships[i].attributes[subProp][attribute]];
 
     data.push(match);
   }
 
   return dlLinearRegression(data);
+};
+
+// when no mass is provided generate mass that's
+// between the massRange
+const massRange = (ships) => {
+  let masses = [];
+  for (var i=0; i<ships.length; i++) {
+    masses.push(ships[i].attributes.mass);
+  }
+  
+  const min = Math.min.apply(null, masses),
+    max = Math.max.apply(null, masses);
+
+  return {
+    minMass: min,
+    maxMass: max
+  };
 };
 
 // generates equation for each attribute in category of faction
@@ -189,6 +207,7 @@ const generateEquations = (faction, category) => {
   // prevent executing on: factions w/o category or less than 2 ship
   if(shipsOfType.length > 1) {
     return equations[faction][category] = {
+      massRange: massRange(shipsOfType),
       bunks: testData(shipsOfType, 'bunks'),
       cargoSpace: testData(shipsOfType, 'cargoSpace'),
       cost: testData(shipsOfType, 'cost'),
@@ -260,8 +279,8 @@ const generateAllEquations = () => {
 
 // testing
 
-// generateAllEquations();
-// console.log(generateShip(50, equations.generic.Interceptor));
+//generateAllEquations();
+//console.log(generateShip(50, equations.generic.Interceptor));
 
 // generateEquations('wanderer', 'Medium Warship');
 // console.log(generateShip(300, equations.wanderer['Medium Warship']))

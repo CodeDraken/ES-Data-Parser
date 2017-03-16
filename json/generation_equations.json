@@ -1,6 +1,10 @@
 {
     "coalition": {
         "Transport": {
+            "massRange": {
+                "minMass": 80,
+                "maxMass": 570
+            },
             "bunks": [
                 0.4035421327367636,
                 -40.72408650260999
@@ -69,6 +73,10 @@
             }
         },
         "Light Freighter": {
+            "massRange": {
+                "minMass": 100,
+                "maxMass": 380
+            },
             "bunks": [
                 0.02674689440993789,
                 5.341226708074534
@@ -137,6 +145,10 @@
             }
         },
         "Heavy Freighter": {
+            "massRange": {
+                "minMass": 340,
+                "maxMass": 670
+            },
             "bunks": [
                 0.05331262939958593,
                 12.593685300207035
@@ -224,6 +236,10 @@
     },
     "generic": {
         "Transport": {
+            "massRange": {
+                "minMass": 40,
+                "maxMass": 230
+            },
             "bunks": [
                 0.41470588235294126,
                 -30.036764705882362
@@ -292,6 +308,10 @@
             }
         },
         "Light Freighter": {
+            "massRange": {
+                "minMass": 70,
+                "maxMass": 330
+            },
             "bunks": [
                 0.0374251497005988,
                 1.2155688622754495
@@ -360,6 +380,10 @@
             }
         },
         "Heavy Freighter": {
+            "massRange": {
+                "minMass": 360,
+                "maxMass": 870
+            },
             "bunks": [
                 0.01037344398340249,
                 12.190871369294605
@@ -428,6 +452,10 @@
             }
         },
         "Interceptor": {
+            "massRange": {
+                "minMass": 50,
+                "maxMass": 150
+            },
             "bunks": [
                 0.015406976744186049,
                 1.244186046511628
@@ -496,6 +524,10 @@
             }
         },
         "Light Warship": {
+            "massRange": {
+                "minMass": 120,
+                "maxMass": 250
+            },
             "bunks": [
                 0.043495400788436264,
                 3.279894875164257
@@ -564,6 +596,10 @@
             }
         },
         "Medium Warship": {
+            "massRange": {
+                "minMass": 130,
+                "maxMass": 580
+            },
             "bunks": [
                 0.0337436542522126,
                 16.600835617053768
@@ -632,6 +668,10 @@
             }
         },
         "Heavy Warship": {
+            "massRange": {
+                "minMass": 480,
+                "maxMass": 940
+            },
             "bunks": [
                 0.2811022652659226,
                 -74.15216677609982
@@ -700,6 +740,10 @@
             }
         },
         "Fighter": {
+            "massRange": {
+                "minMass": 20,
+                "maxMass": 45
+            },
             "bunks": [
                 -0.014765100671140938,
                 1.5973154362416104
@@ -768,6 +812,10 @@
             }
         },
         "Drone": {
+            "massRange": {
+                "minMass": 15,
+                "maxMass": 20
+            },
             "bunks": [
                 0,
                 0
@@ -844,6 +892,10 @@
         "Light Warship": {},
         "Medium Warship": {},
         "Heavy Warship": {
+            "massRange": {
+                "minMass": 650,
+                "maxMass": 925
+            },
             "bunks": [
                 0.08363636363636363,
                 40.63636363636364
@@ -922,6 +974,10 @@
         "Light Warship": {},
         "Medium Warship": {},
         "Heavy Warship": {
+            "massRange": {
+                "minMass": 740,
+                "maxMass": 760
+            },
             "bunks": [
                 0,
                 128
@@ -998,6 +1054,10 @@
         "Heavy Freighter": {},
         "Interceptor": {},
         "Light Warship": {
+            "massRange": {
+                "minMass": 250,
+                "maxMass": 420
+            },
             "bunks": [
                 0,
                 0
@@ -1066,6 +1126,10 @@
             }
         },
         "Medium Warship": {
+            "massRange": {
+                "minMass": 540,
+                "maxMass": 780
+            },
             "bunks": [
                 0,
                 0
@@ -1134,6 +1198,10 @@
             }
         },
         "Heavy Warship": {
+            "massRange": {
+                "minMass": 720,
+                "maxMass": 1350
+            },
             "bunks": [
                 -0.38032748809662065,
                 460.8930437812101
@@ -1202,6 +1270,10 @@
             }
         },
         "Fighter": {
+            "massRange": {
+                "minMass": 34,
+                "maxMass": 40
+            },
             "bunks": [
                 0.1666666666666667,
                 -5.666666666666669
@@ -1276,6 +1348,10 @@
         "Light Freighter": {},
         "Heavy Freighter": {},
         "Interceptor": {
+            "massRange": {
+                "minMass": 100,
+                "maxMass": 145
+            },
             "bunks": [
                 0.1888888888888888,
                 -15.888888888888877
@@ -1344,6 +1420,10 @@
             }
         },
         "Light Warship": {
+            "massRange": {
+                "minMass": 140,
+                "maxMass": 145
+            },
             "bunks": [
                 1.4,
                 -189
@@ -1412,6 +1492,10 @@
             }
         },
         "Medium Warship": {
+            "massRange": {
+                "minMass": 195,
+                "maxMass": 350
+            },
             "bunks": [
                 0.09084604715672674,
                 -5.497919556171976
@@ -1480,6 +1564,10 @@
             }
         },
         "Heavy Warship": {
+            "massRange": {
+                "minMass": 560,
+                "maxMass": 640
+            },
             "bunks": [
                 -0.14583333333333334,
                 161.66666666666669
@@ -1557,6 +1645,10 @@
         "Interceptor": {},
         "Light Warship": {},
         "Medium Warship": {
+            "massRange": {
+                "minMass": 410,
+                "maxMass": 670
+            },
             "bunks": [
                 0.07307692307692308,
                 -2.961538461538467
@@ -1636,6 +1728,10 @@
         "Light Warship": {},
         "Medium Warship": {},
         "Heavy Warship": {
+            "massRange": {
+                "minMass": 360,
+                "maxMass": 460
+            },
             "bunks": [
                 0.25,
                 95
@@ -1710,6 +1806,10 @@
         "Transport": {},
         "Light Freighter": {},
         "Heavy Freighter": {
+            "massRange": {
+                "minMass": 350,
+                "maxMass": 750
+            },
             "bunks": [
                 0.16875000000000004,
                 -55.06250000000003
@@ -1779,6 +1879,10 @@
         },
         "Interceptor": {},
         "Light Warship": {
+            "massRange": {
+                "minMass": 110,
+                "maxMass": 130
+            },
             "bunks": [
                 0.049999999999999996,
                 9.5
@@ -1847,6 +1951,10 @@
             }
         },
         "Medium Warship": {
+            "massRange": {
+                "minMass": 260,
+                "maxMass": 320
+            },
             "bunks": [
                 0.2333333333333333,
                 -21.666666666666657
@@ -1915,6 +2023,10 @@
             }
         },
         "Heavy Warship": {
+            "massRange": {
+                "minMass": 540,
+                "maxMass": 770
+            },
             "bunks": [
                 0.15217391304347824,
                 -0.17391304347825098
