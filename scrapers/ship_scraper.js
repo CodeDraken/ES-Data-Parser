@@ -1,9 +1,10 @@
 const fs = require('fs');
+const _ = require('lodash');
 
 const attrSelector = require('../util/attributeSelector');
 
 // regular expressions
-const shipReg =  /ship "([\s\S]*?)((?=ship ".*)|(?:description .*))/g;
+const shipReg =  /^ship "([\s\S]*?)((?=ship ".*)|(?:description .*)|(?=end))/gm;
 
 // ship selector
 // /ship "([\s\S]*?)(?:description .*)/g /ship "([\s\S]*?)(?:description .*)/g
@@ -30,6 +31,11 @@ const ships = {
   wanderer: {}
 };
 
+// fetch a ship for inheriting
+const inherit = (ship, faction) => {
+  return ships[faction][ship.toLowerCase()];
+};
+
 // return all outfits in an array
 const outfitSelector = (ship) => {
   const result = (/outfits([\s\S]*?)(?=\s*?\t*?(engine|gun|explode|turret))/).exec(ship);
@@ -43,7 +49,7 @@ const layoutSelector = (ship, retry) => {
   try {
     // num selectors
     const engines = ship.match(/engine (-?\d.*)/g);
-    const guns = ship.match(/gun (-?\d.*)/g);
+    const guns = ship.match(/gun (-?\d*.*)/g);
     const turrets = ship.match(/turret (-?\d.*)/g);
     const fighter = ship.match(/fighter (-?\d.*)/g);
 
@@ -71,42 +77,72 @@ const layoutSelector = (ship, retry) => {
 
 
 // create a ship object from string of data
-const scrapeShip = (data) => {
-  return {
-    name: attrSelector('ship', data, true),
-    sprite: attrSelector('sprite', data, true),
+const scrapeShip = (data, faction) => {
+  // test the amount the name occurs, if more than once assume it inherits
+  // the line where the ship name is
+  const nameLine = data.match(/^ship .*/gm)[0];
+  // regex to get the base name
+  const nameReg = new RegExp('^ship "(.*?)"', 'gm');
+  // name of the base ship ie shield beetle
+  const name = nameReg.exec(data)[1];
+  // count occurences of the ship name
+  const nameCountReg = new RegExp (name, 'g');
+  const nameCount = nameLine.match(nameCountReg).length;
 
-    attributes: {
-      automation: attrSelector('automation', data),
-      bunks: attrSelector('bunks', data),
-      cargoSpace: attrSelector('cargo space', data),
-      category: attrSelector('category', data, true),
-      cost: attrSelector('cost', data),
-      drag: attrSelector('drag', data),
-      engineCap: attrSelector('engine capacity', data),
-      fuelCap: attrSelector('fuel capacity', data),
-      heat: attrSelector('heat dissipation', data),
-      hull: attrSelector('hull', data),
-      mass: attrSelector('mass', data),
-      outfitSpace: attrSelector('outfit space', data),
-      requiredCrew: attrSelector('required crew', data),
-      shields: attrSelector('shields', data),
-      weaponCap: attrSelector('weapon capacity', data),
+  // don't inherit
+  if (nameCount < 2) {
+    return {
+      name: attrSelector('ship', data, true),
+      sprite: attrSelector('sprite', data, true),
 
-      weapon: {
-        blastRadius: attrSelector('blast radius', data),
-        hitForce: attrSelector('hit force', data),
-        hullDamage: attrSelector('hull damage', data),
-        shieldDamage: attrSelector('shield damage', data),
-      }
-    },
+      attributes: {
+        automation: attrSelector('automation', data),
+        bunks: attrSelector('bunks', data),
+        cargoSpace: attrSelector('cargo space', data),
+        category: attrSelector('category', data, true),
+        cost: attrSelector('cost', data),
+        drag: attrSelector('drag', data),
+        engineCap: attrSelector('engine capacity', data),
+        fuelCap: attrSelector('fuel capacity', data),
+        heat: attrSelector('heat dissipation', data),
+        hull: attrSelector('hull', data),
+        mass: attrSelector('mass', data),
+        outfitSpace: attrSelector('outfit space', data),
+        requiredCrew: attrSelector('required crew', data),
+        shields: attrSelector('shields', data),
+        weaponCap: attrSelector('weapon capacity', data),
 
-    outfits: outfitSelector(data),
+        weapon: {
+          blastRadius: attrSelector('blast radius', data),
+          hitForce: attrSelector('hit force', data),
+          hullDamage: attrSelector('hull damage', data),
+          shieldDamage: attrSelector('shield damage', data),
+        }
+      },
 
-    layout: layoutSelector(data),
-    
-    description: attrSelector('description', data)
-  };
+      outfits: outfitSelector(data),
+
+      layout: layoutSelector(data),
+      
+      description: attrSelector('description', data)
+    };
+  } else {
+    // probably inherit
+    let parentShip = inherit(name, faction);
+    const childShip = _.assign({}, parentShip, {
+      name: attrSelector('ship', data, true),
+      outfits: outfitSelector(data),
+      layout: layoutSelector(data),
+    });
+    console.log('childShip: ', childShip);
+    return childShip;
+    // return _.assign({}, parentShip, {
+    //   outfits: outfitSelector(data),
+    //   layout: layoutSelector(data),
+    // });
+  }
+
+
 };
 
 
@@ -115,13 +151,13 @@ const shipGenerator = (faction, data) => {
   if( data && data.length > 1 && Array.isArray(data) ) {
     // for many ships
     for (var i=0; i<data.length; i++) {
-      const ship = scrapeShip(data[i]);
+      const ship = scrapeShip(data[i], faction);
 
       ships[faction][ship.name.toLowerCase()] = ship;
     }
   } else if(data) {
     // for single ship
-    const ship = scrapeShip(data);
+    const ship = scrapeShip(data, faction);
     
     ships[faction][ship.name.toLowerCase()] = ship;
   }
@@ -139,6 +175,7 @@ const scrapeFaction = (faction, fileName, single) => {
   // array of ship strings
   const shipScrape = fileText.match(shipReg);
 
+  //fs.writeFileSync('./test.txt', shipScrape);
   shipGenerator(faction, shipScrape);
 };
 
@@ -158,6 +195,10 @@ const scrapeAllShips = () => {
   scrapeFaction('quarg', 'quarg ships');
   scrapeFaction('wanderer', 'wanderer ships');
 };
+
+
+// testing
+//scrapeFaction('hai', 'hai ships');
 
 
 module.exports = {

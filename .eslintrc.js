@@ -34,6 +34,7 @@ module.exports = {
         "no-redeclare": 1,
         "no-self-assign": 1,
         "no-empty": 1,
+        strict: 0,
         "wrap-iife": [
           "warn",
           "inside"

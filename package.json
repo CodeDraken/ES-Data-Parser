@@ -16,5 +16,7 @@
     "datalib": "^1.7.3",
     "lodash": "^4.17.4"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "lodash": "^4.17.4"
+  }
 }
