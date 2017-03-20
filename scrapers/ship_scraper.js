@@ -130,11 +130,36 @@ const scrapeShip = (data, faction) => {
   } else {
     // probably inherit
     let parentShip = inherit(name, faction);
-    const childOutfits = outfitSelector(data),
+    const parentAttr = parentShip.attributes,
+      childOutfits = outfitSelector(data),
       childLayout = layoutSelector(data);
 
     const childShip = _.assign({}, parentShip, {
       name: attrSelector('ship', data, true),
+      attributes: {
+        automation: attrSelector('automation', data) || parentAttr.automation,
+        bunks: attrSelector('bunks', data) || parentAttr.bunks,
+        cargoSpace: attrSelector('cargo space', data) || parentAttr.cargoSpace,
+        category: attrSelector('category', data, true) || parentAttr.category,
+        cost: attrSelector('cost', data) || parentAttr.cost,
+        drag: attrSelector('drag', data) || parentAttr.drag,
+        engineCap: attrSelector('engine capacity', data) || parentAttr.engineCap,
+        fuelCap: attrSelector('fuel capacity', data) || parentAttr.fuelCap,
+        heat: attrSelector('heat dissipation', data) || parentAttr.heat,
+        hull: attrSelector('hull', data) || parentAttr.hull,
+        mass: attrSelector('mass', data) || parentAttr.mass,
+        outfitSpace: attrSelector('outfit space', data) || parentAttr.outfitSpace,
+        requiredCrew: attrSelector('required crew', data) || parentAttr.requiredCrew,
+        shields: attrSelector('shields', data) || parentAttr.shields,
+        weaponCap: attrSelector('weapon capacity', data) || parentAttr.weaponCap,
+
+        weapon: {
+          blastRadius: attrSelector('blast radius', data) || parentAttr.weapon.blastRadius,
+          hitForce: attrSelector('hit force', data) || parentAttr.weapon.hitForce,
+          hullDamage: attrSelector('hull damage', data) || parentAttr.weapon.hullDamage,
+          shieldDamage: attrSelector('shield damage', data) || parentAttr.weapon.shieldDamage,
+        }
+      },
       outfits: childOutfits || parentShip.outfits,
       layout: {
         'engines': childLayout.engines || parentShip.layout.engines,
