@@ -3,7 +3,7 @@
         "name": "Aphid",
         "sprite": "ship/hai aphid",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "5",
             "cargoSpace": "51",
             "category": "Light Freighter",
@@ -57,7 +57,7 @@
         "name": "Aphid Aphid (Anti-Missile)",
         "sprite": "ship/hai aphid",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "5",
             "cargoSpace": "51",
             "category": "Light Freighter",
@@ -111,7 +111,7 @@
         "name": "Flea",
         "sprite": "ship/hai flea",
         "attributes": {
-            "automation": false,
+            "automaton": "1",
             "bunks": false,
             "cargoSpace": false,
             "category": "Drone",
@@ -156,7 +156,7 @@
         "name": "Lightning Bug",
         "sprite": "ship/hai lightning bug",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "10",
             "cargoSpace": "73",
             "category": "Light Warship",
@@ -215,7 +215,7 @@
         "name": "Lightning Bug Lightning Bug (Pulse)",
         "sprite": "ship/hai lightning bug",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "10",
             "cargoSpace": "73",
             "category": "Light Warship",
@@ -274,7 +274,7 @@
         "name": "Pond Strider",
         "sprite": "ship/hai pond strider",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "18",
             "cargoSpace": "71",
             "category": "Medium Warship",
@@ -330,7 +330,7 @@
         "name": "Shield Beetle",
         "sprite": "ship/hai shield beetle",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "95",
             "cargoSpace": "142",
             "category": "Heavy Warship",
@@ -403,7 +403,7 @@
         "name": "Shield Beetle Shield Beetle (Tracker)",
         "sprite": "ship/hai shield beetle",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "95",
             "cargoSpace": "142",
             "category": "Heavy Warship",
@@ -476,7 +476,7 @@
         "name": "Shield Beetle Shield Beetle (Pulse)",
         "sprite": "ship/hai shield beetle",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "95",
             "cargoSpace": "142",
             "category": "Heavy Warship",
@@ -547,7 +547,7 @@
         "name": "Shield Beetle Shield Beetle (Jump)",
         "sprite": "ship/hai shield beetle",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "95",
             "cargoSpace": "142",
             "category": "Heavy Warship",
@@ -622,7 +622,7 @@
         "name": "Shield Beetle Shield Beetle (Jump, Tracker)",
         "sprite": "ship/hai shield beetle",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "95",
             "cargoSpace": "142",
             "category": "Heavy Warship",
@@ -695,7 +695,7 @@
         "name": "Solifuge",
         "sprite": "ship/hai solifuge",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "118",
             "cargoSpace": "142",
             "category": "Heavy Warship",
@@ -776,7 +776,7 @@
         "name": "Solifuge Solifuge (Pulse)",
         "sprite": "ship/hai solifuge",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "118",
             "cargoSpace": "142",
             "category": "Heavy Warship",
@@ -856,7 +856,7 @@
         "name": "Solifuge Solifuge (Tracker)",
         "sprite": "ship/hai solifuge",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "118",
             "cargoSpace": "142",
             "category": "Heavy Warship",
@@ -937,7 +937,7 @@
         "name": "Solifuge Solifuge (Jump)",
         "sprite": "ship/hai solifuge",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "118",
             "cargoSpace": "142",
             "category": "Heavy Warship",
@@ -1018,7 +1018,7 @@
         "name": "Solifuge Solifuge (Jump, Pulse)",
         "sprite": "ship/hai solifuge",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "118",
             "cargoSpace": "142",
             "category": "Heavy Warship",
@@ -1098,7 +1098,7 @@
         "name": "Solifuge Solifuge (Jump, Tracker)",
         "sprite": "ship/hai solifuge",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "118",
             "cargoSpace": "142",
             "category": "Heavy Warship",
@@ -1179,7 +1179,7 @@
         "name": "Violin Spider",
         "sprite": "ship/hai violin spider",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "1",
             "cargoSpace": false,
             "category": "Fighter",
@@ -1233,7 +1233,7 @@
         "name": "Violin Spider Violin Spider (Pulse)",
         "sprite": "ship/hai violin spider",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "1",
             "cargoSpace": false,
             "category": "Fighter",
@@ -1287,7 +1287,7 @@
         "name": "Water Bug",
         "sprite": "ship/hai water bug",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "29",
             "cargoSpace": "197",
             "category": "Heavy Freighter",
@@ -1351,7 +1351,7 @@
         "name": "Water Bug Water Bug (Pulse)",
         "sprite": "ship/hai water bug",
         "attributes": {
-            "automation": false,
+            "automaton": false,
             "bunks": "29",
             "cargoSpace": "197",
             "category": "Heavy Freighter",

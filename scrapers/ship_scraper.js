@@ -97,7 +97,7 @@ const scrapeShip = (data, faction) => {
       sprite: attrSelector('sprite', data, true),
 
       attributes: {
-        automation: attrSelector('automation', data),
+        automaton: attrSelector('automaton', data),
         bunks: attrSelector('bunks', data),
         cargoSpace: attrSelector('cargo space', data),
         category: attrSelector('category', data, true),
@@ -137,7 +137,7 @@ const scrapeShip = (data, faction) => {
     const childShip = _.assign({}, parentShip, {
       name: attrSelector('ship', data, true),
       attributes: {
-        automation: attrSelector('automation', data) || parentAttr.automation,
+        automaton: attrSelector('automaton', data) || parentAttr.automaton,
         bunks: attrSelector('bunks', data) || parentAttr.bunks,
         cargoSpace: attrSelector('cargo space', data) || parentAttr.cargoSpace,
         category: attrSelector('category', data, true) || parentAttr.category,
@@ -230,7 +230,6 @@ const scrapeAllShips = () => {
 
 // testing
 //scrapeFaction('hai', 'hai ships');
-
 
 module.exports = {
   scrapeShip,
