@@ -1,6 +1,6 @@
 // get an attribute's value
 const attrSelector = (attribute, data, trim) => {
-  const attrRegex = new RegExp(`"?${attribute}"? (.*)`, 'gi');
+  const attrRegex = new RegExp(`"?${attribute}"? (.*)`, 'g');
   const result = attrRegex.exec(data);
 
   if(result !== null) {

@@ -172,8 +172,6 @@ const scrapeShip = (data, faction) => {
 
     return childShip;
   }
-
-
 };
 
 

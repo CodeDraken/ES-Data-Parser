@@ -17,8 +17,13 @@ const scrapeWriteAll = (type) => {
         jsonToFile(`./json/ships/${faction}.json`, ships[faction]);
       }
     }
+  } else if(type === 'outfits') {
+    // scrape and write all outfits
+    outfitScraper.scrapeAllOutfits();
+    jsonToFile('./json/outfits/outfits.json', outfitScraper.outfits)
   }
 };
 
 
 scrapeWriteAll('ships');
+scrapeWriteAll('outfits');
