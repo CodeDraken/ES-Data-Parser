@@ -78,6 +78,7 @@ const layoutSelector = (ship, retry) => {
 
 // create a ship object from string of data
 const scrapeShip = (data, faction) => {
+  data = Array.isArray(data) ? data[0] : data;
   // test the amount the name occurs, if more than once assume it inherits
   // the line where the ship name is
   const nameLine = data.match(/^ship .*/gm)[0];
@@ -124,22 +125,27 @@ const scrapeShip = (data, faction) => {
 
       layout: layoutSelector(data),
       
-      description: attrSelector('description', data)
+      description: attrSelector('description', data, true)
     };
   } else {
     // probably inherit
     let parentShip = inherit(name, faction);
+    const childOutfits = outfitSelector(data),
+      childLayout = layoutSelector(data);
+
     const childShip = _.assign({}, parentShip, {
       name: attrSelector('ship', data, true),
-      outfits: outfitSelector(data),
-      layout: layoutSelector(data),
+      outfits: childOutfits || parentShip.outfits,
+      layout: {
+        'engines': childLayout.engines || parentShip.layout.engines,
+        'explosions': childLayout.explosions || parentShip.layout.explosions,
+        'fighter': childLayout.fighter || parentShip.layout.fighter,
+        'guns': childLayout.guns || parentShip.layout.guns,
+        'turrets': childLayout.turrets || parentShip.layout.turrets
+      },
     });
-    console.log('childShip: ', childShip);
+
     return childShip;
-    // return _.assign({}, parentShip, {
-    //   outfits: outfitSelector(data),
-    //   layout: layoutSelector(data),
-    // });
   }
 
 

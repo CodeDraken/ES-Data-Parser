@@ -21,4 +21,4 @@ const scrapeWriteAll = (type) => {
 };
 
 
-// scrapeWriteAll('ships');
+//scrapeWriteAll('ships');
