@@ -23,7 +23,7 @@ const ships = {
   drak: {},
   generic: {},
   hai: {},
-  kestrel: {},
+  other: {},
   korath: {},
   marauders: {},
   pug: {},
@@ -219,7 +219,7 @@ const scrapeAllShips = () => {
   scrapeFaction('drak', 'drak', true);
   scrapeFaction('generic', 'ships');
   scrapeFaction('hai', 'hai ships');
-  scrapeFaction('kestrel', 'kestrel');
+  scrapeFaction('other', 'kestrel');
   scrapeFaction('korath', 'korath ships');
   scrapeFaction('marauders', 'marauders');
   scrapeFaction('pug', 'pug', true);

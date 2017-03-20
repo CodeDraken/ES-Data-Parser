@@ -6,7 +6,7 @@ const attrSelector = (attribute, data, trim) => {
   if(result !== null) {
     return trim === true ? result[1].replace(/"+/g, '') : result[1];
   } else {
-    return false;
+    return 0;
   }
 };
 

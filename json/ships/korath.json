@@ -3,7 +3,7 @@
         "name": "Korath Raider",
         "sprite": "ship/raider",
         "attributes": {
-            "automaton": false,
+            "automaton": 0,
             "bunks": "250",
             "cargoSpace": "175",
             "category": "Heavy Warship",
@@ -73,14 +73,14 @@
         "name": "Korath Chaser",
         "sprite": "ship/chaser",
         "attributes": {
-            "automaton": false,
+            "automaton": 0,
             "bunks": "1",
-            "cargoSpace": false,
+            "cargoSpace": 0,
             "category": "Fighter",
             "cost": "671000",
             "drag": ".9",
             "engineCap": "30",
-            "fuelCap": false,
+            "fuelCap": 0,
             "heat": ".9",
             "hull": "900",
             "mass": "40",
@@ -124,7 +124,7 @@
         "name": "Korath World-Ship",
         "sprite": "ship/world-ship a",
         "attributes": {
-            "automaton": false,
+            "automaton": 0,
             "bunks": "1492",
             "cargoSpace": "264",
             "category": "Heavy Freighter",
@@ -193,7 +193,7 @@
         "name": "Korath World-Ship Korath World-Ship B",
         "sprite": "ship/world-ship a",
         "attributes": {
-            "automaton": false,
+            "automaton": 0,
             "bunks": "1492",
             "cargoSpace": "264",
             "category": "Heavy Freighter",
@@ -262,7 +262,7 @@
         "name": "Korath World-Ship Korath World-Ship C",
         "sprite": "ship/world-ship a",
         "attributes": {
-            "automaton": false,
+            "automaton": 0,
             "bunks": "1492",
             "cargoSpace": "264",
             "category": "Heavy Freighter",
@@ -331,7 +331,7 @@
         "name": "Korath World-Ship Korath World-Ship A (Jump)",
         "sprite": "ship/world-ship a",
         "attributes": {
-            "automaton": false,
+            "automaton": 0,
             "bunks": "1492",
             "cargoSpace": "264",
             "category": "Heavy Freighter",
@@ -400,7 +400,7 @@
         "name": "Korath World-Ship Korath World-Ship B (Jump)",
         "sprite": "ship/world-ship a",
         "attributes": {
-            "automaton": false,
+            "automaton": 0,
             "bunks": "1492",
             "cargoSpace": "264",
             "category": "Heavy Freighter",
@@ -469,7 +469,7 @@
         "name": "Korath World-Ship Korath World-Ship C (Jump)",
         "sprite": "ship/world-ship a",
         "attributes": {
-            "automaton": false,
+            "automaton": 0,
             "bunks": "1492",
             "cargoSpace": "264",
             "category": "Heavy Freighter",
@@ -539,7 +539,7 @@
         "sprite": "ship/kar ik vot 349",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "87",
             "category": "Heavy Warship",
             "cost": "41280000",
@@ -550,7 +550,7 @@
             "hull": "65400",
             "mass": "1350",
             "outfitSpace": "1054",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "57200",
             "weaponCap": "447",
             "weapon": {
@@ -615,7 +615,7 @@
         "sprite": "ship/kar ik vot 349",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "87",
             "category": "Heavy Warship",
             "cost": "41280000",
@@ -626,7 +626,7 @@
             "hull": "65400",
             "mass": "Expansion\"",
             "outfitSpace": "1054",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "57200",
             "weaponCap": "447",
             "weapon": {
@@ -692,7 +692,7 @@
         "sprite": "ship/kar ik vot 349",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "87",
             "category": "Heavy Warship",
             "cost": "41280000",
@@ -703,7 +703,7 @@
             "hull": "65400",
             "mass": "Expansion\"",
             "outfitSpace": "1054",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "57200",
             "weaponCap": "447",
             "weapon": {
@@ -769,7 +769,7 @@
         "sprite": "ship/kar ik vot 349",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "87",
             "category": "Heavy Warship",
             "cost": "41280000",
@@ -780,7 +780,7 @@
             "hull": "65400",
             "mass": "Expansion\" 4",
             "outfitSpace": "1054",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "57200",
             "weaponCap": "447",
             "weapon": {
@@ -843,7 +843,7 @@
         "sprite": "ship/tek far 71 lek",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "36",
             "category": "Medium Warship",
             "cost": "22870000",
@@ -854,7 +854,7 @@
             "hull": "29500",
             "mass": "610",
             "outfitSpace": "533",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "25400",
             "weaponCap": "235",
             "weapon": {
@@ -913,7 +913,7 @@
         "sprite": "ship/tek far 71 lek",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "36",
             "category": "Medium Warship",
             "cost": "22870000",
@@ -924,7 +924,7 @@
             "hull": "29500",
             "mass": "Expansion\"",
             "outfitSpace": "533",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "25400",
             "weaponCap": "235",
             "weapon": {
@@ -984,7 +984,7 @@
         "sprite": "ship/tek far 78 osk",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "43",
             "category": "Medium Warship",
             "cost": "25630000",
@@ -995,7 +995,7 @@
             "hull": "34100",
             "mass": "690",
             "outfitSpace": "611",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "27600",
             "weaponCap": "272",
             "weapon": {
@@ -1066,7 +1066,7 @@
         "sprite": "ship/tek far 78 osk",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "43",
             "category": "Medium Warship",
             "cost": "25630000",
@@ -1077,7 +1077,7 @@
             "hull": "34100",
             "mass": "Expansion\"",
             "outfitSpace": "611",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "27600",
             "weaponCap": "272",
             "weapon": {
@@ -1146,7 +1146,7 @@
         "sprite": "ship/tek far 109",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "31",
             "category": "Medium Warship",
             "cost": "18290000",
@@ -1157,7 +1157,7 @@
             "hull": "15800",
             "mass": "540",
             "outfitSpace": "491",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "17900",
             "weaponCap": "217",
             "weapon": {
@@ -1220,7 +1220,7 @@
         "sprite": "ship/met par tek 53",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "26",
             "category": "Light Warship",
             "cost": "14480000",
@@ -1231,7 +1231,7 @@
             "hull": "22200",
             "mass": "420",
             "outfitSpace": "610",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "15100",
             "weaponCap": "213",
             "weapon": {
@@ -1289,7 +1289,7 @@
         "sprite": "ship/met par tek 53",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "26",
             "category": "Light Warship",
             "cost": "14480000",
@@ -1300,7 +1300,7 @@
             "hull": "22200",
             "mass": "420",
             "outfitSpace": "610",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "15100",
             "weaponCap": "213",
             "weapon": {
@@ -1363,18 +1363,18 @@
         "sprite": "ship/far lek 14",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
-            "cargoSpace": false,
+            "bunks": 0,
+            "cargoSpace": 0,
             "category": "Drone",
             "cost": "573000",
             "drag": ".8",
             "engineCap": "24",
-            "fuelCap": false,
+            "fuelCap": 0,
             "heat": "1.1",
             "hull": "1600",
             "mass": "26",
             "outfitSpace": "65",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "900",
             "weaponCap": "11",
             "weapon": {
@@ -1415,18 +1415,18 @@
         "sprite": "ship/far osk 27",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
-            "cargoSpace": false,
+            "bunks": 0,
+            "cargoSpace": 0,
             "category": "Fighter",
             "cost": "761000",
             "drag": "1.1",
             "engineCap": "24",
-            "fuelCap": false,
+            "fuelCap": 0,
             "heat": "1.0",
             "hull": "2400",
             "mass": "34",
             "outfitSpace": "99",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "1500",
             "weaponCap": "22",
             "weapon": {
@@ -1468,7 +1468,7 @@
         "sprite": "ship/model 8",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "29",
             "category": "Interceptor",
             "cost": "3725000",
@@ -1479,7 +1479,7 @@
             "hull": "3320",
             "mass": "110",
             "outfitSpace": "220",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "5450",
             "weaponCap": "49",
             "weapon": {
@@ -1524,7 +1524,7 @@
         "sprite": "ship/model 16",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "7",
             "category": "Light Warship",
             "cost": "8449000",
@@ -1535,7 +1535,7 @@
             "hull": "9800",
             "mass": "250",
             "outfitSpace": "426",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "15700",
             "weaponCap": "149",
             "weapon": {
@@ -1588,7 +1588,7 @@
         "sprite": "ship/model 32",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "16",
             "category": "Light Warship",
             "cost": "12765000",
@@ -1599,7 +1599,7 @@
             "hull": "13400",
             "mass": "370",
             "outfitSpace": "481",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "27900",
             "weaponCap": "205",
             "weapon": {
@@ -1653,7 +1653,7 @@
         "sprite": "ship/model 64",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "34",
             "category": "Medium Warship",
             "cost": "19552000",
@@ -1664,7 +1664,7 @@
             "hull": "18000",
             "mass": "580",
             "outfitSpace": "567",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "41700",
             "weaponCap": "263",
             "weapon": {
@@ -1719,7 +1719,7 @@
         "sprite": "ship/model 128",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "53",
             "category": "Medium Warship",
             "cost": "24073000",
@@ -1730,7 +1730,7 @@
             "hull": "23100",
             "mass": "780",
             "outfitSpace": "713",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "57000",
             "weaponCap": "344",
             "weapon": {
@@ -1787,7 +1787,7 @@
         "sprite": "ship/model 256",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "78",
             "category": "Heavy Warship",
             "cost": "34920000",
@@ -1798,7 +1798,7 @@
             "hull": "28700",
             "mass": "970",
             "outfitSpace": "857",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "71700",
             "weaponCap": "393",
             "weapon": {
@@ -1856,7 +1856,7 @@
         "sprite": "ship/model 512",
         "attributes": {
             "automaton": "1",
-            "bunks": false,
+            "bunks": 0,
             "cargoSpace": "107",
             "category": "Heavy Warship",
             "cost": "40375000",
@@ -1867,7 +1867,7 @@
             "hull": "34200",
             "mass": "1150",
             "outfitSpace": "994",
-            "requiredCrew": false,
+            "requiredCrew": 0,
             "shields": "86400",
             "weaponCap": "440",
             "weapon": {
