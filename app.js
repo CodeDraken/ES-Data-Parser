@@ -1,6 +1,6 @@
 const shipScraper = require('./scrapers/ship_scraper');
 const outfitScraper = require('./scrapers/outfit_scraper');
-const jsonToFile = require('./util/jsonToFile');
+const { jsonToFile } = require('./util/jsonToFile');
 
 
 const scrapeWriteAll = (type) => {
@@ -20,7 +20,7 @@ const scrapeWriteAll = (type) => {
   } else if(type === 'outfits') {
     // scrape and write all outfits
     outfitScraper.scrapeAllOutfits();
-    jsonToFile('./json/outfits/outfits.json', outfitScraper.outfits)
+    jsonToFile('./json/outfits/outfits.json', outfitScraper.outfits);
   }
 };
 

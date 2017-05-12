@@ -58,7 +58,8 @@ const layoutSelector = (ship, retry) => {
 
     return {
       // return number only for engine
-      engines: Array.isArray(engines) ? engines.map( item => item.replace(/[a-zA-Z]*/g, '').trim()) : engines,
+      // Array.isArray(engines) ? engines.map( item => item.replace(/[a-zA-Z]*/g, '').trim()) : engines
+      engines: engines,
       explosions,
       fighter,
       guns,
