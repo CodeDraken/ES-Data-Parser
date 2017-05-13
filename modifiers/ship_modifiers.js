@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const _ = require('lodash');
 
+const shipSales = require('../json/sales_ships');
 const { objectToShips } = require('../util/jsonToFile');
 
 // multipliers
@@ -70,9 +71,42 @@ const createUsedShips = (shipsFile) => {
 
   });
 
-  // console.log(usedShips.aerie)
-  objectToShips('./used-ships.txt', usedShips, '', ' (worn)');
+
+  objectToShips('../generated_game_files/used-ships.txt', usedShips, '', ' (worn)');
   
+  return usedShips;
 };
 
-createUsedShips('generic');
+const mapShipsToShipyards = (modShips, shipPrefix = '', shipSuffix = '') => {
+  const shipyards = {};
+
+  _.forIn(modShips, modShip => {
+    const match = shipSales[modShip.name];
+    const shipName = `${shipPrefix}${modShip.name}${shipSuffix}`;
+    if (match) {
+      match.forEach(shipyard => {
+        if (shipyards[shipyard]) {
+          shipyards[shipyard] = [...shipyards[shipyard], shipName];
+        } else {
+          shipyards[shipyard] = [shipName];
+        }
+      });
+    }
+  });
+
+  return shipyards;
+};
+
+const shipyardsToString = (shipyards) => {
+  const shipyardsString = '';
+
+  shipyards.forEach(shipyard => {
+    
+  });
+
+  console.log(shipyardsString);
+};
+
+const usedShips = createUsedShips('generic');
+
+mapShipsToShipyards(usedShips, '', ' (worn)');
