@@ -1,5 +1,7 @@
 const shipScraper = require('./scrapers/ship_scraper');
 const outfitScraper = require('./scrapers/outfit_scraper');
+const { shipSalesJSON } = require('./scrapers/sales_scraper');
+
 const { jsonToFile } = require('./util/jsonToFile');
 
 
@@ -27,3 +29,5 @@ const scrapeWriteAll = (type) => {
 
 scrapeWriteAll('ships');
 scrapeWriteAll('outfits');
+
+jsonToFile('./json/sales_ships.json', shipSalesJSON);

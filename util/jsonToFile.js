@@ -28,12 +28,15 @@ const objectToShips = (path, obj, prefix = '', suffix = '') => {
       outfits.forEach(outfit => {
         const outfitNum = (outfit.match(/\d/g) || '')[0];
         outfit = outfit.replace(/\d/g, '');
-        strOutfits += `"${outfit}" ${outfitNum}\n`;
+        strOutfits += `"${outfit}" ${outfitNum||''}\n`;
       });
 
-      _.forIn(ship.layout, (layoutArr, key) => {
+      // remove null values
+      const shipLayout = _.omitBy(ship.layout, _.isNil);
+
+      _.forIn(shipLayout, (layoutArr, key) => {
         layoutArr.forEach(layout => {
-          strLayout += `${layout}\n    `;
+          strLayout += `${layout}\n  `;
         });
       });
     } catch (err) {}
@@ -63,11 +66,11 @@ ship "${prefix}${name}${suffix}"
       "shield damage" ${shieldDamage}
       "hull damage" ${hullDamage}
       "hit force" ${hitForce}
-    outfits
-      ${_.toString(outfits)}
+  outfits
+    ${strOutfits}
     
-    ${strLayout}
-    description "${description}"
+  ${strLayout}
+  description "${description}"
     `);
   });
 
