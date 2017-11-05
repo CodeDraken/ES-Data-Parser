@@ -7,6 +7,8 @@ module.exports = {
 // NOTES:
 // ship selector
 // /ship "([\s\S]*?)(?:description .*)/g /ship "([\s\S]*?)(?:description .*)/g
+// /^ship "([\s\S]*?)((?=ship ".*)|(?:description .*)|(?=END))/gm
+// ^(ship|person) "([\s\S]*?)((?=ship ".*)|(?=person ".*)|(?:description .*)|(?=END))
 
 // attribute selector
 // "?attr"? (.*)
