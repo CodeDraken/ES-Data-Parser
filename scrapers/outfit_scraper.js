@@ -1,9 +1,8 @@
 const fs = require('fs')
 
+const { outfitRegex } = require('../config/regexConfig')
 const dataConfig = require('../config/dataConfig')
 const attrSelector = require('../util/attributeSelector')
-
-const outfitReg = /^outfit "([\s\S]*?)((?=^outfit ".*)|(?:description .*)|(?=end))/gm
 
 // Ammunition: {},
 // Engines: {},
@@ -68,7 +67,7 @@ const scrapeFile = (fileName, single) => {
   : fs.readFileSync(`${dataConfig.dataLocation}/mix/${fileName}.txt`, 'utf8')
 
   // array of outfit strings
-  const outfitScrape = fileText.match(outfitReg)
+  const outfitScrape = fileText.match(outfitRegex)
 
   // fs.writeFileSync('./test.txt', outfitScrape);
   outfitGenerator(outfitScrape)

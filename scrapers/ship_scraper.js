@@ -2,21 +2,8 @@ const fs = require('fs')
 const _ = require('lodash')
 
 const dataConfig = require('../config/dataConfig')
+const { shipRegex } = require('../config/regexConfig')
 const attrSelector = require('../util/attributeSelector')
-
-// regular expressions
-const shipReg = /^ship "([\s\S]*?)((?=ship ".*)|(?:description .*)|(?=END))/gm
-
-// ship selector
-// /ship "([\s\S]*?)(?:description .*)/g /ship "([\s\S]*?)(?:description .*)/g
-
-// attribute selector
-// "?attr"? (.*)
-// "?attr"? "?([\d?\w?\s?]*)
-// "?category"? "?([\d?\w? ?]*)
-
-// outfit selector
-// outfits([\s\S]*?)(?=\s*?\t*?(engine|gun|explode|turret))
 
 // ships by faction
 const shipFileArr = [
@@ -57,7 +44,6 @@ const layoutSelector = (ship, retry) => {
 
     return {
       // return number only for engine
-      // Array.isArray(engines) ? engines.map( item => item.replace(/[a-zA-Z]*/g, '').trim()) : engines
       engines: engines,
       explosions,
       fighter,
@@ -129,9 +115,9 @@ const scrapeShip = (data, faction) => {
   } else {
     // probably inherit
     let parentShip = inherit(name, faction)
-    const parentAttr = parentShip.attributes,
-      childOutfits = outfitSelector(data),
-      childLayout = layoutSelector(data)
+    const parentAttr = parentShip.attributes
+    const childOutfits = outfitSelector(data)
+    const childLayout = layoutSelector(data)
 
     const childShip = _.assign({}, parentShip, {
       name: attrSelector('ship', data, true),
@@ -196,16 +182,15 @@ const scrapeFaction = (faction) => {
   // outfits, ships, and whatever
   const fileText = (() => {
     try {
-      return fs.readFileSync(`${dataConfig.dataLocation}/ships/${faction}.txt`, 'utf8', (err, data) => {})
+      return fs.readFileSync(`${dataConfig.dataLocation}/ships/${faction}.txt`, 'utf8')
     } catch (err) {
       return fs.readFileSync(`${dataConfig.dataLocation}/mix/${faction}.txt`, 'utf8')
     }
   })()
 
   // array of ship strings
-  const shipScrape = fileText.match(shipReg)
+  const shipScrape = fileText.match(shipRegex)
 
-  // fs.writeFileSync('./test.txt', shipScrape);
   shipGenerator(faction, shipScrape)
 }
 
