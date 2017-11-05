@@ -1,10 +1,10 @@
 // read json, run a function to create duplicate ships and modify them
-const fs = require('fs');
-const path = require('path');
-const _ = require('lodash');
+const fs = require('fs')
+const path = require('path')
+const _ = require('lodash')
 
-const shipSales = require('../json/sales_ships');
-const { objectToShips, jsonToFile } = require('../util/jsonToFile');
+const shipSales = require('../json/sales_ships')
+const { objectToShips, jsonToFile } = require('../util/jsonToFile')
 
 // multipliers
 const usedShipConfig = {
@@ -27,95 +27,93 @@ const usedShipConfig = {
     'hullDamage': 1.1,
     'shieldDamage': 1.1
   }
-};
+}
 
 const createUsedShips = (shipsFile) => {
-  const originalShipsObject = JSON.parse( fs.readFileSync(path.join(__dirname, `../json/ships/${shipsFile}.json`)) );
-  const shipKeys = Object.keys(originalShipsObject);
-  const usedShips = {};
-  
+  const originalShipsObject = JSON.parse(fs.readFileSync(path.join(__dirname, `../json/ships/${shipsFile}.json`)))
+  const shipKeys = Object.keys(originalShipsObject)
+  const usedShips = {}
+
   shipKeys.forEach(key => {
     // create a new ship, add properties from parent, and remove outfits
     usedShips[key] = Object.assign({}, originalShipsObject[key], {
       outfits: ['Hyperdrive']
-    });
+    })
 
     // apply multipliers to each key
     _.mergeWith(usedShips[key].attributes, usedShipConfig, (objVal, srcVal) => {
       // on objects like 'weapon' do another merge
       if (_.isObject(objVal)) {
-        return _.mergeWith(objVal, srcVal, (objVal2, srcVal2) => Math.floor(objVal2 * srcVal2));
+        return _.mergeWith(objVal, srcVal, (objVal2, srcVal2) => Math.floor(objVal2 * srcVal2))
       } else {
-        return Math.floor(objVal * srcVal) || objVal;
+        return Math.floor(objVal * srcVal) || objVal
       }
-    });
+    })
 
     // check if values are valid
-    const newShip = usedShips[key];
-    const newAttr = usedShips[key].attributes;
+    const newShip = usedShips[key]
+    const newAttr = usedShips[key].attributes
 
     // crew
     if (newAttr.bunks < newAttr.requiredCrew) {
-      newAttr.bunks = newAttr.requiredCrew;
+      newAttr.bunks = newAttr.requiredCrew
     }
 
     // heat dissipation
     if (newAttr.heat < 0.5 || newAttr.heat > 0.9) {
-      newAttr.heat = originalShipsObject[key].attributes.heat;
+      newAttr.heat = originalShipsObject[key].attributes.heat
     }
 
     // fuel
     if (newAttr.fuelCap < 300 && originalShipsObject[key].attributes.fuelCap > 300) {
-      newAttr.fuelCap = originalShipsObject[key].attributes.fuelCap;
+      newAttr.fuelCap = originalShipsObject[key].attributes.fuelCap
     }
-
-  });
+  })
 
   // console.log(usedShips.sparrow.layout)
 
-  objectToShips('../generated_game_files/worn-ships.txt', usedShips, '', ' (worn)');
-  
-  return usedShips;
-};
+  objectToShips('../generated_game_files/worn-ships.txt', usedShips, '', ' (worn)')
+
+  return usedShips
+}
 
 const mapShipsToShipyards = (modShips, shipPrefix = '', shipSuffix = '') => {
-  const shipyards = {};
+  const shipyards = {}
 
   _.forIn(modShips, modShip => {
-    const match = shipSales[modShip.name];
-    const shipName = `${shipPrefix}${modShip.name}${shipSuffix}`;
+    const match = shipSales[modShip.name]
+    const shipName = `${shipPrefix}${modShip.name}${shipSuffix}`
     if (match) {
       match.forEach(shipyard => {
         if (shipyards[shipyard]) {
-          shipyards[shipyard] = [...shipyards[shipyard], shipName];
+          shipyards[shipyard] = [...shipyards[shipyard], shipName]
         } else {
-          shipyards[shipyard] = [shipName];
+          shipyards[shipyard] = [shipName]
         }
-      });
+      })
     }
-  });
+  })
 
-  return shipyards;
-};
+  return shipyards
+}
 
 const shipyardsToString = (shipyards = {}) => {
-  let shipyardsString = '';
+  let shipyardsString = ''
 
   _.forIn(shipyards, (shipyard, key) => {
-    shipyardsString += `shipyard "${key}"\n`;
+    shipyardsString += `shipyard "${key}"\n`
 
     shipyard.forEach(ship => {
-      shipyardsString += ` "${ship}"\n`;
-    });
+      shipyardsString += ` "${ship}"\n`
+    })
+  })
 
-  });
+  return (shipyardsString)
+}
 
-  return(shipyardsString);
-};
+const usedShips = createUsedShips('generic')
 
-const usedShips = createUsedShips('generic');
+const shipyardsJSON = mapShipsToShipyards(usedShips, '', ' (worn)')
+const shipyardsString = shipyardsToString(shipyardsJSON)
 
-const shipyardsJSON = mapShipsToShipyards(usedShips, '', ' (worn)');
-const shipyardsString = shipyardsToString(shipyardsJSON);
-
-fs.writeFileSync(path.join(__dirname, '../generated_game_files/worn-ships-sales.txt'), shipyardsString);
+fs.writeFileSync(path.join(__dirname, '../generated_game_files/worn-ships-sales.txt'), shipyardsString)

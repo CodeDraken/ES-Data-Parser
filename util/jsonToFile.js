@@ -1,46 +1,45 @@
-const fs = require('fs');
-const _ = require('lodash');
+const fs = require('fs')
+const _ = require('lodash')
 
 // convert object to JSON and write to file
 const jsonToFile = (path, obj) => {
-  const json = JSON.stringify(obj, null, 2);
+  const json = JSON.stringify(obj, null, 2)
 
-  fs.writeFileSync(path, json);
-};
+  fs.writeFileSync(path, json)
+}
 
 // convert object to an ES ship file
 const objectToShips = (path, obj, prefix = '', suffix = '') => {
   // const shipJSON = JSON.stringify(obj, null, 2);
   // const shipString = shipJSON.replace(/{/g, '').replace(/}/g, '').replace(/:/g, '').trim();
 
-  let shipString = '';
+  let shipString = ''
 
   _.forIn(obj, (ship, key) => {
-    const { name, sprite, description, outfits } = ship;
+    const { name, sprite, description, outfits } = ship
     const { automaton, bunks, cargoSpace, category, cost, drag, engineCap, fuelCap, heat, hull,
-            mass, outfitSpace, requiredCrew, shields, weaponCap } = ship.attributes;
-    const { blastRadius, hitForce, hullDamage, shieldDamage } = ship.attributes.weapon; 
-    //const { engines, explosions, fighter, guns, turrets } = ship.layout;
+            mass, outfitSpace, requiredCrew, shields, weaponCap } = ship.attributes
+    const { blastRadius, hitForce, hullDamage, shieldDamage } = ship.attributes.weapon
+    // const { engines, explosions, fighter, guns, turrets } = ship.layout;
 
-    let strOutfits = '';
-    let strLayout = '';
+    let strOutfits = ''
+    let strLayout = ''
     try {
       outfits.forEach(outfit => {
-        const outfitNum = (outfit.match(/\d/g) || '')[0];
-        outfit = outfit.replace(/\d/g, '');
-        strOutfits += `"${outfit}" ${outfitNum||''}\n`;
-      });
+        const outfitNum = (outfit.match(/\d/g) || '')[0]
+        outfit = outfit.replace(/\d/g, '')
+        strOutfits += `"${outfit}" ${outfitNum || ''}\n`
+      })
 
       // remove null values
-      const shipLayout = _.omitBy(ship.layout, _.isNil);
+      const shipLayout = _.omitBy(ship.layout, _.isNil)
 
       _.forIn(shipLayout, (layoutArr, key) => {
         layoutArr.forEach(layout => {
-          strLayout += `${layout}\n  `;
-        });
-      });
+          strLayout += `${layout}\n  `
+        })
+      })
     } catch (err) {}
-
 
     shipString += (`
 ship "${prefix}${name}${suffix}"
@@ -71,15 +70,15 @@ ship "${prefix}${name}${suffix}"
     
   ${strLayout}
   description "${description}"
-    `);
-  });
+    `)
+  })
 
-  fs.writeFileSync(path, shipString);
-};
+  fs.writeFileSync(path, shipString)
+}
 
-module.exports = {jsonToFile, objectToShips};
+module.exports = {jsonToFile, objectToShips}
 
-// const example = { 
+// const example = {
 //   name: 'Aerie',
 //   sprite: 'ship/aerie',
 //   attributes:
