@@ -3,7 +3,7 @@ const outfitScraper = require('./scrapers/outfit_scraper')
 const { shipSalesJSON } = require('./scrapers/sales_scraper')
 const { jsonToFile } = require('./util/jsonToFile')
 const dataConfig = require('./config/dataConfig')
-// const attrEquationGen = require('./util/attr_equation_gen')
+const attrEquationGen = require('./util/attr_equation_gen')
 
 const scrapeWriteAll = (type) => {
   if (type === 'ships') {
@@ -28,6 +28,6 @@ const scrapeWriteAll = (type) => {
 
 scrapeWriteAll('ships')
 scrapeWriteAll('outfits')
-// attrEquationGen.generateAllEquations()
+attrEquationGen.generateAllEquations()
 
 jsonToFile(`${dataConfig.outputJSON}/sales_ships.json`, shipSalesJSON)

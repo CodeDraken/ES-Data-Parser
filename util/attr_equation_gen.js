@@ -4,10 +4,10 @@ const _ = require('lodash')
 const dl = require('datalib')
 
 const dataConfig = require('../config/dataConfig')
-const jsonToFile = require('./jsonToFile')
+const { jsonToFile } = require('./jsonToFile')
 
 // load all of the ships
-const baseShips = JSON.parse(fs.readFileSync(`${dataConfig.outputJSON}/all_ships.json`))
+const baseShips = JSON.parse(fs.readFileSync(`${dataConfig.outputJSON}/ships/all_ships.json`))
 
 // just ship categories as strings, used for looping
 const shipCategories = [
@@ -271,9 +271,8 @@ const generateAllEquations = () => {
     }
   }
 
-  jsonToFile(path.join(__dirname, '../json/', 'generation_equations.json'), equations)
+  jsonToFile(`${dataConfig.outputJSON}/generation_equations.json`, equations)
 }
-
 // testing
 
 // generateAllEquations();
