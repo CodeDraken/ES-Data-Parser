@@ -18,6 +18,8 @@ const shipReg = /^ship "([\s\S]*?)((?=ship ".*)|(?:description .*)|(?=end))/gm
 // outfit selector
 // outfits([\s\S]*?)(?=\s*?\t*?(engine|gun|explode|turret))
 
+console.log(fs.readdirSync(`${dataConfig.dataLocation}/ships`))
+
 // ships by faction
 const ships = {
   coalition: {},
