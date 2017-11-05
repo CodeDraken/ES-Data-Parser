@@ -63,6 +63,8 @@ const layoutSelector = (ship, retry) => {
 
 // create a ship object from string of data
 const scrapeShip = (shipStr, faction) => {
+  // TODO: Add drone support
+  // TODO: Move attrs to config file
   const attributes = [
     'ship', 'sprite', 'bunks', 'cargo space', 'category', 'cost',
     'drag', 'engine capacity', 'fuel capacity', 'heat dissipation',
@@ -219,11 +221,6 @@ const shipFactory = (faction, arrOfFactionShips) => {
 
       ships[faction][ship.name.toLowerCase()] = ship
     })
-    // for (var i = 0; i < data.length; i++) {
-    //   const ship = scrapeShip(data[i], faction)
-
-    //   ships[faction][ship.name.toLowerCase()] = ship
-    // }
   } else if (data) {
     // for single ship
     const ship = scrapeShip(data, faction)
@@ -259,7 +256,7 @@ const scrapeAllShips = () => {
 }
 
 // testing
-scrapeFaction('pug')
+// scrapeFaction('pug')
 
 module.exports = {
   scrapeShip,

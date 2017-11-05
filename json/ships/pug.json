@@ -50,7 +50,14 @@
       ],
       "turrets": null
     },
-    "description": "The Zibruka is the smallest Pug ship that you know of."
+    "description": "The Zibruka is the smallest Pug ship that you know of.",
+    "extra": {
+      "energy generation": "10",
+      "shield generation": "6",
+      "shield energy": "6",
+      "heat generation": "20",
+      "energy capacity": "1000"
+    }
   },
   "pug enfolta": {
     "name": "Pug Enfolta",
@@ -109,7 +116,14 @@
         "turret 0 7 \"Pug Zapper Turret\""
       ]
     },
-    "description": "This is a medium-sized Pug warship."
+    "description": "This is a medium-sized Pug warship.",
+    "extra": {
+      "energy generation": "22",
+      "shield generation": "8",
+      "shield energy": "8",
+      "heat generation": "32",
+      "energy capacity": "2000"
+    }
   },
   "pug maboro": {
     "name": "Pug Maboro",
@@ -170,7 +184,14 @@
         "turret 15 -35 \"Pug Zapper Turret\""
       ]
     },
-    "description": "This is the largest Pug warship."
+    "description": "This is the largest Pug warship.",
+    "extra": {
+      "energy generation": "32",
+      "shield generation": "10",
+      "shield energy": "10",
+      "heat generation": "48",
+      "energy capacity": "4000"
+    }
   },
   "pug arfecta": {
     "name": "Pug Arfecta",
@@ -231,6 +252,13 @@
         "turret 73 84 \"Pug Gridfire Turret\""
       ]
     },
-    "description": "`This is a Pug tier 3 warship, intended for use in combat against either a species on par with the Quarg, or a lesser species that has decided to be particularly meddlesome.`"
+    "description": "`This is a Pug tier 3 warship, intended for use in combat against either a species on par with the Quarg, or a lesser species that has decided to be particularly meddlesome.`",
+    "extra": {
+      "energy generation": "200",
+      "shield generation": "32",
+      "shield energy": "32",
+      "heat generation": "10",
+      "energy capacity": "10000"
+    }
   }
 }

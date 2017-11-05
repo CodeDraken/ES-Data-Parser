@@ -33,7 +33,7 @@ const scrapeWriteAll = (type) => {
   }
 }
 
-// scrapeWriteAll('ships')
+scrapeWriteAll('ships')
 // scrapeWriteAll('outfits')
 // attrEquationGen.generateAllEquations()
 

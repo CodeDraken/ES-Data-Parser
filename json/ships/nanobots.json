@@ -41,6 +41,22 @@
       ],
       "turrets": null
     },
-    "description": 0
+    "description": 0,
+    "extra": {
+      "automaton": "1",
+      "energy capacity": "100",
+      "turn": "40",
+      "thrust": "10",
+      "inaccuracy": "10",
+      "velocity": "200",
+      "lifetime": "30",
+      "reload": "10",
+      "firing energy": "5",
+      "frame rate": "10",
+      "random angle": "360",
+      "random spin": "30",
+      "random velocity": "2",
+      "Nanobot": "10"
+    }
   }
 }

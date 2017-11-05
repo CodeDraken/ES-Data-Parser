@@ -41,7 +41,15 @@
       ],
       "turrets": null
     },
-    "description": 0
+    "description": 0,
+    "extra": {
+      "frame rate": "3.2",
+      "thrust": "20",
+      "turn": "900",
+      "energy capacity": "1",
+      "inscrutable": "1",
+      "gaslining": "1"
+    }
   },
   "void sprite void sprite (infant)": {
     "name": "Void Sprite Void Sprite (Infant)",
@@ -85,6 +93,14 @@
       ],
       "turrets": null
     },
-    "description": 0
+    "description": 0,
+    "extra": {
+      "frame rate": "3.2",
+      "thrust": "20",
+      "turn": "900",
+      "energy capacity": "1",
+      "inscrutable": "1",
+      "gaslining": "1"
+    }
   }
 }

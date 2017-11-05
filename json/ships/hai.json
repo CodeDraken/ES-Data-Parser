@@ -51,7 +51,8 @@
         "turret 0 24 \"Pulse Turret\""
       ]
     },
-    "description": "The Aphid is a light freighter designed by the Hai. It has only minimal armament."
+    "description": "The Aphid is a light freighter designed by the Hai. It has only minimal armament.",
+    "extra": {}
   },
   "aphid aphid (anti-missile)": {
     "name": "Aphid Aphid (Anti-Missile)",
@@ -105,7 +106,8 @@
         "turret 0 24 \"Pulse Turret\""
       ]
     },
-    "description": "The Aphid is a light freighter designed by the Hai. It has only minimal armament."
+    "description": "The Aphid is a light freighter designed by the Hai. It has only minimal armament.",
+    "extra": {}
   },
   "flea": {
     "name": "Flea",
@@ -150,7 +152,10 @@
       ],
       "turrets": null
     },
-    "description": "`This is a combat drone designed to help contain Unfettered aggression with a minimum risk to Hai life.`"
+    "description": "`This is a combat drone designed to help contain Unfettered aggression with a minimum risk to Hai life.`",
+    "extra": {
+      "automaton": "1"
+    }
   },
   "lightning bug": {
     "name": "Lightning Bug",
@@ -210,7 +215,8 @@
         "turret 47 18 \"Bullfrog Anti-Missile\""
       ]
     },
-    "description": "The Lightning Bug is a small defensive ship, mostly used by the Hai as a convoy escort. In its stock configuration, its only offensive weapon is a single ion cannon."
+    "description": "The Lightning Bug is a small defensive ship, mostly used by the Hai as a convoy escort. In its stock configuration, its only offensive weapon is a single ion cannon.",
+    "extra": {}
   },
   "lightning bug lightning bug (pulse)": {
     "name": "Lightning Bug Lightning Bug (Pulse)",
@@ -270,7 +276,8 @@
         "turret 47 18 \"Bullfrog Anti-Missile\""
       ]
     },
-    "description": "The Lightning Bug is a small defensive ship, mostly used by the Hai as a convoy escort. In its stock configuration, its only offensive weapon is a single ion cannon."
+    "description": "The Lightning Bug is a small defensive ship, mostly used by the Hai as a convoy escort. In its stock configuration, its only offensive weapon is a single ion cannon.",
+    "extra": {}
   },
   "pond strider": {
     "name": "Pond Strider",
@@ -326,7 +333,13 @@
         "turret 0 26 \"Bullfrog Anti-Missile\""
       ]
     },
-    "description": "This short range drone carrier was built by the Hai to contain the increasingly aggressive Unfettered with their new Solifuge and Violin Spider ships. The Hai's greater value for life is evident in the remotely-piloted robotic fighter craft, preferring to keep valuable pilots out of harm's way."
+    "description": "This short range drone carrier was built by the Hai to contain the increasingly aggressive Unfettered with their new Solifuge and Violin Spider ships. The Hai's greater value for life is evident in the remotely-piloted robotic fighter craft, preferring to keep valuable pilots out of harm's way.",
+    "extra": {
+      "Pulse Turret": "2",
+      "Hai Williwaw Cooling": "3",
+      "drone": "70",
+      "drone -70": "28 over"
+    }
   },
   "shield beetle": {
     "name": "Shield Beetle",
@@ -400,7 +413,8 @@
         "turret 57 75 \"Chameleon Anti-Missile\""
       ]
     },
-    "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
+    "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys.",
+    "extra": {}
   },
   "shield beetle shield beetle (tracker)": {
     "name": "Shield Beetle Shield Beetle (Tracker)",
@@ -474,7 +488,8 @@
         "turret 57 75 \"Chameleon Anti-Missile\""
       ]
     },
-    "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
+    "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys.",
+    "extra": {}
   },
   "shield beetle shield beetle (pulse)": {
     "name": "Shield Beetle Shield Beetle (Pulse)",
@@ -545,7 +560,8 @@
         "turret 57 75 \"Chameleon Anti-Missile\""
       ]
     },
-    "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
+    "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys.",
+    "extra": {}
   },
   "shield beetle shield beetle (jump)": {
     "name": "Shield Beetle Shield Beetle (Jump)",
@@ -620,7 +636,8 @@
         "turret 57 75 \"Chameleon Anti-Missile\""
       ]
     },
-    "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
+    "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys.",
+    "extra": {}
   },
   "shield beetle shield beetle (jump, tracker)": {
     "name": "Shield Beetle Shield Beetle (Jump, Tracker)",
@@ -694,7 +711,8 @@
         "turret 57 75 \"Chameleon Anti-Missile\""
       ]
     },
-    "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
+    "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys.",
+    "extra": {}
   },
   "solifuge": {
     "name": "Solifuge",
@@ -776,7 +794,8 @@
         "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
       ]
     },
-    "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
+    "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`",
+    "extra": {}
   },
   "solifuge solifuge (pulse)": {
     "name": "Solifuge Solifuge (Pulse)",
@@ -856,7 +875,8 @@
         "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
       ]
     },
-    "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
+    "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`",
+    "extra": {}
   },
   "solifuge solifuge (tracker)": {
     "name": "Solifuge Solifuge (Tracker)",
@@ -938,7 +958,8 @@
         "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
       ]
     },
-    "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
+    "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`",
+    "extra": {}
   },
   "solifuge solifuge (jump)": {
     "name": "Solifuge Solifuge (Jump)",
@@ -1020,7 +1041,8 @@
         "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
       ]
     },
-    "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
+    "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`",
+    "extra": {}
   },
   "solifuge solifuge (jump, pulse)": {
     "name": "Solifuge Solifuge (Jump, Pulse)",
@@ -1100,7 +1122,8 @@
         "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
       ]
     },
-    "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
+    "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`",
+    "extra": {}
   },
   "solifuge solifuge (jump, tracker)": {
     "name": "Solifuge Solifuge (Jump, Tracker)",
@@ -1182,7 +1205,8 @@
         "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
       ]
     },
-    "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
+    "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`",
+    "extra": {}
   },
   "violin spider": {
     "name": "Violin Spider",
@@ -1236,7 +1260,8 @@
         "turret 0 5"
       ]
     },
-    "description": "`The Hai fighter is equipped with what most humans would consider the greatest technology available, but all of that high tech comes at a cost.`"
+    "description": "`The Hai fighter is equipped with what most humans would consider the greatest technology available, but all of that high tech comes at a cost.`",
+    "extra": {}
   },
   "violin spider violin spider (pulse)": {
     "name": "Violin Spider Violin Spider (Pulse)",
@@ -1290,7 +1315,8 @@
         "turret 0 5"
       ]
     },
-    "description": "`The Hai fighter is equipped with what most humans would consider the greatest technology available, but all of that high tech comes at a cost.`"
+    "description": "`The Hai fighter is equipped with what most humans would consider the greatest technology available, but all of that high tech comes at a cost.`",
+    "extra": {}
   },
   "water bug": {
     "name": "Water Bug",
@@ -1355,7 +1381,8 @@
         "turret 17 17 \"Chameleon Anti-Missile\""
       ]
     },
-    "description": "The Water Bug is the primary freight ship used by the Hai."
+    "description": "The Water Bug is the primary freight ship used by the Hai.",
+    "extra": {}
   },
   "water bug water bug (pulse)": {
     "name": "Water Bug Water Bug (Pulse)",
@@ -1420,7 +1447,8 @@
         "turret 17 17 \"Chameleon Anti-Missile\""
       ]
     },
-    "description": "The Water Bug is the primary freight ship used by the Hai."
+    "description": "The Water Bug is the primary freight ship used by the Hai.",
+    "extra": {}
   },
   "water bug water bug (jump)": {
     "name": "Water Bug Water Bug (Jump)",
@@ -1485,6 +1513,7 @@
         "turret 17 17 \"Chameleon Anti-Missile\""
       ]
     },
-    "description": "The Water Bug is the primary freight ship used by the Hai."
+    "description": "The Water Bug is the primary freight ship used by the Hai.",
+    "extra": {}
   }
 }

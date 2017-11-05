@@ -45,7 +45,11 @@
       "guns": null,
       "turrets": null
     },
-    "description": "The Earth Shaper is a robotic drone that the Wanderers use for mining, exploring, surveying, and terraforming."
+    "description": "The Earth Shaper is a robotic drone that the Wanderers use for mining, exploring, surveying, and terraforming.",
+    "extra": {
+      "atmosphere scan": "100",
+      "automaton": "1"
+    }
   },
   "flycatcher": {
     "name": "Flycatcher",
@@ -96,7 +100,10 @@
         "turret 0 4"
       ]
     },
-    "description": "Flycatcher drones are used by the Wanderers to keep their star systems safe. Rather than carrying weapons of its own, a stock Flycatcher just carries an anti-missile turret for defending other ships."
+    "description": "Flycatcher drones are used by the Wanderers to keep their star systems safe. Rather than carrying weapons of its own, a stock Flycatcher just carries an anti-missile turret for defending other ships.",
+    "extra": {
+      "automaton": "1"
+    }
   },
   "summer leaf": {
     "name": "Summer Leaf",
@@ -152,7 +159,8 @@
       ],
       "turrets": null
     },
-    "description": "The Summer Leaf is mostly used by the Wanderers as a light transport, but it is also quite effective in combat."
+    "description": "The Summer Leaf is mostly used by the Wanderers as a light transport, but it is also quite effective in combat.",
+    "extra": {}
   },
   "autumn leaf": {
     "name": "Autumn Leaf",
@@ -211,7 +219,8 @@
         "turret 0 28"
       ]
     },
-    "description": "The Autumn Leaf is based on the Wanderer Summer Leaf light warship, but slightly larger and better equipped for combat. Unlike Wanderer peacetime ships, it is equipped with a turret mount in addition to the ports for fixed guns."
+    "description": "The Autumn Leaf is based on the Wanderer Summer Leaf light warship, but slightly larger and better equipped for combat. Unlike Wanderer peacetime ships, it is equipped with a turret mount in addition to the ports for fixed guns.",
+    "extra": {}
   },
   "strong wind": {
     "name": "Strong Wind",
@@ -273,7 +282,8 @@
       ],
       "turrets": null
     },
-    "description": "The Strong Wind was originally designed for science and exploration, but recently the Wanderers have modified the design to allow it to be used as a warship."
+    "description": "The Strong Wind was originally designed for science and exploration, but recently the Wanderers have modified the design to allow it to be used as a warship.",
+    "extra": {}
   },
   "tempest": {
     "name": "Tempest",
@@ -340,7 +350,8 @@
         "turret 32 87 \"Wanderer Anti-Missile\""
       ]
     },
-    "description": "In response to the Unfettered invasion, the Wanderers have begun digging up ancient warship designs from their archives and putting them back into production. The Tempest is the first purpose-built warship they have manufactured in tens of thousands of years."
+    "description": "In response to the Unfettered invasion, the Wanderers have begun digging up ancient warship designs from their archives and putting them back into production. The Tempest is the first purpose-built warship they have manufactured in tens of thousands of years.",
+    "extra": {}
   },
   "tempest tempest (heavy)": {
     "name": "Tempest Tempest (Heavy)",
@@ -408,7 +419,8 @@
         "turret 32 87 \"Wanderer Anti-Missile\""
       ]
     },
-    "description": "In response to the Unfettered invasion, the Wanderers have begun digging up ancient warship designs from their archives and putting them back into production. The Tempest is the first purpose-built warship they have manufactured in tens of thousands of years."
+    "description": "In response to the Unfettered invasion, the Wanderers have begun digging up ancient warship designs from their archives and putting them back into production. The Tempest is the first purpose-built warship they have manufactured in tens of thousands of years.",
+    "extra": {}
   },
   "tempest tempest (missile)": {
     "name": "Tempest Tempest (Missile)",
@@ -474,7 +486,8 @@
         "turret 32 87 \"Wanderer Anti-Missile\""
       ]
     },
-    "description": "In response to the Unfettered invasion, the Wanderers have begun digging up ancient warship designs from their archives and putting them back into production. The Tempest is the first purpose-built warship they have manufactured in tens of thousands of years."
+    "description": "In response to the Unfettered invasion, the Wanderers have begun digging up ancient warship designs from their archives and putting them back into production. The Tempest is the first purpose-built warship they have manufactured in tens of thousands of years.",
+    "extra": {}
   },
   "derecho": {
     "name": "Derecho",
@@ -547,7 +560,8 @@
         "turret 38 95 \"Wanderer Anti-Missile\""
       ]
     },
-    "description": "Like a latent gene waiting to express itself, the knowledge of how to wage war in space has been passed down through hundreds of generations of Wanderers. Based on one of their ancient designs, the Derecho has a mixture of agility and raw firepower that is well-suited to their present, rapidly changing situation."
+    "description": "Like a latent gene waiting to express itself, the knowledge of how to wage war in space has been passed down through hundreds of generations of Wanderers. Based on one of their ancient designs, the Derecho has a mixture of agility and raw firepower that is well-suited to their present, rapidly changing situation.",
+    "extra": {}
   },
   "derecho derecho (turret)": {
     "name": "Derecho Derecho (Turret)",
@@ -620,7 +634,8 @@
         "turret 38 95 \"Wanderer Anti-Missile\""
       ]
     },
-    "description": "Like a latent gene waiting to express itself, the knowledge of how to wage war in space has been passed down through hundreds of generations of Wanderers. Based on one of their ancient designs, the Derecho has a mixture of agility and raw firepower that is well-suited to their present, rapidly changing situation."
+    "description": "Like a latent gene waiting to express itself, the knowledge of how to wage war in space has been passed down through hundreds of generations of Wanderers. Based on one of their ancient designs, the Derecho has a mixture of agility and raw firepower that is well-suited to their present, rapidly changing situation.",
+    "extra": {}
   },
   "derecho derecho (tough)": {
     "name": "Derecho Derecho (Tough)",
@@ -687,7 +702,8 @@
         "turret 38 95 \"Wanderer Anti-Missile\""
       ]
     },
-    "description": "Like a latent gene waiting to express itself, the knowledge of how to wage war in space has been passed down through hundreds of generations of Wanderers. Based on one of their ancient designs, the Derecho has a mixture of agility and raw firepower that is well-suited to their present, rapidly changing situation."
+    "description": "Like a latent gene waiting to express itself, the knowledge of how to wage war in space has been passed down through hundreds of generations of Wanderers. Based on one of their ancient designs, the Derecho has a mixture of agility and raw firepower that is well-suited to their present, rapidly changing situation.",
+    "extra": {}
   },
   "hurricane": {
     "name": "Hurricane",
@@ -759,7 +775,8 @@
         "turret 39 140 \"Wanderer Anti-Missile\""
       ]
     },
-    "description": "The Hurricane is not built for speed, elegance, or versatility, but for one simple purpose: to be durable enough to serve as a rearguard, absorbing an enemy's attacks for long enough to allow the fleet it is guarding to escape."
+    "description": "The Hurricane is not built for speed, elegance, or versatility, but for one simple purpose: to be durable enough to serve as a rearguard, absorbing an enemy's attacks for long enough to allow the fleet it is guarding to escape.",
+    "extra": {}
   },
   "hurricane hurricane (turret)": {
     "name": "Hurricane Hurricane (Turret)",
@@ -831,7 +848,8 @@
         "turret 39 140 \"Wanderer Anti-Missile\""
       ]
     },
-    "description": "The Hurricane is not built for speed, elegance, or versatility, but for one simple purpose: to be durable enough to serve as a rearguard, absorbing an enemy's attacks for long enough to allow the fleet it is guarding to escape."
+    "description": "The Hurricane is not built for speed, elegance, or versatility, but for one simple purpose: to be durable enough to serve as a rearguard, absorbing an enemy's attacks for long enough to allow the fleet it is guarding to escape.",
+    "extra": {}
   },
   "hurricane hurricane (tough)": {
     "name": "Hurricane Hurricane (Tough)",
@@ -906,7 +924,8 @@
         "turret 39 140 \"Wanderer Anti-Missile\""
       ]
     },
-    "description": "The Hurricane is not built for speed, elegance, or versatility, but for one simple purpose: to be durable enough to serve as a rearguard, absorbing an enemy's attacks for long enough to allow the fleet it is guarding to escape."
+    "description": "The Hurricane is not built for speed, elegance, or versatility, but for one simple purpose: to be durable enough to serve as a rearguard, absorbing an enemy's attacks for long enough to allow the fleet it is guarding to escape.",
+    "extra": {}
   },
   "deep river": {
     "name": "Deep River",
@@ -969,7 +988,8 @@
       ],
       "turrets": null
     },
-    "description": "The Deep River is a bulk freighter, designed to carry cargo in detachable pods."
+    "description": "The Deep River is a bulk freighter, designed to carry cargo in detachable pods.",
+    "extra": {}
   },
   "deep river deep river 0": {
     "name": "Deep River Deep River 0",
@@ -1032,7 +1052,8 @@
       ],
       "turrets": null
     },
-    "description": "The Deep River is a bulk freighter, designed to carry cargo in detachable pods."
+    "description": "The Deep River is a bulk freighter, designed to carry cargo in detachable pods.",
+    "extra": {}
   },
   "deep river deep river 1": {
     "name": "Deep River Deep River 1",
@@ -1095,7 +1116,8 @@
       ],
       "turrets": null
     },
-    "description": "The Deep River is a bulk freighter, designed to carry cargo in detachable pods."
+    "description": "The Deep River is a bulk freighter, designed to carry cargo in detachable pods.",
+    "extra": {}
   },
   "deep river deep river 2": {
     "name": "Deep River Deep River 2",
@@ -1158,7 +1180,8 @@
       ],
       "turrets": null
     },
-    "description": "The Deep River is a bulk freighter, designed to carry cargo in detachable pods."
+    "description": "The Deep River is a bulk freighter, designed to carry cargo in detachable pods.",
+    "extra": {}
   },
   "deep river deep river 3": {
     "name": "Deep River Deep River 3",
@@ -1221,7 +1244,8 @@
       ],
       "turrets": null
     },
-    "description": "The Deep River is a bulk freighter, designed to carry cargo in detachable pods."
+    "description": "The Deep River is a bulk freighter, designed to carry cargo in detachable pods.",
+    "extra": {}
   },
   "deep river deep river 4": {
     "name": "Deep River Deep River 4",
@@ -1284,7 +1308,8 @@
       ],
       "turrets": null
     },
-    "description": "The Deep River is a bulk freighter, designed to carry cargo in detachable pods."
+    "description": "The Deep River is a bulk freighter, designed to carry cargo in detachable pods.",
+    "extra": {}
   },
   "deep river transport": {
     "name": "Deep River Transport",
@@ -1344,6 +1369,7 @@
         "turret 36 330 \"Wanderer Anti-Missile\""
       ]
     },
-    "description": "This is a Deep River freighter that has been converted into a transport ship for refugees."
+    "description": "This is a Deep River freighter that has been converted into a transport ship for refugees.",
+    "extra": {}
   }
 }

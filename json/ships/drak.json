@@ -60,7 +60,16 @@
         "turret 55 16 \"Drak Distancer\""
       ]
     },
-    "description": 0
+    "description": 0,
+    "extra": {
+      "frame rate": "0.87",
+      "energy capacity": "10000",
+      "energy generation": "500",
+      "shield generation": "100",
+      "shield energy": "100",
+      "heat generation": "17",
+      "ramscoop": "100"
+    }
   },
   "archon archon (cloaked)": {
     "name": "Archon Archon (Cloaked)",
@@ -123,6 +132,15 @@
         "turret 55 16 \"Drak Distancer\""
       ]
     },
-    "description": 0
+    "description": 0,
+    "extra": {
+      "frame rate": "0.87",
+      "energy capacity": "10000",
+      "energy generation": "500",
+      "shield generation": "100",
+      "shield energy": "100",
+      "heat generation": "17",
+      "ramscoop": "100"
+    }
   }
 }

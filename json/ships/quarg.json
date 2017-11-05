@@ -56,7 +56,11 @@
         "turret 12 -80 \"Quarg Anti-Missile\""
       ]
     },
-    "description": "The Skylark is used by the Quarg as a freighter and warship."
+    "description": "The Skylark is used by the Quarg as a freighter and warship.",
+    "extra": {
+      "ramscoop": "10",
+      "energy generation": "80"
+    }
   },
   "quarg wardragon": {
     "name": "Quarg Wardragon",
@@ -115,6 +119,10 @@
         "turret 29 6 \"Quarg Anti-Missile\""
       ]
     },
-    "description": "The Wardragon is used by the Quarg as a light warship."
+    "description": "The Wardragon is used by the Quarg as a light warship.",
+    "extra": {
+      "ramscoop": "10",
+      "energy generation": "80"
+    }
   }
 }

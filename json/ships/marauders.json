@@ -58,7 +58,8 @@
         "turret 0 15 \"Quad Blaster Turret\""
       ]
     },
-    "description": "This Arrow has had numerous modifications to its hull and internal systems to make more room for outfits - mostly with combat in mind. More shields, weapons, engines, outfit space, and a turret mount nearly push this ship into the Light Warship category, and definitely make it one of the heaviest Interceptors you're likely to find."
+    "description": "This Arrow has had numerous modifications to its hull and internal systems to make more room for outfits - mostly with combat in mind. More shields, weapons, engines, outfit space, and a turret mount nearly push this ship into the Light Warship category, and definitely make it one of the heaviest Interceptors you're likely to find.",
+    "extra": {}
   },
   "marauder arrow marauder arrow (engines)": {
     "name": "Marauder Arrow Marauder Arrow (Engines)",
@@ -118,7 +119,8 @@
         "turret 0 15 \"Anti-Missile Turret\""
       ]
     },
-    "description": "This Arrow has had numerous modifications to its hull and internal systems to make more room for outfits - mostly with combat in mind. More shields, weapons, engines, outfit space, and a turret mount nearly push this ship into the Light Warship category, and definitely make it one of the heaviest Interceptors you're likely to find."
+    "description": "This Arrow has had numerous modifications to its hull and internal systems to make more room for outfits - mostly with combat in mind. More shields, weapons, engines, outfit space, and a turret mount nearly push this ship into the Light Warship category, and definitely make it one of the heaviest Interceptors you're likely to find.",
+    "extra": {}
   },
   "marauder arrow marauder arrow (weapons)": {
     "name": "Marauder Arrow Marauder Arrow (Weapons)",
@@ -181,7 +183,8 @@
         "turret 0 15"
       ]
     },
-    "description": "This Arrow has had numerous modifications to its hull and internal systems to make more room for outfits - mostly with combat in mind. More shields, weapons, engines, outfit space, and a turret mount nearly push this ship into the Light Warship category, and definitely make it one of the heaviest Interceptors you're likely to find."
+    "description": "This Arrow has had numerous modifications to its hull and internal systems to make more room for outfits - mostly with combat in mind. More shields, weapons, engines, outfit space, and a turret mount nearly push this ship into the Light Warship category, and definitely make it one of the heaviest Interceptors you're likely to find.",
+    "extra": {}
   },
   "marauder bounder": {
     "name": "Marauder Bounder",
@@ -246,7 +249,8 @@
         "turret 38 7 \"Quad Blaster Turret\""
       ]
     },
-    "description": "This Megaparsec Bounder has been modified from a courier-scout into a heavy escort Interceptor - currently the largest in the class. A little extra outfit space, reinforced turret mounts, a new gun port in front of the pilot, and additional shield emitters bring this former Transport into combat with fearsome speed and armament."
+    "description": "This Megaparsec Bounder has been modified from a courier-scout into a heavy escort Interceptor - currently the largest in the class. A little extra outfit space, reinforced turret mounts, a new gun port in front of the pilot, and additional shield emitters bring this former Transport into combat with fearsome speed and armament.",
+    "extra": {}
   },
   "marauder bounder marauder bounder (engines)": {
     "name": "Marauder Bounder Marauder Bounder (Engines)",
@@ -309,7 +313,8 @@
         "turret 38 7 \"Quad Blaster Turret\""
       ]
     },
-    "description": "This Megaparsec Bounder has been modified from a courier-scout into a heavy escort Interceptor - currently the largest in the class. A little extra outfit space, reinforced turret mounts, a new gun port in front of the pilot, and additional shield emitters bring this former Transport into combat with fearsome speed and armament."
+    "description": "This Megaparsec Bounder has been modified from a courier-scout into a heavy escort Interceptor - currently the largest in the class. A little extra outfit space, reinforced turret mounts, a new gun port in front of the pilot, and additional shield emitters bring this former Transport into combat with fearsome speed and armament.",
+    "extra": {}
   },
   "marauder bounder marauder bounder (weapons)": {
     "name": "Marauder Bounder Marauder Bounder (Weapons)",
@@ -373,7 +378,8 @@
         "turret 37 4 \"Heavy Laser Turret\""
       ]
     },
-    "description": "This Megaparsec Bounder has been modified from a courier-scout into a heavy escort Interceptor - currently the largest in the class. A little extra outfit space, reinforced turret mounts, a new gun port in front of the pilot, and additional shield emitters bring this former Transport into combat with fearsome speed and armament."
+    "description": "This Megaparsec Bounder has been modified from a courier-scout into a heavy escort Interceptor - currently the largest in the class. A little extra outfit space, reinforced turret mounts, a new gun port in front of the pilot, and additional shield emitters bring this former Transport into combat with fearsome speed and armament.",
+    "extra": {}
   },
   "marauder falcon": {
     "name": "Marauder Falcon",
@@ -442,7 +448,8 @@
         "turret 57 32.5 \"Modified Blaster Turret\""
       ]
     },
-    "description": "This Tarazed Falcon has been heavily modified by some very dedicated craftsmen. The hull is riddled with extra shield emitters and expanded equipment bays, adding bulk and definitely voiding the warranty."
+    "description": "This Tarazed Falcon has been heavily modified by some very dedicated craftsmen. The hull is riddled with extra shield emitters and expanded equipment bays, adding bulk and definitely voiding the warranty.",
+    "extra": {}
   },
   "marauder falcon marauder falcon (engines)": {
     "name": "Marauder Falcon Marauder Falcon (Engines)",
@@ -513,7 +520,8 @@
         "turret 57 32.5 \"Blaster Turret\""
       ]
     },
-    "description": "This Tarazed Falcon has been heavily modified by some very dedicated craftsmen. The hull is riddled with extra shield emitters and expanded equipment bays, adding bulk and definitely voiding the warranty."
+    "description": "This Tarazed Falcon has been heavily modified by some very dedicated craftsmen. The hull is riddled with extra shield emitters and expanded equipment bays, adding bulk and definitely voiding the warranty.",
+    "extra": {}
   },
   "marauder falcon marauder falcon (weapons)": {
     "name": "Marauder Falcon Marauder Falcon (Weapons)",
@@ -585,7 +593,8 @@
         "turret 57 32.5 \"Quad Blaster Turret\""
       ]
     },
-    "description": "This Tarazed Falcon has been heavily modified by some very dedicated craftsmen. The hull is riddled with extra shield emitters and expanded equipment bays, adding bulk and definitely voiding the warranty."
+    "description": "This Tarazed Falcon has been heavily modified by some very dedicated craftsmen. The hull is riddled with extra shield emitters and expanded equipment bays, adding bulk and definitely voiding the warranty.",
+    "extra": {}
   },
   "marauder firebird": {
     "name": "Marauder Firebird",
@@ -652,7 +661,8 @@
         "turret 5 3 \"Heavy Anti-Missile Turret\""
       ]
     },
-    "description": "By the looks of the modification that have taken place, you suspect that this ship contains no original parts. With extra shield emitters, hull plating, and outfit space, this half-millennium young ship is finding new life with its heavy modification."
+    "description": "By the looks of the modification that have taken place, you suspect that this ship contains no original parts. With extra shield emitters, hull plating, and outfit space, this half-millennium young ship is finding new life with its heavy modification.",
+    "extra": {}
   },
   "marauder firebird marauder firebird (engines)": {
     "name": "Marauder Firebird Marauder Firebird (Engines)",
@@ -722,7 +732,8 @@
         "turret 5 3 \"Anti-Missile Turret\""
       ]
     },
-    "description": "By the looks of the modification that have taken place, you suspect that this ship contains no original parts. With extra shield emitters, hull plating, and outfit space, this half-millennium young ship is finding new life with its heavy modification."
+    "description": "By the looks of the modification that have taken place, you suspect that this ship contains no original parts. With extra shield emitters, hull plating, and outfit space, this half-millennium young ship is finding new life with its heavy modification.",
+    "extra": {}
   },
   "marauder firebird marauder firebird (weapons)": {
     "name": "Marauder Firebird Marauder Firebird (Weapons)",
@@ -790,7 +801,8 @@
         "turret 5 3 \"Quad Blaster Turret\""
       ]
     },
-    "description": "By the looks of the modification that have taken place, you suspect that this ship contains no original parts. With extra shield emitters, hull plating, and outfit space, this half-millennium young ship is finding new life with its heavy modification."
+    "description": "By the looks of the modification that have taken place, you suspect that this ship contains no original parts. With extra shield emitters, hull plating, and outfit space, this half-millennium young ship is finding new life with its heavy modification.",
+    "extra": {}
   },
   "marauder fury": {
     "name": "Marauder Fury",
@@ -855,7 +867,10 @@
       ],
       "turrets": null
     },
-    "description": "You're sure there's a Southbound Fury under all the extra modifications. This ship appears to be one man's insane quest to make the most powerful single pilot warship ever. Upon closer inspection, you're inclined to believe he may have succeeded."
+    "description": "You're sure there's a Southbound Fury under all the extra modifications. This ship appears to be one man's insane quest to make the most powerful single pilot warship ever. Upon closer inspection, you're inclined to believe he may have succeeded.",
+    "extra": {
+      "ramscoop": "2"
+    }
   },
   "marauder leviathan": {
     "name": "Marauder Leviathan",
@@ -926,7 +941,8 @@
         "turret 25 10 \"Heavy Laser Turret\""
       ]
     },
-    "description": "The Betelgeuse Shipyards Leviathan has been in service for a long time, and captains have had some very interesting ideas about how to modify them for optimum performance. This one has had the hull surface completely stripped off and replaced with a surface containing more shield projectors per square meter."
+    "description": "The Betelgeuse Shipyards Leviathan has been in service for a long time, and captains have had some very interesting ideas about how to modify them for optimum performance. This one has had the hull surface completely stripped off and replaced with a surface containing more shield projectors per square meter.",
+    "extra": {}
   },
   "marauder leviathan marauder leviathan (engines)": {
     "name": "Marauder Leviathan Marauder Leviathan (Engines)",
@@ -996,7 +1012,8 @@
         "turret 25 10 \"Quad Blaster Turret\""
       ]
     },
-    "description": "The Betelgeuse Shipyards Leviathan has been in service for a long time, and captains have had some very interesting ideas about how to modify them for optimum performance. This one has had the hull surface completely stripped off and replaced with a surface containing more shield projectors per square meter."
+    "description": "The Betelgeuse Shipyards Leviathan has been in service for a long time, and captains have had some very interesting ideas about how to modify them for optimum performance. This one has had the hull surface completely stripped off and replaced with a surface containing more shield projectors per square meter.",
+    "extra": {}
   },
   "marauder leviathan marauder leviathan (weapons)": {
     "name": "Marauder Leviathan Marauder Leviathan (Weapons)",
@@ -1066,7 +1083,8 @@
         "turret 25 10 \"Heavy Laser Turret\""
       ]
     },
-    "description": "The Betelgeuse Shipyards Leviathan has been in service for a long time, and captains have had some very interesting ideas about how to modify them for optimum performance. This one has had the hull surface completely stripped off and replaced with a surface containing more shield projectors per square meter."
+    "description": "The Betelgeuse Shipyards Leviathan has been in service for a long time, and captains have had some very interesting ideas about how to modify them for optimum performance. This one has had the hull surface completely stripped off and replaced with a surface containing more shield projectors per square meter.",
+    "extra": {}
   },
   "marauder manta": {
     "name": "Marauder Manta",
@@ -1135,7 +1153,8 @@
         "turret 0 -29 \"Quad Blaster Turret\""
       ]
     },
-    "description": "`After the Syndicate released their Vanguard Heavy Warship, the Manta fell somewhat out of favor, lacking the ability to mount any anti-missile systems. The owner of this Manta rectified that, added some extra armor plating and shield emitters, and rearranged some of the internals to yield a little more outfit space. Dry tonnage alone keeps it in the Medium Warship category.`"
+    "description": "`After the Syndicate released their Vanguard Heavy Warship, the Manta fell somewhat out of favor, lacking the ability to mount any anti-missile systems. The owner of this Manta rectified that, added some extra armor plating and shield emitters, and rearranged some of the internals to yield a little more outfit space. Dry tonnage alone keeps it in the Medium Warship category.`",
+    "extra": {}
   },
   "marauder manta marauder manta (engines)": {
     "name": "Marauder Manta Marauder Manta (Engines)",
@@ -1204,7 +1223,8 @@
         "turret 0 -29 \"Quad Blaster Turret\""
       ]
     },
-    "description": "`After the Syndicate released their Vanguard Heavy Warship, the Manta fell somewhat out of favor, lacking the ability to mount any anti-missile systems. The owner of this Manta rectified that, added some extra armor plating and shield emitters, and rearranged some of the internals to yield a little more outfit space. Dry tonnage alone keeps it in the Medium Warship category.`"
+    "description": "`After the Syndicate released their Vanguard Heavy Warship, the Manta fell somewhat out of favor, lacking the ability to mount any anti-missile systems. The owner of this Manta rectified that, added some extra armor plating and shield emitters, and rearranged some of the internals to yield a little more outfit space. Dry tonnage alone keeps it in the Medium Warship category.`",
+    "extra": {}
   },
   "marauder manta marauder manta (weapons)": {
     "name": "Marauder Manta Marauder Manta (Weapons)",
@@ -1275,7 +1295,8 @@
         "turret 0 -29 \"Heavy Anti-Missile Turret\""
       ]
     },
-    "description": "`After the Syndicate released their Vanguard Heavy Warship, the Manta fell somewhat out of favor, lacking the ability to mount any anti-missile systems. The owner of this Manta rectified that, added some extra armor plating and shield emitters, and rearranged some of the internals to yield a little more outfit space. Dry tonnage alone keeps it in the Medium Warship category.`"
+    "description": "`After the Syndicate released their Vanguard Heavy Warship, the Manta fell somewhat out of favor, lacking the ability to mount any anti-missile systems. The owner of this Manta rectified that, added some extra armor plating and shield emitters, and rearranged some of the internals to yield a little more outfit space. Dry tonnage alone keeps it in the Medium Warship category.`",
+    "extra": {}
   },
   "marauder quicksilver": {
     "name": "Marauder Quicksilver",
@@ -1336,7 +1357,8 @@
         "turret 0 15 \"Heavy Anti-Missile Turret\""
       ]
     },
-    "description": "This Megaparsec Quicksilver is a bit of a Hotrod, being a little faster, with extra shield projectors, hull plating, and an extra bunk. This aftermarket model also features a turret mount, perhaps in an answer to Lionheart's Headhunter. The shop that built this ship is sure to see more customers."
+    "description": "This Megaparsec Quicksilver is a bit of a Hotrod, being a little faster, with extra shield projectors, hull plating, and an extra bunk. This aftermarket model also features a turret mount, perhaps in an answer to Lionheart's Headhunter. The shop that built this ship is sure to see more customers.",
+    "extra": {}
   },
   "marauder quicksilver marauder quicksilver (engines)": {
     "name": "Marauder Quicksilver Marauder Quicksilver (Engines)",
@@ -1398,7 +1420,8 @@
         "turret 0 15 \"Anti-Missile Turret\""
       ]
     },
-    "description": "This Megaparsec Quicksilver is a bit of a Hotrod, being a little faster, with extra shield projectors, hull plating, and an extra bunk. This aftermarket model also features a turret mount, perhaps in an answer to Lionheart's Headhunter. The shop that built this ship is sure to see more customers."
+    "description": "This Megaparsec Quicksilver is a bit of a Hotrod, being a little faster, with extra shield projectors, hull plating, and an extra bunk. This aftermarket model also features a turret mount, perhaps in an answer to Lionheart's Headhunter. The shop that built this ship is sure to see more customers.",
+    "extra": {}
   },
   "marauder quicksilver marauder quicksilver (weapons)": {
     "name": "Marauder Quicksilver Marauder Quicksilver (Weapons)",
@@ -1461,7 +1484,8 @@
         "turret 0 15 \"Heavy Laser Turret\""
       ]
     },
-    "description": "This Megaparsec Quicksilver is a bit of a Hotrod, being a little faster, with extra shield projectors, hull plating, and an extra bunk. This aftermarket model also features a turret mount, perhaps in an answer to Lionheart's Headhunter. The shop that built this ship is sure to see more customers."
+    "description": "This Megaparsec Quicksilver is a bit of a Hotrod, being a little faster, with extra shield projectors, hull plating, and an extra bunk. This aftermarket model also features a turret mount, perhaps in an answer to Lionheart's Headhunter. The shop that built this ship is sure to see more customers.",
+    "extra": {}
   },
   "marauder raven": {
     "name": "Marauder Raven",
@@ -1526,7 +1550,8 @@
         "turret 0 -19 \"Heavy Laser Turret\""
       ]
     },
-    "description": "The modifier of this Raven has given more heft to an agile and elegant vessel. They've added a turret and some apparently flimsy bulkheads over extra shield emitters and outfit space. If it weren't for the wingtips, you would barely recognize Lionheart's ship under the patchwork that you expect has made an already deadly warship even more so."
+    "description": "The modifier of this Raven has given more heft to an agile and elegant vessel. They've added a turret and some apparently flimsy bulkheads over extra shield emitters and outfit space. If it weren't for the wingtips, you would barely recognize Lionheart's ship under the patchwork that you expect has made an already deadly warship even more so.",
+    "extra": {}
   },
   "marauder raven marauder raven (engines)": {
     "name": "Marauder Raven Marauder Raven (Engines)",
@@ -1591,7 +1616,8 @@
         "turret 0 -19 \"Heavy Laser Turret\""
       ]
     },
-    "description": "The modifier of this Raven has given more heft to an agile and elegant vessel. They've added a turret and some apparently flimsy bulkheads over extra shield emitters and outfit space. If it weren't for the wingtips, you would barely recognize Lionheart's ship under the patchwork that you expect has made an already deadly warship even more so."
+    "description": "The modifier of this Raven has given more heft to an agile and elegant vessel. They've added a turret and some apparently flimsy bulkheads over extra shield emitters and outfit space. If it weren't for the wingtips, you would barely recognize Lionheart's ship under the patchwork that you expect has made an already deadly warship even more so.",
+    "extra": {}
   },
   "marauder raven marauder raven (weapons)": {
     "name": "Marauder Raven Marauder Raven (Weapons)",
@@ -1657,7 +1683,8 @@
         "turret 0 -19 \"Heavy Laser Turret\""
       ]
     },
-    "description": "The modifier of this Raven has given more heft to an agile and elegant vessel. They've added a turret and some apparently flimsy bulkheads over extra shield emitters and outfit space. If it weren't for the wingtips, you would barely recognize Lionheart's ship under the patchwork that you expect has made an already deadly warship even more so."
+    "description": "The modifier of this Raven has given more heft to an agile and elegant vessel. They've added a turret and some apparently flimsy bulkheads over extra shield emitters and outfit space. If it weren't for the wingtips, you would barely recognize Lionheart's ship under the patchwork that you expect has made an already deadly warship even more so.",
+    "extra": {}
   },
   "marauder splinter": {
     "name": "Marauder Splinter",
@@ -1722,7 +1749,8 @@
         "turret 17 -28 \"Heavy Laser Turret\""
       ]
     },
-    "description": "The Splinter is the largest warship produced by Megaparsec. Apparently someone wanted a bit more out of it, and has covered large sections of the hull with extra shield emitters and hull plating. Much of the stock cargo space has been converted to outfit, weapons and engines space, coupled with streamlining of existing internal systems make this light Medium Warship an agile and flexible war machine."
+    "description": "The Splinter is the largest warship produced by Megaparsec. Apparently someone wanted a bit more out of it, and has covered large sections of the hull with extra shield emitters and hull plating. Much of the stock cargo space has been converted to outfit, weapons and engines space, coupled with streamlining of existing internal systems make this light Medium Warship an agile and flexible war machine.",
+    "extra": {}
   },
   "marauder splinter marauder splinter (engines)": {
     "name": "Marauder Splinter Marauder Splinter (Engines)",
@@ -1790,7 +1818,8 @@
         "turret 17 -28 \"Quad Blaster Turret\""
       ]
     },
-    "description": "The Splinter is the largest warship produced by Megaparsec. Apparently someone wanted a bit more out of it, and has covered large sections of the hull with extra shield emitters and hull plating. Much of the stock cargo space has been converted to outfit, weapons and engines space, coupled with streamlining of existing internal systems make this light Medium Warship an agile and flexible war machine."
+    "description": "The Splinter is the largest warship produced by Megaparsec. Apparently someone wanted a bit more out of it, and has covered large sections of the hull with extra shield emitters and hull plating. Much of the stock cargo space has been converted to outfit, weapons and engines space, coupled with streamlining of existing internal systems make this light Medium Warship an agile and flexible war machine.",
+    "extra": {}
   },
   "marauder splinter marauder splinter (weapons)": {
     "name": "Marauder Splinter Marauder Splinter (Weapons)",
@@ -1858,6 +1887,7 @@
         "turret 17 -28 \"Quad Blaster Turret\""
       ]
     },
-    "description": "The Splinter is the largest warship produced by Megaparsec. Apparently someone wanted a bit more out of it, and has covered large sections of the hull with extra shield emitters and hull plating. Much of the stock cargo space has been converted to outfit, weapons and engines space, coupled with streamlining of existing internal systems make this light Medium Warship an agile and flexible war machine."
+    "description": "The Splinter is the largest warship produced by Megaparsec. Apparently someone wanted a bit more out of it, and has covered large sections of the hull with extra shield emitters and hull plating. Much of the stock cargo space has been converted to outfit, weapons and engines space, coupled with streamlining of existing internal systems make this light Medium Warship an agile and flexible war machine.",
+    "extra": {}
   }
 }

@@ -67,7 +67,8 @@
         "turret 0 90 \"Korath Warder\""
       ]
     },
-    "description": "The Korath Raider is their warship of choice for plundering neighboring species."
+    "description": "The Korath Raider is their warship of choice for plundering neighboring species.",
+    "extra": {}
   },
   "korath raider korath raider (hyperdrive)": {
     "name": "Korath Raider Korath Raider (Hyperdrive)",
@@ -137,7 +138,8 @@
         "turret 0 90 \"Korath Warder\""
       ]
     },
-    "description": "The Korath Raider is their warship of choice for plundering neighboring species."
+    "description": "The Korath Raider is their warship of choice for plundering neighboring species.",
+    "extra": {}
   },
   "korath chaser": {
     "name": "Korath Chaser",
@@ -188,7 +190,8 @@
       ],
       "turrets": null
     },
-    "description": "The Korath Chaser is a fighter carried by most of their capital ships."
+    "description": "The Korath Chaser is a fighter carried by most of their capital ships.",
+    "extra": {}
   },
   "korath world-ship": {
     "name": "Korath World-Ship",
@@ -257,7 +260,8 @@
         "turret 66 210 \"Korath Banisher\""
       ]
     },
-    "description": "Korath World-Ships are massive nomadic habitats that hold all that is left of their people."
+    "description": "Korath World-Ships are massive nomadic habitats that hold all that is left of their people.",
+    "extra": {}
   },
   "korath world-ship korath world-ship b": {
     "name": "Korath World-Ship Korath World-Ship B",
@@ -326,7 +330,8 @@
         "turret 0 277 \"Korath Banisher\""
       ]
     },
-    "description": "Korath World-Ships are massive nomadic habitats that hold all that is left of their people."
+    "description": "Korath World-Ships are massive nomadic habitats that hold all that is left of their people.",
+    "extra": {}
   },
   "korath world-ship korath world-ship c": {
     "name": "Korath World-Ship Korath World-Ship C",
@@ -395,7 +400,8 @@
         "turret 91 290 \"Korath Warder\""
       ]
     },
-    "description": "Korath World-Ships are massive nomadic habitats that hold all that is left of their people."
+    "description": "Korath World-Ships are massive nomadic habitats that hold all that is left of their people.",
+    "extra": {}
   },
   "korath world-ship korath world-ship a (jump)": {
     "name": "Korath World-Ship Korath World-Ship A (Jump)",
@@ -464,7 +470,8 @@
         "turret 66 210 \"Korath Banisher\""
       ]
     },
-    "description": "Korath World-Ships are massive nomadic habitats that hold all that is left of their people."
+    "description": "Korath World-Ships are massive nomadic habitats that hold all that is left of their people.",
+    "extra": {}
   },
   "korath world-ship korath world-ship b (jump)": {
     "name": "Korath World-Ship Korath World-Ship B (Jump)",
@@ -533,7 +540,8 @@
         "turret 0 277 \"Korath Banisher\""
       ]
     },
-    "description": "Korath World-Ships are massive nomadic habitats that hold all that is left of their people."
+    "description": "Korath World-Ships are massive nomadic habitats that hold all that is left of their people.",
+    "extra": {}
   },
   "korath world-ship korath world-ship c (jump)": {
     "name": "Korath World-Ship Korath World-Ship C (Jump)",
@@ -602,7 +610,8 @@
         "turret 91 286 \"Korath Warder\""
       ]
     },
-    "description": "Korath World-Ships are massive nomadic habitats that hold all that is left of their people."
+    "description": "Korath World-Ships are massive nomadic habitats that hold all that is left of their people.",
+    "extra": {}
   },
   "kar ik vot 349": {
     "name": "Kar Ik Vot 349",
@@ -678,7 +687,11 @@
         "turret 102 188 \"Korath Warder\""
       ]
     },
-    "description": "The largest and deadliest of the Kor Sestor robotic warships, a single one of these battlecruisers can hold its own against an entire fleet of lesser ships."
+    "description": "The largest and deadliest of the Kor Sestor robotic warships, a single one of these battlecruisers can hold its own against an entire fleet of lesser ships.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "kar ik vot 349 kar ik vot 349 (offense)": {
     "name": "Kar Ik Vot 349 Kar Ik Vot 349 (Offense)",
@@ -755,7 +768,11 @@
         "turret 102 188 \"Korath Warder\""
       ]
     },
-    "description": "The largest and deadliest of the Kor Sestor robotic warships, a single one of these battlecruisers can hold its own against an entire fleet of lesser ships."
+    "description": "The largest and deadliest of the Kor Sestor robotic warships, a single one of these battlecruisers can hold its own against an entire fleet of lesser ships.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "kar ik vot 349 kar ik vot 349 (defense)": {
     "name": "Kar Ik Vot 349 Kar Ik Vot 349 (Defense)",
@@ -832,7 +849,11 @@
         "turret 102 188 \"Korath Warder\""
       ]
     },
-    "description": "The largest and deadliest of the Kor Sestor robotic warships, a single one of these battlecruisers can hold its own against an entire fleet of lesser ships."
+    "description": "The largest and deadliest of the Kor Sestor robotic warships, a single one of these battlecruisers can hold its own against an entire fleet of lesser ships.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "kar ik vot 349 kar ik vot 349 (trapper)": {
     "name": "Kar Ik Vot 349 Kar Ik Vot 349 (Trapper)",
@@ -906,7 +927,11 @@
         "turret 102 188 \"Korath Warder\""
       ]
     },
-    "description": "The largest and deadliest of the Kor Sestor robotic warships, a single one of these battlecruisers can hold its own against an entire fleet of lesser ships."
+    "description": "The largest and deadliest of the Kor Sestor robotic warships, a single one of these battlecruisers can hold its own against an entire fleet of lesser ships.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "tek far 71 - lek": {
     "name": "Tek Far 71 - Lek",
@@ -976,7 +1001,12 @@
         "turret 14 177 \"Korath Warder\""
       ]
     },
-    "description": "The Kor Sestor war fleets rely heavily on small, powerful fighters and drones. This ship can carry up to ten of their drones, clamped to the exterior of its hull."
+    "description": "The Kor Sestor war fleets rely heavily on small, powerful fighters and drones. This ship can carry up to ten of their drones, clamped to the exterior of its hull.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3",
+      "drone": "34"
+    }
   },
   "tek far 71 - lek tek far 71 - lek (close quarters)": {
     "name": "Tek Far 71 - Lek Tek Far 71 - Lek (Close Quarters)",
@@ -1047,7 +1077,12 @@
         "turret 14 177 \"Korath Warder\""
       ]
     },
-    "description": "The Kor Sestor war fleets rely heavily on small, powerful fighters and drones. This ship can carry up to ten of their drones, clamped to the exterior of its hull."
+    "description": "The Kor Sestor war fleets rely heavily on small, powerful fighters and drones. This ship can carry up to ten of their drones, clamped to the exterior of its hull.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3",
+      "drone": "34"
+    }
   },
   "tek far 78 - osk": {
     "name": "Tek Far 78 - Osk",
@@ -1129,7 +1164,11 @@
         "turret 38 145 \"Korath Warder\""
       ]
     },
-    "description": "This carrier is equipped with docking clamps for up to nine fighters. When loaded with a full complement of the powerful Kor Sestor robotic fighters, it is a formidable opponent."
+    "description": "This carrier is equipped with docking clamps for up to nine fighters. When loaded with a full complement of the powerful Kor Sestor robotic fighters, it is a formidable opponent.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "tek far 78 - osk tek far 78 - osk (close quarters)": {
     "name": "Tek Far 78 - Osk Tek Far 78 - Osk (Close Quarters)",
@@ -1209,7 +1248,11 @@
         "turret 38 145 \"Korath Warder\""
       ]
     },
-    "description": "This carrier is equipped with docking clamps for up to nine fighters. When loaded with a full complement of the powerful Kor Sestor robotic fighters, it is a formidable opponent."
+    "description": "This carrier is equipped with docking clamps for up to nine fighters. When loaded with a full complement of the powerful Kor Sestor robotic fighters, it is a formidable opponent.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "tek far 109": {
     "name": "Tek Far 109",
@@ -1283,7 +1326,12 @@
         "turret 89 32"
       ]
     },
-    "description": "The TF109 is designed almost solely for the purpose of carrying a fleet of Kor Sestor fighters and drones. Without them to serve as a protective screen, the ship itself is relatively helpless."
+    "description": "The TF109 is designed almost solely for the purpose of carrying a fleet of Kor Sestor fighters and drones. Without them to serve as a protective screen, the ship itself is relatively helpless.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3",
+      "drone": "45.5"
+    }
   },
   "met par tek 53": {
     "name": "Met Par Tek 53",
@@ -1352,7 +1400,11 @@
         "turret 40 -8 \"Korath Repeater Turret\""
       ]
     },
-    "description": "Although this is the smallest Kor Sestor ship other than their fighters, it is larger than most human capital ships and considerably more powerful."
+    "description": "Although this is the smallest Kor Sestor ship other than their fighters, it is larger than most human capital ships and considerably more powerful.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "met par tek 53 met par tek 53 (sniper)": {
     "name": "Met Par Tek 53 Met Par Tek 53 (Sniper)",
@@ -1426,7 +1478,11 @@
         "turret 40 -8 \"Korath Repeater Turret\""
       ]
     },
-    "description": "Although this is the smallest Kor Sestor ship other than their fighters, it is larger than most human capital ships and considerably more powerful."
+    "description": "Although this is the smallest Kor Sestor ship other than their fighters, it is larger than most human capital ships and considerably more powerful.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "far lek 14": {
     "name": "Far Lek 14",
@@ -1478,7 +1534,11 @@
       ],
       "turrets": null
     },
-    "description": "At the peak of their recent civil war, the Kor Sestor faction developed these automated attack drones, easy to manufacture and encased in an ultra-dense hull that can absorb a significant amount of damage."
+    "description": "At the peak of their recent civil war, the Kor Sestor faction developed these automated attack drones, easy to manufacture and encased in an ultra-dense hull that can absorb a significant amount of damage.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "far osk 27": {
     "name": "Far Osk 27",
@@ -1531,7 +1591,11 @@
       ],
       "turrets": null
     },
-    "description": "Because it is piloted by a computer and has no need for a cockpit or life support systems, the FS27 fighter is able to carry far more weaponry than any comparable human ship."
+    "description": "Because it is piloted by a computer and has no need for a cockpit or life support systems, the FS27 fighter is able to carry far more weaponry than any comparable human ship.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "model 8": {
     "name": "Model 8",
@@ -1587,7 +1651,11 @@
       ],
       "turrets": null
     },
-    "description": "The primary role of the smallest Kor Mereti drones is asteroid mining, but their lasers can also be employed as offensive weapons when necessary."
+    "description": "The primary role of the smallest Kor Mereti drones is asteroid mining, but their lasers can also be employed as offensive weapons when necessary.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "model 16": {
     "name": "Model 16",
@@ -1651,7 +1719,11 @@
         "turret 19 49 \"Korath Slicer Turret\""
       ]
     },
-    "description": "The Kor Mereti war drones are constructed in a modular fashion, which allows them to grow over time as more materials become available. This one is recently built, and relatively small."
+    "description": "The Kor Mereti war drones are constructed in a modular fashion, which allows them to grow over time as more materials become available. This one is recently built, and relatively small.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "model 32": {
     "name": "Model 32",
@@ -1716,7 +1788,11 @@
         "turret 24 19 \"Korath Slicer Turret\""
       ]
     },
-    "description": "The Kor Mereti built their drones to mimic life: capable of growth and development throughout their life cycles. Their automated factories can convert the drones from one configuration to another by adding or removing modules."
+    "description": "The Kor Mereti built their drones to mimic life: capable of growth and development throughout their life cycles. Their automated factories can convert the drones from one configuration to another by adding or removing modules.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "model 64": {
     "name": "Model 64",
@@ -1782,7 +1858,11 @@
         "turret 34 77 \"Korath Disruptor\""
       ]
     },
-    "description": "This medium-sized drone serves the Kor Mereti fleets in much the same way as a human Frigate, but in terms of total firepower it is far beyond anything humans have constructed."
+    "description": "This medium-sized drone serves the Kor Mereti fleets in much the same way as a human Frigate, but in terms of total firepower it is far beyond anything humans have constructed.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "model 128": {
     "name": "Model 128",
@@ -1850,7 +1930,11 @@
         "turret -24 115 \"Korath Slicer Turret\""
       ]
     },
-    "description": "As Kor Mereti drones continue to grow and develop into their final form, they split down the middle. At the same time, their shielding and weaponry continue to become stronger."
+    "description": "As Kor Mereti drones continue to grow and develop into their final form, they split down the middle. At the same time, their shielding and weaponry continue to become stronger.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "model 256": {
     "name": "Model 256",
@@ -1919,7 +2003,11 @@
         "turret -56 101 \"Korath Disruptor\""
       ]
     },
-    "description": "There is a saying among the Quarg that every species which insists on studying war will eventually construct a weapon that outlives its creators. For the Korath, their war drones have very nearly done so."
+    "description": "There is a saying among the Quarg that every species which insists on studying war will eventually construct a weapon that outlives its creators. For the Korath, their war drones have very nearly done so.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   },
   "model 512": {
     "name": "Model 512",
@@ -1990,6 +2078,10 @@
         "turret 54 138 \"Korath Disruptor\""
       ]
     },
-    "description": "This is the final state in the evolution of a Kor Mereti war drone: a perfect ring, with incredibly powerful shields and turrets firing in every direction."
+    "description": "This is the final state in the evolution of a Kor Mereti war drone: a perfect ring, with incredibly powerful shields and turrets firing in every direction.",
+    "extra": {
+      "automaton": "1",
+      "ramscoop": "3"
+    }
   }
 }

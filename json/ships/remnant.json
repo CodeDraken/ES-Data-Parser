@@ -62,7 +62,12 @@
         "turret 0 2 \"Point Defense Turret\""
       ]
     },
-    "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens."
+    "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens.",
+    "extra": {
+      "shield generation": "1.8",
+      "shield energy": "1.2",
+      "cloaking energy": "5"
+    }
   },
   "starling starling (heavy)": {
     "name": "Starling Starling (Heavy)",
@@ -127,7 +132,12 @@
         "turret 0 2 \"Point Defense Turret\""
       ]
     },
-    "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens."
+    "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens.",
+    "extra": {
+      "shield generation": "1.8",
+      "shield energy": "1.2",
+      "cloaking energy": "5"
+    }
   },
   "starling starling (sniper)": {
     "name": "Starling Starling (Sniper)",
@@ -192,7 +202,12 @@
         "turret 0 2 \"Point Defense Turret\""
       ]
     },
-    "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens."
+    "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens.",
+    "extra": {
+      "shield generation": "1.8",
+      "shield energy": "1.2",
+      "cloaking energy": "5"
+    }
   },
   "starling starling (hunter)": {
     "name": "Starling Starling (Hunter)",
@@ -253,7 +268,12 @@
         "turret 0 2 \"Point Defense Turret\""
       ]
     },
-    "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens."
+    "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens.",
+    "extra": {
+      "shield generation": "1.8",
+      "shield energy": "1.2",
+      "cloaking energy": "5"
+    }
   },
   "starling starling (thrasher)": {
     "name": "Starling Starling (Thrasher)",
@@ -315,7 +335,12 @@
         "turret 0 2 \"Point Defense Turret\""
       ]
     },
-    "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens."
+    "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens.",
+    "extra": {
+      "shield generation": "1.8",
+      "shield energy": "1.2",
+      "cloaking energy": "5"
+    }
   },
   "albatross": {
     "name": "Albatross",
@@ -388,7 +413,11 @@
         "turret 0 77 \"Point Defense Turret\""
       ]
     },
-    "description": "Once they left human space, it became apparent to the Remnant that they would need to build their own shipyards in order to defend themselves if they were discovered by the Alphas or any other unfriendly faction. Using new composite materials that they discovered, they built ships very different from anything seen in human space."
+    "description": "Once they left human space, it became apparent to the Remnant that they would need to build their own shipyards in order to defend themselves if they were discovered by the Alphas or any other unfriendly faction. Using new composite materials that they discovered, they built ships very different from anything seen in human space.",
+    "extra": {
+      "shield generation": "5.2",
+      "shield energy": "4.6"
+    }
   },
   "albatross albatross (sniper)": {
     "name": "Albatross Albatross (Sniper)",
@@ -462,7 +491,11 @@
         "turret 0 77 \"Point Defense Turret\""
       ]
     },
-    "description": "Once they left human space, it became apparent to the Remnant that they would need to build their own shipyards in order to defend themselves if they were discovered by the Alphas or any other unfriendly faction. Using new composite materials that they discovered, they built ships very different from anything seen in human space."
+    "description": "Once they left human space, it became apparent to the Remnant that they would need to build their own shipyards in order to defend themselves if they were discovered by the Alphas or any other unfriendly faction. Using new composite materials that they discovered, they built ships very different from anything seen in human space.",
+    "extra": {
+      "shield generation": "5.2",
+      "shield energy": "4.6"
+    }
   },
   "albatross albatross (turret)": {
     "name": "Albatross Albatross (Turret)",
@@ -535,7 +568,11 @@
         "turret 0 77 \"Point Defense Turret\""
       ]
     },
-    "description": "Once they left human space, it became apparent to the Remnant that they would need to build their own shipyards in order to defend themselves if they were discovered by the Alphas or any other unfriendly faction. Using new composite materials that they discovered, they built ships very different from anything seen in human space."
+    "description": "Once they left human space, it became apparent to the Remnant that they would need to build their own shipyards in order to defend themselves if they were discovered by the Alphas or any other unfriendly faction. Using new composite materials that they discovered, they built ships very different from anything seen in human space.",
+    "extra": {
+      "shield generation": "5.2",
+      "shield energy": "4.6"
+    }
   },
   "albatross albatross (heavy)": {
     "name": "Albatross Albatross (Heavy)",
@@ -607,6 +644,10 @@
         "turret 0 77 \"Point Defense Turret\""
       ]
     },
-    "description": "Once they left human space, it became apparent to the Remnant that they would need to build their own shipyards in order to defend themselves if they were discovered by the Alphas or any other unfriendly faction. Using new composite materials that they discovered, they built ships very different from anything seen in human space."
+    "description": "Once they left human space, it became apparent to the Remnant that they would need to build their own shipyards in order to defend themselves if they were discovered by the Alphas or any other unfriendly faction. Using new composite materials that they discovered, they built ships very different from anything seen in human space.",
+    "extra": {
+      "shield generation": "5.2",
+      "shield energy": "4.6"
+    }
   }
 }
