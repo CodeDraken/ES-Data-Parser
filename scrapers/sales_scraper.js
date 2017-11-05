@@ -1,10 +1,11 @@
 const fs = require('fs')
 const path = require('path')
 
+const dataConfig = require('../config/dataConfig')
 const shipyardRegex = /shipyard\s(".*")([\s\S]*?)(?=shipyard|\n\n)/gm
 
 const generateShipSalesJSON = (dataFileName) => {
-  const sales = fs.readFileSync(path.join(__dirname, `/data/`, dataFileName), 'utf8')
+  const sales = fs.readFileSync(`${dataConfig.dataLocation}/${dataFileName}`, 'utf8')
   const shipSales = {}
 
   var testArr

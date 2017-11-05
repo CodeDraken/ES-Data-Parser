@@ -1,6 +1,7 @@
 const fs = require('fs')
 const _ = require('lodash')
 
+const dataConfig = require('../config/dataConfig')
 const attrSelector = require('../util/attributeSelector')
 
 // regular expressions
@@ -195,8 +196,8 @@ const scrapeFaction = (faction, fileName, single) => {
   // different paths for files with ships only and ones with
   // outfits, ships, and whatever
   const fileText = !single
-  ? fs.readFileSync(`${__dirname}/data/ships/${fileName}.txt`, 'utf8')
-  : fs.readFileSync(`${__dirname}/data/singles/${fileName}.txt`, 'utf8')
+  ? fs.readFileSync(`${dataConfig.dataLocation}/ships/${fileName}.txt`, 'utf8')
+  : fs.readFileSync(`${dataConfig.dataLocation}/mix/${fileName}.txt`, 'utf8')
 
   // array of ship strings
   const shipScrape = fileText.match(shipReg)
@@ -206,14 +207,14 @@ const scrapeFaction = (faction, fileName, single) => {
 }
 
 // scrape all current factions then write to file
-// TODO use readdir to read directory -> array -> scrapeFaction each item
+// TODO: use readdir to read directory -> array -> scrapeFaction each item
 // dynamically generate ships object and scrape
 const scrapeAllShips = () => {
   scrapeFaction('coalition', 'coalition ships')
   scrapeFaction('drak', 'drak', true)
   scrapeFaction('generic', 'ships')
   scrapeFaction('hai', 'hai ships')
-  scrapeFaction('other', 'kestrel')
+  scrapeFaction('other', 'kestrel', true)
   scrapeFaction('korath', 'korath ships')
   scrapeFaction('marauders', 'marauders')
   scrapeFaction('pug', 'pug', true)

@@ -3,10 +3,11 @@ const path = require('path')
 const _ = require('lodash')
 const dl = require('datalib')
 
+const dataConfig = require('../config/dataConfig')
 const jsonToFile = require('./jsonToFile')
 
 // load all of the ships
-const baseShips = JSON.parse(fs.readFileSync(path.join(__dirname, '../json/ships/', 'all_ships.json')))
+const baseShips = JSON.parse(fs.readFileSync(`${dataConfig.outputJSON}/all_ships.json`))
 
 // just ship categories as strings, used for looping
 const shipCategories = [

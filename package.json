@@ -4,7 +4,8 @@
   "description": "Scrape data from files",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gen-data": "node app"
   },
   "keywords": [
     "game",
@@ -13,10 +14,8 @@
   "author": "CodeDraken",
   "license": "MIT",
   "dependencies": {
-    "datalib": "^1.7.3",
+    "datalib": "^1.8.0",
     "lodash": "^4.17.4"
   },
-  "devDependencies": {
-    "lodash": "^4.17.4"
-  }
+  "devDependencies": {}
 }

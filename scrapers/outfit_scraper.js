@@ -1,5 +1,6 @@
 const fs = require('fs')
 
+const dataConfig = require('../config/dataConfig')
 const attrSelector = require('../util/attributeSelector')
 
 const outfitReg = /^outfit "([\s\S]*?)((?=^outfit ".*)|(?:description .*)|(?=end))/gm
@@ -63,8 +64,8 @@ const scrapeFile = (fileName, single) => {
   // different paths for files with outfits only and ones with
   // outfits, outfits, and whatever
   const fileText = !single
-  ? fs.readFileSync(`${__dirname}/data/outfits/${fileName}.txt`, 'utf8')
-  : fs.readFileSync(`${__dirname}/data/singles/${fileName}.txt`, 'utf8')
+  ? fs.readFileSync(`${dataConfig.dataLocation}/outfits/${fileName}.txt`, 'utf8')
+  : fs.readFileSync(`${dataConfig.dataLocation}/mix/${fileName}.txt`, 'utf8')
 
   // array of outfit strings
   const outfitScrape = fileText.match(outfitReg)
@@ -74,7 +75,7 @@ const scrapeFile = (fileName, single) => {
 }
 
 const scrapeAllOutfits = () => {
-  const files = fs.readdirSync(`${__dirname}/data/outfits`)
+  const files = fs.readdirSync(`${dataConfig.dataLocation}/outfits`)
   files.forEach((file) => {
     scrapeFile(file.replace('.txt', ''))
   })
