@@ -62,9 +62,12 @@ const layoutSelector = (ship, retry) => {
 }
 
 // create a ship object from string of data
-const scrapeShip = (data, faction) => {
+const scrapeShip = (shipStr, faction) => {
+  let data = shipStr
+
+  // some special cases end up being an array
   data = Array.isArray(data) ? data[0] : data
-  // test the amount the name occurs, if more than once assume it inherits
+
   // the line where the ship name is
   const nameLine = data.match(/^ship .*/gm)[0]
   // regex to get the base name
@@ -75,8 +78,9 @@ const scrapeShip = (data, faction) => {
   const nameCountReg = new RegExp(name, 'g')
   const nameCount = nameLine.match(nameCountReg).length
 
-  // don't inherit
+  // test the amount the name occurs, if more than once assume it inherits
   if (nameCount < 2) {
+    // don't inherit
     return {
       name: attrSelector('ship', data, true),
       sprite: attrSelector('sprite', data, true),
@@ -160,14 +164,20 @@ const scrapeShip = (data, faction) => {
 }
 
 // generate ships from array of strings, put into ships[faction]
-const shipGenerator = (faction, data) => {
+const shipFactory = (faction, arrOfFactionShips) => {
+  const data = arrOfFactionShips
   if (data && data.length > 1 && Array.isArray(data)) {
     // for many ships
-    for (var i = 0; i < data.length; i++) {
-      const ship = scrapeShip(data[i], faction)
+    data.forEach(shipStr => {
+      const ship = scrapeShip(shipStr, faction)
 
       ships[faction][ship.name.toLowerCase()] = ship
-    }
+    })
+    // for (var i = 0; i < data.length; i++) {
+    //   const ship = scrapeShip(data[i], faction)
+
+    //   ships[faction][ship.name.toLowerCase()] = ship
+    // }
   } else if (data) {
     // for single ship
     const ship = scrapeShip(data, faction)
@@ -177,7 +187,7 @@ const shipGenerator = (faction, data) => {
 }
 
 // read file, find all ships as strings, generate ships
-const scrapeFaction = (faction) => {
+const scrapeFaction = faction => {
   // different paths for files with ships only and ones with
   // outfits, ships, and whatever
   const fileText = (() => {
@@ -189,9 +199,9 @@ const scrapeFaction = (faction) => {
   })()
 
   // array of ship strings
-  const shipScrape = fileText.match(shipRegex)
+  const arrOfFactionShips = fileText.match(shipRegex)
 
-  shipGenerator(faction, shipScrape)
+  shipFactory(faction, arrOfFactionShips)
 }
 
 // scrape all current factions then write to file
@@ -209,6 +219,6 @@ module.exports = {
   scrapeShip,
   scrapeFaction,
   scrapeAllShips,
-  shipGenerator,
+  shipFactory,
   ships
 }

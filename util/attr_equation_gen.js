@@ -6,6 +6,8 @@ const dl = require('datalib')
 const dataConfig = require('../config/dataConfig')
 const { jsonToFile } = require('./jsonToFile')
 
+// TODO: update 'generic'
+
 // load all of the ships
 const baseShips = JSON.parse(fs.readFileSync(`${dataConfig.outputJSON}/ships/all_ships.json`))
 
