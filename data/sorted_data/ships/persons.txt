@@ -405,3 +405,4 @@ person "Tranquility"
 			"I swear by my pretty floral bonnet, I will end you."
 			"Just once I'd like things to go according to the gorram plan."
 			"I'm a dangerous-minded man on a ship loaded with hurt."
+END

@@ -176,3 +176,4 @@ mission "FW Epilogue: Danforth"
 			`	Then he leans forward and says, more quietly, "Of course, you and I both know the pirates aren't the main threat. Raven is off infiltrating Syndicate worlds even as we speak, and several of my other best intelligence officers, too. The Syndicate wants us to believe that they've weeded out all the rotten apples from their ranks, but we're keeping an eye on them, all the same."`
 			`	After you talk for a while longer, Danforth wishes you luck and sends you on your way. "I'll be in touch if we ever need your assistance in the future," he says.`
 				decline
+END

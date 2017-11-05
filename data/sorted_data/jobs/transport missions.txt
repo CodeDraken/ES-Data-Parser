@@ -1951,3 +1951,4 @@ ship "Science Drone"
 		"heat dissipation" 1
 	explode "tiny explosion" 5
 	explode "small explosion" 2
+END

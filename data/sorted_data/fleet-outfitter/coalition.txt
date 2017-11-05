@@ -735,3 +735,4 @@ phrase "friendly heliarch"
 		"we have committed."
 		"we do serve."
 		"we do vow."
+END

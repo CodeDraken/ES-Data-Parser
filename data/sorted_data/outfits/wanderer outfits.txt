@@ -474,3 +474,4 @@ outfit "Type 4 Radiant Steering"
 	"turning heat" 4.5
 	"cooling" 6.7
 	description "This is the largest steering system that the Wanderers sell."
+END

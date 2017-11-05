@@ -61,3 +61,4 @@ mission "Discovered Korath Space"
 event "label korath space"
 	galaxy "label korath"
 		sprite "label/korath"
+END

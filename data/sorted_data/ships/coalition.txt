@@ -957,3 +957,4 @@ ship "Saryd Visitor"
 	explode "medium explosion" 5
 	"final explode" "final explosion medium"
 	description `Rather than specializing in carrying passengers or carrying cargo, Saryds seek to make their ships as well-balanced and versatile as possible. As a result, the crew of a typical Visitor can count on performing a different sort of job every week.`
+END

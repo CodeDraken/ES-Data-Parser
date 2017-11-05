@@ -113,3 +113,4 @@ mission "First Contact: Kuwaru Efreti"
 			label destroy
 			`	It clicks its teeth together, which might be the Quarg equivalent of laughter. "It was hoped that one faction of robots would destroy the other, and leave less work for us to do, but they are sadly too evenly matched. We instead merely restrain them from expanding, as one isolates a fire one cannot extinguish and waits for it to burn out." You thank it for its time, and the crowd of Quarg that has been gawking at you slowly disperses.`
 				decline
+END

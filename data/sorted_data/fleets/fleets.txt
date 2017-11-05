@@ -2593,3 +2593,4 @@ fleet "Hired Guns"
 		"Bactrian (Hired Gun)"
 		"Dagger" 3
 		"Splinter (Laser)"
+END

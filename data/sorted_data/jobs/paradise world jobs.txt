@@ -365,3 +365,4 @@ mission "Pleasure cruise security"
 		dialog "You bid goodbye to the captain of the <npc> and accept your payment of <payment>."
 		payment
 		payment 50000
+END

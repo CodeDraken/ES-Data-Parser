@@ -1464,3 +1464,4 @@ ship "Marauder Splinter" "Marauder Splinter (Weapons)"
 	explode "large explosion" 8
 	"final explode" "final explosion medium"
 	description "This Splinter has had extensive modification to its weapons space, with two new forward hard points on either side of the bridge. Large sections of the hull are covered with extra shield emitters and hull plating. Much of the stock cargo space has been converted to space for outfits, weapons and engines, coupled with streamlining of existing internal systems make the prospect of meeting this flexible war machine in an uninhabited system seem pretty unappealing."
+END

@@ -107,3 +107,4 @@ fleet "Void Sprites"
 	variant
 		"Void Sprite"
 		"Void Sprite (Infant)" 3
+END

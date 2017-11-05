@@ -2608,3 +2608,4 @@ mission "Geminus Rebuilt"
 	on offer
 		event "geminus rebuilt" 90
 		fail
+END

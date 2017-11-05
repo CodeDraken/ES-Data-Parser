@@ -5,7 +5,7 @@ const dataConfig = require('../config/dataConfig')
 const attrSelector = require('../util/attributeSelector')
 
 // regular expressions
-const shipReg = /^ship "([\s\S]*?)((?=ship ".*)|(?:description .*)|(?=end))/gm
+const shipReg = /^ship "([\s\S]*?)((?=ship ".*)|(?:description .*)|(?=END))/gm
 
 // ship selector
 // /ship "([\s\S]*?)(?:description .*)/g /ship "([\s\S]*?)(?:description .*)/g
@@ -18,21 +18,18 @@ const shipReg = /^ship "([\s\S]*?)((?=ship ".*)|(?:description .*)|(?=end))/gm
 // outfit selector
 // outfits([\s\S]*?)(?=\s*?\t*?(engine|gun|explode|turret))
 
-console.log(fs.readdirSync(`${dataConfig.dataLocation}/ships`))
-
 // ships by faction
-const ships = {
-  coalition: {},
-  drak: {},
-  generic: {},
-  hai: {},
-  other: {},
-  korath: {},
-  marauders: {},
-  pug: {},
-  quarg: {},
-  wanderer: {}
-}
+const shipFileArr = [
+  ...fs.readdirSync(`${dataConfig.dataLocation}/ships`)
+  .map(shipFileName => shipFileName.replace('.txt', '')),
+  ...fs.readdirSync(`${dataConfig.dataLocation}/mix`)
+  .map(shipFileName => shipFileName.replace('.txt', ''))
+]
+
+const ships = shipFileArr.reduce((shipObj, ship) => {
+  shipObj[ship] = {}
+  return shipObj
+}, {})
 
 // fetch a ship for inheriting
 const inherit = (ship, faction) => {
@@ -194,12 +191,16 @@ const shipGenerator = (faction, data) => {
 }
 
 // read file, find all ships as strings, generate ships
-const scrapeFaction = (faction, fileName, single) => {
+const scrapeFaction = (faction) => {
   // different paths for files with ships only and ones with
   // outfits, ships, and whatever
-  const fileText = !single
-  ? fs.readFileSync(`${dataConfig.dataLocation}/ships/${fileName}.txt`, 'utf8')
-  : fs.readFileSync(`${dataConfig.dataLocation}/mix/${fileName}.txt`, 'utf8')
+  const fileText = (() => {
+    try {
+      return fs.readFileSync(`${dataConfig.dataLocation}/ships/${faction}.txt`, 'utf8', (err, data) => {})
+    } catch (err) {
+      return fs.readFileSync(`${dataConfig.dataLocation}/mix/${faction}.txt`, 'utf8')
+    }
+  })()
 
   // array of ship strings
   const shipScrape = fileText.match(shipReg)
@@ -209,19 +210,11 @@ const scrapeFaction = (faction, fileName, single) => {
 }
 
 // scrape all current factions then write to file
-// TODO: use readdir to read directory -> array -> scrapeFaction each item
 // dynamically generate ships object and scrape
 const scrapeAllShips = () => {
-  scrapeFaction('coalition', 'coalition ships')
-  scrapeFaction('drak', 'drak', true)
-  scrapeFaction('generic', 'ships')
-  scrapeFaction('hai', 'hai ships')
-  scrapeFaction('other', 'kestrel', true)
-  scrapeFaction('korath', 'korath ships')
-  scrapeFaction('marauders', 'marauders')
-  scrapeFaction('pug', 'pug', true)
-  scrapeFaction('quarg', 'quarg ships')
-  scrapeFaction('wanderer', 'wanderer ships')
+  for (let faction in ships) {
+    scrapeFaction(faction)
+  }
 }
 
 // testing

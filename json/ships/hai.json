@@ -1421,5 +1421,70 @@
       ]
     },
     "description": "The Water Bug is the primary freight ship used by the Hai."
+  },
+  "water bug water bug (jump)": {
+    "name": "Water Bug Water Bug (Jump)",
+    "sprite": "ship/hai water bug",
+    "attributes": {
+      "automaton": 0,
+      "bunks": "29",
+      "cargoSpace": "197",
+      "category": "Heavy Freighter",
+      "cost": "6500000",
+      "drag": "5.9",
+      "engineCap": "64",
+      "fuelCap": "600",
+      "heat": ".75",
+      "hull": "4500",
+      "mass": "270",
+      "outfitSpace": "368",
+      "requiredCrew": "5",
+      "shields": "7900",
+      "weaponCap": "145",
+      "weapon": {
+        "blastRadius": "124",
+        "hitForce": "1860",
+        "hullDamage": "620",
+        "shieldDamage": "1240"
+      }
+    },
+    "outfits": [
+      "Hai Tracker Pod 2",
+      "Hai Tracker 112",
+      "Pulse Turret",
+      "Chameleon Anti-Missile 2",
+      "Geode Reactor",
+      "Hai Gorge Batteries",
+      "Hai Chasm Batteries",
+      "Hai Diamond Regenerator",
+      "Hai Williwaw Cooling",
+      "Quantum Keystone",
+      "`Benga Atomic Thruster`",
+      "`Benga Atomic Steering`",
+      "Hyperdrive"
+    ],
+    "layout": {
+      "engines": [
+        "engine -50 33",
+        "engine 50 33"
+      ],
+      "explosions": [
+        "explode \"small explosion\" 15",
+        "explode \"medium explosion\" 30",
+        "explode \"large explosion\" 20",
+        "explode \"huge explosion\" 5"
+      ],
+      "fighter": null,
+      "guns": [
+        "gun -24 -53 \"Hai Tracker Pod\"",
+        "gun 24 -53 \"Hai Tracker Pod\""
+      ],
+      "turrets": [
+        "turret 0 -10 \"Pulse Turret\"",
+        "turret -17 17 \"Chameleon Anti-Missile\"",
+        "turret 17 17 \"Chameleon Anti-Missile\""
+      ]
+    },
+    "description": "The Water Bug is the primary freight ship used by the Hai."
   }
 }

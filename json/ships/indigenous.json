@@ -1,0 +1,90 @@
+{
+  "void sprite": {
+    "name": "Void Sprite",
+    "sprite": "ship/void sprite adult",
+    "attributes": {
+      "automaton": 0,
+      "bunks": "4",
+      "cargoSpace": "40",
+      "category": "Medium Warship",
+      "cost": 0,
+      "drag": "8.2",
+      "engineCap": 0,
+      "fuelCap": "1",
+      "heat": ".8",
+      "hull": "9600",
+      "mass": "480",
+      "outfitSpace": 0,
+      "requiredCrew": "4",
+      "shields": 0,
+      "weaponCap": 0,
+      "weapon": {
+        "blastRadius": 0,
+        "hitForce": 0,
+        "hullDamage": 0,
+        "shieldDamage": 0
+      }
+    },
+    "outfits": [
+      "Mouthparts? 2"
+    ],
+    "layout": {
+      "engines": null,
+      "explosions": [
+        "explode \"tracker cloud\" 40",
+        "explode \"smoke\" 40"
+      ],
+      "fighter": null,
+      "guns": [
+        "gun -4 -111",
+        "gun 6 -111"
+      ],
+      "turrets": null
+    },
+    "description": 0
+  },
+  "void sprite void sprite (infant)": {
+    "name": "Void Sprite Void Sprite (Infant)",
+    "sprite": "ship/void sprite adult",
+    "attributes": {
+      "automaton": 0,
+      "bunks": "2",
+      "cargoSpace": "20",
+      "category": "Light Warship",
+      "cost": 0,
+      "drag": "5.4",
+      "engineCap": 0,
+      "fuelCap": "1",
+      "heat": ".9",
+      "hull": "2800",
+      "mass": "200",
+      "outfitSpace": 0,
+      "requiredCrew": "2",
+      "shields": 0,
+      "weaponCap": 0,
+      "weapon": {
+        "blastRadius": 0,
+        "hitForce": 0,
+        "hullDamage": "300",
+        "shieldDamage": "300"
+      }
+    },
+    "outfits": [
+      "Mouthparts?"
+    ],
+    "layout": {
+      "engines": null,
+      "explosions": [
+        "explode \"tracker cloud\" 20",
+        "explode \"smoke\" 20"
+      ],
+      "fighter": null,
+      "guns": [
+        "gun 4 -41",
+        "gun ports\" -1"
+      ],
+      "turrets": null
+    },
+    "description": 0
+  }
+}

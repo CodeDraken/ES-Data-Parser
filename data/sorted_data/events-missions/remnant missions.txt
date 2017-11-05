@@ -494,3 +494,4 @@ mission "Remnant: Technology Available"
 				`	"Is there anything else I can do to assist your people?"`
 			`	"Not that I am aware of right now," he says, "but we will call on you if a need ever arises."`
 				decline
+END

@@ -219,3 +219,4 @@ mission "Record academic conference"
 	on complete
 		dialog "You touch down and make your way to the conference hall at a grand university. The provided credentials gain you access and you set up the recording equipment at the back of the room. The panelists are electrifying, speaking eloquently on a variety of cutting-edge topics in the sciences and humanities. The experience leaves you feeling remarkably optimistic about the future of humanity here in the stars. You transmit the video to your contact on <origin> and receive your payment of <payment>."
 		payment 5000 1000
+END

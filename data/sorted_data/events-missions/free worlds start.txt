@@ -1711,3 +1711,4 @@ mission "FW Refinery 1A"
 			`After unloading the supplies, you send Freya and JJ a message letting them know that you arrived safely. You're a bit surprised when they don't immediately send you a message back. Something else must be going on that is occupying their attention. After months of just traveling around following other people's orders, it feels odd to be left to your own devices for a change.`
 		set "fw first chapter done"
 		event "navy occupying the south" 8
+END

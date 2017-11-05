@@ -164,7 +164,7 @@ effect "antimatter dust"
 	"random spin" 50
 
 
-ship Archon
+ship "Archon"
 	noun "entity"
 	sprite ship/archon
 		"frame rate" 0.87
@@ -223,7 +223,7 @@ ship Archon
 	explode "nuke explosion" 3
 	"final explode" "final explosion large"
 
-ship Archon "Archon (Cloaked)"
+ship "Archon" "Archon (Cloaked)"
 	"never disabled"
 	attributes
 		category "Heavy Warship"
@@ -257,3 +257,4 @@ ship Archon "Archon (Cloaked)"
 	turret "Drak Turret"
 	turret "Drak Distancer"
 	turret "Drak Distancer"
+END

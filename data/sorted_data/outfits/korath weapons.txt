@@ -576,3 +576,4 @@ effect "slicer impact"
 	"random spin" 2
 	"random velocity" .1
 	"velocity scale" -.002
+END

@@ -101,3 +101,4 @@ ship "Quarg Wardragon"
 	explode "huge explosion" 20
 	"final explode" "final explosion medium"
 	description "The Wardragon is used by the Quarg as a light warship."
+END

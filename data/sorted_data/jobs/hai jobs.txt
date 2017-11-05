@@ -1104,3 +1104,4 @@ mission "Hai Large Rush Delivery [3]"
 		payment
 		payment 42000
 		dialog "You drop off your cargo of <commodity> and collect your payment of <payment>."
+END

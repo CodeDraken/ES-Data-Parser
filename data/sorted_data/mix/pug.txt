@@ -726,3 +726,4 @@ mission "Pug Angry at Being Farmed"
 		personality nemesis heroic staying
 		system "Pug Iyik"
 		ship "Pug Arfecta" "Ayee Eee Eek"
+END

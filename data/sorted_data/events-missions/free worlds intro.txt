@@ -2049,3 +2049,4 @@ mission "FWCarrier License"
 	on offer
 		set "license: Militia Carrier"
 		fail
+END

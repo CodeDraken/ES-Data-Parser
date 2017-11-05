@@ -1,0 +1,46 @@
+{
+  "nanobot": {
+    "name": "Nanobot",
+    "sprite": "effect/nano spark",
+    "attributes": {
+      "automaton": "1",
+      "bunks": 0,
+      "cargoSpace": 0,
+      "category": "Guns",
+      "cost": 0,
+      "drag": "1",
+      "engineCap": 0,
+      "fuelCap": 0,
+      "heat": ".9",
+      "hull": "100",
+      "mass": "10",
+      "outfitSpace": "5",
+      "requiredCrew": 0,
+      "shields": 0,
+      "weaponCap": "5",
+      "weapon": {
+        "blastRadius": 0,
+        "hitForce": 0,
+        "hullDamage": "10",
+        "shieldDamage": "10"
+      }
+    },
+    "outfits": [
+      "Nano Strike"
+    ],
+    "layout": {
+      "engines": [
+        "engine -17 35",
+        "engine 17 35"
+      ],
+      "explosions": null,
+      "fighter": null,
+      "guns": [
+        "gun 0 0",
+        "gun ports\" -1"
+      ],
+      "turrets": null
+    },
+    "description": 0
+  }
+}

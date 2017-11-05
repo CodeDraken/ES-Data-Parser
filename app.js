@@ -1,9 +1,16 @@
+const readLastLines = require('read-last-lines')
+
 const shipScraper = require('./scrapers/ship_scraper')
 const outfitScraper = require('./scrapers/outfit_scraper')
 const { shipSalesJSON } = require('./scrapers/sales_scraper')
 const { jsonToFile } = require('./util/jsonToFile')
 const dataConfig = require('./config/dataConfig')
 const attrEquationGen = require('./util/attr_equation_gen')
+const { filePrep } = require('./util/fileUtil')
+
+// TODO: if END isn't at end of files then add it
+// prep files
+// filePrep()
 
 const scrapeWriteAll = (type) => {
   if (type === 'ships') {

@@ -2141,3 +2141,4 @@ mission "FW Liberate Delta Sagittarii"
 		system "Rastaban"
 		government "Republic"
 		fleet "Large Republic" 2
+END

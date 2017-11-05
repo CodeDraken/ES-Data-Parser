@@ -524,3 +524,4 @@ outfit "AR120 Reverse Thruster"
 	"reverse thrusting energy" 1.8
 	"reverse thrusting heat" 3.5
 	description "For pilots who want to be able to pull fancy tricks that most ships are not capable of emulating, a reverse thruster allows a ship to accelerate backwards, without needing to turn around. Because a reverse thruster must be facing forwards, it must be installed in the weapon section of your ship instead of the engine section."
+END

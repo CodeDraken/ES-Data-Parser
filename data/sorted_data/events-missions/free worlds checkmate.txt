@@ -2320,3 +2320,4 @@ mission "FWC End"
 				`	"See if folks in the fringe worlds need any help against the pirates."`
 				`	"Use my jump drive to explore beyond human space."`
 			`	"Well, we all wish you the best of luck," says Freya. "We would never have won this war without you. Be sure to stay in touch." You hug each of them goodbye, and return to your ship. What you do next is up to you...`
+END

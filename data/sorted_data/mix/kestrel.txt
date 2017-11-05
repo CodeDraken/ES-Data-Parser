@@ -371,3 +371,4 @@ ship "Kestrel" "Kestrel (More Shields)"
 		"outfit space" 810
 		"weapon capacity" 380
 		"engine capacity" 210
+END

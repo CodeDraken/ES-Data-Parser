@@ -1465,8 +1465,1497 @@
       "description": "`Rather than specializing in carrying passengers or carrying cargo, Saryds seek to make their ships as well-balanced and versatile as possible. As a result, the crew of a typical Visitor can count on performing a different sort of job every week.`"
     }
   },
-  "drak": {},
-  "generic": {
+  "hai": {
+    "aphid": {
+      "name": "Aphid",
+      "sprite": "ship/hai aphid",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "5",
+        "cargoSpace": "51",
+        "category": "Light Freighter",
+        "cost": "570000",
+        "drag": "1.9",
+        "engineCap": "48",
+        "fuelCap": "400",
+        "heat": ".90",
+        "hull": "1400",
+        "mass": "100",
+        "outfitSpace": "185",
+        "requiredCrew": "1",
+        "shields": "1700",
+        "weaponCap": "37",
+        "weapon": {
+          "blastRadius": "30",
+          "hitForce": "450",
+          "hullDamage": "150",
+          "shieldDamage": "300"
+        }
+      },
+      "outfits": [
+        "Pulse Turret",
+        "Pebble Core",
+        "Hai Fissure Batteries",
+        "Hai Corundum Regenerator",
+        "Hai Williwaw Cooling",
+        "`Basrem Atomic Thruster`",
+        "`Basrem Atomic Steering`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -8 40",
+          "engine 8 40"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 10",
+          "explode \"small explosion\" 20",
+          "explode \"medium explosion\" 15"
+        ],
+        "fighter": null,
+        "guns": null,
+        "turrets": [
+          "turret 0 24 \"Pulse Turret\""
+        ]
+      },
+      "description": "The Aphid is a light freighter designed by the Hai. It has only minimal armament."
+    },
+    "aphid aphid (anti-missile)": {
+      "name": "Aphid Aphid (Anti-Missile)",
+      "sprite": "ship/hai aphid",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "5",
+        "cargoSpace": "51",
+        "category": "Light Freighter",
+        "cost": "570000",
+        "drag": "1.9",
+        "engineCap": "48",
+        "fuelCap": "400",
+        "heat": ".90",
+        "hull": "1400",
+        "mass": "100",
+        "outfitSpace": "185",
+        "requiredCrew": "1",
+        "shields": "1700",
+        "weaponCap": "37",
+        "weapon": {
+          "blastRadius": "30",
+          "hitForce": "450",
+          "hullDamage": "150",
+          "shieldDamage": "300"
+        }
+      },
+      "outfits": [
+        "Pulse Turret",
+        "Pebble Core",
+        "Hai Fissure Batteries",
+        "Hai Corundum Regenerator",
+        "Hai Williwaw Cooling",
+        "`Basrem Atomic Thruster`",
+        "`Basrem Atomic Steering`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -8 40",
+          "engine 8 40"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 10",
+          "explode \"small explosion\" 20",
+          "explode \"medium explosion\" 15"
+        ],
+        "fighter": null,
+        "guns": null,
+        "turrets": [
+          "turret 0 24 \"Pulse Turret\""
+        ]
+      },
+      "description": "The Aphid is a light freighter designed by the Hai. It has only minimal armament."
+    },
+    "flea": {
+      "name": "Flea",
+      "sprite": "ship/hai flea",
+      "attributes": {
+        "automaton": "1",
+        "bunks": 0,
+        "cargoSpace": 0,
+        "category": "Drone",
+        "cost": "122400",
+        "drag": ".55",
+        "engineCap": "29",
+        "fuelCap": 0,
+        "heat": ".75",
+        "hull": "700",
+        "mass": "21",
+        "outfitSpace": "60",
+        "requiredCrew": 0,
+        "shields": "200",
+        "weaponCap": "9",
+        "weapon": {
+          "blastRadius": "6",
+          "hitForce": "80",
+          "hullDamage": "30",
+          "shieldDamage": "55"
+        }
+      },
+      "outfits": [
+        "Rail"
+      ],
+      "layout": {
+        "engines": [
+          "engine 0 27"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 15"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun Slug\" 160",
+          "gun 0 -27 \"Railgun\""
+        ],
+        "turrets": null
+      },
+      "description": "`This is a combat drone designed to help contain Unfettered aggression with a minimum risk to Hai life.`"
+    },
+    "lightning bug": {
+      "name": "Lightning Bug",
+      "sprite": "ship/hai lightning bug",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "10",
+        "cargoSpace": "73",
+        "category": "Light Warship",
+        "cost": "3200000",
+        "drag": "3.8",
+        "engineCap": "93",
+        "fuelCap": "600",
+        "heat": ".85",
+        "hull": "1700",
+        "mass": "220",
+        "outfitSpace": "278",
+        "requiredCrew": "4",
+        "shields": "6700",
+        "weaponCap": "87",
+        "weapon": {
+          "blastRadius": "84",
+          "hitForce": "1260",
+          "hullDamage": "420",
+          "shieldDamage": "840"
+        }
+      },
+      "outfits": [
+        "Ion Cannon",
+        "Bullfrog Anti-Missile 2",
+        "Geode Reactor",
+        "Hai Gorge Batteries",
+        "Hai Corundum Regenerator",
+        "Hai Williwaw Cooling",
+        "Quantum Keystone",
+        "`Benga Atomic Thruster`",
+        "`Biroo Atomic Steering`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -40 22",
+          "engine 40 22"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 18",
+          "explode \"small explosion\" 36",
+          "explode \"medium explosion\" 24",
+          "explode \"large explosion\" 8"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun 0 -40 \"Ion Cannon\""
+        ],
+        "turrets": [
+          "turret -47 18 \"Bullfrog Anti-Missile\"",
+          "turret 47 18 \"Bullfrog Anti-Missile\""
+        ]
+      },
+      "description": "The Lightning Bug is a small defensive ship, mostly used by the Hai as a convoy escort. In its stock configuration, its only offensive weapon is a single ion cannon."
+    },
+    "lightning bug lightning bug (pulse)": {
+      "name": "Lightning Bug Lightning Bug (Pulse)",
+      "sprite": "ship/hai lightning bug",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "10",
+        "cargoSpace": "73",
+        "category": "Light Warship",
+        "cost": "3200000",
+        "drag": "3.8",
+        "engineCap": "93",
+        "fuelCap": "600",
+        "heat": ".85",
+        "hull": "1700",
+        "mass": "220",
+        "outfitSpace": "278",
+        "requiredCrew": "4",
+        "shields": "6700",
+        "weaponCap": "87",
+        "weapon": {
+          "blastRadius": "84",
+          "hitForce": "1260",
+          "hullDamage": "420",
+          "shieldDamage": "840"
+        }
+      },
+      "outfits": [
+        "Ion Cannon",
+        "Bullfrog Anti-Missile 2",
+        "Geode Reactor",
+        "Hai Gorge Batteries",
+        "Hai Corundum Regenerator",
+        "Hai Williwaw Cooling",
+        "Quantum Keystone",
+        "`Benga Atomic Thruster`",
+        "`Biroo Atomic Steering`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -40 22",
+          "engine 40 22"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 18",
+          "explode \"small explosion\" 36",
+          "explode \"medium explosion\" 24",
+          "explode \"large explosion\" 8"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun 0 -40 \"Ion Cannon\""
+        ],
+        "turrets": [
+          "turret -47 18 \"Bullfrog Anti-Missile\"",
+          "turret 47 18 \"Bullfrog Anti-Missile\""
+        ]
+      },
+      "description": "The Lightning Bug is a small defensive ship, mostly used by the Hai as a convoy escort. In its stock configuration, its only offensive weapon is a single ion cannon."
+    },
+    "pond strider": {
+      "name": "Pond Strider",
+      "sprite": "ship/hai pond strider",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "18",
+        "cargoSpace": "71",
+        "category": "Medium Warship",
+        "cost": "5250000",
+        "drag": "3.6",
+        "engineCap": "76",
+        "fuelCap": "300",
+        "heat": ".65",
+        "hull": "3000",
+        "mass": "132",
+        "outfitSpace": "354",
+        "requiredCrew": "9",
+        "shields": "10000",
+        "weaponCap": "129",
+        "weapon": {
+          "blastRadius": "200",
+          "hitForce": "1750",
+          "hullDamage": "750",
+          "shieldDamage": "1500"
+        }
+      },
+      "outfits": [
+        "Rail"
+      ],
+      "layout": {
+        "engines": [
+          "engine -23 80",
+          "engine 23 80"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 20",
+          "explode \"small explosion\" 45",
+          "explode \"medium explosion\" 50",
+          "explode \"large explosion\" 40",
+          "explode \"huge explosion\" 10"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun Slug\" 320",
+          "gun 0 -76 \"Pulse Cannon\"",
+          "gun -15 -72 \"Railgun\"",
+          "gun 15 -72 \"Railgun\""
+        ],
+        "turrets": [
+          "turret -18 -65 \"Pulse Turret\"",
+          "turret 18 -65 \"Pulse Turret\"",
+          "turret 0 26 \"Bullfrog Anti-Missile\""
+        ]
+      },
+      "description": "This short range drone carrier was built by the Hai to contain the increasingly aggressive Unfettered with their new Solifuge and Violin Spider ships. The Hai's greater value for life is evident in the remotely-piloted robotic fighter craft, preferring to keep valuable pilots out of harm's way."
+    },
+    "shield beetle": {
+      "name": "Shield Beetle",
+      "sprite": "ship/hai shield beetle",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "95",
+        "cargoSpace": "142",
+        "category": "Heavy Warship",
+        "cost": "17900000",
+        "drag": "8.8",
+        "engineCap": "150",
+        "fuelCap": "500",
+        "heat": ".60",
+        "hull": "9800",
+        "mass": "650",
+        "outfitSpace": "798",
+        "requiredCrew": "47",
+        "shields": "32000",
+        "weaponCap": "333",
+        "weapon": {
+          "blastRadius": "400",
+          "hitForce": "3000",
+          "hullDamage": "2000",
+          "shieldDamage": "4000"
+        }
+      },
+      "outfits": [
+        "Ion Cannon 4",
+        "Hai Tracker Pod 4",
+        "Hai Tracker 224",
+        "Chameleon Anti-Missile 2",
+        "Boulder Reactor",
+        "Geode Reactor",
+        "Hai Gorge Batteries",
+        "Hai Ravine Batteries",
+        "Hai Diamond Regenerator",
+        "Hai Williwaw Cooling 2",
+        "Quantum Keystone",
+        "`Bondir Atomic Thruster`",
+        "`Bufaer Atomic Steering`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -44 133",
+          "engine 44 133"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 50",
+          "explode \"small explosion\" 50",
+          "explode \"medium explosion\" 50",
+          "explode \"large explosion\" 50",
+          "explode \"huge explosion\" 20"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -22 -102 \"Ion Cannon\"",
+          "gun 22 -102 \"Ion Cannon\"",
+          "gun -34 -68 \"Hai Tracker Pod\"",
+          "gun 34 -68 \"Hai Tracker Pod\"",
+          "gun -49 -38 \"Ion Cannon\"",
+          "gun 49 -38 \"Ion Cannon\"",
+          "gun -61 -14 \"Hai Tracker Pod\"",
+          "gun 61 -14 \"Hai Tracker Pod\""
+        ],
+        "turrets": [
+          "turret -39 48",
+          "turret 39 48",
+          "turret -57 75 \"Chameleon Anti-Missile\"",
+          "turret 57 75 \"Chameleon Anti-Missile\""
+        ]
+      },
+      "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
+    },
+    "shield beetle shield beetle (tracker)": {
+      "name": "Shield Beetle Shield Beetle (Tracker)",
+      "sprite": "ship/hai shield beetle",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "95",
+        "cargoSpace": "142",
+        "category": "Heavy Warship",
+        "cost": "17900000",
+        "drag": "8.8",
+        "engineCap": "150",
+        "fuelCap": "500",
+        "heat": ".60",
+        "hull": "9800",
+        "mass": "650",
+        "outfitSpace": "798",
+        "requiredCrew": "47",
+        "shields": "32000",
+        "weaponCap": "333",
+        "weapon": {
+          "blastRadius": "400",
+          "hitForce": "3000",
+          "hullDamage": "2000",
+          "shieldDamage": "4000"
+        }
+      },
+      "outfits": [
+        "Ion Cannon 4",
+        "Hai Tracker Pod 4",
+        "Hai Tracker 224",
+        "Chameleon Anti-Missile 2",
+        "Boulder Reactor",
+        "Geode Reactor",
+        "Hai Gorge Batteries",
+        "Hai Ravine Batteries",
+        "Hai Diamond Regenerator",
+        "Hai Williwaw Cooling 2",
+        "Quantum Keystone",
+        "`Bondir Atomic Thruster`",
+        "`Bufaer Atomic Steering`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -44 133",
+          "engine 44 133"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 50",
+          "explode \"small explosion\" 50",
+          "explode \"medium explosion\" 50",
+          "explode \"large explosion\" 50",
+          "explode \"huge explosion\" 20"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -22 -102 \"Ion Cannon\"",
+          "gun 22 -102 \"Ion Cannon\"",
+          "gun -34 -68 \"Hai Tracker Pod\"",
+          "gun 34 -68 \"Hai Tracker Pod\"",
+          "gun -49 -38 \"Ion Cannon\"",
+          "gun 49 -38 \"Ion Cannon\"",
+          "gun -61 -14 \"Hai Tracker Pod\"",
+          "gun 61 -14 \"Hai Tracker Pod\""
+        ],
+        "turrets": [
+          "turret -39 48",
+          "turret 39 48",
+          "turret -57 75 \"Chameleon Anti-Missile\"",
+          "turret 57 75 \"Chameleon Anti-Missile\""
+        ]
+      },
+      "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
+    },
+    "shield beetle shield beetle (pulse)": {
+      "name": "Shield Beetle Shield Beetle (Pulse)",
+      "sprite": "ship/hai shield beetle",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "95",
+        "cargoSpace": "142",
+        "category": "Heavy Warship",
+        "cost": "17900000",
+        "drag": "8.8",
+        "engineCap": "150",
+        "fuelCap": "500",
+        "heat": ".60",
+        "hull": "9800",
+        "mass": "650",
+        "outfitSpace": "798",
+        "requiredCrew": "47",
+        "shields": "32000",
+        "weaponCap": "333",
+        "weapon": {
+          "blastRadius": "400",
+          "hitForce": "3000",
+          "hullDamage": "2000",
+          "shieldDamage": "4000"
+        }
+      },
+      "outfits": [
+        "Ion Cannon 2",
+        "Pulse Cannon 6",
+        "Pulse Turret 4",
+        "Boulder Reactor",
+        "Geode Reactor",
+        "Hai Ravine Batteries",
+        "Hai Diamond Regenerator 2",
+        "Hai Williwaw Cooling 3",
+        "`Bondir Atomic Thruster`",
+        "`Bufaer Atomic Steering`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -44 133",
+          "engine 44 133"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 50",
+          "explode \"small explosion\" 50",
+          "explode \"medium explosion\" 50",
+          "explode \"large explosion\" 50",
+          "explode \"huge explosion\" 20"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun \"Ion Cannon\"",
+          "gun \"Ion Cannon\"",
+          "gun \"Pulse Cannon\"",
+          "gun \"Pulse Cannon\"",
+          "gun \"Pulse Cannon\"",
+          "gun \"Pulse Cannon\"",
+          "gun \"Pulse Cannon\"",
+          "gun \"Pulse Cannon\""
+        ],
+        "turrets": [
+          "turret -39 48",
+          "turret 39 48",
+          "turret -57 75 \"Chameleon Anti-Missile\"",
+          "turret 57 75 \"Chameleon Anti-Missile\""
+        ]
+      },
+      "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
+    },
+    "shield beetle shield beetle (jump)": {
+      "name": "Shield Beetle Shield Beetle (Jump)",
+      "sprite": "ship/hai shield beetle",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "95",
+        "cargoSpace": "142",
+        "category": "Heavy Warship",
+        "cost": "17900000",
+        "drag": "8.8",
+        "engineCap": "150",
+        "fuelCap": "500",
+        "heat": ".60",
+        "hull": "9800",
+        "mass": "650",
+        "outfitSpace": "798",
+        "requiredCrew": "47",
+        "shields": "32000",
+        "weaponCap": "333",
+        "weapon": {
+          "blastRadius": "400",
+          "hitForce": "3000",
+          "hullDamage": "2000",
+          "shieldDamage": "4000"
+        }
+      },
+      "outfits": [
+        "Ion Cannon 4",
+        "Hai Tracker Pod 4",
+        "Hai Tracker 224",
+        "Chameleon Anti-Missile 2",
+        "Boulder Reactor 2",
+        "Hai Chasm Batteries 2",
+        "Hai Fissure Batteries",
+        "Hai Gorge Batteries",
+        "Outfits Expansion 4",
+        "Hai Diamond Regenerator 2",
+        "Fuel Pod 3",
+        "Hai Williwaw Cooling 4",
+        "`Bondir Atomic Thruster`",
+        "`Bufaer Atomic Steering`",
+        "Jump Drive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -44 133",
+          "engine 44 133"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 50",
+          "explode \"small explosion\" 50",
+          "explode \"medium explosion\" 50",
+          "explode \"large explosion\" 50",
+          "explode \"huge explosion\" 20"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun \"Ion Cannon\"",
+          "gun \"Ion Cannon\"",
+          "gun \"Hai Tracker Pod\"",
+          "gun \"Hai Tracker Pod\"",
+          "gun \"Ion Cannon\"",
+          "gun \"Ion Cannon\"",
+          "gun \"Hai Tracker Pod\"",
+          "gun \"Hai Tracker Pod\""
+        ],
+        "turrets": [
+          "turret -39 48",
+          "turret 39 48",
+          "turret -57 75 \"Chameleon Anti-Missile\"",
+          "turret 57 75 \"Chameleon Anti-Missile\""
+        ]
+      },
+      "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
+    },
+    "shield beetle shield beetle (jump, tracker)": {
+      "name": "Shield Beetle Shield Beetle (Jump, Tracker)",
+      "sprite": "ship/hai shield beetle",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "95",
+        "cargoSpace": "142",
+        "category": "Heavy Warship",
+        "cost": "17900000",
+        "drag": "8.8",
+        "engineCap": "150",
+        "fuelCap": "500",
+        "heat": ".60",
+        "hull": "9800",
+        "mass": "650",
+        "outfitSpace": "798",
+        "requiredCrew": "47",
+        "shields": "32000",
+        "weaponCap": "333",
+        "weapon": {
+          "blastRadius": "400",
+          "hitForce": "3000",
+          "hullDamage": "2000",
+          "shieldDamage": "4000"
+        }
+      },
+      "outfits": [
+        "Ion Cannon 4",
+        "Hai Tracker Pod 4",
+        "Hai Tracker 224",
+        "Chameleon Anti-Missile 2",
+        "Boulder Reactor",
+        "Geode Reactor",
+        "Hai Gorge Batteries",
+        "Hai Ravine Batteries",
+        "Hai Diamond Regenerator",
+        "Hai Williwaw Cooling 2",
+        "Quantum Keystone",
+        "`Bondir Atomic Thruster`",
+        "`Bufaer Atomic Steering`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -44 133",
+          "engine 44 133"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 50",
+          "explode \"small explosion\" 50",
+          "explode \"medium explosion\" 50",
+          "explode \"large explosion\" 50",
+          "explode \"huge explosion\" 20"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -22 -102 \"Ion Cannon\"",
+          "gun 22 -102 \"Ion Cannon\"",
+          "gun -34 -68 \"Hai Tracker Pod\"",
+          "gun 34 -68 \"Hai Tracker Pod\"",
+          "gun -49 -38 \"Ion Cannon\"",
+          "gun 49 -38 \"Ion Cannon\"",
+          "gun -61 -14 \"Hai Tracker Pod\"",
+          "gun 61 -14 \"Hai Tracker Pod\""
+        ],
+        "turrets": [
+          "turret -39 48",
+          "turret 39 48",
+          "turret -57 75 \"Chameleon Anti-Missile\"",
+          "turret 57 75 \"Chameleon Anti-Missile\""
+        ]
+      },
+      "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
+    },
+    "solifuge": {
+      "name": "Solifuge",
+      "sprite": "ship/hai solifuge",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "118",
+        "cargoSpace": "142",
+        "category": "Heavy Warship",
+        "cost": "22800000",
+        "drag": "15.4",
+        "engineCap": "166",
+        "fuelCap": "600",
+        "heat": ".42",
+        "hull": "11000",
+        "mass": "925",
+        "outfitSpace": "828",
+        "requiredCrew": "62",
+        "shields": "37800",
+        "weaponCap": "342",
+        "weapon": {
+          "blastRadius": "450",
+          "hitForce": "3500",
+          "hullDamage": "2250",
+          "shieldDamage": "4500"
+        }
+      },
+      "outfits": [
+        "Hai Tracker Pod",
+        "Hai Tracker 56",
+        "Ion Cannon 4",
+        "Pulse Turret 2",
+        "Chameleon Anti-Missile",
+        "Bullfrog Anti-Missile 4",
+        "Boulder Reactor 2",
+        "Hai Gorge Batteries",
+        "Hai Diamond Regenerator",
+        "Hai Williwaw Cooling 6",
+        "Quantum Keystone",
+        "`Benga Atomic Steering`",
+        "`Bufaer Atomic Steering`",
+        "`Bondir Atomic Thruster`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -28 135.5",
+          "engine 28 135.5"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 50",
+          "explode \"small explosion\" 50",
+          "explode \"medium explosion\" 50",
+          "explode \"large explosion\" 50",
+          "explode \"huge explosion\" 20"
+        ],
+        "fighter": [
+          "fighter -51.5 -71 under",
+          "fighter 51.5 -71 under",
+          "fighter -58.5 2 under",
+          "fighter 58.5 2 under",
+          "fighter -51.5 76 under",
+          "fighter 51.5 76 under"
+        ],
+        "guns": [
+          "gun 0 -140 \"Hai Tracker Pod\"",
+          "gun -11.5 -138.5 \"Ion Cannon\"",
+          "gun 11.5 -138.5 \"Ion Cannon\"",
+          "gun -9.5 -101 \"Ion Cannon\"",
+          "gun 9.5 -101 \"Ion Cannon\""
+        ],
+        "turrets": [
+          "turret 0 -109.5 \"Chameleon Anti-Missile\"",
+          "turret 54.5 -48.5 \"Bullfrog Anti-Missile\"",
+          "turret -54.5 -48.5 \"Bullfrog Anti-Missile\"",
+          "turret 55 1 \"Pulse Turret\"",
+          "turret -55 1 \"Pulse Turret\"",
+          "turret 54.5 50.5 \"Bullfrog Anti-Missile\"",
+          "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
+        ]
+      },
+      "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
+    },
+    "solifuge solifuge (pulse)": {
+      "name": "Solifuge Solifuge (Pulse)",
+      "sprite": "ship/hai solifuge",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "118",
+        "cargoSpace": "142",
+        "category": "Heavy Warship",
+        "cost": "22800000",
+        "drag": "15.4",
+        "engineCap": "166",
+        "fuelCap": "600",
+        "heat": ".42",
+        "hull": "11000",
+        "mass": "925",
+        "outfitSpace": "828",
+        "requiredCrew": "62",
+        "shields": "37800",
+        "weaponCap": "342",
+        "weapon": {
+          "blastRadius": "450",
+          "hitForce": "3500",
+          "hullDamage": "2250",
+          "shieldDamage": "4500"
+        }
+      },
+      "outfits": [
+        "Ion Cannon 2",
+        "Pulse Cannon 3",
+        "Pulse Turret 5",
+        "Bullfrog Anti-Missile 2",
+        "Boulder Reactor 2",
+        "Hai Fissure Batteries",
+        "Hai Corundum Regenerator",
+        "Hai Diamond Regenerator",
+        "Hai Williwaw Cooling 8",
+        "`Benga Atomic Steering`",
+        "`Bufaer Atomic Steering`",
+        "`Bondir Atomic Thruster`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -28 135.5",
+          "engine 28 135.5"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 50",
+          "explode \"small explosion\" 50",
+          "explode \"medium explosion\" 50",
+          "explode \"large explosion\" 50",
+          "explode \"huge explosion\" 20"
+        ],
+        "fighter": [
+          "fighter -51.5 -71 under",
+          "fighter 51.5 -71 under",
+          "fighter -58.5 2 under",
+          "fighter 58.5 2 under",
+          "fighter -51.5 76 under",
+          "fighter 51.5 76 under"
+        ],
+        "guns": [
+          "gun \"Pulse Cannon\"",
+          "gun \"Pulse Cannon\"",
+          "gun \"Pulse Cannon\"",
+          "gun \"Ion Cannon\"",
+          "gun \"Ion Cannon\""
+        ],
+        "turrets": [
+          "turret 0 -109.5 \"Chameleon Anti-Missile\"",
+          "turret 54.5 -48.5 \"Bullfrog Anti-Missile\"",
+          "turret -54.5 -48.5 \"Bullfrog Anti-Missile\"",
+          "turret 55 1 \"Pulse Turret\"",
+          "turret -55 1 \"Pulse Turret\"",
+          "turret 54.5 50.5 \"Bullfrog Anti-Missile\"",
+          "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
+        ]
+      },
+      "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
+    },
+    "solifuge solifuge (tracker)": {
+      "name": "Solifuge Solifuge (Tracker)",
+      "sprite": "ship/hai solifuge",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "118",
+        "cargoSpace": "142",
+        "category": "Heavy Warship",
+        "cost": "22800000",
+        "drag": "15.4",
+        "engineCap": "166",
+        "fuelCap": "600",
+        "heat": ".42",
+        "hull": "11000",
+        "mass": "925",
+        "outfitSpace": "828",
+        "requiredCrew": "62",
+        "shields": "37800",
+        "weaponCap": "342",
+        "weapon": {
+          "blastRadius": "450",
+          "hitForce": "3500",
+          "hullDamage": "2250",
+          "shieldDamage": "4500"
+        }
+      },
+      "outfits": [
+        "Hai Tracker Pod",
+        "Hai Tracker 56",
+        "Ion Cannon 4",
+        "Pulse Turret 2",
+        "Chameleon Anti-Missile",
+        "Bullfrog Anti-Missile 4",
+        "Boulder Reactor 2",
+        "Hai Gorge Batteries",
+        "Hai Diamond Regenerator",
+        "Hai Williwaw Cooling 6",
+        "Quantum Keystone",
+        "`Benga Atomic Steering`",
+        "`Bufaer Atomic Steering`",
+        "`Bondir Atomic Thruster`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -28 135.5",
+          "engine 28 135.5"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 50",
+          "explode \"small explosion\" 50",
+          "explode \"medium explosion\" 50",
+          "explode \"large explosion\" 50",
+          "explode \"huge explosion\" 20"
+        ],
+        "fighter": [
+          "fighter -51.5 -71 under",
+          "fighter 51.5 -71 under",
+          "fighter -58.5 2 under",
+          "fighter 58.5 2 under",
+          "fighter -51.5 76 under",
+          "fighter 51.5 76 under"
+        ],
+        "guns": [
+          "gun 0 -140 \"Hai Tracker Pod\"",
+          "gun -11.5 -138.5 \"Ion Cannon\"",
+          "gun 11.5 -138.5 \"Ion Cannon\"",
+          "gun -9.5 -101 \"Ion Cannon\"",
+          "gun 9.5 -101 \"Ion Cannon\""
+        ],
+        "turrets": [
+          "turret 0 -109.5 \"Chameleon Anti-Missile\"",
+          "turret 54.5 -48.5 \"Bullfrog Anti-Missile\"",
+          "turret -54.5 -48.5 \"Bullfrog Anti-Missile\"",
+          "turret 55 1 \"Pulse Turret\"",
+          "turret -55 1 \"Pulse Turret\"",
+          "turret 54.5 50.5 \"Bullfrog Anti-Missile\"",
+          "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
+        ]
+      },
+      "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
+    },
+    "solifuge solifuge (jump)": {
+      "name": "Solifuge Solifuge (Jump)",
+      "sprite": "ship/hai solifuge",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "118",
+        "cargoSpace": "142",
+        "category": "Heavy Warship",
+        "cost": "22800000",
+        "drag": "15.4",
+        "engineCap": "166",
+        "fuelCap": "600",
+        "heat": ".42",
+        "hull": "11000",
+        "mass": "925",
+        "outfitSpace": "828",
+        "requiredCrew": "62",
+        "shields": "37800",
+        "weaponCap": "342",
+        "weapon": {
+          "blastRadius": "450",
+          "hitForce": "3500",
+          "hullDamage": "2250",
+          "shieldDamage": "4500"
+        }
+      },
+      "outfits": [
+        "Hai Tracker Pod",
+        "Hai Tracker 56",
+        "Ion Cannon 4",
+        "Pulse Turret 2",
+        "Chameleon Anti-Missile",
+        "Bullfrog Anti-Missile 4",
+        "Boulder Reactor 2",
+        "Hai Gorge Batteries",
+        "Hai Diamond Regenerator",
+        "Hai Williwaw Cooling 6",
+        "Quantum Keystone",
+        "`Benga Atomic Steering`",
+        "`Bufaer Atomic Steering`",
+        "`Bondir Atomic Thruster`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -28 135.5",
+          "engine 28 135.5"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 50",
+          "explode \"small explosion\" 50",
+          "explode \"medium explosion\" 50",
+          "explode \"large explosion\" 50",
+          "explode \"huge explosion\" 20"
+        ],
+        "fighter": [
+          "fighter -51.5 -71 under",
+          "fighter 51.5 -71 under",
+          "fighter -58.5 2 under",
+          "fighter 58.5 2 under",
+          "fighter -51.5 76 under",
+          "fighter 51.5 76 under"
+        ],
+        "guns": [
+          "gun 0 -140 \"Hai Tracker Pod\"",
+          "gun -11.5 -138.5 \"Ion Cannon\"",
+          "gun 11.5 -138.5 \"Ion Cannon\"",
+          "gun -9.5 -101 \"Ion Cannon\"",
+          "gun 9.5 -101 \"Ion Cannon\""
+        ],
+        "turrets": [
+          "turret 0 -109.5 \"Chameleon Anti-Missile\"",
+          "turret 54.5 -48.5 \"Bullfrog Anti-Missile\"",
+          "turret -54.5 -48.5 \"Bullfrog Anti-Missile\"",
+          "turret 55 1 \"Pulse Turret\"",
+          "turret -55 1 \"Pulse Turret\"",
+          "turret 54.5 50.5 \"Bullfrog Anti-Missile\"",
+          "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
+        ]
+      },
+      "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
+    },
+    "solifuge solifuge (jump, pulse)": {
+      "name": "Solifuge Solifuge (Jump, Pulse)",
+      "sprite": "ship/hai solifuge",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "118",
+        "cargoSpace": "142",
+        "category": "Heavy Warship",
+        "cost": "22800000",
+        "drag": "15.4",
+        "engineCap": "166",
+        "fuelCap": "600",
+        "heat": ".42",
+        "hull": "11000",
+        "mass": "925",
+        "outfitSpace": "828",
+        "requiredCrew": "62",
+        "shields": "37800",
+        "weaponCap": "342",
+        "weapon": {
+          "blastRadius": "450",
+          "hitForce": "3500",
+          "hullDamage": "2250",
+          "shieldDamage": "4500"
+        }
+      },
+      "outfits": [
+        "Ion Cannon 2",
+        "Pulse Cannon 3",
+        "Pulse Turret 5",
+        "Bullfrog Anti-Missile 2",
+        "Boulder Reactor 2",
+        "Hai Fissure Batteries",
+        "Hai Corundum Regenerator",
+        "Hai Diamond Regenerator",
+        "Hai Williwaw Cooling 8",
+        "`Benga Atomic Steering`",
+        "`Bufaer Atomic Steering`",
+        "`Bondir Atomic Thruster`",
+        "Jump Drive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -28 135.5",
+          "engine 28 135.5"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 50",
+          "explode \"small explosion\" 50",
+          "explode \"medium explosion\" 50",
+          "explode \"large explosion\" 50",
+          "explode \"huge explosion\" 20"
+        ],
+        "fighter": [
+          "fighter -51.5 -71 under",
+          "fighter 51.5 -71 under",
+          "fighter -58.5 2 under",
+          "fighter 58.5 2 under",
+          "fighter -51.5 76 under",
+          "fighter 51.5 76 under"
+        ],
+        "guns": [
+          "gun \"Pulse Cannon\"",
+          "gun \"Pulse Cannon\"",
+          "gun \"Pulse Cannon\"",
+          "gun \"Ion Cannon\"",
+          "gun \"Ion Cannon\""
+        ],
+        "turrets": [
+          "turret 0 -109.5 \"Chameleon Anti-Missile\"",
+          "turret 54.5 -48.5 \"Bullfrog Anti-Missile\"",
+          "turret -54.5 -48.5 \"Bullfrog Anti-Missile\"",
+          "turret 55 1 \"Pulse Turret\"",
+          "turret -55 1 \"Pulse Turret\"",
+          "turret 54.5 50.5 \"Bullfrog Anti-Missile\"",
+          "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
+        ]
+      },
+      "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
+    },
+    "solifuge solifuge (jump, tracker)": {
+      "name": "Solifuge Solifuge (Jump, Tracker)",
+      "sprite": "ship/hai solifuge",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "118",
+        "cargoSpace": "142",
+        "category": "Heavy Warship",
+        "cost": "22800000",
+        "drag": "15.4",
+        "engineCap": "166",
+        "fuelCap": "600",
+        "heat": ".42",
+        "hull": "11000",
+        "mass": "925",
+        "outfitSpace": "828",
+        "requiredCrew": "62",
+        "shields": "37800",
+        "weaponCap": "342",
+        "weapon": {
+          "blastRadius": "450",
+          "hitForce": "3500",
+          "hullDamage": "2250",
+          "shieldDamage": "4500"
+        }
+      },
+      "outfits": [
+        "Hai Tracker Pod",
+        "Hai Tracker 56",
+        "Ion Cannon 4",
+        "Pulse Turret 2",
+        "Chameleon Anti-Missile",
+        "Bullfrog Anti-Missile 4",
+        "Boulder Reactor 2",
+        "Hai Gorge Batteries",
+        "Hai Diamond Regenerator",
+        "Hai Williwaw Cooling 6",
+        "Quantum Keystone",
+        "`Benga Atomic Steering`",
+        "`Bufaer Atomic Steering`",
+        "`Bondir Atomic Thruster`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -28 135.5",
+          "engine 28 135.5"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 50",
+          "explode \"small explosion\" 50",
+          "explode \"medium explosion\" 50",
+          "explode \"large explosion\" 50",
+          "explode \"huge explosion\" 20"
+        ],
+        "fighter": [
+          "fighter -51.5 -71 under",
+          "fighter 51.5 -71 under",
+          "fighter -58.5 2 under",
+          "fighter 58.5 2 under",
+          "fighter -51.5 76 under",
+          "fighter 51.5 76 under"
+        ],
+        "guns": [
+          "gun 0 -140 \"Hai Tracker Pod\"",
+          "gun -11.5 -138.5 \"Ion Cannon\"",
+          "gun 11.5 -138.5 \"Ion Cannon\"",
+          "gun -9.5 -101 \"Ion Cannon\"",
+          "gun 9.5 -101 \"Ion Cannon\""
+        ],
+        "turrets": [
+          "turret 0 -109.5 \"Chameleon Anti-Missile\"",
+          "turret 54.5 -48.5 \"Bullfrog Anti-Missile\"",
+          "turret -54.5 -48.5 \"Bullfrog Anti-Missile\"",
+          "turret 55 1 \"Pulse Turret\"",
+          "turret -55 1 \"Pulse Turret\"",
+          "turret 54.5 50.5 \"Bullfrog Anti-Missile\"",
+          "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
+        ]
+      },
+      "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
+    },
+    "violin spider": {
+      "name": "Violin Spider",
+      "sprite": "ship/hai violin spider",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "1",
+        "cargoSpace": 0,
+        "category": "Fighter",
+        "cost": "139000",
+        "drag": "0.9",
+        "engineCap": "30",
+        "fuelCap": 0,
+        "heat": ".7",
+        "hull": "600",
+        "mass": "31",
+        "outfitSpace": "92",
+        "requiredCrew": "1",
+        "shields": "1400",
+        "weaponCap": "19",
+        "weapon": {
+          "blastRadius": "12",
+          "hitForce": "180",
+          "hullDamage": "60",
+          "shieldDamage": "120"
+        }
+      },
+      "outfits": [
+        "Hai Tracker Pod",
+        "Hai Tracker 56",
+        "Pebble Core",
+        "Supercapacitor",
+        "Hai Williwaw Cooling",
+        "`Basrem Atomic Steering`",
+        "`Basrem Atomic Thruster`"
+      ],
+      "layout": {
+        "engines": [
+          "engine -15 30",
+          "engine 15 30"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 15",
+          "explode \"small explosion\" 5"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun 0 -31 \"Hai Tracker Pod\""
+        ],
+        "turrets": [
+          "turret 0 5"
+        ]
+      },
+      "description": "`The Hai fighter is equipped with what most humans would consider the greatest technology available, but all of that high tech comes at a cost.`"
+    },
+    "violin spider violin spider (pulse)": {
+      "name": "Violin Spider Violin Spider (Pulse)",
+      "sprite": "ship/hai violin spider",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "1",
+        "cargoSpace": 0,
+        "category": "Fighter",
+        "cost": "139000",
+        "drag": "0.9",
+        "engineCap": "30",
+        "fuelCap": 0,
+        "heat": ".7",
+        "hull": "600",
+        "mass": "31",
+        "outfitSpace": "92",
+        "requiredCrew": "1",
+        "shields": "1400",
+        "weaponCap": "19",
+        "weapon": {
+          "blastRadius": "12",
+          "hitForce": "180",
+          "hullDamage": "60",
+          "shieldDamage": "120"
+        }
+      },
+      "outfits": [
+        "Hai Tracker Pod",
+        "Hai Tracker 56",
+        "Pebble Core",
+        "Supercapacitor",
+        "Hai Williwaw Cooling",
+        "`Basrem Atomic Steering`",
+        "`Basrem Atomic Thruster`"
+      ],
+      "layout": {
+        "engines": [
+          "engine -15 30",
+          "engine 15 30"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 15",
+          "explode \"small explosion\" 5"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun 0 -31 \"Hai Tracker Pod\""
+        ],
+        "turrets": [
+          "turret 0 5"
+        ]
+      },
+      "description": "`The Hai fighter is equipped with what most humans would consider the greatest technology available, but all of that high tech comes at a cost.`"
+    },
+    "water bug": {
+      "name": "Water Bug",
+      "sprite": "ship/hai water bug",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "29",
+        "cargoSpace": "197",
+        "category": "Heavy Freighter",
+        "cost": "6500000",
+        "drag": "5.9",
+        "engineCap": "64",
+        "fuelCap": "600",
+        "heat": ".75",
+        "hull": "4500",
+        "mass": "270",
+        "outfitSpace": "368",
+        "requiredCrew": "5",
+        "shields": "7900",
+        "weaponCap": "145",
+        "weapon": {
+          "blastRadius": "124",
+          "hitForce": "1860",
+          "hullDamage": "620",
+          "shieldDamage": "1240"
+        }
+      },
+      "outfits": [
+        "Hai Tracker Pod 2",
+        "Hai Tracker 112",
+        "Pulse Turret",
+        "Chameleon Anti-Missile 2",
+        "Geode Reactor",
+        "Hai Gorge Batteries",
+        "Hai Chasm Batteries",
+        "Hai Diamond Regenerator",
+        "Hai Williwaw Cooling",
+        "Quantum Keystone",
+        "`Benga Atomic Thruster`",
+        "`Benga Atomic Steering`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -50 33",
+          "engine 50 33"
+        ],
+        "explosions": [
+          "explode \"small explosion\" 15",
+          "explode \"medium explosion\" 30",
+          "explode \"large explosion\" 20",
+          "explode \"huge explosion\" 5"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -24 -53 \"Hai Tracker Pod\"",
+          "gun 24 -53 \"Hai Tracker Pod\""
+        ],
+        "turrets": [
+          "turret 0 -10 \"Pulse Turret\"",
+          "turret -17 17 \"Chameleon Anti-Missile\"",
+          "turret 17 17 \"Chameleon Anti-Missile\""
+        ]
+      },
+      "description": "The Water Bug is the primary freight ship used by the Hai."
+    },
+    "water bug water bug (pulse)": {
+      "name": "Water Bug Water Bug (Pulse)",
+      "sprite": "ship/hai water bug",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "29",
+        "cargoSpace": "197",
+        "category": "Heavy Freighter",
+        "cost": "6500000",
+        "drag": "5.9",
+        "engineCap": "64",
+        "fuelCap": "600",
+        "heat": ".75",
+        "hull": "4500",
+        "mass": "270",
+        "outfitSpace": "368",
+        "requiredCrew": "5",
+        "shields": "7900",
+        "weaponCap": "145",
+        "weapon": {
+          "blastRadius": "124",
+          "hitForce": "1860",
+          "hullDamage": "620",
+          "shieldDamage": "1240"
+        }
+      },
+      "outfits": [
+        "Hai Tracker Pod 2",
+        "Hai Tracker 112",
+        "Pulse Turret",
+        "Chameleon Anti-Missile 2",
+        "Geode Reactor",
+        "Hai Gorge Batteries",
+        "Hai Chasm Batteries",
+        "Hai Diamond Regenerator",
+        "Hai Williwaw Cooling",
+        "Quantum Keystone",
+        "`Benga Atomic Thruster`",
+        "`Benga Atomic Steering`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -50 33",
+          "engine 50 33"
+        ],
+        "explosions": [
+          "explode \"small explosion\" 15",
+          "explode \"medium explosion\" 30",
+          "explode \"large explosion\" 20",
+          "explode \"huge explosion\" 5"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -24 -53 \"Hai Tracker Pod\"",
+          "gun 24 -53 \"Hai Tracker Pod\""
+        ],
+        "turrets": [
+          "turret 0 -10 \"Pulse Turret\"",
+          "turret -17 17 \"Chameleon Anti-Missile\"",
+          "turret 17 17 \"Chameleon Anti-Missile\""
+        ]
+      },
+      "description": "The Water Bug is the primary freight ship used by the Hai."
+    },
+    "water bug water bug (jump)": {
+      "name": "Water Bug Water Bug (Jump)",
+      "sprite": "ship/hai water bug",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "29",
+        "cargoSpace": "197",
+        "category": "Heavy Freighter",
+        "cost": "6500000",
+        "drag": "5.9",
+        "engineCap": "64",
+        "fuelCap": "600",
+        "heat": ".75",
+        "hull": "4500",
+        "mass": "270",
+        "outfitSpace": "368",
+        "requiredCrew": "5",
+        "shields": "7900",
+        "weaponCap": "145",
+        "weapon": {
+          "blastRadius": "124",
+          "hitForce": "1860",
+          "hullDamage": "620",
+          "shieldDamage": "1240"
+        }
+      },
+      "outfits": [
+        "Hai Tracker Pod 2",
+        "Hai Tracker 112",
+        "Pulse Turret",
+        "Chameleon Anti-Missile 2",
+        "Geode Reactor",
+        "Hai Gorge Batteries",
+        "Hai Chasm Batteries",
+        "Hai Diamond Regenerator",
+        "Hai Williwaw Cooling",
+        "Quantum Keystone",
+        "`Benga Atomic Thruster`",
+        "`Benga Atomic Steering`",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -50 33",
+          "engine 50 33"
+        ],
+        "explosions": [
+          "explode \"small explosion\" 15",
+          "explode \"medium explosion\" 30",
+          "explode \"large explosion\" 20",
+          "explode \"huge explosion\" 5"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -24 -53 \"Hai Tracker Pod\"",
+          "gun 24 -53 \"Hai Tracker Pod\""
+        ],
+        "turrets": [
+          "turret 0 -10 \"Pulse Turret\"",
+          "turret -17 17 \"Chameleon Anti-Missile\"",
+          "turret 17 17 \"Chameleon Anti-Missile\""
+        ]
+      },
+      "description": "The Water Bug is the primary freight ship used by the Hai."
+    }
+  },
+  "humans": {
     "aerie": {
       "name": "Aerie",
       "sprite": "ship/aerie",
@@ -4983,1705 +6472,6 @@
         "turrets": null
       },
       "description": "The wasp is a medium-strength interceptor, designed by Syndicated Shipyards to serve as an escort for cargo vessels. Like most Syndicate ships, it is not particularly pretty, but it at least serves the purpose it was made for."
-    }
-  },
-  "hai": {
-    "aphid": {
-      "name": "Aphid",
-      "sprite": "ship/hai aphid",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "5",
-        "cargoSpace": "51",
-        "category": "Light Freighter",
-        "cost": "570000",
-        "drag": "1.9",
-        "engineCap": "48",
-        "fuelCap": "400",
-        "heat": ".90",
-        "hull": "1400",
-        "mass": "100",
-        "outfitSpace": "185",
-        "requiredCrew": "1",
-        "shields": "1700",
-        "weaponCap": "37",
-        "weapon": {
-          "blastRadius": "30",
-          "hitForce": "450",
-          "hullDamage": "150",
-          "shieldDamage": "300"
-        }
-      },
-      "outfits": [
-        "Pulse Turret",
-        "Pebble Core",
-        "Hai Fissure Batteries",
-        "Hai Corundum Regenerator",
-        "Hai Williwaw Cooling",
-        "`Basrem Atomic Thruster`",
-        "`Basrem Atomic Steering`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -8 40",
-          "engine 8 40"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 10",
-          "explode \"small explosion\" 20",
-          "explode \"medium explosion\" 15"
-        ],
-        "fighter": null,
-        "guns": null,
-        "turrets": [
-          "turret 0 24 \"Pulse Turret\""
-        ]
-      },
-      "description": "The Aphid is a light freighter designed by the Hai. It has only minimal armament."
-    },
-    "aphid aphid (anti-missile)": {
-      "name": "Aphid Aphid (Anti-Missile)",
-      "sprite": "ship/hai aphid",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "5",
-        "cargoSpace": "51",
-        "category": "Light Freighter",
-        "cost": "570000",
-        "drag": "1.9",
-        "engineCap": "48",
-        "fuelCap": "400",
-        "heat": ".90",
-        "hull": "1400",
-        "mass": "100",
-        "outfitSpace": "185",
-        "requiredCrew": "1",
-        "shields": "1700",
-        "weaponCap": "37",
-        "weapon": {
-          "blastRadius": "30",
-          "hitForce": "450",
-          "hullDamage": "150",
-          "shieldDamage": "300"
-        }
-      },
-      "outfits": [
-        "Pulse Turret",
-        "Pebble Core",
-        "Hai Fissure Batteries",
-        "Hai Corundum Regenerator",
-        "Hai Williwaw Cooling",
-        "`Basrem Atomic Thruster`",
-        "`Basrem Atomic Steering`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -8 40",
-          "engine 8 40"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 10",
-          "explode \"small explosion\" 20",
-          "explode \"medium explosion\" 15"
-        ],
-        "fighter": null,
-        "guns": null,
-        "turrets": [
-          "turret 0 24 \"Pulse Turret\""
-        ]
-      },
-      "description": "The Aphid is a light freighter designed by the Hai. It has only minimal armament."
-    },
-    "flea": {
-      "name": "Flea",
-      "sprite": "ship/hai flea",
-      "attributes": {
-        "automaton": "1",
-        "bunks": 0,
-        "cargoSpace": 0,
-        "category": "Drone",
-        "cost": "122400",
-        "drag": ".55",
-        "engineCap": "29",
-        "fuelCap": 0,
-        "heat": ".75",
-        "hull": "700",
-        "mass": "21",
-        "outfitSpace": "60",
-        "requiredCrew": 0,
-        "shields": "200",
-        "weaponCap": "9",
-        "weapon": {
-          "blastRadius": "6",
-          "hitForce": "80",
-          "hullDamage": "30",
-          "shieldDamage": "55"
-        }
-      },
-      "outfits": [
-        "Rail"
-      ],
-      "layout": {
-        "engines": [
-          "engine 0 27"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 15"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun Slug\" 160",
-          "gun 0 -27 \"Railgun\""
-        ],
-        "turrets": null
-      },
-      "description": "`This is a combat drone designed to help contain Unfettered aggression with a minimum risk to Hai life.`"
-    },
-    "lightning bug": {
-      "name": "Lightning Bug",
-      "sprite": "ship/hai lightning bug",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "10",
-        "cargoSpace": "73",
-        "category": "Light Warship",
-        "cost": "3200000",
-        "drag": "3.8",
-        "engineCap": "93",
-        "fuelCap": "600",
-        "heat": ".85",
-        "hull": "1700",
-        "mass": "220",
-        "outfitSpace": "278",
-        "requiredCrew": "4",
-        "shields": "6700",
-        "weaponCap": "87",
-        "weapon": {
-          "blastRadius": "84",
-          "hitForce": "1260",
-          "hullDamage": "420",
-          "shieldDamage": "840"
-        }
-      },
-      "outfits": [
-        "Ion Cannon",
-        "Bullfrog Anti-Missile 2",
-        "Geode Reactor",
-        "Hai Gorge Batteries",
-        "Hai Corundum Regenerator",
-        "Hai Williwaw Cooling",
-        "Quantum Keystone",
-        "`Benga Atomic Thruster`",
-        "`Biroo Atomic Steering`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -40 22",
-          "engine 40 22"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 18",
-          "explode \"small explosion\" 36",
-          "explode \"medium explosion\" 24",
-          "explode \"large explosion\" 8"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun 0 -40 \"Ion Cannon\""
-        ],
-        "turrets": [
-          "turret -47 18 \"Bullfrog Anti-Missile\"",
-          "turret 47 18 \"Bullfrog Anti-Missile\""
-        ]
-      },
-      "description": "The Lightning Bug is a small defensive ship, mostly used by the Hai as a convoy escort. In its stock configuration, its only offensive weapon is a single ion cannon."
-    },
-    "lightning bug lightning bug (pulse)": {
-      "name": "Lightning Bug Lightning Bug (Pulse)",
-      "sprite": "ship/hai lightning bug",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "10",
-        "cargoSpace": "73",
-        "category": "Light Warship",
-        "cost": "3200000",
-        "drag": "3.8",
-        "engineCap": "93",
-        "fuelCap": "600",
-        "heat": ".85",
-        "hull": "1700",
-        "mass": "220",
-        "outfitSpace": "278",
-        "requiredCrew": "4",
-        "shields": "6700",
-        "weaponCap": "87",
-        "weapon": {
-          "blastRadius": "84",
-          "hitForce": "1260",
-          "hullDamage": "420",
-          "shieldDamage": "840"
-        }
-      },
-      "outfits": [
-        "Ion Cannon",
-        "Bullfrog Anti-Missile 2",
-        "Geode Reactor",
-        "Hai Gorge Batteries",
-        "Hai Corundum Regenerator",
-        "Hai Williwaw Cooling",
-        "Quantum Keystone",
-        "`Benga Atomic Thruster`",
-        "`Biroo Atomic Steering`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -40 22",
-          "engine 40 22"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 18",
-          "explode \"small explosion\" 36",
-          "explode \"medium explosion\" 24",
-          "explode \"large explosion\" 8"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun 0 -40 \"Ion Cannon\""
-        ],
-        "turrets": [
-          "turret -47 18 \"Bullfrog Anti-Missile\"",
-          "turret 47 18 \"Bullfrog Anti-Missile\""
-        ]
-      },
-      "description": "The Lightning Bug is a small defensive ship, mostly used by the Hai as a convoy escort. In its stock configuration, its only offensive weapon is a single ion cannon."
-    },
-    "pond strider": {
-      "name": "Pond Strider",
-      "sprite": "ship/hai pond strider",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "18",
-        "cargoSpace": "71",
-        "category": "Medium Warship",
-        "cost": "5250000",
-        "drag": "3.6",
-        "engineCap": "76",
-        "fuelCap": "300",
-        "heat": ".65",
-        "hull": "3000",
-        "mass": "132",
-        "outfitSpace": "354",
-        "requiredCrew": "9",
-        "shields": "10000",
-        "weaponCap": "129",
-        "weapon": {
-          "blastRadius": "200",
-          "hitForce": "1750",
-          "hullDamage": "750",
-          "shieldDamage": "1500"
-        }
-      },
-      "outfits": [
-        "Rail"
-      ],
-      "layout": {
-        "engines": [
-          "engine -23 80",
-          "engine 23 80"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 20",
-          "explode \"small explosion\" 45",
-          "explode \"medium explosion\" 50",
-          "explode \"large explosion\" 40",
-          "explode \"huge explosion\" 10"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun Slug\" 320",
-          "gun 0 -76 \"Pulse Cannon\"",
-          "gun -15 -72 \"Railgun\"",
-          "gun 15 -72 \"Railgun\""
-        ],
-        "turrets": [
-          "turret -18 -65 \"Pulse Turret\"",
-          "turret 18 -65 \"Pulse Turret\"",
-          "turret 0 26 \"Bullfrog Anti-Missile\""
-        ]
-      },
-      "description": "This short range drone carrier was built by the Hai to contain the increasingly aggressive Unfettered with their new Solifuge and Violin Spider ships. The Hai's greater value for life is evident in the remotely-piloted robotic fighter craft, preferring to keep valuable pilots out of harm's way."
-    },
-    "shield beetle": {
-      "name": "Shield Beetle",
-      "sprite": "ship/hai shield beetle",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "95",
-        "cargoSpace": "142",
-        "category": "Heavy Warship",
-        "cost": "17900000",
-        "drag": "8.8",
-        "engineCap": "150",
-        "fuelCap": "500",
-        "heat": ".60",
-        "hull": "9800",
-        "mass": "650",
-        "outfitSpace": "798",
-        "requiredCrew": "47",
-        "shields": "32000",
-        "weaponCap": "333",
-        "weapon": {
-          "blastRadius": "400",
-          "hitForce": "3000",
-          "hullDamage": "2000",
-          "shieldDamage": "4000"
-        }
-      },
-      "outfits": [
-        "Ion Cannon 4",
-        "Hai Tracker Pod 4",
-        "Hai Tracker 224",
-        "Chameleon Anti-Missile 2",
-        "Boulder Reactor",
-        "Geode Reactor",
-        "Hai Gorge Batteries",
-        "Hai Ravine Batteries",
-        "Hai Diamond Regenerator",
-        "Hai Williwaw Cooling 2",
-        "Quantum Keystone",
-        "`Bondir Atomic Thruster`",
-        "`Bufaer Atomic Steering`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -44 133",
-          "engine 44 133"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 50",
-          "explode \"small explosion\" 50",
-          "explode \"medium explosion\" 50",
-          "explode \"large explosion\" 50",
-          "explode \"huge explosion\" 20"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun -22 -102 \"Ion Cannon\"",
-          "gun 22 -102 \"Ion Cannon\"",
-          "gun -34 -68 \"Hai Tracker Pod\"",
-          "gun 34 -68 \"Hai Tracker Pod\"",
-          "gun -49 -38 \"Ion Cannon\"",
-          "gun 49 -38 \"Ion Cannon\"",
-          "gun -61 -14 \"Hai Tracker Pod\"",
-          "gun 61 -14 \"Hai Tracker Pod\""
-        ],
-        "turrets": [
-          "turret -39 48",
-          "turret 39 48",
-          "turret -57 75 \"Chameleon Anti-Missile\"",
-          "turret 57 75 \"Chameleon Anti-Missile\""
-        ]
-      },
-      "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
-    },
-    "shield beetle shield beetle (tracker)": {
-      "name": "Shield Beetle Shield Beetle (Tracker)",
-      "sprite": "ship/hai shield beetle",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "95",
-        "cargoSpace": "142",
-        "category": "Heavy Warship",
-        "cost": "17900000",
-        "drag": "8.8",
-        "engineCap": "150",
-        "fuelCap": "500",
-        "heat": ".60",
-        "hull": "9800",
-        "mass": "650",
-        "outfitSpace": "798",
-        "requiredCrew": "47",
-        "shields": "32000",
-        "weaponCap": "333",
-        "weapon": {
-          "blastRadius": "400",
-          "hitForce": "3000",
-          "hullDamage": "2000",
-          "shieldDamage": "4000"
-        }
-      },
-      "outfits": [
-        "Ion Cannon 4",
-        "Hai Tracker Pod 4",
-        "Hai Tracker 224",
-        "Chameleon Anti-Missile 2",
-        "Boulder Reactor",
-        "Geode Reactor",
-        "Hai Gorge Batteries",
-        "Hai Ravine Batteries",
-        "Hai Diamond Regenerator",
-        "Hai Williwaw Cooling 2",
-        "Quantum Keystone",
-        "`Bondir Atomic Thruster`",
-        "`Bufaer Atomic Steering`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -44 133",
-          "engine 44 133"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 50",
-          "explode \"small explosion\" 50",
-          "explode \"medium explosion\" 50",
-          "explode \"large explosion\" 50",
-          "explode \"huge explosion\" 20"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun -22 -102 \"Ion Cannon\"",
-          "gun 22 -102 \"Ion Cannon\"",
-          "gun -34 -68 \"Hai Tracker Pod\"",
-          "gun 34 -68 \"Hai Tracker Pod\"",
-          "gun -49 -38 \"Ion Cannon\"",
-          "gun 49 -38 \"Ion Cannon\"",
-          "gun -61 -14 \"Hai Tracker Pod\"",
-          "gun 61 -14 \"Hai Tracker Pod\""
-        ],
-        "turrets": [
-          "turret -39 48",
-          "turret 39 48",
-          "turret -57 75 \"Chameleon Anti-Missile\"",
-          "turret 57 75 \"Chameleon Anti-Missile\""
-        ]
-      },
-      "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
-    },
-    "shield beetle shield beetle (pulse)": {
-      "name": "Shield Beetle Shield Beetle (Pulse)",
-      "sprite": "ship/hai shield beetle",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "95",
-        "cargoSpace": "142",
-        "category": "Heavy Warship",
-        "cost": "17900000",
-        "drag": "8.8",
-        "engineCap": "150",
-        "fuelCap": "500",
-        "heat": ".60",
-        "hull": "9800",
-        "mass": "650",
-        "outfitSpace": "798",
-        "requiredCrew": "47",
-        "shields": "32000",
-        "weaponCap": "333",
-        "weapon": {
-          "blastRadius": "400",
-          "hitForce": "3000",
-          "hullDamage": "2000",
-          "shieldDamage": "4000"
-        }
-      },
-      "outfits": [
-        "Ion Cannon 2",
-        "Pulse Cannon 6",
-        "Pulse Turret 4",
-        "Boulder Reactor",
-        "Geode Reactor",
-        "Hai Ravine Batteries",
-        "Hai Diamond Regenerator 2",
-        "Hai Williwaw Cooling 3",
-        "`Bondir Atomic Thruster`",
-        "`Bufaer Atomic Steering`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -44 133",
-          "engine 44 133"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 50",
-          "explode \"small explosion\" 50",
-          "explode \"medium explosion\" 50",
-          "explode \"large explosion\" 50",
-          "explode \"huge explosion\" 20"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun \"Ion Cannon\"",
-          "gun \"Ion Cannon\"",
-          "gun \"Pulse Cannon\"",
-          "gun \"Pulse Cannon\"",
-          "gun \"Pulse Cannon\"",
-          "gun \"Pulse Cannon\"",
-          "gun \"Pulse Cannon\"",
-          "gun \"Pulse Cannon\""
-        ],
-        "turrets": [
-          "turret -39 48",
-          "turret 39 48",
-          "turret -57 75 \"Chameleon Anti-Missile\"",
-          "turret 57 75 \"Chameleon Anti-Missile\""
-        ]
-      },
-      "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
-    },
-    "shield beetle shield beetle (jump)": {
-      "name": "Shield Beetle Shield Beetle (Jump)",
-      "sprite": "ship/hai shield beetle",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "95",
-        "cargoSpace": "142",
-        "category": "Heavy Warship",
-        "cost": "17900000",
-        "drag": "8.8",
-        "engineCap": "150",
-        "fuelCap": "500",
-        "heat": ".60",
-        "hull": "9800",
-        "mass": "650",
-        "outfitSpace": "798",
-        "requiredCrew": "47",
-        "shields": "32000",
-        "weaponCap": "333",
-        "weapon": {
-          "blastRadius": "400",
-          "hitForce": "3000",
-          "hullDamage": "2000",
-          "shieldDamage": "4000"
-        }
-      },
-      "outfits": [
-        "Ion Cannon 4",
-        "Hai Tracker Pod 4",
-        "Hai Tracker 224",
-        "Chameleon Anti-Missile 2",
-        "Boulder Reactor 2",
-        "Hai Chasm Batteries 2",
-        "Hai Fissure Batteries",
-        "Hai Gorge Batteries",
-        "Outfits Expansion 4",
-        "Hai Diamond Regenerator 2",
-        "Fuel Pod 3",
-        "Hai Williwaw Cooling 4",
-        "`Bondir Atomic Thruster`",
-        "`Bufaer Atomic Steering`",
-        "Jump Drive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -44 133",
-          "engine 44 133"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 50",
-          "explode \"small explosion\" 50",
-          "explode \"medium explosion\" 50",
-          "explode \"large explosion\" 50",
-          "explode \"huge explosion\" 20"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun \"Ion Cannon\"",
-          "gun \"Ion Cannon\"",
-          "gun \"Hai Tracker Pod\"",
-          "gun \"Hai Tracker Pod\"",
-          "gun \"Ion Cannon\"",
-          "gun \"Ion Cannon\"",
-          "gun \"Hai Tracker Pod\"",
-          "gun \"Hai Tracker Pod\""
-        ],
-        "turrets": [
-          "turret -39 48",
-          "turret 39 48",
-          "turret -57 75 \"Chameleon Anti-Missile\"",
-          "turret 57 75 \"Chameleon Anti-Missile\""
-        ]
-      },
-      "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
-    },
-    "shield beetle shield beetle (jump, tracker)": {
-      "name": "Shield Beetle Shield Beetle (Jump, Tracker)",
-      "sprite": "ship/hai shield beetle",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "95",
-        "cargoSpace": "142",
-        "category": "Heavy Warship",
-        "cost": "17900000",
-        "drag": "8.8",
-        "engineCap": "150",
-        "fuelCap": "500",
-        "heat": ".60",
-        "hull": "9800",
-        "mass": "650",
-        "outfitSpace": "798",
-        "requiredCrew": "47",
-        "shields": "32000",
-        "weaponCap": "333",
-        "weapon": {
-          "blastRadius": "400",
-          "hitForce": "3000",
-          "hullDamage": "2000",
-          "shieldDamage": "4000"
-        }
-      },
-      "outfits": [
-        "Ion Cannon 4",
-        "Hai Tracker Pod 4",
-        "Hai Tracker 224",
-        "Chameleon Anti-Missile 2",
-        "Boulder Reactor",
-        "Geode Reactor",
-        "Hai Gorge Batteries",
-        "Hai Ravine Batteries",
-        "Hai Diamond Regenerator",
-        "Hai Williwaw Cooling 2",
-        "Quantum Keystone",
-        "`Bondir Atomic Thruster`",
-        "`Bufaer Atomic Steering`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -44 133",
-          "engine 44 133"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 50",
-          "explode \"small explosion\" 50",
-          "explode \"medium explosion\" 50",
-          "explode \"large explosion\" 50",
-          "explode \"huge explosion\" 20"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun -22 -102 \"Ion Cannon\"",
-          "gun 22 -102 \"Ion Cannon\"",
-          "gun -34 -68 \"Hai Tracker Pod\"",
-          "gun 34 -68 \"Hai Tracker Pod\"",
-          "gun -49 -38 \"Ion Cannon\"",
-          "gun 49 -38 \"Ion Cannon\"",
-          "gun -61 -14 \"Hai Tracker Pod\"",
-          "gun 61 -14 \"Hai Tracker Pod\""
-        ],
-        "turrets": [
-          "turret -39 48",
-          "turret 39 48",
-          "turret -57 75 \"Chameleon Anti-Missile\"",
-          "turret 57 75 \"Chameleon Anti-Missile\""
-        ]
-      },
-      "description": "The Shield Beetle is a versatile warship used by the Hai to guard their merchant convoys."
-    },
-    "solifuge": {
-      "name": "Solifuge",
-      "sprite": "ship/hai solifuge",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "118",
-        "cargoSpace": "142",
-        "category": "Heavy Warship",
-        "cost": "22800000",
-        "drag": "15.4",
-        "engineCap": "166",
-        "fuelCap": "600",
-        "heat": ".42",
-        "hull": "11000",
-        "mass": "925",
-        "outfitSpace": "828",
-        "requiredCrew": "62",
-        "shields": "37800",
-        "weaponCap": "342",
-        "weapon": {
-          "blastRadius": "450",
-          "hitForce": "3500",
-          "hullDamage": "2250",
-          "shieldDamage": "4500"
-        }
-      },
-      "outfits": [
-        "Hai Tracker Pod",
-        "Hai Tracker 56",
-        "Ion Cannon 4",
-        "Pulse Turret 2",
-        "Chameleon Anti-Missile",
-        "Bullfrog Anti-Missile 4",
-        "Boulder Reactor 2",
-        "Hai Gorge Batteries",
-        "Hai Diamond Regenerator",
-        "Hai Williwaw Cooling 6",
-        "Quantum Keystone",
-        "`Benga Atomic Steering`",
-        "`Bufaer Atomic Steering`",
-        "`Bondir Atomic Thruster`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -28 135.5",
-          "engine 28 135.5"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 50",
-          "explode \"small explosion\" 50",
-          "explode \"medium explosion\" 50",
-          "explode \"large explosion\" 50",
-          "explode \"huge explosion\" 20"
-        ],
-        "fighter": [
-          "fighter -51.5 -71 under",
-          "fighter 51.5 -71 under",
-          "fighter -58.5 2 under",
-          "fighter 58.5 2 under",
-          "fighter -51.5 76 under",
-          "fighter 51.5 76 under"
-        ],
-        "guns": [
-          "gun 0 -140 \"Hai Tracker Pod\"",
-          "gun -11.5 -138.5 \"Ion Cannon\"",
-          "gun 11.5 -138.5 \"Ion Cannon\"",
-          "gun -9.5 -101 \"Ion Cannon\"",
-          "gun 9.5 -101 \"Ion Cannon\""
-        ],
-        "turrets": [
-          "turret 0 -109.5 \"Chameleon Anti-Missile\"",
-          "turret 54.5 -48.5 \"Bullfrog Anti-Missile\"",
-          "turret -54.5 -48.5 \"Bullfrog Anti-Missile\"",
-          "turret 55 1 \"Pulse Turret\"",
-          "turret -55 1 \"Pulse Turret\"",
-          "turret 54.5 50.5 \"Bullfrog Anti-Missile\"",
-          "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
-        ]
-      },
-      "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
-    },
-    "solifuge solifuge (pulse)": {
-      "name": "Solifuge Solifuge (Pulse)",
-      "sprite": "ship/hai solifuge",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "118",
-        "cargoSpace": "142",
-        "category": "Heavy Warship",
-        "cost": "22800000",
-        "drag": "15.4",
-        "engineCap": "166",
-        "fuelCap": "600",
-        "heat": ".42",
-        "hull": "11000",
-        "mass": "925",
-        "outfitSpace": "828",
-        "requiredCrew": "62",
-        "shields": "37800",
-        "weaponCap": "342",
-        "weapon": {
-          "blastRadius": "450",
-          "hitForce": "3500",
-          "hullDamage": "2250",
-          "shieldDamage": "4500"
-        }
-      },
-      "outfits": [
-        "Ion Cannon 2",
-        "Pulse Cannon 3",
-        "Pulse Turret 5",
-        "Bullfrog Anti-Missile 2",
-        "Boulder Reactor 2",
-        "Hai Fissure Batteries",
-        "Hai Corundum Regenerator",
-        "Hai Diamond Regenerator",
-        "Hai Williwaw Cooling 8",
-        "`Benga Atomic Steering`",
-        "`Bufaer Atomic Steering`",
-        "`Bondir Atomic Thruster`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -28 135.5",
-          "engine 28 135.5"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 50",
-          "explode \"small explosion\" 50",
-          "explode \"medium explosion\" 50",
-          "explode \"large explosion\" 50",
-          "explode \"huge explosion\" 20"
-        ],
-        "fighter": [
-          "fighter -51.5 -71 under",
-          "fighter 51.5 -71 under",
-          "fighter -58.5 2 under",
-          "fighter 58.5 2 under",
-          "fighter -51.5 76 under",
-          "fighter 51.5 76 under"
-        ],
-        "guns": [
-          "gun \"Pulse Cannon\"",
-          "gun \"Pulse Cannon\"",
-          "gun \"Pulse Cannon\"",
-          "gun \"Ion Cannon\"",
-          "gun \"Ion Cannon\""
-        ],
-        "turrets": [
-          "turret 0 -109.5 \"Chameleon Anti-Missile\"",
-          "turret 54.5 -48.5 \"Bullfrog Anti-Missile\"",
-          "turret -54.5 -48.5 \"Bullfrog Anti-Missile\"",
-          "turret 55 1 \"Pulse Turret\"",
-          "turret -55 1 \"Pulse Turret\"",
-          "turret 54.5 50.5 \"Bullfrog Anti-Missile\"",
-          "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
-        ]
-      },
-      "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
-    },
-    "solifuge solifuge (tracker)": {
-      "name": "Solifuge Solifuge (Tracker)",
-      "sprite": "ship/hai solifuge",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "118",
-        "cargoSpace": "142",
-        "category": "Heavy Warship",
-        "cost": "22800000",
-        "drag": "15.4",
-        "engineCap": "166",
-        "fuelCap": "600",
-        "heat": ".42",
-        "hull": "11000",
-        "mass": "925",
-        "outfitSpace": "828",
-        "requiredCrew": "62",
-        "shields": "37800",
-        "weaponCap": "342",
-        "weapon": {
-          "blastRadius": "450",
-          "hitForce": "3500",
-          "hullDamage": "2250",
-          "shieldDamage": "4500"
-        }
-      },
-      "outfits": [
-        "Hai Tracker Pod",
-        "Hai Tracker 56",
-        "Ion Cannon 4",
-        "Pulse Turret 2",
-        "Chameleon Anti-Missile",
-        "Bullfrog Anti-Missile 4",
-        "Boulder Reactor 2",
-        "Hai Gorge Batteries",
-        "Hai Diamond Regenerator",
-        "Hai Williwaw Cooling 6",
-        "Quantum Keystone",
-        "`Benga Atomic Steering`",
-        "`Bufaer Atomic Steering`",
-        "`Bondir Atomic Thruster`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -28 135.5",
-          "engine 28 135.5"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 50",
-          "explode \"small explosion\" 50",
-          "explode \"medium explosion\" 50",
-          "explode \"large explosion\" 50",
-          "explode \"huge explosion\" 20"
-        ],
-        "fighter": [
-          "fighter -51.5 -71 under",
-          "fighter 51.5 -71 under",
-          "fighter -58.5 2 under",
-          "fighter 58.5 2 under",
-          "fighter -51.5 76 under",
-          "fighter 51.5 76 under"
-        ],
-        "guns": [
-          "gun 0 -140 \"Hai Tracker Pod\"",
-          "gun -11.5 -138.5 \"Ion Cannon\"",
-          "gun 11.5 -138.5 \"Ion Cannon\"",
-          "gun -9.5 -101 \"Ion Cannon\"",
-          "gun 9.5 -101 \"Ion Cannon\""
-        ],
-        "turrets": [
-          "turret 0 -109.5 \"Chameleon Anti-Missile\"",
-          "turret 54.5 -48.5 \"Bullfrog Anti-Missile\"",
-          "turret -54.5 -48.5 \"Bullfrog Anti-Missile\"",
-          "turret 55 1 \"Pulse Turret\"",
-          "turret -55 1 \"Pulse Turret\"",
-          "turret 54.5 50.5 \"Bullfrog Anti-Missile\"",
-          "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
-        ]
-      },
-      "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
-    },
-    "solifuge solifuge (jump)": {
-      "name": "Solifuge Solifuge (Jump)",
-      "sprite": "ship/hai solifuge",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "118",
-        "cargoSpace": "142",
-        "category": "Heavy Warship",
-        "cost": "22800000",
-        "drag": "15.4",
-        "engineCap": "166",
-        "fuelCap": "600",
-        "heat": ".42",
-        "hull": "11000",
-        "mass": "925",
-        "outfitSpace": "828",
-        "requiredCrew": "62",
-        "shields": "37800",
-        "weaponCap": "342",
-        "weapon": {
-          "blastRadius": "450",
-          "hitForce": "3500",
-          "hullDamage": "2250",
-          "shieldDamage": "4500"
-        }
-      },
-      "outfits": [
-        "Hai Tracker Pod",
-        "Hai Tracker 56",
-        "Ion Cannon 4",
-        "Pulse Turret 2",
-        "Chameleon Anti-Missile",
-        "Bullfrog Anti-Missile 4",
-        "Boulder Reactor 2",
-        "Hai Gorge Batteries",
-        "Hai Diamond Regenerator",
-        "Hai Williwaw Cooling 6",
-        "Quantum Keystone",
-        "`Benga Atomic Steering`",
-        "`Bufaer Atomic Steering`",
-        "`Bondir Atomic Thruster`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -28 135.5",
-          "engine 28 135.5"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 50",
-          "explode \"small explosion\" 50",
-          "explode \"medium explosion\" 50",
-          "explode \"large explosion\" 50",
-          "explode \"huge explosion\" 20"
-        ],
-        "fighter": [
-          "fighter -51.5 -71 under",
-          "fighter 51.5 -71 under",
-          "fighter -58.5 2 under",
-          "fighter 58.5 2 under",
-          "fighter -51.5 76 under",
-          "fighter 51.5 76 under"
-        ],
-        "guns": [
-          "gun 0 -140 \"Hai Tracker Pod\"",
-          "gun -11.5 -138.5 \"Ion Cannon\"",
-          "gun 11.5 -138.5 \"Ion Cannon\"",
-          "gun -9.5 -101 \"Ion Cannon\"",
-          "gun 9.5 -101 \"Ion Cannon\""
-        ],
-        "turrets": [
-          "turret 0 -109.5 \"Chameleon Anti-Missile\"",
-          "turret 54.5 -48.5 \"Bullfrog Anti-Missile\"",
-          "turret -54.5 -48.5 \"Bullfrog Anti-Missile\"",
-          "turret 55 1 \"Pulse Turret\"",
-          "turret -55 1 \"Pulse Turret\"",
-          "turret 54.5 50.5 \"Bullfrog Anti-Missile\"",
-          "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
-        ]
-      },
-      "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
-    },
-    "solifuge solifuge (jump, pulse)": {
-      "name": "Solifuge Solifuge (Jump, Pulse)",
-      "sprite": "ship/hai solifuge",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "118",
-        "cargoSpace": "142",
-        "category": "Heavy Warship",
-        "cost": "22800000",
-        "drag": "15.4",
-        "engineCap": "166",
-        "fuelCap": "600",
-        "heat": ".42",
-        "hull": "11000",
-        "mass": "925",
-        "outfitSpace": "828",
-        "requiredCrew": "62",
-        "shields": "37800",
-        "weaponCap": "342",
-        "weapon": {
-          "blastRadius": "450",
-          "hitForce": "3500",
-          "hullDamage": "2250",
-          "shieldDamage": "4500"
-        }
-      },
-      "outfits": [
-        "Ion Cannon 2",
-        "Pulse Cannon 3",
-        "Pulse Turret 5",
-        "Bullfrog Anti-Missile 2",
-        "Boulder Reactor 2",
-        "Hai Fissure Batteries",
-        "Hai Corundum Regenerator",
-        "Hai Diamond Regenerator",
-        "Hai Williwaw Cooling 8",
-        "`Benga Atomic Steering`",
-        "`Bufaer Atomic Steering`",
-        "`Bondir Atomic Thruster`",
-        "Jump Drive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -28 135.5",
-          "engine 28 135.5"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 50",
-          "explode \"small explosion\" 50",
-          "explode \"medium explosion\" 50",
-          "explode \"large explosion\" 50",
-          "explode \"huge explosion\" 20"
-        ],
-        "fighter": [
-          "fighter -51.5 -71 under",
-          "fighter 51.5 -71 under",
-          "fighter -58.5 2 under",
-          "fighter 58.5 2 under",
-          "fighter -51.5 76 under",
-          "fighter 51.5 76 under"
-        ],
-        "guns": [
-          "gun \"Pulse Cannon\"",
-          "gun \"Pulse Cannon\"",
-          "gun \"Pulse Cannon\"",
-          "gun \"Ion Cannon\"",
-          "gun \"Ion Cannon\""
-        ],
-        "turrets": [
-          "turret 0 -109.5 \"Chameleon Anti-Missile\"",
-          "turret 54.5 -48.5 \"Bullfrog Anti-Missile\"",
-          "turret -54.5 -48.5 \"Bullfrog Anti-Missile\"",
-          "turret 55 1 \"Pulse Turret\"",
-          "turret -55 1 \"Pulse Turret\"",
-          "turret 54.5 50.5 \"Bullfrog Anti-Missile\"",
-          "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
-        ]
-      },
-      "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
-    },
-    "solifuge solifuge (jump, tracker)": {
-      "name": "Solifuge Solifuge (Jump, Tracker)",
-      "sprite": "ship/hai solifuge",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "118",
-        "cargoSpace": "142",
-        "category": "Heavy Warship",
-        "cost": "22800000",
-        "drag": "15.4",
-        "engineCap": "166",
-        "fuelCap": "600",
-        "heat": ".42",
-        "hull": "11000",
-        "mass": "925",
-        "outfitSpace": "828",
-        "requiredCrew": "62",
-        "shields": "37800",
-        "weaponCap": "342",
-        "weapon": {
-          "blastRadius": "450",
-          "hitForce": "3500",
-          "hullDamage": "2250",
-          "shieldDamage": "4500"
-        }
-      },
-      "outfits": [
-        "Hai Tracker Pod",
-        "Hai Tracker 56",
-        "Ion Cannon 4",
-        "Pulse Turret 2",
-        "Chameleon Anti-Missile",
-        "Bullfrog Anti-Missile 4",
-        "Boulder Reactor 2",
-        "Hai Gorge Batteries",
-        "Hai Diamond Regenerator",
-        "Hai Williwaw Cooling 6",
-        "Quantum Keystone",
-        "`Benga Atomic Steering`",
-        "`Bufaer Atomic Steering`",
-        "`Bondir Atomic Thruster`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -28 135.5",
-          "engine 28 135.5"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 50",
-          "explode \"small explosion\" 50",
-          "explode \"medium explosion\" 50",
-          "explode \"large explosion\" 50",
-          "explode \"huge explosion\" 20"
-        ],
-        "fighter": [
-          "fighter -51.5 -71 under",
-          "fighter 51.5 -71 under",
-          "fighter -58.5 2 under",
-          "fighter 58.5 2 under",
-          "fighter -51.5 76 under",
-          "fighter 51.5 76 under"
-        ],
-        "guns": [
-          "gun 0 -140 \"Hai Tracker Pod\"",
-          "gun -11.5 -138.5 \"Ion Cannon\"",
-          "gun 11.5 -138.5 \"Ion Cannon\"",
-          "gun -9.5 -101 \"Ion Cannon\"",
-          "gun 9.5 -101 \"Ion Cannon\""
-        ],
-        "turrets": [
-          "turret 0 -109.5 \"Chameleon Anti-Missile\"",
-          "turret 54.5 -48.5 \"Bullfrog Anti-Missile\"",
-          "turret -54.5 -48.5 \"Bullfrog Anti-Missile\"",
-          "turret 55 1 \"Pulse Turret\"",
-          "turret -55 1 \"Pulse Turret\"",
-          "turret 54.5 50.5 \"Bullfrog Anti-Missile\"",
-          "turret -54.5 50.5 \"Bullfrog Anti-Missile\""
-        ]
-      },
-      "description": "`Impressed by the Alpha's Giftbringer, the Unfettered endeavoured to build their own fighter carrier to take more advantage of their supply of Jump Drives.`"
-    },
-    "violin spider": {
-      "name": "Violin Spider",
-      "sprite": "ship/hai violin spider",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "1",
-        "cargoSpace": 0,
-        "category": "Fighter",
-        "cost": "139000",
-        "drag": "0.9",
-        "engineCap": "30",
-        "fuelCap": 0,
-        "heat": ".7",
-        "hull": "600",
-        "mass": "31",
-        "outfitSpace": "92",
-        "requiredCrew": "1",
-        "shields": "1400",
-        "weaponCap": "19",
-        "weapon": {
-          "blastRadius": "12",
-          "hitForce": "180",
-          "hullDamage": "60",
-          "shieldDamage": "120"
-        }
-      },
-      "outfits": [
-        "Hai Tracker Pod",
-        "Hai Tracker 56",
-        "Pebble Core",
-        "Supercapacitor",
-        "Hai Williwaw Cooling",
-        "`Basrem Atomic Steering`",
-        "`Basrem Atomic Thruster`"
-      ],
-      "layout": {
-        "engines": [
-          "engine -15 30",
-          "engine 15 30"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 15",
-          "explode \"small explosion\" 5"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun 0 -31 \"Hai Tracker Pod\""
-        ],
-        "turrets": [
-          "turret 0 5"
-        ]
-      },
-      "description": "`The Hai fighter is equipped with what most humans would consider the greatest technology available, but all of that high tech comes at a cost.`"
-    },
-    "violin spider violin spider (pulse)": {
-      "name": "Violin Spider Violin Spider (Pulse)",
-      "sprite": "ship/hai violin spider",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "1",
-        "cargoSpace": 0,
-        "category": "Fighter",
-        "cost": "139000",
-        "drag": "0.9",
-        "engineCap": "30",
-        "fuelCap": 0,
-        "heat": ".7",
-        "hull": "600",
-        "mass": "31",
-        "outfitSpace": "92",
-        "requiredCrew": "1",
-        "shields": "1400",
-        "weaponCap": "19",
-        "weapon": {
-          "blastRadius": "12",
-          "hitForce": "180",
-          "hullDamage": "60",
-          "shieldDamage": "120"
-        }
-      },
-      "outfits": [
-        "Hai Tracker Pod",
-        "Hai Tracker 56",
-        "Pebble Core",
-        "Supercapacitor",
-        "Hai Williwaw Cooling",
-        "`Basrem Atomic Steering`",
-        "`Basrem Atomic Thruster`"
-      ],
-      "layout": {
-        "engines": [
-          "engine -15 30",
-          "engine 15 30"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 15",
-          "explode \"small explosion\" 5"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun 0 -31 \"Hai Tracker Pod\""
-        ],
-        "turrets": [
-          "turret 0 5"
-        ]
-      },
-      "description": "`The Hai fighter is equipped with what most humans would consider the greatest technology available, but all of that high tech comes at a cost.`"
-    },
-    "water bug": {
-      "name": "Water Bug",
-      "sprite": "ship/hai water bug",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "29",
-        "cargoSpace": "197",
-        "category": "Heavy Freighter",
-        "cost": "6500000",
-        "drag": "5.9",
-        "engineCap": "64",
-        "fuelCap": "600",
-        "heat": ".75",
-        "hull": "4500",
-        "mass": "270",
-        "outfitSpace": "368",
-        "requiredCrew": "5",
-        "shields": "7900",
-        "weaponCap": "145",
-        "weapon": {
-          "blastRadius": "124",
-          "hitForce": "1860",
-          "hullDamage": "620",
-          "shieldDamage": "1240"
-        }
-      },
-      "outfits": [
-        "Hai Tracker Pod 2",
-        "Hai Tracker 112",
-        "Pulse Turret",
-        "Chameleon Anti-Missile 2",
-        "Geode Reactor",
-        "Hai Gorge Batteries",
-        "Hai Chasm Batteries",
-        "Hai Diamond Regenerator",
-        "Hai Williwaw Cooling",
-        "Quantum Keystone",
-        "`Benga Atomic Thruster`",
-        "`Benga Atomic Steering`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -50 33",
-          "engine 50 33"
-        ],
-        "explosions": [
-          "explode \"small explosion\" 15",
-          "explode \"medium explosion\" 30",
-          "explode \"large explosion\" 20",
-          "explode \"huge explosion\" 5"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun -24 -53 \"Hai Tracker Pod\"",
-          "gun 24 -53 \"Hai Tracker Pod\""
-        ],
-        "turrets": [
-          "turret 0 -10 \"Pulse Turret\"",
-          "turret -17 17 \"Chameleon Anti-Missile\"",
-          "turret 17 17 \"Chameleon Anti-Missile\""
-        ]
-      },
-      "description": "The Water Bug is the primary freight ship used by the Hai."
-    },
-    "water bug water bug (pulse)": {
-      "name": "Water Bug Water Bug (Pulse)",
-      "sprite": "ship/hai water bug",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "29",
-        "cargoSpace": "197",
-        "category": "Heavy Freighter",
-        "cost": "6500000",
-        "drag": "5.9",
-        "engineCap": "64",
-        "fuelCap": "600",
-        "heat": ".75",
-        "hull": "4500",
-        "mass": "270",
-        "outfitSpace": "368",
-        "requiredCrew": "5",
-        "shields": "7900",
-        "weaponCap": "145",
-        "weapon": {
-          "blastRadius": "124",
-          "hitForce": "1860",
-          "hullDamage": "620",
-          "shieldDamage": "1240"
-        }
-      },
-      "outfits": [
-        "Hai Tracker Pod 2",
-        "Hai Tracker 112",
-        "Pulse Turret",
-        "Chameleon Anti-Missile 2",
-        "Geode Reactor",
-        "Hai Gorge Batteries",
-        "Hai Chasm Batteries",
-        "Hai Diamond Regenerator",
-        "Hai Williwaw Cooling",
-        "Quantum Keystone",
-        "`Benga Atomic Thruster`",
-        "`Benga Atomic Steering`",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -50 33",
-          "engine 50 33"
-        ],
-        "explosions": [
-          "explode \"small explosion\" 15",
-          "explode \"medium explosion\" 30",
-          "explode \"large explosion\" 20",
-          "explode \"huge explosion\" 5"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun -24 -53 \"Hai Tracker Pod\"",
-          "gun 24 -53 \"Hai Tracker Pod\""
-        ],
-        "turrets": [
-          "turret 0 -10 \"Pulse Turret\"",
-          "turret -17 17 \"Chameleon Anti-Missile\"",
-          "turret 17 17 \"Chameleon Anti-Missile\""
-        ]
-      },
-      "description": "The Water Bug is the primary freight ship used by the Hai."
-    }
-  },
-  "other": {
-    "unknown ship type": {
-      "name": "Unknown Ship Type",
-      "sprite": "ship/kestrel",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "128",
-        "cargoSpace": "120",
-        "category": "Heavy Warship",
-        "cost": "10300000",
-        "drag": "12.5",
-        "engineCap": "210",
-        "fuelCap": "500",
-        "heat": ".45",
-        "hull": "6200",
-        "mass": "740",
-        "outfitSpace": "810",
-        "requiredCrew": "72",
-        "shields": "17400",
-        "weaponCap": "380",
-        "weapon": {
-          "blastRadius": "260",
-          "hitForce": "3900",
-          "hullDamage": "1300",
-          "shieldDamage": "2600"
-        }
-      },
-      "outfits": [
-        "Particle Cannon 4",
-        "Torpedo Launcher 2",
-        "Torpedo 60",
-        "Heavy Laser Turret 4",
-        "Fusion Reactor",
-        "LP144a Battery Pack",
-        "D94-YV Shield Generator",
-        "Liquid Nitrogen Cooler",
-        "Orca Plasma Thruster",
-        "X5200 Ion Steering",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -14 177",
-          "engine 14 177"
-        ],
-        "explosions": [
-          "explode \"small explosion\" 25",
-          "explode \"medium explosion\" 35",
-          "explode \"large explosion\" 45",
-          "explode \"huge explosion\" 30"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun -31 66 \"Particle Cannon\"",
-          "gun 31 66 \"Particle Cannon\"",
-          "gun -53 61 \"Particle Cannon\"",
-          "gun 53 61 \"Particle Cannon\"",
-          "gun -75 57 \"Torpedo Launcher\"",
-          "gun 75 57 \"Torpedo Launcher\""
-        ],
-        "turrets": [
-          "turret -7 -4 \"Heavy Laser Turret\"",
-          "turret 7 -4 \"Heavy Laser Turret\"",
-          "turret -23 14 \"Heavy Laser Turret\"",
-          "turret 23 14 \"Heavy Laser Turret\""
-        ]
-      },
-      "description": 0
-    },
-    "kestrel": {
-      "name": "Kestrel",
-      "sprite": "ship/kestrel",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "128",
-        "cargoSpace": "120",
-        "category": "Heavy Warship",
-        "cost": "10300000",
-        "drag": "12.5",
-        "engineCap": "210",
-        "fuelCap": "500",
-        "heat": ".45",
-        "hull": "6200",
-        "mass": "740",
-        "outfitSpace": "810",
-        "requiredCrew": "72",
-        "shields": "17400",
-        "weaponCap": "380",
-        "weapon": {
-          "blastRadius": "260",
-          "hitForce": "3900",
-          "hullDamage": "1300",
-          "shieldDamage": "2600"
-        }
-      },
-      "outfits": [
-        "Particle Cannon 4",
-        "Torpedo Launcher 2",
-        "Torpedo 60",
-        "Heavy Laser Turret 4",
-        "Fusion Reactor",
-        "LP144a Battery Pack",
-        "D94-YV Shield Generator",
-        "Liquid Nitrogen Cooler",
-        "Orca Plasma Thruster",
-        "X5200 Ion Steering",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -14 177",
-          "engine 14 177"
-        ],
-        "explosions": [
-          "explode \"small explosion\" 25",
-          "explode \"medium explosion\" 35",
-          "explode \"large explosion\" 45",
-          "explode \"huge explosion\" 30"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun -31 66 \"Particle Cannon\"",
-          "gun 31 66 \"Particle Cannon\"",
-          "gun -53 61 \"Particle Cannon\"",
-          "gun 53 61 \"Particle Cannon\"",
-          "gun -75 57 \"Torpedo Launcher\"",
-          "gun 75 57 \"Torpedo Launcher\""
-        ],
-        "turrets": [
-          "turret -7 -4 \"Heavy Laser Turret\"",
-          "turret 7 -4 \"Heavy Laser Turret\"",
-          "turret -23 14 \"Heavy Laser Turret\"",
-          "turret 23 14 \"Heavy Laser Turret\""
-        ]
-      },
-      "description": "Several years ago, while visiting a sweat lodge in search of spiritual renewal, Tarazed's chief ship designer fell into a trance and journeyed to a reality separate from our own. There he saw visions of a strange and elegant starship. Returning to his work with renewed purpose, he spent the next seven years making the Kestrel a reality."
-    },
-    "kestrel kestrel (more weapons)": {
-      "name": "Kestrel Kestrel (More Weapons)",
-      "sprite": "ship/kestrel",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "128",
-        "cargoSpace": "120",
-        "category": "Heavy Warship",
-        "cost": "10300000",
-        "drag": "12.5",
-        "engineCap": "210",
-        "fuelCap": "500",
-        "heat": ".45",
-        "hull": "6200",
-        "mass": "740",
-        "outfitSpace": "810",
-        "requiredCrew": "72",
-        "shields": "17400",
-        "weaponCap": "400",
-        "weapon": {
-          "blastRadius": "260",
-          "hitForce": "3900",
-          "hullDamage": "1300",
-          "shieldDamage": "2600"
-        }
-      },
-      "outfits": [
-        "Particle Cannon 4",
-        "Torpedo Launcher 2",
-        "Torpedo 60",
-        "Heavy Laser Turret 4",
-        "Fusion Reactor",
-        "LP144a Battery Pack",
-        "D94-YV Shield Generator",
-        "Liquid Nitrogen Cooler",
-        "Orca Plasma Thruster",
-        "X5200 Ion Steering",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -14 177",
-          "engine 14 177"
-        ],
-        "explosions": [
-          "explode \"small explosion\" 25",
-          "explode \"medium explosion\" 35",
-          "explode \"large explosion\" 45",
-          "explode \"huge explosion\" 30"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun -31 66 \"Particle Cannon\"",
-          "gun 31 66 \"Particle Cannon\"",
-          "gun -53 61 \"Particle Cannon\"",
-          "gun 53 61 \"Particle Cannon\"",
-          "gun -75 57 \"Torpedo Launcher\"",
-          "gun 75 57 \"Torpedo Launcher\""
-        ],
-        "turrets": [
-          "turret -7 -4 \"Heavy Laser Turret\"",
-          "turret 7 -4 \"Heavy Laser Turret\"",
-          "turret -23 14 \"Heavy Laser Turret\"",
-          "turret 23 14 \"Heavy Laser Turret\""
-        ]
-      },
-      "description": "Several years ago, while visiting a sweat lodge in search of spiritual renewal, Tarazed's chief ship designer fell into a trance and journeyed to a reality separate from our own. There he saw visions of a strange and elegant starship. Returning to his work with renewed purpose, he spent the next seven years making the Kestrel a reality."
-    },
-    "kestrel kestrel (more engines)": {
-      "name": "Kestrel Kestrel (More Engines)",
-      "sprite": "ship/kestrel",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "128",
-        "cargoSpace": "120",
-        "category": "Heavy Warship",
-        "cost": "10300000",
-        "drag": "12.5",
-        "engineCap": "230",
-        "fuelCap": "500",
-        "heat": ".45",
-        "hull": "6200",
-        "mass": "740",
-        "outfitSpace": "810",
-        "requiredCrew": "72",
-        "shields": "17400",
-        "weaponCap": "380",
-        "weapon": {
-          "blastRadius": "260",
-          "hitForce": "3900",
-          "hullDamage": "1300",
-          "shieldDamage": "2600"
-        }
-      },
-      "outfits": [
-        "Particle Cannon 4",
-        "Torpedo Launcher 2",
-        "Torpedo 60",
-        "Heavy Laser Turret 4",
-        "Fusion Reactor",
-        "LP144a Battery Pack",
-        "D94-YV Shield Generator",
-        "Liquid Nitrogen Cooler",
-        "Orca Plasma Thruster",
-        "X5200 Ion Steering",
-        "Hyperdrive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -14 177",
-          "engine 14 177"
-        ],
-        "explosions": [
-          "explode \"small explosion\" 25",
-          "explode \"medium explosion\" 35",
-          "explode \"large explosion\" 45",
-          "explode \"huge explosion\" 30"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun -31 66 \"Particle Cannon\"",
-          "gun 31 66 \"Particle Cannon\"",
-          "gun -53 61 \"Particle Cannon\"",
-          "gun 53 61 \"Particle Cannon\"",
-          "gun -75 57 \"Torpedo Launcher\"",
-          "gun 75 57 \"Torpedo Launcher\""
-        ],
-        "turrets": [
-          "turret -7 -4 \"Heavy Laser Turret\"",
-          "turret 7 -4 \"Heavy Laser Turret\"",
-          "turret -23 14 \"Heavy Laser Turret\"",
-          "turret 23 14 \"Heavy Laser Turret\""
-        ]
-      },
-      "description": "Several years ago, while visiting a sweat lodge in search of spiritual renewal, Tarazed's chief ship designer fell into a trance and journeyed to a reality separate from our own. There he saw visions of a strange and elegant starship. Returning to his work with renewed purpose, he spent the next seven years making the Kestrel a reality."
     }
   },
   "korath": {
@@ -10542,242 +10332,7 @@
       "description": "The Splinter is the largest warship produced by Megaparsec. Apparently someone wanted a bit more out of it, and has covered large sections of the hull with extra shield emitters and hull plating. Much of the stock cargo space has been converted to outfit, weapons and engines space, coupled with streamlining of existing internal systems make this light Medium Warship an agile and flexible war machine."
     }
   },
-  "pug": {
-    "pug zibruka": {
-      "name": "Pug Zibruka",
-      "sprite": "ship/pug zibruka",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "6",
-        "cargoSpace": "20",
-        "category": "Light Warship",
-        "cost": "1900000",
-        "drag": "3.1",
-        "engineCap": "76",
-        "fuelCap": "600",
-        "heat": ".8",
-        "hull": "1000",
-        "mass": "240",
-        "outfitSpace": "180",
-        "requiredCrew": "4",
-        "shields": "4000",
-        "weaponCap": "68",
-        "weapon": {
-          "blastRadius": "100",
-          "hitForce": "600",
-          "hullDamage": "200",
-          "shieldDamage": "400"
-        }
-      },
-      "outfits": [
-        "Pug Zapper 2",
-        "Pug Biodefenses 4",
-        "Jump Drive",
-        "Pug Akfar Thruster",
-        "Pug Akfar Steering"
-      ],
-      "layout": {
-        "engines": [
-          "engine -7 35",
-          "engine 7 35"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 10",
-          "explode \"small explosion\" 15",
-          "explode \"medium explosion\" 20",
-          "explode \"large explosion\" 10"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun -15 -42 \"Pug Zapper\"",
-          "gun 15 -42 \"Pug Zapper\""
-        ],
-        "turrets": null
-      },
-      "description": "The Zibruka is the smallest Pug ship that you know of."
-    },
-    "pug enfolta": {
-      "name": "Pug Enfolta",
-      "sprite": "ship/pug enfolta",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "27",
-        "cargoSpace": "40",
-        "category": "Medium Warship",
-        "cost": "6300000",
-        "drag": "5.9",
-        "engineCap": "106",
-        "fuelCap": "600",
-        "heat": ".7",
-        "hull": "1700",
-        "mass": "410",
-        "outfitSpace": "360",
-        "requiredCrew": "19",
-        "shields": "6800",
-        "weaponCap": "184",
-        "weapon": {
-          "blastRadius": "180",
-          "hitForce": "1080",
-          "hullDamage": "360",
-          "shieldDamage": "720"
-        }
-      },
-      "outfits": [
-        "Pug Zapper 2",
-        "Pug Seeker 2",
-        "Pug Zapper Turret",
-        "Pug Biodefenses 6",
-        "Jump Drive",
-        "Pug Cormet Thruster",
-        "Pug Cormet Steering"
-      ],
-      "layout": {
-        "engines": [
-          "engine -11 68",
-          "engine 11 68"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 5",
-          "explode \"small explosion\" 20",
-          "explode \"medium explosion\" 25",
-          "explode \"large explosion\" 15"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun -11 -85 \"Pug Zapper\"",
-          "gun 11 -85 \"Pug Zapper\"",
-          "gun -11 -85 \"Pug Seeker\"",
-          "gun 11 -85 \"Pug Seeker\""
-        ],
-        "turrets": [
-          "turret 0 7 \"Pug Zapper Turret\""
-        ]
-      },
-      "description": "This is a medium-sized Pug warship."
-    },
-    "pug maboro": {
-      "name": "Pug Maboro",
-      "sprite": "ship/pug maboro",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "87",
-        "cargoSpace": "70",
-        "category": "Heavy Warship",
-        "cost": "9500000",
-        "drag": "9.8",
-        "engineCap": "148",
-        "fuelCap": "600",
-        "heat": ".6",
-        "hull": "2700",
-        "mass": "940",
-        "outfitSpace": "560",
-        "requiredCrew": "54",
-        "shields": "12600",
-        "weaponCap": "309",
-        "weapon": {
-          "blastRadius": "300",
-          "hitForce": "1800",
-          "hullDamage": "600",
-          "shieldDamage": "1200"
-        }
-      },
-      "outfits": [
-        "Pug Seeker 4",
-        "Pug Zapper Turret 2",
-        "Pug Anti-Missile",
-        "Pug Biodefenses 8",
-        "Jump Drive",
-        "Pug Lohmar Thruster",
-        "Pug Lohmar Steering"
-      ],
-      "layout": {
-        "engines": [
-          "engine -20 136",
-          "engine 20 136"
-        ],
-        "explosions": [
-          "explode \"small explosion\" 25",
-          "explode \"medium explosion\" 30",
-          "explode \"large explosion\" 20",
-          "explode \"huge explosion\" 5"
-        ],
-        "fighter": null,
-        "guns": [
-          "gun -20 -150 \"Pug Seeker\"",
-          "gun 20 -150 \"Pug Seeker\"",
-          "gun -10 -150 \"Pug Seeker\"",
-          "gun 10 -150 \"Pug Seeker\""
-        ],
-        "turrets": [
-          "turret 0 -50 \"Pug Anti-Missile\"",
-          "turret -15 -35 \"Pug Zapper Turret\"",
-          "turret 15 -35 \"Pug Zapper Turret\""
-        ]
-      },
-      "description": "This is the largest Pug warship."
-    },
-    "pug arfecta": {
-      "name": "Pug Arfecta",
-      "sprite": "ship/pug arfecta",
-      "attributes": {
-        "automaton": 0,
-        "bunks": "46",
-        "cargoSpace": "64",
-        "category": "Medium Warship",
-        "cost": "90000000",
-        "drag": "7.5",
-        "engineCap": "220",
-        "fuelCap": "1200",
-        "heat": ".8",
-        "hull": "80000",
-        "mass": "670",
-        "outfitSpace": "640",
-        "requiredCrew": "36",
-        "shields": "98000",
-        "weaponCap": "390",
-        "weapon": {
-          "blastRadius": "320",
-          "hitForce": "7000",
-          "hullDamage": "4500",
-          "shieldDamage": "9000"
-        }
-      },
-      "outfits": [
-        "Tier 3 Anti-Missile 2",
-        "Pug Gridfire Turret 3",
-        "",
-        "Cloaking Device",
-        "Pug Biodefenses 12",
-        "",
-        "Pug Lohmar Thruster",
-        "Pug Lohmar Steering",
-        "Pug Lohmar Steering",
-        "Jump Drive"
-      ],
-      "layout": {
-        "engines": [
-          "engine -15 164",
-          "engine 15 164"
-        ],
-        "explosions": [
-          "explode \"tiny explosion\" 100",
-          "explode \"small explosion\" 60",
-          "explode \"medium explosion\" 30",
-          "explode \"large explosion\" 10"
-        ],
-        "fighter": null,
-        "guns": null,
-        "turrets": [
-          "turret -50 -29 \"Tier 3 Anti-Missile\"",
-          "turret 50 -29 \"Tier 3 Anti-Missile\"",
-          "turret 0 40 \"Pug Gridfire Turret\"",
-          "turret -73 84 \"Pug Gridfire Turret\"",
-          "turret 73 84 \"Pug Gridfire Turret\""
-        ]
-      },
-      "description": "`This is a Pug tier 3 warship, intended for use in combat against either a species on par with the Quarg, or a lesser species that has decided to be particularly meddlesome.`"
-    }
-  },
+  "persons": {},
   "quarg": {
     "quarg skylark": {
       "name": "Quarg Skylark",
@@ -10896,6 +10451,618 @@
         ]
       },
       "description": "The Wardragon is used by the Quarg as a light warship."
+    }
+  },
+  "remnant": {
+    "starling": {
+      "name": "Starling",
+      "sprite": "ship/starling",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "15",
+        "cargoSpace": "36",
+        "category": "Light Warship",
+        "cost": "8800000",
+        "drag": "3.8",
+        "engineCap": "94",
+        "fuelCap": "900",
+        "heat": "0.7",
+        "hull": "4900",
+        "mass": "270",
+        "outfitSpace": "312",
+        "requiredCrew": "6",
+        "shields": "8800",
+        "weaponCap": "83",
+        "weapon": {
+          "blastRadius": "80",
+          "hitForce": "1200",
+          "hullDamage": "400",
+          "shieldDamage": "800"
+        }
+      },
+      "outfits": [
+        "Inhibitor Cannon 3",
+        "Point Defense Turret",
+        "",
+        "Epoch Cell",
+        "Crystal Capacitor",
+        "Emergency Ramscoop 2",
+        "Quantum Key Stone",
+        "",
+        "Forge-Class Thruster",
+        "Forge-Class Steering",
+        "Crucible-Class Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -16 82 0.7",
+          "engine 16 82 0.7",
+          "engine 0 90 1"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 40",
+          "explode \"small explosion\" 20",
+          "explode \"medium explosion\" 10"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun 0 -99 \"Inhibitor Cannon\"",
+          "gun -12 -72 \"Inhibitor Cannon\"",
+          "gun 12 -72 \"Inhibitor Cannon\"",
+          "gun -18 -49",
+          "gun 18 -49"
+        ],
+        "turrets": [
+          "turret 0 2 \"Point Defense Turret\""
+        ]
+      },
+      "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens."
+    },
+    "starling starling (heavy)": {
+      "name": "Starling Starling (Heavy)",
+      "sprite": "ship/starling",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "15",
+        "cargoSpace": "36",
+        "category": "Light Warship",
+        "cost": "8800000",
+        "drag": "3.8",
+        "engineCap": "94",
+        "fuelCap": "900",
+        "heat": "0.7",
+        "hull": "4900",
+        "mass": "270",
+        "outfitSpace": "312",
+        "requiredCrew": "6",
+        "shields": "8800",
+        "weaponCap": "83",
+        "weapon": {
+          "blastRadius": "80",
+          "hitForce": "1200",
+          "hullDamage": "400",
+          "shieldDamage": "800"
+        }
+      },
+      "outfits": [
+        "Inhibitor Cannon 3",
+        "Point Defense Turret",
+        "",
+        "Epoch Cell",
+        "Crystal Capacitor",
+        "Emergency Ramscoop 2",
+        "Quantum Key Stone",
+        "",
+        "Forge-Class Thruster",
+        "Forge-Class Steering",
+        "Crucible-Class Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -16 82 0.7",
+          "engine 16 82 0.7",
+          "engine 0 90 1"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 40",
+          "explode \"small explosion\" 20",
+          "explode \"medium explosion\" 10"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun 0 -99 \"Inhibitor Cannon\"",
+          "gun -12 -72 \"Inhibitor Cannon\"",
+          "gun 12 -72 \"Inhibitor Cannon\"",
+          "gun -18 -49",
+          "gun 18 -49"
+        ],
+        "turrets": [
+          "turret 0 2 \"Point Defense Turret\""
+        ]
+      },
+      "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens."
+    },
+    "starling starling (sniper)": {
+      "name": "Starling Starling (Sniper)",
+      "sprite": "ship/starling",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "15",
+        "cargoSpace": "36",
+        "category": "Light Warship",
+        "cost": "8800000",
+        "drag": "3.8",
+        "engineCap": "94",
+        "fuelCap": "900",
+        "heat": "0.7",
+        "hull": "4900",
+        "mass": "270",
+        "outfitSpace": "312",
+        "requiredCrew": "6",
+        "shields": "8800",
+        "weaponCap": "83",
+        "weapon": {
+          "blastRadius": "80",
+          "hitForce": "1200",
+          "hullDamage": "400",
+          "shieldDamage": "800"
+        }
+      },
+      "outfits": [
+        "Inhibitor Cannon 3",
+        "Point Defense Turret",
+        "",
+        "Epoch Cell",
+        "Crystal Capacitor",
+        "Emergency Ramscoop 2",
+        "Quantum Key Stone",
+        "",
+        "Forge-Class Thruster",
+        "Forge-Class Steering",
+        "Crucible-Class Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -16 82 0.7",
+          "engine 16 82 0.7",
+          "engine 0 90 1"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 40",
+          "explode \"small explosion\" 20",
+          "explode \"medium explosion\" 10"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun 0 -99 \"Inhibitor Cannon\"",
+          "gun -12 -72 \"Inhibitor Cannon\"",
+          "gun 12 -72 \"Inhibitor Cannon\"",
+          "gun -18 -49",
+          "gun 18 -49"
+        ],
+        "turrets": [
+          "turret 0 2 \"Point Defense Turret\""
+        ]
+      },
+      "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens."
+    },
+    "starling starling (hunter)": {
+      "name": "Starling Starling (Hunter)",
+      "sprite": "ship/starling",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "15",
+        "cargoSpace": "36",
+        "category": "Light Warship",
+        "cost": "8800000",
+        "drag": "3.8",
+        "engineCap": "94",
+        "fuelCap": "900",
+        "heat": "0.7",
+        "hull": "4900",
+        "mass": "270",
+        "outfitSpace": "312",
+        "requiredCrew": "6",
+        "shields": "8800",
+        "weaponCap": "83",
+        "weapon": {
+          "blastRadius": "80",
+          "hitForce": "1200",
+          "hullDamage": "400",
+          "shieldDamage": "800"
+        }
+      },
+      "outfits": [
+        "Inhibitor Cannon 2",
+        "Thrasher Turret",
+        "",
+        "Epoch Cell",
+        "Millennium Cell",
+        "Crystal Capacitor",
+        "Emergency Ramscoop",
+        "",
+        "Forge-Class Thruster",
+        "Forge-Class Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -16 82 0.7",
+          "engine 16 82 0.7",
+          "engine 0 90 1"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 40",
+          "explode \"small explosion\" 20",
+          "explode \"medium explosion\" 10"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun \"Inhibitor Cannon\"",
+          "gun \"Inhibitor Cannon\""
+        ],
+        "turrets": [
+          "turret 0 2 \"Point Defense Turret\""
+        ]
+      },
+      "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens."
+    },
+    "starling starling (thrasher)": {
+      "name": "Starling Starling (Thrasher)",
+      "sprite": "ship/starling",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "15",
+        "cargoSpace": "36",
+        "category": "Light Warship",
+        "cost": "8800000",
+        "drag": "3.8",
+        "engineCap": "94",
+        "fuelCap": "900",
+        "heat": "0.7",
+        "hull": "4900",
+        "mass": "270",
+        "outfitSpace": "312",
+        "requiredCrew": "6",
+        "shields": "8800",
+        "weaponCap": "83",
+        "weapon": {
+          "blastRadius": "80",
+          "hitForce": "1200",
+          "hullDamage": "400",
+          "shieldDamage": "800"
+        }
+      },
+      "outfits": [
+        "Thrasher Cannon 3",
+        "Thrasher Turret",
+        "",
+        "Epoch Cell",
+        "Millennium Cell",
+        "Crystal Capacitor",
+        "Quantum Key Stone",
+        "",
+        "Forge-Class Thruster",
+        "Forge-Class Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -16 82 0.7",
+          "engine 16 82 0.7",
+          "engine 0 90 1"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 40",
+          "explode \"small explosion\" 20",
+          "explode \"medium explosion\" 10"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun \"Thrasher Cannon\"",
+          "gun \"Thrasher Cannon\"",
+          "gun \"Thrasher Cannon\""
+        ],
+        "turrets": [
+          "turret 0 2 \"Point Defense Turret\""
+        ]
+      },
+      "description": "One of the strangest and most useful things that the Remnant discovered in the abandoned worlds of the Ember Waste is alien cloaking technology. They designed their scout ships to be able to cloak when needed, in order to explore alien territory without being seen... or to escape in a hurry after stealing something particularly valuable from those aliens."
+    },
+    "albatross": {
+      "name": "Albatross",
+      "sprite": "ship/albatross",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "75",
+        "cargoSpace": "124",
+        "category": "Heavy Warship",
+        "cost": "20000000",
+        "drag": "8.6",
+        "engineCap": "142",
+        "fuelCap": "600",
+        "heat": "0.6",
+        "hull": "12600",
+        "mass": "610",
+        "outfitSpace": "658",
+        "requiredCrew": "44",
+        "shields": "34200",
+        "weaponCap": "236",
+        "weapon": {
+          "blastRadius": "360",
+          "hitForce": "5400",
+          "hullDamage": "1800",
+          "shieldDamage": "3600"
+        }
+      },
+      "outfits": [
+        "Inhibitor Cannon 6",
+        "Thrasher Turret 2",
+        "Point Defense Turret",
+        "",
+        "Aeon Cell",
+        "Epoch Cell",
+        "Crystal Capacitor",
+        "Thermoelectric Cooler 2",
+        "Quantum Key Stone",
+        "",
+        "Smelter-Class Thruster",
+        "Smelter-Class Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -28 155 .8",
+          "engine 28 155 .9",
+          "engine 0 184 .8"
+        ],
+        "explosions": [
+          "explode \"small explosion\" 30",
+          "explode \"medium explosion\" 60",
+          "explode \"large explosion\" 40",
+          "explode \"huge explosion\" 10"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun 0 -190",
+          "gun -9 -177 \"Inhibitor Cannon\"",
+          "gun 9 -177 \"Inhibitor Cannon\"",
+          "gun -14 -162 \"Inhibitor Cannon\"",
+          "gun 14 -162 \"Inhibitor Cannon\"",
+          "gun -18 -144 \"Inhibitor Cannon\"",
+          "gun 18 -144 \"Inhibitor Cannon\""
+        ],
+        "turrets": [
+          "turret -23 -34 \"Thrasher Turret\"",
+          "turret 23 -34 \"Thrasher Turret\"",
+          "turret -74 62",
+          "turret 74 62",
+          "turret 0 77 \"Point Defense Turret\""
+        ]
+      },
+      "description": "Once they left human space, it became apparent to the Remnant that they would need to build their own shipyards in order to defend themselves if they were discovered by the Alphas or any other unfriendly faction. Using new composite materials that they discovered, they built ships very different from anything seen in human space."
+    },
+    "albatross albatross (sniper)": {
+      "name": "Albatross Albatross (Sniper)",
+      "sprite": "ship/albatross",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "75",
+        "cargoSpace": "124",
+        "category": "Heavy Warship",
+        "cost": "20000000",
+        "drag": "8.6",
+        "engineCap": "142",
+        "fuelCap": "600",
+        "heat": "0.6",
+        "hull": "12600",
+        "mass": "610",
+        "outfitSpace": "658",
+        "requiredCrew": "44",
+        "shields": "34200",
+        "weaponCap": "236",
+        "weapon": {
+          "blastRadius": "360",
+          "hitForce": "5400",
+          "hullDamage": "1800",
+          "shieldDamage": "3600"
+        }
+      },
+      "outfits": [
+        "Inhibitor Cannon 7",
+        "Point Defense Turret 3",
+        "",
+        "Aeon Cell",
+        "Epoch Cell",
+        "Crystal Capacitor",
+        "Thermoelectric Cooler 2",
+        "Quantum Key Stone",
+        "",
+        "Forge-Class Thruster",
+        "Crucible-Class Thruster",
+        "Smelter-Class Steering",
+        "Forge-Class Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -28 155 .8",
+          "engine 28 155 .9",
+          "engine 0 184 .8"
+        ],
+        "explosions": [
+          "explode \"small explosion\" 30",
+          "explode \"medium explosion\" 60",
+          "explode \"large explosion\" 40",
+          "explode \"huge explosion\" 10"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun 0 -190",
+          "gun -9 -177 \"Inhibitor Cannon\"",
+          "gun 9 -177 \"Inhibitor Cannon\"",
+          "gun -14 -162 \"Inhibitor Cannon\"",
+          "gun 14 -162 \"Inhibitor Cannon\"",
+          "gun -18 -144 \"Inhibitor Cannon\"",
+          "gun 18 -144 \"Inhibitor Cannon\""
+        ],
+        "turrets": [
+          "turret -23 -34 \"Thrasher Turret\"",
+          "turret 23 -34 \"Thrasher Turret\"",
+          "turret -74 62",
+          "turret 74 62",
+          "turret 0 77 \"Point Defense Turret\""
+        ]
+      },
+      "description": "Once they left human space, it became apparent to the Remnant that they would need to build their own shipyards in order to defend themselves if they were discovered by the Alphas or any other unfriendly faction. Using new composite materials that they discovered, they built ships very different from anything seen in human space."
+    },
+    "albatross albatross (turret)": {
+      "name": "Albatross Albatross (Turret)",
+      "sprite": "ship/albatross",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "75",
+        "cargoSpace": "124",
+        "category": "Heavy Warship",
+        "cost": "20000000",
+        "drag": "8.6",
+        "engineCap": "142",
+        "fuelCap": "600",
+        "heat": "0.6",
+        "hull": "12600",
+        "mass": "610",
+        "outfitSpace": "658",
+        "requiredCrew": "44",
+        "shields": "34200",
+        "weaponCap": "236",
+        "weapon": {
+          "blastRadius": "360",
+          "hitForce": "5400",
+          "hullDamage": "1800",
+          "shieldDamage": "3600"
+        }
+      },
+      "outfits": [
+        "Thrasher Turret 4",
+        "Point Defense Turret",
+        "",
+        "Aeon Cell",
+        "Epoch Cell",
+        "Millennium Cell",
+        "Crystal Capacitor",
+        "Thermoelectric Cooler",
+        "Outfits Expansion 2",
+        "",
+        "Smelter-Class Thruster",
+        "Smelter-Class Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -28 155 .8",
+          "engine 28 155 .9",
+          "engine 0 184 .8"
+        ],
+        "explosions": [
+          "explode \"small explosion\" 30",
+          "explode \"medium explosion\" 60",
+          "explode \"large explosion\" 40",
+          "explode \"huge explosion\" 10"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun 0 -190",
+          "gun -9 -177 \"Inhibitor Cannon\"",
+          "gun 9 -177 \"Inhibitor Cannon\"",
+          "gun -14 -162 \"Inhibitor Cannon\"",
+          "gun 14 -162 \"Inhibitor Cannon\"",
+          "gun -18 -144 \"Inhibitor Cannon\"",
+          "gun 18 -144 \"Inhibitor Cannon\""
+        ],
+        "turrets": [
+          "turret -23 -34 \"Thrasher Turret\"",
+          "turret 23 -34 \"Thrasher Turret\"",
+          "turret -74 62",
+          "turret 74 62",
+          "turret 0 77 \"Point Defense Turret\""
+        ]
+      },
+      "description": "Once they left human space, it became apparent to the Remnant that they would need to build their own shipyards in order to defend themselves if they were discovered by the Alphas or any other unfriendly faction. Using new composite materials that they discovered, they built ships very different from anything seen in human space."
+    },
+    "albatross albatross (heavy)": {
+      "name": "Albatross Albatross (Heavy)",
+      "sprite": "ship/albatross",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "1",
+        "cargoSpace": "8",
+        "category": "Transport",
+        "cost": "530000",
+        "drag": "1.7",
+        "engineCap": "34",
+        "fuelCap": "700",
+        "heat": "0.9",
+        "hull": "1500",
+        "mass": "80",
+        "outfitSpace": "90",
+        "requiredCrew": "1",
+        "shields": "800",
+        "weaponCap": "236",
+        "weapon": {
+          "blastRadius": "360",
+          "hitForce": "5400",
+          "hullDamage": "1800",
+          "shieldDamage": "3600"
+        }
+      },
+      "outfits": [
+        "Inhibitor Cannon 3",
+        "Thrasher Cannon 4",
+        "Thrasher Turret 3",
+        "",
+        "Aeon Cell",
+        "Epoch Cell",
+        "Millennium Cell",
+        "Crystal Capacitor 2",
+        "Thermoelectric Cooler 2",
+        "Outfits Expansion 4",
+        "",
+        "Forge-Class Thruster",
+        "Crucible-Class Thruster",
+        "Smelter-Class Steering",
+        "Forge-Class Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine 0 30"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 8",
+          "explode \"small explosion\" 7"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun \"Inhibitor Cannon\"",
+          "gun \"Inhibitor Cannon\"",
+          "gun \"Inhibitor Cannon\"",
+          "gun \"Thrasher Cannon\"",
+          "gun \"Thrasher Cannon\"",
+          "gun \"Thrasher Cannon\"",
+          "gun \"Thrasher Cannon\""
+        ],
+        "turrets": [
+          "turret -23 -34 \"Thrasher Turret\"",
+          "turret 23 -34 \"Thrasher Turret\"",
+          "turret -74 62",
+          "turret 74 62",
+          "turret 0 77 \"Point Defense Turret\""
+        ]
+      },
+      "description": "Once they left human space, it became apparent to the Remnant that they would need to build their own shipyards in order to defend themselves if they were discovered by the Alphas or any other unfriendly faction. Using new composite materials that they discovered, they built ships very different from anything seen in human space."
     }
   },
   "wanderer": {
@@ -12245,6 +12412,848 @@
         ]
       },
       "description": "This is a Deep River freighter that has been converted into a transport ship for refugees."
+    }
+  },
+  "drak": {
+    "archon": {
+      "name": "Archon",
+      "sprite": "ship/archon",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "1",
+        "cargoSpace": "0",
+        "category": "Heavy Warship",
+        "cost": "1000000000",
+        "drag": "27",
+        "engineCap": "200",
+        "fuelCap": "800",
+        "heat": "40",
+        "hull": "1000000",
+        "mass": "1000",
+        "outfitSpace": "800",
+        "requiredCrew": "1",
+        "shields": "4000000",
+        "weaponCap": "600",
+        "weapon": {
+          "blastRadius": "200",
+          "hitForce": "30000",
+          "hullDamage": "10000",
+          "shieldDamage": "20000"
+        }
+      },
+      "outfits": [
+        "Drak Antimatter Cannon",
+        "Drak Anti-Missile Field 2",
+        "Drak Draining Field",
+        "Drak Distancer 2",
+        "Drak Turret 3",
+        "",
+        "Medium Graviton Thruster",
+        "Medium Graviton Steering",
+        "Hyperdrive",
+        "Jump Drive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -17 92",
+          "engine 17 92"
+        ],
+        "explosions": [
+          "explode \"nuke explosion\" 3"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun 0 -74 \"Drak Antimatter Cannon\""
+        ],
+        "turrets": [
+          "turret 0 -10 \"Drak Anti-Missile Field\"",
+          "turret 0 -10 \"Drak Anti-Missile Field\"",
+          "turret 0 -10 \"Drak Draining Field\"",
+          "turret -40 -13 \"Drak Turret\"",
+          "turret 40 -13 \"Drak Turret\"",
+          "turret 0 81 \"Drak Turret\"",
+          "turret -55 16 \"Drak Distancer\"",
+          "turret 55 16 \"Drak Distancer\""
+        ]
+      },
+      "description": 0
+    },
+    "archon archon (cloaked)": {
+      "name": "Archon Archon (Cloaked)",
+      "sprite": "ship/archon",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "1",
+        "cargoSpace": "0",
+        "category": "Heavy Warship",
+        "cost": "1000000000",
+        "drag": "27",
+        "engineCap": "200",
+        "fuelCap": "800",
+        "heat": "40",
+        "hull": "1000000",
+        "mass": "1000",
+        "outfitSpace": "800",
+        "requiredCrew": "1",
+        "shields": "4000000",
+        "weaponCap": "600",
+        "weapon": {
+          "blastRadius": "200",
+          "hitForce": "30000",
+          "hullDamage": "10000",
+          "shieldDamage": "20000"
+        }
+      },
+      "outfits": [
+        "Drak Antimatter Cannon",
+        "Drak Anti-Missile Field 2",
+        "Drak Draining Field",
+        "Drak Distancer 2",
+        "Drak Turret 3",
+        "",
+        "Medium Graviton Thruster",
+        "Medium Graviton Steering",
+        "Hyperdrive",
+        "Jump Drive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -17 92",
+          "engine 17 92"
+        ],
+        "explosions": [
+          "explode \"nuke explosion\" 3"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun 0 -74 \"Drak Antimatter Cannon\""
+        ],
+        "turrets": [
+          "turret 0 -10 \"Drak Anti-Missile Field\"",
+          "turret 0 -10 \"Drak Anti-Missile Field\"",
+          "turret 0 -10 \"Drak Draining Field\"",
+          "turret -40 -13 \"Drak Turret\"",
+          "turret 40 -13 \"Drak Turret\"",
+          "turret 0 81 \"Drak Turret\"",
+          "turret -55 16 \"Drak Distancer\"",
+          "turret 55 16 \"Drak Distancer\""
+        ]
+      },
+      "description": 0
+    }
+  },
+  "indigenous": {
+    "void sprite": {
+      "name": "Void Sprite",
+      "sprite": "ship/void sprite adult",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "4",
+        "cargoSpace": "40",
+        "category": "Medium Warship",
+        "cost": 0,
+        "drag": "8.2",
+        "engineCap": 0,
+        "fuelCap": "1",
+        "heat": ".8",
+        "hull": "9600",
+        "mass": "480",
+        "outfitSpace": 0,
+        "requiredCrew": "4",
+        "shields": 0,
+        "weaponCap": 0,
+        "weapon": {
+          "blastRadius": 0,
+          "hitForce": 0,
+          "hullDamage": 0,
+          "shieldDamage": 0
+        }
+      },
+      "outfits": [
+        "Mouthparts? 2"
+      ],
+      "layout": {
+        "engines": null,
+        "explosions": [
+          "explode \"tracker cloud\" 40",
+          "explode \"smoke\" 40"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -4 -111",
+          "gun 6 -111"
+        ],
+        "turrets": null
+      },
+      "description": 0
+    },
+    "void sprite void sprite (infant)": {
+      "name": "Void Sprite Void Sprite (Infant)",
+      "sprite": "ship/void sprite adult",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "2",
+        "cargoSpace": "20",
+        "category": "Light Warship",
+        "cost": 0,
+        "drag": "5.4",
+        "engineCap": 0,
+        "fuelCap": "1",
+        "heat": ".9",
+        "hull": "2800",
+        "mass": "200",
+        "outfitSpace": 0,
+        "requiredCrew": "2",
+        "shields": 0,
+        "weaponCap": 0,
+        "weapon": {
+          "blastRadius": 0,
+          "hitForce": 0,
+          "hullDamage": "300",
+          "shieldDamage": "300"
+        }
+      },
+      "outfits": [
+        "Mouthparts?"
+      ],
+      "layout": {
+        "engines": null,
+        "explosions": [
+          "explode \"tracker cloud\" 20",
+          "explode \"smoke\" 20"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun 4 -41",
+          "gun ports\" -1"
+        ],
+        "turrets": null
+      },
+      "description": 0
+    }
+  },
+  "kestrel": {
+    "unknown ship type": {
+      "name": "Unknown Ship Type",
+      "sprite": "ship/kestrel",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "128",
+        "cargoSpace": "120",
+        "category": "Heavy Warship",
+        "cost": "10300000",
+        "drag": "12.5",
+        "engineCap": "210",
+        "fuelCap": "500",
+        "heat": ".45",
+        "hull": "6200",
+        "mass": "740",
+        "outfitSpace": "810",
+        "requiredCrew": "72",
+        "shields": "17400",
+        "weaponCap": "380",
+        "weapon": {
+          "blastRadius": "260",
+          "hitForce": "3900",
+          "hullDamage": "1300",
+          "shieldDamage": "2600"
+        }
+      },
+      "outfits": [
+        "Particle Cannon 4",
+        "Torpedo Launcher 2",
+        "Torpedo 60",
+        "Heavy Laser Turret 4",
+        "Fusion Reactor",
+        "LP144a Battery Pack",
+        "D94-YV Shield Generator",
+        "Liquid Nitrogen Cooler",
+        "Orca Plasma Thruster",
+        "X5200 Ion Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -14 177",
+          "engine 14 177"
+        ],
+        "explosions": [
+          "explode \"small explosion\" 25",
+          "explode \"medium explosion\" 35",
+          "explode \"large explosion\" 45",
+          "explode \"huge explosion\" 30"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -31 66 \"Particle Cannon\"",
+          "gun 31 66 \"Particle Cannon\"",
+          "gun -53 61 \"Particle Cannon\"",
+          "gun 53 61 \"Particle Cannon\"",
+          "gun -75 57 \"Torpedo Launcher\"",
+          "gun 75 57 \"Torpedo Launcher\""
+        ],
+        "turrets": [
+          "turret -7 -4 \"Heavy Laser Turret\"",
+          "turret 7 -4 \"Heavy Laser Turret\"",
+          "turret -23 14 \"Heavy Laser Turret\"",
+          "turret 23 14 \"Heavy Laser Turret\""
+        ]
+      },
+      "description": 0
+    },
+    "kestrel": {
+      "name": "Kestrel",
+      "sprite": "ship/kestrel",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "128",
+        "cargoSpace": "120",
+        "category": "Heavy Warship",
+        "cost": "10300000",
+        "drag": "12.5",
+        "engineCap": "210",
+        "fuelCap": "500",
+        "heat": ".45",
+        "hull": "6200",
+        "mass": "740",
+        "outfitSpace": "810",
+        "requiredCrew": "72",
+        "shields": "17400",
+        "weaponCap": "380",
+        "weapon": {
+          "blastRadius": "260",
+          "hitForce": "3900",
+          "hullDamage": "1300",
+          "shieldDamage": "2600"
+        }
+      },
+      "outfits": [
+        "Particle Cannon 4",
+        "Torpedo Launcher 2",
+        "Torpedo 60",
+        "Heavy Laser Turret 4",
+        "Fusion Reactor",
+        "LP144a Battery Pack",
+        "D94-YV Shield Generator",
+        "Liquid Nitrogen Cooler",
+        "Orca Plasma Thruster",
+        "X5200 Ion Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -14 177",
+          "engine 14 177"
+        ],
+        "explosions": [
+          "explode \"small explosion\" 25",
+          "explode \"medium explosion\" 35",
+          "explode \"large explosion\" 45",
+          "explode \"huge explosion\" 30"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -31 66 \"Particle Cannon\"",
+          "gun 31 66 \"Particle Cannon\"",
+          "gun -53 61 \"Particle Cannon\"",
+          "gun 53 61 \"Particle Cannon\"",
+          "gun -75 57 \"Torpedo Launcher\"",
+          "gun 75 57 \"Torpedo Launcher\""
+        ],
+        "turrets": [
+          "turret -7 -4 \"Heavy Laser Turret\"",
+          "turret 7 -4 \"Heavy Laser Turret\"",
+          "turret -23 14 \"Heavy Laser Turret\"",
+          "turret 23 14 \"Heavy Laser Turret\""
+        ]
+      },
+      "description": "Several years ago, while visiting a sweat lodge in search of spiritual renewal, Tarazed's chief ship designer fell into a trance and journeyed to a reality separate from our own. There he saw visions of a strange and elegant starship. Returning to his work with renewed purpose, he spent the next seven years making the Kestrel a reality."
+    },
+    "kestrel kestrel (more weapons)": {
+      "name": "Kestrel Kestrel (More Weapons)",
+      "sprite": "ship/kestrel",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "128",
+        "cargoSpace": "120",
+        "category": "Heavy Warship",
+        "cost": "10300000",
+        "drag": "12.5",
+        "engineCap": "210",
+        "fuelCap": "500",
+        "heat": ".45",
+        "hull": "6200",
+        "mass": "740",
+        "outfitSpace": "810",
+        "requiredCrew": "72",
+        "shields": "17400",
+        "weaponCap": "400",
+        "weapon": {
+          "blastRadius": "260",
+          "hitForce": "3900",
+          "hullDamage": "1300",
+          "shieldDamage": "2600"
+        }
+      },
+      "outfits": [
+        "Particle Cannon 4",
+        "Torpedo Launcher 2",
+        "Torpedo 60",
+        "Heavy Laser Turret 4",
+        "Fusion Reactor",
+        "LP144a Battery Pack",
+        "D94-YV Shield Generator",
+        "Liquid Nitrogen Cooler",
+        "Orca Plasma Thruster",
+        "X5200 Ion Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -14 177",
+          "engine 14 177"
+        ],
+        "explosions": [
+          "explode \"small explosion\" 25",
+          "explode \"medium explosion\" 35",
+          "explode \"large explosion\" 45",
+          "explode \"huge explosion\" 30"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -31 66 \"Particle Cannon\"",
+          "gun 31 66 \"Particle Cannon\"",
+          "gun -53 61 \"Particle Cannon\"",
+          "gun 53 61 \"Particle Cannon\"",
+          "gun -75 57 \"Torpedo Launcher\"",
+          "gun 75 57 \"Torpedo Launcher\""
+        ],
+        "turrets": [
+          "turret -7 -4 \"Heavy Laser Turret\"",
+          "turret 7 -4 \"Heavy Laser Turret\"",
+          "turret -23 14 \"Heavy Laser Turret\"",
+          "turret 23 14 \"Heavy Laser Turret\""
+        ]
+      },
+      "description": "Several years ago, while visiting a sweat lodge in search of spiritual renewal, Tarazed's chief ship designer fell into a trance and journeyed to a reality separate from our own. There he saw visions of a strange and elegant starship. Returning to his work with renewed purpose, he spent the next seven years making the Kestrel a reality."
+    },
+    "kestrel kestrel (more engines)": {
+      "name": "Kestrel Kestrel (More Engines)",
+      "sprite": "ship/kestrel",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "128",
+        "cargoSpace": "120",
+        "category": "Heavy Warship",
+        "cost": "10300000",
+        "drag": "12.5",
+        "engineCap": "230",
+        "fuelCap": "500",
+        "heat": ".45",
+        "hull": "6200",
+        "mass": "740",
+        "outfitSpace": "810",
+        "requiredCrew": "72",
+        "shields": "17400",
+        "weaponCap": "380",
+        "weapon": {
+          "blastRadius": "260",
+          "hitForce": "3900",
+          "hullDamage": "1300",
+          "shieldDamage": "2600"
+        }
+      },
+      "outfits": [
+        "Particle Cannon 4",
+        "Torpedo Launcher 2",
+        "Torpedo 60",
+        "Heavy Laser Turret 4",
+        "Fusion Reactor",
+        "LP144a Battery Pack",
+        "D94-YV Shield Generator",
+        "Liquid Nitrogen Cooler",
+        "Orca Plasma Thruster",
+        "X5200 Ion Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -14 177",
+          "engine 14 177"
+        ],
+        "explosions": [
+          "explode \"small explosion\" 25",
+          "explode \"medium explosion\" 35",
+          "explode \"large explosion\" 45",
+          "explode \"huge explosion\" 30"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -31 66 \"Particle Cannon\"",
+          "gun 31 66 \"Particle Cannon\"",
+          "gun -53 61 \"Particle Cannon\"",
+          "gun 53 61 \"Particle Cannon\"",
+          "gun -75 57 \"Torpedo Launcher\"",
+          "gun 75 57 \"Torpedo Launcher\""
+        ],
+        "turrets": [
+          "turret -7 -4 \"Heavy Laser Turret\"",
+          "turret 7 -4 \"Heavy Laser Turret\"",
+          "turret -23 14 \"Heavy Laser Turret\"",
+          "turret 23 14 \"Heavy Laser Turret\""
+        ]
+      },
+      "description": "Several years ago, while visiting a sweat lodge in search of spiritual renewal, Tarazed's chief ship designer fell into a trance and journeyed to a reality separate from our own. There he saw visions of a strange and elegant starship. Returning to his work with renewed purpose, he spent the next seven years making the Kestrel a reality."
+    },
+    "kestrel kestrel (more shields)": {
+      "name": "Kestrel Kestrel (More Shields)",
+      "sprite": "ship/kestrel",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "128",
+        "cargoSpace": "120",
+        "category": "Heavy Warship",
+        "cost": "10300000",
+        "drag": "12.5",
+        "engineCap": "210",
+        "fuelCap": "500",
+        "heat": ".45",
+        "hull": "7500",
+        "mass": "760",
+        "outfitSpace": "810",
+        "requiredCrew": "72",
+        "shields": "20100",
+        "weaponCap": "380",
+        "weapon": {
+          "blastRadius": "260",
+          "hitForce": "3900",
+          "hullDamage": "1300",
+          "shieldDamage": "2600"
+        }
+      },
+      "outfits": [
+        "Particle Cannon 4",
+        "Torpedo Launcher 2",
+        "Torpedo 60",
+        "Heavy Laser Turret 4",
+        "Fusion Reactor",
+        "LP144a Battery Pack",
+        "D94-YV Shield Generator",
+        "Liquid Nitrogen Cooler",
+        "Orca Plasma Thruster",
+        "X5200 Ion Steering",
+        "Hyperdrive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -14 177",
+          "engine 14 177"
+        ],
+        "explosions": [
+          "explode \"small explosion\" 25",
+          "explode \"medium explosion\" 35",
+          "explode \"large explosion\" 45",
+          "explode \"huge explosion\" 30"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -31 66 \"Particle Cannon\"",
+          "gun 31 66 \"Particle Cannon\"",
+          "gun -53 61 \"Particle Cannon\"",
+          "gun 53 61 \"Particle Cannon\"",
+          "gun -75 57 \"Torpedo Launcher\"",
+          "gun 75 57 \"Torpedo Launcher\""
+        ],
+        "turrets": [
+          "turret -7 -4 \"Heavy Laser Turret\"",
+          "turret 7 -4 \"Heavy Laser Turret\"",
+          "turret -23 14 \"Heavy Laser Turret\"",
+          "turret 23 14 \"Heavy Laser Turret\""
+        ]
+      },
+      "description": "Several years ago, while visiting a sweat lodge in search of spiritual renewal, Tarazed's chief ship designer fell into a trance and journeyed to a reality separate from our own. There he saw visions of a strange and elegant starship. Returning to his work with renewed purpose, he spent the next seven years making the Kestrel a reality."
+    }
+  },
+  "nanobots": {
+    "nanobot": {
+      "name": "Nanobot",
+      "sprite": "effect/nano spark",
+      "attributes": {
+        "automaton": "1",
+        "bunks": 0,
+        "cargoSpace": 0,
+        "category": "Guns",
+        "cost": 0,
+        "drag": "1",
+        "engineCap": 0,
+        "fuelCap": 0,
+        "heat": ".9",
+        "hull": "100",
+        "mass": "10",
+        "outfitSpace": "5",
+        "requiredCrew": 0,
+        "shields": 0,
+        "weaponCap": "5",
+        "weapon": {
+          "blastRadius": 0,
+          "hitForce": 0,
+          "hullDamage": "10",
+          "shieldDamage": "10"
+        }
+      },
+      "outfits": [
+        "Nano Strike"
+      ],
+      "layout": {
+        "engines": [
+          "engine -17 35",
+          "engine 17 35"
+        ],
+        "explosions": null,
+        "fighter": null,
+        "guns": [
+          "gun 0 0",
+          "gun ports\" -1"
+        ],
+        "turrets": null
+      },
+      "description": 0
+    }
+  },
+  "pug": {
+    "pug zibruka": {
+      "name": "Pug Zibruka",
+      "sprite": "ship/pug zibruka",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "6",
+        "cargoSpace": "20",
+        "category": "Light Warship",
+        "cost": "1900000",
+        "drag": "3.1",
+        "engineCap": "76",
+        "fuelCap": "600",
+        "heat": ".8",
+        "hull": "1000",
+        "mass": "240",
+        "outfitSpace": "180",
+        "requiredCrew": "4",
+        "shields": "4000",
+        "weaponCap": "68",
+        "weapon": {
+          "blastRadius": "100",
+          "hitForce": "600",
+          "hullDamage": "200",
+          "shieldDamage": "400"
+        }
+      },
+      "outfits": [
+        "Pug Zapper 2",
+        "Pug Biodefenses 4",
+        "Jump Drive",
+        "Pug Akfar Thruster",
+        "Pug Akfar Steering"
+      ],
+      "layout": {
+        "engines": [
+          "engine -7 35",
+          "engine 7 35"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 10",
+          "explode \"small explosion\" 15",
+          "explode \"medium explosion\" 20",
+          "explode \"large explosion\" 10"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -15 -42 \"Pug Zapper\"",
+          "gun 15 -42 \"Pug Zapper\""
+        ],
+        "turrets": null
+      },
+      "description": "The Zibruka is the smallest Pug ship that you know of."
+    },
+    "pug enfolta": {
+      "name": "Pug Enfolta",
+      "sprite": "ship/pug enfolta",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "27",
+        "cargoSpace": "40",
+        "category": "Medium Warship",
+        "cost": "6300000",
+        "drag": "5.9",
+        "engineCap": "106",
+        "fuelCap": "600",
+        "heat": ".7",
+        "hull": "1700",
+        "mass": "410",
+        "outfitSpace": "360",
+        "requiredCrew": "19",
+        "shields": "6800",
+        "weaponCap": "184",
+        "weapon": {
+          "blastRadius": "180",
+          "hitForce": "1080",
+          "hullDamage": "360",
+          "shieldDamage": "720"
+        }
+      },
+      "outfits": [
+        "Pug Zapper 2",
+        "Pug Seeker 2",
+        "Pug Zapper Turret",
+        "Pug Biodefenses 6",
+        "Jump Drive",
+        "Pug Cormet Thruster",
+        "Pug Cormet Steering"
+      ],
+      "layout": {
+        "engines": [
+          "engine -11 68",
+          "engine 11 68"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 5",
+          "explode \"small explosion\" 20",
+          "explode \"medium explosion\" 25",
+          "explode \"large explosion\" 15"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -11 -85 \"Pug Zapper\"",
+          "gun 11 -85 \"Pug Zapper\"",
+          "gun -11 -85 \"Pug Seeker\"",
+          "gun 11 -85 \"Pug Seeker\""
+        ],
+        "turrets": [
+          "turret 0 7 \"Pug Zapper Turret\""
+        ]
+      },
+      "description": "This is a medium-sized Pug warship."
+    },
+    "pug maboro": {
+      "name": "Pug Maboro",
+      "sprite": "ship/pug maboro",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "87",
+        "cargoSpace": "70",
+        "category": "Heavy Warship",
+        "cost": "9500000",
+        "drag": "9.8",
+        "engineCap": "148",
+        "fuelCap": "600",
+        "heat": ".6",
+        "hull": "2700",
+        "mass": "940",
+        "outfitSpace": "560",
+        "requiredCrew": "54",
+        "shields": "12600",
+        "weaponCap": "309",
+        "weapon": {
+          "blastRadius": "300",
+          "hitForce": "1800",
+          "hullDamage": "600",
+          "shieldDamage": "1200"
+        }
+      },
+      "outfits": [
+        "Pug Seeker 4",
+        "Pug Zapper Turret 2",
+        "Pug Anti-Missile",
+        "Pug Biodefenses 8",
+        "Jump Drive",
+        "Pug Lohmar Thruster",
+        "Pug Lohmar Steering"
+      ],
+      "layout": {
+        "engines": [
+          "engine -20 136",
+          "engine 20 136"
+        ],
+        "explosions": [
+          "explode \"small explosion\" 25",
+          "explode \"medium explosion\" 30",
+          "explode \"large explosion\" 20",
+          "explode \"huge explosion\" 5"
+        ],
+        "fighter": null,
+        "guns": [
+          "gun -20 -150 \"Pug Seeker\"",
+          "gun 20 -150 \"Pug Seeker\"",
+          "gun -10 -150 \"Pug Seeker\"",
+          "gun 10 -150 \"Pug Seeker\""
+        ],
+        "turrets": [
+          "turret 0 -50 \"Pug Anti-Missile\"",
+          "turret -15 -35 \"Pug Zapper Turret\"",
+          "turret 15 -35 \"Pug Zapper Turret\""
+        ]
+      },
+      "description": "This is the largest Pug warship."
+    },
+    "pug arfecta": {
+      "name": "Pug Arfecta",
+      "sprite": "ship/pug arfecta",
+      "attributes": {
+        "automaton": 0,
+        "bunks": "46",
+        "cargoSpace": "64",
+        "category": "Medium Warship",
+        "cost": "90000000",
+        "drag": "7.5",
+        "engineCap": "220",
+        "fuelCap": "1200",
+        "heat": ".8",
+        "hull": "80000",
+        "mass": "670",
+        "outfitSpace": "640",
+        "requiredCrew": "36",
+        "shields": "98000",
+        "weaponCap": "390",
+        "weapon": {
+          "blastRadius": "320",
+          "hitForce": "7000",
+          "hullDamage": "4500",
+          "shieldDamage": "9000"
+        }
+      },
+      "outfits": [
+        "Tier 3 Anti-Missile 2",
+        "Pug Gridfire Turret 3",
+        "",
+        "Cloaking Device",
+        "Pug Biodefenses 12",
+        "",
+        "Pug Lohmar Thruster",
+        "Pug Lohmar Steering",
+        "Pug Lohmar Steering",
+        "Jump Drive"
+      ],
+      "layout": {
+        "engines": [
+          "engine -15 164",
+          "engine 15 164"
+        ],
+        "explosions": [
+          "explode \"tiny explosion\" 100",
+          "explode \"small explosion\" 60",
+          "explode \"medium explosion\" 30",
+          "explode \"large explosion\" 10"
+        ],
+        "fighter": null,
+        "guns": null,
+        "turrets": [
+          "turret -50 -29 \"Tier 3 Anti-Missile\"",
+          "turret 50 -29 \"Tier 3 Anti-Missile\"",
+          "turret 0 40 \"Pug Gridfire Turret\"",
+          "turret -73 84 \"Pug Gridfire Turret\"",
+          "turret 73 84 \"Pug Gridfire Turret\""
+        ]
+      },
+      "description": "`This is a Pug tier 3 warship, intended for use in combat against either a species on par with the Quarg, or a lesser species that has decided to be particularly meddlesome.`"
     }
   }
 }

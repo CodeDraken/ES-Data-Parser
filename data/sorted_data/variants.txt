@@ -1642,3 +1642,4 @@ ship "Bactrian" "Bactrian (Hired Gun)"
 		"A520 Atomic Thruster"
 		"A525 Atomic Steering"
 		"Hyperdrive"
+END

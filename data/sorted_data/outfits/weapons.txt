@@ -1079,3 +1079,4 @@ outfit "gbullet"
 		"hull damage" 6
 		"hit force" 0.15
 		"hit effect" "bullet impact"
+END

@@ -190,3 +190,4 @@ effect "big explosion"
 	"random spin" 4
 	"random frame rate" 5
 	"velocity scale" .4
+END

@@ -2517,3 +2517,4 @@ mission "Hunted by State [1]"
 		system
 			distance 5 5
 		fleet "Hired Guns"
+END

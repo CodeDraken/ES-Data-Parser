@@ -302,3 +302,4 @@ ship "Vanguard" "Vanguard Test Dummy"
 	add attributes
 		"automaton" 1
 		"self destruct" 1
+END

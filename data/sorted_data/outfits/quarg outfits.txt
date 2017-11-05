@@ -124,3 +124,4 @@ outfit "Quantum Shield Generator"
 	"outfit space" -120
 	"shield generation" 10
 	"shield energy" 10
+END

@@ -87,3 +87,4 @@ mission "Drak guarding Void Sprites"
 		personality heroic vindictive staying
 		system Nenia
 		ship "Archon (Cloaked)" "Sleeping Dragon"
+END

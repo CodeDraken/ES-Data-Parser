@@ -625,3 +625,4 @@ mission "Wanderer Bulk Delivery [2]"
 		payment
 		payment 20000
 		dialog "You drop off your cargo of <commodity>. The Wanderers thank you and you collect your payment of <payment>."
+END

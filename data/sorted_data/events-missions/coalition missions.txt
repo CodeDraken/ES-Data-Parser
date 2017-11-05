@@ -142,3 +142,4 @@ mission "Coalition License Patch"
 	on offer
 		set "license: Coalition"
 		fail
+END

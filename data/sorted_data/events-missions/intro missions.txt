@@ -451,3 +451,4 @@ conversation "end of intro missions"
 	label next
 	`	There's an awkward pause. You're unsure of how to respond. Then he says, "Thing is, this here planet is one of the most exclusive retirement communities in the galaxy. Plenty of the locals are probably worth more than a billion credits. But they're mostly financial or business types, or old money. I'm rich enough to be here, but I just hope they're willing to socialize with someone who made his fortune flying a ship."`
 	`	He hands you a credit chip worth <payment>, and says, "Best of luck to you, Captain. Don't hesitate to look me up if you're ever in the area."`
+END

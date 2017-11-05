@@ -651,3 +651,4 @@ ship "Water Bug" "Water Bug (Jump)"
 		`"Benga" Atomic Thruster`
 		`"Benga" Atomic Steering`
 		"Jump Drive"
+END

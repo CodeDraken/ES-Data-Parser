@@ -1232,3 +1232,4 @@ ship "Model 512"
 	explode "large explosion" 35
 	"final explode" "final explosion large"
 	description "This is the final state in the evolution of a Kor Mereti war drone: a perfect ring, with incredibly powerful shields and turrets firing in every direction."
+END

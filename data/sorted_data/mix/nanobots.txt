@@ -66,3 +66,4 @@ fleet "Nanobots"
 		vindictive
 	variant
 		"Nanobot" 10
+END
