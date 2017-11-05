@@ -2,7 +2,7 @@ const fs = require('fs')
 const _ = require('lodash')
 
 const dataConfig = require('../config/dataConfig')
-const { shipRegex } = require('../config/regexConfig')
+const { shipRegex, equipedOutfitRegex } = require('../config/regexConfig')
 const attrSelector = require('../util/attributeSelector')
 
 // ships by faction
@@ -25,7 +25,7 @@ const inherit = (ship, faction) => {
 
 // return all outfits in an array
 const outfitSelector = (ship) => {
-  const result = (/outfits([\s\S]*?)(?=\s*?\t*?(engine|gun|explode|turret))/).exec(ship)
+  const result = equipedOutfitRegex.exec(ship)
 
   return result != null ? result[1].replace(/\t|"/g, '').trim().split('\n') : false
 }
@@ -63,6 +63,15 @@ const layoutSelector = (ship, retry) => {
 
 // create a ship object from string of data
 const scrapeShip = (shipStr, faction) => {
+  const attributes = [
+    'ship', 'sprite', 'bunks', 'cargo space', 'category', 'cost',
+    'drag', 'engine capacity', 'fuel capacity', 'heat dissipation',
+    'hull', 'mass', 'outfit space', 'required crew', 'shields',
+    'weapon capacity', 'blast radius', 'hit force', 'hull damage', 'shield damage',
+    'description'
+  ]
+  const locAttributes = ['engine', 'gun', 'fighter', 'turret', 'explode', 'final explode']
+  const attrGroups = ['weapon', 'attributes', 'outfits']
   let data = shipStr
 
   // some special cases end up being an array
@@ -81,7 +90,7 @@ const scrapeShip = (shipStr, faction) => {
   // test the amount the name occurs, if more than once assume it inherits
   if (nameCount < 2) {
     // don't inherit
-    return {
+    const ship = {
       name: attrSelector('ship', data, true),
       sprite: attrSelector('sprite', data, true),
 
@@ -116,6 +125,43 @@ const scrapeShip = (shipStr, faction) => {
 
       description: attrSelector('description', data, true)
     }
+
+    data = data.replace(equipedOutfitRegex, '')
+
+    attributes.forEach(attr => {
+      const re = new RegExp(`"?${attr}"? .*`, 'g')
+      data = data.replace(re, '')
+    })
+
+    locAttributes.forEach(attr => {
+      const re = new RegExp(`.*${attr}.*`, 'g')
+      data = data.replace(re, '')
+    })
+
+    attrGroups.forEach(attr => {
+      const re = new RegExp(`.*${attr}.*`, 'g')
+      data = data.replace(re, '')
+    })
+
+    const extra = data
+      .trim()
+      .split('\n')
+      .map(line =>
+        line
+          .trim()
+          .split(/ (?=\d)/)
+      )
+      .reduce((extraObj, attr) => {
+        if (attr[0] && attr[1]) {
+          extraObj[attr[0].replace(/"/g, '')] = attr[1]
+        }
+
+        return extraObj
+      }, {})
+
+    ship.extra = extra
+
+    return ship
   } else {
     // probably inherit
     let parentShip = inherit(name, faction)
@@ -213,7 +259,7 @@ const scrapeAllShips = () => {
 }
 
 // testing
-// scrapeFaction('hai', 'hai ships');
+scrapeFaction('pug')
 
 module.exports = {
   scrapeShip,
