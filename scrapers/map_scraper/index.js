@@ -10,7 +10,7 @@ const mapData = {
   // split into system strings
   systemsArrOfStr: [],
   // convert each system string to an object
-  systems: {}
+  systems: []
 }
 
 const openMap = (mapFile = `${dataConfig.dataLocation}/map.txt`) => {

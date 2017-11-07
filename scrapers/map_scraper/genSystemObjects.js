@@ -60,10 +60,11 @@ const grabAttributes = (systemStrLines, sysObj) => {
 }
 
 const genSystemObjects = (arrOfSystemStrings) => {
-  const systems = {}
+  const systems = []
 
   // read system strings & convert into objects
   arrOfSystemStrings.forEach((systemStr, i) => {
+    const sysObj = {}
     let preppedSystemStr = prepInitialString(systemStr)
 
     // grab the "object" attributes before removing them from string
@@ -80,18 +81,21 @@ const genSystemObjects = (arrOfSystemStrings) => {
     // remove extra new line ( empty el in array )
     systemStrLines.pop()
 
+    // TODO: old object version cleanup
     // index 0 should be the system name so use that
-    const systemName = systemStrLines[0].replace('system ', '')
+    // const systemName = systemStrLines[0].replace('system ', '')
 
     // initialize the system obj
-    systems[systemName] = {}
+    // systems[systemName] = {}
+
     // shorter variable reference to it
-    const sysObj = systems[systemName]
+    // const sysObj = systems[systemName]
 
     // add the "object" propeties that we pulled out above ^
     sysObj.objects = objectAttributes
 
     grabAttributes(systemStrLines, sysObj)
+    systems.push(sysObj)
   })
 
   return systems
