@@ -8,7 +8,7 @@ const filePrep = () => {
 
   // add END to end of all data files for easier regex
   allFiles.forEach(file => {
-    appendFileSync(file, 'END')
+    appendFileSync(file, '{!END!}')
   })
 }
 
