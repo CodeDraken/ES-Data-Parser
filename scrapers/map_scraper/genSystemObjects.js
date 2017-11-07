@@ -95,6 +95,15 @@ const genSystemObjects = (arrOfSystemStrings) => {
     sysObj.objects = objectAttributes
 
     grabAttributes(systemStrLines, sysObj)
+
+    // if only one value for attribute don't use array
+    for (let attr in sysObj) {
+      const value = sysObj[attr]
+      if (Array.isArray(value) && value.length < 2) {
+        sysObj[attr] = value.join('')
+      }
+    }
+
     systems.push(sysObj)
   })
 

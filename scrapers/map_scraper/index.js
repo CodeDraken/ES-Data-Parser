@@ -13,8 +13,12 @@ const mapData = {
   systems: []
 }
 
-const openMap = (mapFile = `${dataConfig.dataLocation}/map.txt`) => {
-  return fs.readFileSync(mapFile, 'utf-8')
+const openMap = (mapFile = `${dataConfig.dataLocation}/map.txt`, call) => {
+  const mapStr = fs.readFileSync(mapFile, 'utf-8')
+
+  console.log('[mapScraper]: Map loaded')
+
+  return mapStr
 }
 
 const scrapeSystems = (mapStr = mapData.mapStr) => {
