@@ -4,7 +4,7 @@ const genSystemObjects = require('./genSystemObjects')
 const { systemRegex, systemObjectsRegex } = require('../../config/regexConfig')
 const dataConfig = require('../../config/dataConfig')
 
-const data = {
+const mapData = {
   // string from inital read file
   mapStr: '',
   // split into system strings
@@ -17,17 +17,17 @@ const openMap = (mapFile = `${dataConfig.dataLocation}/map.txt`) => {
   return fs.readFileSync(mapFile, 'utf-8')
 }
 
-const scrapeSystems = (mapStr = data.mapStr) => {
+const scrapeSystems = (mapStr = mapData.mapStr) => {
   // split each system ( at each empty line between them )
-  data.systemsArrOfStr = data.mapStr.match(systemRegex)
+  mapData.systemsArrOfStr = mapData.mapStr.match(systemRegex)
 
   // arr of str to system objects
-  data.systems = genSystemObjects(data.systemsArrOfStr)
+  mapData.systems = genSystemObjects(mapData.systemsArrOfStr)
 }
 
 // load in the text file as is
-data.mapStr = openMap()
-scrapeSystems()
+mapData.mapStr = openMap()
+// scrapeSystems()
 
 // TESTING STUFF //
 // "1 Axis"
@@ -36,6 +36,6 @@ scrapeSystems()
 // console.log(data.systems)
 
 module.exports = {
-  data,
+  mapData,
   scrapeSystems
 }

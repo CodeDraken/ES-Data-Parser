@@ -7,6 +7,7 @@ const { jsonToFile } = require('./util/jsonToFile')
 const dataConfig = require('./config/dataConfig')
 const attrEquationGen = require('./util/attr_equation_gen')
 const { filePrep } = require('./util/fileUtil')
+const { scrapeSystems, mapData } = require('./scrapers/map_scraper')
 
 // TODO: if END isn't at end of files then add it
 // prep files
@@ -38,3 +39,6 @@ const scrapeWriteAll = (type) => {
 // attrEquationGen.generateAllEquations()
 
 // jsonToFile(`${dataConfig.outputJSON}/sales_ships.json`, shipSalesJSON)
+
+scrapeSystems()
+jsonToFile(`${dataConfig.outputJSON}/map.json`, mapData.systems)
