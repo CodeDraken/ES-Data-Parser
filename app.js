@@ -33,8 +33,8 @@ const scrapeWriteAll = (type) => {
   }
 }
 
-scrapeWriteAll('ships')
+// scrapeWriteAll('ships')
 // scrapeWriteAll('outfits')
 // attrEquationGen.generateAllEquations()
 
-jsonToFile(`${dataConfig.outputJSON}/sales_ships.json`, shipSalesJSON)
+// jsonToFile(`${dataConfig.outputJSON}/sales_ships.json`, shipSalesJSON)
