@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 const genSystemObjects = require('./genSystemObjects')
-const { systemRegex, systemObjectsRegex } = require('../../config/regexConfig')
+const { systemRegex } = require('../../config/regexConfig')
 const dataConfig = require('../../config/dataConfig')
 
 const mapData = {
@@ -27,9 +27,9 @@ const scrapeSystems = (mapStr = mapData.mapStr) => {
 
 // load in the text file as is
 mapData.mapStr = openMap()
-// scrapeSystems()
 
 // TESTING STUFF //
+// scrapeSystems()
 // "1 Axis"
 // console.log(data.systemsArrOfStr[0])
 // console.log(data.systems['"1 Axis"'])

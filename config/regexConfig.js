@@ -3,7 +3,7 @@ module.exports = {
   outfitRegex: /^outfit "([\s\S]*?)((?=^outfit ".*)|(?:description .*)|(?={!END!}))/gm,
   shipyardRegex: /shipyard\s(".*")([\s\S]*?)(?=shipyard|\n\n)/gm,
   equipedOutfitRegex: /outfits([\s\S]*?)(?=\s*?\t*?(engine|gun|explode|turret))/,
-  systemRegex: /^system ([\s\S]*?)(?=^\s^system)/gm,
+  systemRegex: /^system ([\s\S]*?)(?=^\s*$^)/gm,
   systemObjectsRegex: /^\s+?object\s([\s\S]*?)(?={!END!})/gm
 }
 
@@ -20,3 +20,6 @@ module.exports = {
 
 // outfit selector
 // outfits([\s\S]*?)(?=\s*?\t*?(engine|gun|explode|turret))
+
+// system scraper
+// /^system ([\s\S]*?)(?=^\s*$^)/gm

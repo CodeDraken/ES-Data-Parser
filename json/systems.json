@@ -38425,5 +38425,113 @@
       "\"Small Southern Pirates\" 3000",
       "\"Large Southern Pirates\" 5000"
     ]
+  },
+  "Zubeneschamali": {
+    "objects": [
+      {
+        "name": null,
+        "sprite": "star/g5",
+        "distance": "62",
+        "period": "15.622",
+        "offset": "180"
+      },
+      {
+        "name": null,
+        "sprite": "star/g5-old",
+        "distance": "62",
+        "period": "15.622"
+      },
+      {
+        "name": null,
+        "sprite": "planet/cloud8",
+        "distance": "420.44",
+        "period": "97.5351"
+      },
+      {
+        "name": null,
+        "sprite": "planet/desert4",
+        "distance": "160",
+        "period": "23.094"
+      },
+      {
+        "name": null,
+        "sprite": "planet/ganymede",
+        "distance": "880",
+        "period": "295.345"
+      },
+      {
+        "name": "Zug",
+        "sprite": "planet/forest2",
+        "distance": "1146.84",
+        "period": "439.399"
+      },
+      {
+        "name": null,
+        "sprite": "planet/rock6",
+        "distance": "1525.84",
+        "period": "674.324"
+      },
+      {
+        "name": null,
+        "sprite": "planet/dust3",
+        "distance": "2218.25",
+        "period": "1182.01"
+      }
+    ],
+    "system": [
+      "Zubeneschamali"
+    ],
+    "pos": [
+      "-759 338"
+    ],
+    "government": [
+      "Republic"
+    ],
+    "habitable": [
+      "1250"
+    ],
+    "belt": [
+      "1543"
+    ],
+    "link": [
+      "Hadar",
+      "Zubenelgenubi",
+      "Kochab",
+      "Ildaria"
+    ],
+    "asteroids": [
+      "\"small rock\" 9 1.9344",
+      "\"medium rock\" 57 1.7784",
+      "\"large rock\" 33 2.496",
+      "\"small metal\" 29 2.964",
+      "\"medium metal\" 41 3.0576",
+      "\"large metal\" 72 3.7752"
+    ],
+    "minables": [
+      "neodymium 25 3.69745",
+      "silicon 28 4.05728",
+      "titanium 31 4.30615"
+    ],
+    "trade": [
+      "Clothing 376",
+      "Electronics 673",
+      "Equipment 592",
+      "Food 146",
+      "\"Heavy Metals\" 1056",
+      "Industrial 755",
+      "\"Luxury Goods\" 994",
+      "Medical 567",
+      "Metal 554",
+      "Plastic 303"
+    ],
+    "fleet": [
+      "\"Small Southern Merchants\" 500",
+      "\"Large Southern Merchants\" 1500",
+      "\"Small Militia\" 3000",
+      "\"Large Militia\" 5000",
+      "\"Small Southern Pirates\" 2000",
+      "\"Large Southern Pirates\" 3000",
+      "\"Human Miners\" 2000"
+    ]
   }
 }

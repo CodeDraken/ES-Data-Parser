@@ -40,5 +40,5 @@ const scrapeWriteAll = (type) => {
 
 // jsonToFile(`${dataConfig.outputJSON}/sales_ships.json`, shipSalesJSON)
 
-scrapeSystems()
-jsonToFile(`${dataConfig.outputJSON}/map.json`, mapData.systems)
+// scrapeSystems()
+// jsonToFile(`${dataConfig.outputJSON}/systems.json`, mapData.systems)
