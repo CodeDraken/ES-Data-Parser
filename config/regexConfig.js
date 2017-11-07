@@ -1,10 +1,13 @@
+// TODO: create generic regex to use with multiple scrapers
+
 module.exports = {
   shipRegex: /^ship "([\s\S]*?)((?=ship ".*)|(?:description .*)|(?={!END!}))/gm,
   outfitRegex: /^outfit "([\s\S]*?)((?=^outfit ".*)|(?:description .*)|(?={!END!}))/gm,
   shipyardRegex: /shipyard\s(".*")([\s\S]*?)(?=shipyard|\n\n)/gm,
   equipedOutfitRegex: /outfits([\s\S]*?)(?=\s*?\t*?(engine|gun|explode|turret))/,
   systemRegex: /^system ([\s\S]*?)(?=^\s*$^)/gm,
-  systemObjectsRegex: /^\s+?object\s([\s\S]*?)(?={!END!})/gm
+  systemObjectsRegex: /^\s+?object\s([\s\S]*?)(?={!END!})/gm,
+  planetRegex: /^planet ([\s\S]*?)(?=^\s*$^)/gm
 }
 
 // NOTES:
