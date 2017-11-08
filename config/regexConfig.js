@@ -1,5 +1,3 @@
-// TODO: create generic regex to use with multiple scrapers
-
 module.exports = {
   // selects blocks of code seperated by new lines
   genericGroupRegex: (name) => new RegExp(`^${name} ([\s\S]*?)(?=^\s*$^)`, 'gm'),
