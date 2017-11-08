@@ -41,7 +41,6 @@ const spacedAttrVal = (line) => {
 
 const addAttr = (attr, value, parent, hasAttr) => {
   if (hasAttr) {
-    console.log('add normal attribute: ', attr, ' | ', value)
     // normal attribute
     parent[attr] = attr in parent
     ? Array.isArray(parent[attr])
@@ -49,11 +48,39 @@ const addAttr = (attr, value, parent, hasAttr) => {
       : [ parent[attr], value ]
     : value
   } else {
-    console.log('add single attribute: ', attr, value)
     // probably a single attribute no value i.e outfits like "blaster" ( no # after )
     parent.singles = parent.singles
       ? [ ...parent.singles, value ]
       : [ value ]
+  }
+}
+
+const addNode = (attr, value, parent, hasAttr, tree) => {
+  // it's a parent node i.e attributes
+  if (hasAttr) {
+    console.log('add attribute node: ', attr, value)
+    const node = { _value: value }
+    // some nodes have a value after it i.e sprite "..."
+    // can be an array of nodes
+    parent[attr] = attr in parent
+    ? Array.isArray(parent[attr])
+      ? [ ...parent[attr], node ]
+      : [ parent[attr], node ]
+    : node
+
+    tree.push(node)
+  } else {
+    const node = {}
+    console.log('add plain node: ', attr, value)
+    // just a name i.e "attributes"
+
+    parent[value] = value in parent
+    ? Array.isArray(parent[value])
+      ? [ ...parent[value], node ]
+      : [ parent[value], node ]
+    : node
+
+    tree.push(node)
   }
 }
 
@@ -67,10 +94,7 @@ const parser = (fileStr, groupsToGrab, _path) => {
   console.log(genericGroupRegex(groupsToGrab))
   console.log(`Found ${blocks.length} matches for ${groupsToGrab} in ${_path}`)
 
-  if (!debug) console.log = () => null
-
   return blocks.map((block, i) => {
-    if (i > 0) console.log = () => null
     const lines = block
       .split('\n')
       .filter(line => line.length > 0)
@@ -106,31 +130,16 @@ const parser = (fileStr, groupsToGrab, _path) => {
         const { attr, value } = spacedAttrVal(line)
         const hasAttr = !!attr
 
-        console.log('AV: ', attr, ' | ', value)
-        console.log('indent', indent, nextIndent, expectedIndent)
-
         if (indent === expectedIndent && nextIndent === expectedIndent) {
           addAttr(attr, value, parent, hasAttr)
         } else if (nextIndent > expectedIndent || indent > expectedIndent) {
-           // it's a parent node i.e attributes
-          if (hasAttr) {
-            console.log('create parent node with attribute', attr, ' | ', value, indent, nextIndent, expectedIndent)
-            // some nodes have a value after it i.e sprite "..."
-            parent[attr] = { _value: value }
-            tree.push(parent[attr])
-          } else {
-            // just a name i.e "attributes"
-            parent[value] = {}
-            tree.push(parent[value])
-          }
+          addNode(attr, value, parent, hasAttr, tree)
         } else if (indent === expectedIndent && nextIndent < expectedIndent) {
-          console.log('add and go up: ', attr, value)
           // add then go up tree
           addAttr(attr, value, parent, hasAttr)
 
           tree.length = nextIndent
         } else if (indent < expectedIndent) {
-          console.log('go up then add: ', attr, value)
           // go up the node tree
           tree.length = indent
           // get the right parent and add to it
