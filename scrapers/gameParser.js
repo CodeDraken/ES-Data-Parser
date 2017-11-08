@@ -55,13 +55,13 @@ const addAttr = (attr, value, parent, hasAttr) => {
   }
 }
 
-const parser = (fileStr, groupsToGrab) => {
+const parser = (fileStr, groupsToGrab, _path) => {
   console.log(genericGroupRegex(groupsToGrab))
   const blocks = fileStr
     .match(genericGroupRegex(groupsToGrab))
     .filter(block => block.length > 0)
 
-  console.log(`Found ${blocks.length} matches for ${groupsToGrab}`)
+  console.log(`Found ${blocks.length} matches for ${groupsToGrab} in ${_path}`)
 
   return blocks.map(block => {
     const lines = block
@@ -133,20 +133,22 @@ const parser = (fileStr, groupsToGrab) => {
 // testing
 // console.log(parser())
 
-// parse every file
+// parse file
 const test = (_path, name, search) => {
   jsonToFile(
     `${outputJSON}/parserJSON/${name}.json`,
-    parser(fs.readFileSync(`${dataLocation}${_path}.txt`, 'utf-8'), search)
+    parser(fs.readFileSync(`${dataLocation}${_path}.txt`, 'utf-8'), search, _path)
   )
 }
 
-test('/map', 'map-planets', 'planet')
-test('/map', 'map-systems', 'system')
-test('/governments', 'governments', 'government')
-test('/sales', 'sales', 'outfitter')
-test('/fleets/fleets', 'fleets', 'fleet')
-test('/mix/drak', 'drak-ship', 'ship')
+// test('/map', 'map-planets', 'planet')
+// test('/map', 'map-systems', 'system')
+// test('/governments', 'governments', 'government')
+// test('/sales', 'sales', 'outfitter')
+// test('/outfits/outfits', 'outfits-human', 'outfit')
+// test('/ships/humans', 'ships-human', 'ship')
+// test('/fleets/fleets', 'fleets', 'fleet')
+// test('/mix/drak', 'drak-ship', 'ship')
 
 // const testFile = fs.readFileSync(`${dataLocation}/map.txt`, 'utf-8')
 
