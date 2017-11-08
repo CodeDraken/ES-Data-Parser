@@ -1,0 +1,46 @@
+[
+  {
+    "_type": "ship",
+    "_name": "\"Tek Far 109\"",
+    "sprite": "\"ship/tek far 109\"",
+    "attributes": {
+      "category": "\"Medium Warship\"",
+      "\"cost\"": "18290000",
+      "\"shields\"": "17900",
+      "\"hull\"": "15800",
+      "\"automaton\"": "1",
+      "\"mass\"": "540",
+      "\"drag\"": "9.1",
+      "\"heat": "dissipation\" .65",
+      "\"fuel": "capacity\" 400",
+      "\"cargo": "space\" 31",
+      "\"outfit": "space\" 491",
+      "\"weapon": "capacity\" 217",
+      "\"engine": "capacity\" 98",
+      "\"self": "destruct\" .7",
+      "\"ramscoop\"": "3",
+      "weapon": {
+        "\"blast": "radius\" 280",
+        "\"shield": "damage\" 3200",
+        "\"hull": "damage\" 1600"
+      }
+    },
+    "\"Korath": {
+      "_name": "Detainer\"",
+      "\"Korath": "Banisher\" 2",
+      "\"Double": "Plasma Core\"",
+      "\"Systems": "Core (Medium)\"",
+      "\"Small": "Heat Shunt\" 2",
+      "\"Control": "Transceiver\"",
+      "\"Thruster": "(Lunar Class)\"",
+      "\"Steering": "(Planetary Class)\""
+    },
+    "engine": "9 205",
+    "gun": "14 -206 \"Korath Piercer Launcher\"",
+    "turret": "89 32",
+    "drone": "45.5 135 under",
+    "fighter": "-22 -82 under",
+    "explode": "\"huge explosion\" 8",
+    "\"final": "explode\" \"final explosion medium\""
+  }
+]

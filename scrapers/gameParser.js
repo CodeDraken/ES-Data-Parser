@@ -4,6 +4,7 @@
 
 const fs = require('fs')
 
+const { jsonToFile } = require('../util/jsonToFile')
 const { dataLocation, outputJSON } = require('../config/dataConfig')
 
 const fileStr = (
@@ -78,6 +79,7 @@ const fileStr = (
 )
 
 const spacedAttrVal = (line) => {
+  line = line.trim()
   const attr = line.substr(0, line.indexOf(' '))
   const value = line.substr(line.indexOf(' ') + 1)
 
@@ -85,7 +87,7 @@ const spacedAttrVal = (line) => {
 }
 
 const parser = (useFileStrHereLater) => {
-  const lines = fileStr.split('\n')
+  const lines = fileStr.split('\n').filter(line => line.length > 0)
 
   // wrap below for loops in loop through string groups
   const populateObjects = []
@@ -96,47 +98,52 @@ const parser = (useFileStrHereLater) => {
 
   // use for loop so we can skip lines when needed
   for (let i = 1; i < lines.length; i++) {
-    // the parent node
-    const parent = populateObjects[populateObjects.length - 1]
-    // how many nodes deep we are
-    const expectedIndent = populateObjects.length
+    try {
+      // the parent node
+      const parent = populateObjects[populateObjects.length - 1]
+      // how many nodes deep we are
+      const expectedIndent = populateObjects.length
 
-    // list of objects we are currently populating
-    const line = lines[i]
-    const nextLine = lines[i + 1]
-    // const chars = line.split('')
+      // list of objects we are currently populating
+      const line = lines[i]
+      const nextLine = lines[i + 1]
+      // const chars = line.split('')
 
-    // skip empty lines
-    if (line === '\n' || line.trim().length < 1) continue
+      // skip empty lines
+      if (line === '\n' || line.trim().length < 1) continue
 
-    // number of white space / indents for the line
-    const indent = line.search(/\S|$/)
-    // if next white is > white assume it's an object
-    const nextIndent = nextLine.search(/\S|$/)
-    // get the attribute name and value
-    const { attr, value } = spacedAttrVal(line)
-    const hasAttr = !!attr
+      // number of white space / indents for the line
+      const indent = line.search(/\S|$/)
+     // if next white is > white assume it's an object
+      const nextIndent = nextLine
+        ? nextLine.search(/\S|$/)
+        : true
+      // get the attribute name and value
+      const { attr, value } = spacedAttrVal(line)
+      const hasAttr = !!attr
 
-    if (indent === expectedIndent && nextIndent === expectedIndent) {
-      // normal attribute
-      parent[attr] = value
-    } else if (nextIndent > expectedIndent || indent > expectedIndent) {
-      // it's a parent node i.e attributes
-      if (hasAttr) {
-        // some nodes have a value after it i.e sprite "..."
-        parent[attr] = { _name: value }
-        populateObjects.push(parent[attr])
-      } else {
-        // just a name i.e "attributes"
-        parent[value] = {}
-        populateObjects.push(parent[value])
+      if (indent === expectedIndent && nextIndent === expectedIndent) {
+        // normal attribute
+        parent[attr] = value
+      } else if (nextIndent > expectedIndent || indent > expectedIndent) {
+         // it's a parent node i.e attributes
+        if (hasAttr) {
+          // some nodes have a value after it i.e sprite "..."
+          parent[attr] = { _name: value }
+          populateObjects.push(parent[attr])
+        } else {
+          // just a name i.e "attributes"
+          parent[value] = {}
+          populateObjects.push(parent[value])
+        }
+      } else if (indent < expectedIndent || nextIndent < expectedIndent) {
+        // go up the node tree
+        populateObjects.length = indent
       }
-    } else if (indent < expectedIndent || nextIndent < expectedIndent) {
-      // go up the node tree
-      populateObjects.length = indent
+    } catch (err) {
+      console.log('ERROR: ', err)
+      console.log(`failed at: I ${i}, line: ${lines[i]}`)
     }
-
-    return populateObjects
 
     // TODO: char looping or cleanup
     // loop each char of a line
@@ -147,6 +154,9 @@ const parser = (useFileStrHereLater) => {
     //   if (char === '#') break
     // }
   }
+  return populateObjects
 }
 
 console.log(parser())
+
+jsonToFile(`${outputJSON}/test_parser.json`, parser())
