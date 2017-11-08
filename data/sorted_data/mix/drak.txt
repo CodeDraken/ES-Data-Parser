@@ -257,4 +257,4 @@ ship "Archon" "Archon (Cloaked)"
 	turret "Drak Turret"
 	turret "Drak Distancer"
 	turret "Drak Distancer"
-END
+

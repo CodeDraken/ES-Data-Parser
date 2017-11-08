@@ -1,6 +1,6 @@
 module.exports = {
   // selects blocks of code seperated by new lines
-  genericGroupRegex: (name) => new RegExp(`^${name} ([\s\S]*?)(?=^\s*$^)`, 'gm'),
+  genericGroupRegex: (name) => new RegExp(String.raw`^${name} ([\s\S]*?)(?=(^\s*$^)|({!END!}))`, 'gm'),
   shipRegex: /^ship "([\s\S]*?)((?=ship ".*)|(?:description .*)|(?={!END!}))/gm,
   outfitRegex: /^outfit "([\s\S]*?)((?=^outfit ".*)|(?:description .*)|(?={!END!}))/gm,
   shipyardRegex: /shipyard\s(".*")([\s\S]*?)(?=shipyard|\n\n)/gm,

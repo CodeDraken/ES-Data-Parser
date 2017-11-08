@@ -356,4 +356,5 @@ government "Wanderer"
 	"friendly hail" "wanderer untranslated"
 	"hostile hail" "wanderer untranslated"
 	"hostile disabled hail" "wanderer untranslated"
+
 END

@@ -1,0 +1,895 @@
+[
+  {
+    "_type": "fleet",
+    "_value": "\"Small Southern Merchants\"",
+    "government": "\"Merchant\"",
+    "names": "\"civilian\"",
+    "cargo": 3,
+    "personality": {
+      "confusion": 40,
+      "timid": "frugal appeasing"
+    },
+    "variant": {
+      "_value": 7,
+      "singles": [
+        "\"Hauler\"",
+        "\"Berserker\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Southern Merchants\"",
+    "government": "\"Merchant\"",
+    "names": "\"civilian\"",
+    "cargo": 4,
+    "personality": {
+      "confusion": 30,
+      "timid": "frugal appeasing"
+    },
+    "variant": {
+      "_value": 6,
+      "singles": [
+        "\"Hauler III\""
+      ],
+      "\"Berserker\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Core Merchants\"",
+    "government": "\"Merchant\"",
+    "names": "\"civilian\"",
+    "cargo": 3,
+    "personality": {
+      "confusion": 30,
+      "timid": "frugal appeasing"
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Flivver (Racing)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Core Merchants\"",
+    "government": "\"Merchant\"",
+    "names": "\"civilian\"",
+    "cargo": 4,
+    "personality": {
+      "confusion": 20,
+      "timid": "frugal appeasing"
+    },
+    "variant": {
+      "_value": 2,
+      "singles": [
+        "\"Arrow\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Northern Merchants\"",
+    "government": "\"Merchant\"",
+    "names": "\"civilian\"",
+    "cargo": 3,
+    "personality": {
+      "confusion": 40,
+      "timid": "frugal appeasing"
+    },
+    "variant": {
+      "_value": 2,
+      "singles": [
+        "\"Hauler II\"",
+        "\"Hauler\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Northern Merchants\"",
+    "government": "\"Merchant\"",
+    "names": "\"civilian\"",
+    "cargo": 4,
+    "personality": {
+      "confusion": 30,
+      "timid": "frugal appeasing"
+    },
+    "variant": {
+      "_value": 4,
+      "singles": [
+        "\"Hauler III\"",
+        "\"Hauler II\""
+      ],
+      "\"Headhunter\"": 3
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Human Merchants (Hai)\"",
+    "government": "\"Merchant\"",
+    "names": "\"civilian\"",
+    "cargo": 3,
+    "personality": {
+      "confusion": 40,
+      "timid": "frugal appeasing"
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Star Barge\"",
+        "\"Aphid\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Human Merchants (Hai)\"",
+    "government": "\"Merchant\"",
+    "names": "\"civilian\"",
+    "cargo": 4,
+    "personality": {
+      "confusion": 30,
+      "timid": "frugal appeasing"
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Shield Beetle\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Human Miners\"",
+    "government": "\"Merchant\"",
+    "names": "\"civilian\"",
+    "cargo": 0,
+    "personality": {
+      "confusion": 20,
+      "timid": "frugal mining harvests"
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Headhunter (Particle)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Free Worlds\"",
+    "government": "\"Free Worlds\"",
+    "names": "\"free worlds small\"",
+    "cargo": 1,
+    "personality": {
+      "heroic": "disables frugal opportunistic"
+    },
+    "variant": {
+      "_value": 2,
+      "singles": [
+        "\"Hawk (Speedy)\""
+      ],
+      "\"Sparrow\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Free Worlds\"",
+    "government": "\"Free Worlds\"",
+    "names": "\"free worlds capital\"",
+    "cargo": 1,
+    "personality": {
+      "heroic": "disables frugal opportunistic"
+    },
+    "variant": {
+      "_value": 2,
+      "singles": [
+        "\"Falcon (Laser)\"",
+        "\"Bastion (Laser)\"",
+        "\"Hawk (Speedy)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Militia\"",
+    "government": "\"Militia\"",
+    "names": "\"militia\"",
+    "cargo": 1,
+    "personality": {
+      "heroic": "frugal",
+      "confusion": 20
+    },
+    "variant": {
+      "_value": 2,
+      "singles": [
+        "\"Hawk (Speedy)\""
+      ],
+      "\"Sparrow\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Militia\"",
+    "government": "\"Militia\"",
+    "names": "\"militia\"",
+    "cargo": 1,
+    "personality": {
+      "heroic": "frugal",
+      "confusion": 20
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Falcon (Laser)\""
+      ],
+      "\"Hawk\"": 2,
+      "\"Sparrow\"": 3
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Republic\"",
+    "government": "\"Republic\"",
+    "names": "\"republic small\"",
+    "cargo": 0,
+    "personality": {
+      "heroic": "opportunistic"
+    },
+    "variant": {
+      "_value": 6,
+      "singles": [
+        "\"Gunboat\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Republic\"",
+    "government": "\"Republic\"",
+    "names": "\"republic capital\"",
+    "fighters": "\"republic fighter\"",
+    "cargo": 0,
+    "personality": {
+      "heroic": "opportunistic"
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Frigate\"",
+        "\"Gunboat\""
+      ],
+      "\"Rainmaker\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Navy Surveillance\"",
+    "government": "\"Republic\"",
+    "names": "\"republic capital\"",
+    "fighters": "\"republic fighter\"",
+    "cargo": 0,
+    "personality": {
+      "surveillance": "opportunistic"
+    },
+    "variant": {
+      "_value": 10,
+      "\"Gunboat\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Deep\"",
+    "government": "\"Republic\"",
+    "names": "\"deep\"",
+    "fighters": "\"deep fighter\"",
+    "cargo": 0,
+    "personality": {
+      "singles": [
+        "heroic"
+      ]
+    },
+    "variant": {
+      "_value": 2,
+      "singles": [
+        "\"Flivver (Racing)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Deep\"",
+    "government": "\"Republic\"",
+    "names": "\"deep\"",
+    "fighters": "\"deep fighter\"",
+    "cargo": 0,
+    "personality": {
+      "singles": [
+        "heroic"
+      ]
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Star Queen\""
+      ],
+      "\"Raven (Afterburner)\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Deep Military\"",
+    "government": "\"Republic\"",
+    "names": "\"deep\"",
+    "fighters": "\"deep fighter\"",
+    "cargo": 0,
+    "personality": {
+      "singles": [
+        "heroic"
+      ]
+    },
+    "variant": {
+      "_value": 2,
+      "singles": [
+        "\"Corvette (Missile)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Deep Military\"",
+    "government": "\"Republic\"",
+    "names": "\"deep\"",
+    "fighters": "\"deep fighter\"",
+    "cargo": 0,
+    "personality": {
+      "singles": [
+        "heroic"
+      ]
+    },
+    "variant": {
+      "_value": 3,
+      "singles": [
+        "\"Corvette (Speedy)\"",
+        "\"Corvette (Missile)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Oathkeeper\"",
+    "government": "\"Navy (Oathkeeper)\"",
+    "names": "\"republic small\"",
+    "cargo": 0,
+    "personality": {
+      "heroic": "opportunistic"
+    },
+    "variant": {
+      "_value": 6,
+      "singles": [
+        "\"Gunboat\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Oathkeeper\"",
+    "government": "\"Navy (Oathkeeper)\"",
+    "names": "\"republic capital\"",
+    "fighters": "\"republic fighter\"",
+    "cargo": 0,
+    "personality": {
+      "heroic": "opportunistic"
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Frigate\"",
+        "\"Gunboat\""
+      ],
+      "\"Rainmaker\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Syndicate\"",
+    "government": "\"Syndicate\"",
+    "names": "\"syndicate small\"",
+    "cargo": 2,
+    "personality": {
+      "singles": [
+        "heroic"
+      ]
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Manta (Proton)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Syndicate\"",
+    "government": "\"Syndicate\"",
+    "names": "\"syndicate capital\"",
+    "fighters": "\"syndicate fighter\"",
+    "cargo": 2,
+    "personality": {
+      "singles": [
+        "heroic"
+      ]
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Vanguard\""
+      ],
+      "\"Quicksilver (Proton)\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Southern Pirates\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "plunders": "harvests",
+      "confusion": 20
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Modified Argosy\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Southern Pirates\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "plunders": "harvests"
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Falcon (Laser)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Independent\"",
+    "government": "\"Independent\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "plunders"
+      ],
+      "confusion": 20
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Clipper (Speedy)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Independent\"",
+    "government": "\"Independent\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "plunders"
+      ]
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Falcon (Laser)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Core Pirates\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "plunders": "harvests",
+      "confusion": 20
+    },
+    "variant": {
+      "_value": 2,
+      "\"Quicksilver\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Core Pirates\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "plunders": "harvests"
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Firebird (Missile)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Northern Pirates\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "plunders": "harvests",
+      "confusion": 20
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Corvette (Speedy)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Northern Pirates\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "plunders": "harvests"
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Bactrian\""
+      ],
+      "\"Dagger\"": 3
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"pirate raid\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "nemesis": "plunders harvests",
+      "confusion": 20
+    },
+    "variant": {
+      "_value": 2,
+      "\"Berserker (Afterburner)\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Syndicate Extremists\"",
+    "government": "\"Syndicate (Extremist)\"",
+    "names": "\"syndicate capital\"",
+    "fighters": "\"syndicate fighter\"",
+    "cargo": 0,
+    "personality": {
+      "singles": [
+        "heroic"
+      ]
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Leviathan (Heavy)\""
+      ],
+      "\"Firebird (Plasma)\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Bounty Hunters\"",
+    "government": "\"Bounty Hunter\"",
+    "names": "\"bounty hunter\"",
+    "personality": {
+      "nemesis": "waiting heroic"
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Splinter\"",
+        "\"Fury (Missile)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Quarg\"",
+    "government": "\"Quarg\"",
+    "names": "\"quarg\"",
+    "cargo": 3,
+    "personality": {
+      "forbearing": "opportunistic"
+    },
+    "variant": {
+      "singles": [
+        "\"Quarg Wardragon\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Quarg\"",
+    "government": "\"Quarg\"",
+    "names": "\"quarg\"",
+    "cargo": 1,
+    "personality": {
+      "forbearing": "opportunistic"
+    },
+    "variant": {
+      "\"Quarg Skylark\"": 3,
+      "singles": [
+        "\"Quarg Wardragon\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Small Pug\"",
+    "government": "\"Pug\"",
+    "names": "\"pug\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "heroic"
+      ]
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Pug Enfolta\"",
+        "\"Pug Zibruka\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Large Pug\"",
+    "government": "\"Pug\"",
+    "names": "\"pug\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "heroic"
+      ]
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Pug Maboro\"",
+        "\"Pug Enfolta\""
+      ],
+      "\"Pug Zibruka\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Marauder fleet I\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "plunders"
+      ]
+    },
+    "variant": {
+      "_value": 1,
+      "\"Marauder Raven (Weapons)\"": {
+        "\"Marauder Arrow\"": 2
+      },
+      "\"Marauder Bounder\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Marauder fleet II\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "plunders"
+      ]
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Marauder Raven (Weapons)\""
+      ],
+      "\"Marauder Arrow\"": 2,
+      "\"Marauder Bounder\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Marauder fleet III\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "plunders"
+      ]
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Marauder Raven (Weapons)\""
+      ],
+      "\"Marauder Arrow\"": 2,
+      "\"Marauder Bounder\"": 2
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Marauder fleet IV\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "plunders"
+      ]
+    },
+    "variant": {
+      "_value": 2,
+      "singles": [
+        "\"Marauder Splinter (Weapons)\"",
+        "\"Marauder Raven\"",
+        "\"Marauder Quicksilver\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Marauder fleet V\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "plunders"
+      ]
+    },
+    "variant": {
+      "_value": 2,
+      "singles": [
+        "\"Marauder Splinter (Weapons)\"",
+        "\"Marauder Raven\"",
+        "\"Marauder Quicksilver\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Marauder fleet VI\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "plunders"
+      ]
+    },
+    "variant": {
+      "_value": 2,
+      "singles": [
+        "\"Marauder Splinter (Weapons)\"",
+        "\"Marauder Raven\"",
+        "\"Marauder Quicksilver\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Marauder fleet VII\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "plunders"
+      ]
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Marauder Leviathan (Weapons)\"",
+        "\"Firebird\"",
+        "\"Firebird (Plasma)\"",
+        "\"Firebird (Missile)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Marauder fleet VIII\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "plunders"
+      ]
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Marauder Leviathan (Weapons)\"",
+        "\"Firebird\"",
+        "\"Firebird (Plasma)\"",
+        "\"Firebird (Missile)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Marauder fleet IX\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "plunders"
+      ]
+    },
+    "variant": {
+      "_value": 1,
+      "singles": [
+        "\"Marauder Leviathan (Weapons)\"",
+        "\"Firebird\"",
+        "\"Firebird (Plasma)\"",
+        "\"Firebird (Missile)\""
+      ]
+    }
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Marauder fleet X\"",
+    "government": "\"Pirate\"",
+    "names": "\"pirate\"",
+    "cargo": 1,
+    "personality": {
+      "singles": [
+        "plunders"
+      ]
+    },
+    "variant": {
+      "_value": 2,
+      "singles": [
+        "\"Marauder Leviathan (Weapons)\"",
+        "\"Marauder Firebird (Engines)\"",
+        "\"Marauder Raven\"",
+        "\"Marauder Quicksilver\"",
+        "\"Marauder Arrow\"",
+        "\"Marauder Bounder\""
+      ]
+    }
+  }
+]
