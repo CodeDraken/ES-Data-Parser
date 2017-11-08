@@ -1,4 +1,5 @@
 // target object is last element in populateObjects
+// expected indent is always populateObjects.length?
 
 // PUG ZAPPER TURRET WALKTHROUGH //
 
@@ -63,6 +64,10 @@ populateObjects.pop()
 expectedIndent = 1
 parent.description = '...'
 
+// nothing left in block
+data[obj._type][obj._name] = obj
+
+
 outfit "Pug Zapper Turret"
 	category "Turrets"
 	cost 860000
@@ -91,4 +96,196 @@ outfit "Pug Zapper Turret"
 		"hull damage" 5.8
 	description "Mounted on a turret, this Pug weapon becomes even more devastatingly powerful. However, its energy requirements are higher than most human ships can support."
 
+
+
 // PUG ZAPPER TURRET WALKTHROUGH END //
+
+
+
+// ship "Tek Far 109" WALKTHROUGH //
+
+// index / indent is 0, expectedIndent is 1
+// initialize new object { _type: ship, _name: "Tek Far 109" }
+// push to populateObjects reference to object
+[ objGroup ]
+
+parent = [ populateObjects.length - 1 ]
+
+// indent is 1, add as normal
+{
+  sprite "ship/tek far 109"
+}
+
+// attributes, next indent is 2 > expectedIndent of 1
+parent.attributes = {}
+populateObjects.push(parent.attributes)
+expectedIndent = 2
+
+// add values to attributes obj as normal...
+{
+  category "Medium Warship"
+  "cost" 18290000
+  "shields" 17900
+  "hull" 15800
+  "automaton" 1
+  "mass" 540
+  "drag" 9.1
+  "heat dissipation" .65
+  "fuel capacity" 400
+  "cargo space" 31
+  "outfit space" 491
+  "weapon capacity" 217
+  "engine capacity" 98
+  "self destruct" .7
+  "ramscoop" 3
+}
+
+// weapon, next indent is 3 > expectedIndent of 2
+parent.weapon = {}
+populateObjects.push(parent.weapon)
+expectedIndent = 3
+
+// add values to ship>attributes>weapon as normal
+{
+  "blast radius" 280
+  "shield damage" 3200
+  "hull damage" 1600
+  "hit force" 4800
+}
+
+// next line outfits, indent is 1 < expectedIndent of 3
+populateObjects.length = 1
+expectedIndent = 1
+
+// outfits, next indent is 2 > expectedIndent of 1
+parent.outfits = {}
+populateObjects.push(parent.outfits)
+expectedIndent = 2
+
+// add values to ship>outfits
+{
+  "Korath Detainer"
+  "Korath Piercer Launcher" 2
+  "Korath Piercer" 62
+  "Korath Banisher" 2
+  
+  "Double Plasma Core"
+  "Systems Core (Medium)"
+  "Small Heat Shunt" 2
+  "Control Transceiver"
+  
+  "Thruster (Lunar Class)"
+  "Steering (Planetary Class)"
+  Hyperdrive
+}
+
+// empty line skipped
+// engine, indent is 1 < expectedIndent of 2
+populateObjects.length = 1
+expectedIndent = 1
+
+// add objects as normal until end
+{
+  engine -9 205
+	engine 9 205
+	gun 0 -214 "Korath Detainer"
+	gun -14 -206 "Korath Piercer Launcher"
+	gun 14 -206 "Korath Piercer Launcher"
+	turret -89 32
+	turret 89 32
+	drone 38.5 -115.5 over
+	drone 25 -50.5 over
+	drone 59 28 over
+	drone 28 79 over
+	drone 19.5 145.5 over
+	drone 57.5 -56.5 under
+	drone 40 19 under
+	drone 60 58.5 under
+	drone 45.5 135 under
+	fighter -36.5 -130.5 over
+	fighter -61.5 -68 over
+	fighter -29.5 -17 over
+	fighter -54.5 55 over
+	fighter -62 24 under
+	fighter -35 136.5 under
+	fighter -22 -82 under
+	explode "tiny explosion" 70
+	explode "small explosion" 40
+	explode "medium explosion" 45
+	explode "large explosion" 30
+	explode "huge explosion" 8
+	"final explode" "final explosion medium"
+	description "The TF109 is designed almost solely for the purpose of carrying a fleet of Kor Sestor fighters and drones. Without them to serve as a protective screen, the ship itself is relatively helpless."
+}
+
+ship "Tek Far 109"
+	sprite "ship/tek far 109"
+	attributes
+		category "Medium Warship"
+		"cost" 18290000
+		"shields" 17900
+		"hull" 15800
+		"automaton" 1
+		"mass" 540
+		"drag" 9.1
+		"heat dissipation" .65
+		"fuel capacity" 400
+		"cargo space" 31
+		"outfit space" 491
+		"weapon capacity" 217
+		"engine capacity" 98
+		"self destruct" .7
+		"ramscoop" 3
+		weapon
+			"blast radius" 280
+			"shield damage" 3200
+			"hull damage" 1600
+			"hit force" 4800
+	outfits
+		"Korath Detainer"
+		"Korath Piercer Launcher" 2
+		"Korath Piercer" 62
+		"Korath Banisher" 2
+		
+		"Double Plasma Core"
+		"Systems Core (Medium)"
+		"Small Heat Shunt" 2
+		"Control Transceiver"
+		
+		"Thruster (Lunar Class)"
+		"Steering (Planetary Class)"
+		Hyperdrive
+	
+	engine -9 205
+	engine 9 205
+	gun 0 -214 "Korath Detainer"
+	gun -14 -206 "Korath Piercer Launcher"
+	gun 14 -206 "Korath Piercer Launcher"
+	turret -89 32
+	turret 89 32
+	drone 38.5 -115.5 over
+	drone 25 -50.5 over
+	drone 59 28 over
+	drone 28 79 over
+	drone 19.5 145.5 over
+	drone 57.5 -56.5 under
+	drone 40 19 under
+	drone 60 58.5 under
+	drone 45.5 135 under
+	fighter -36.5 -130.5 over
+	fighter -61.5 -68 over
+	fighter -29.5 -17 over
+	fighter -54.5 55 over
+	fighter -62 24 under
+	fighter -35 136.5 under
+	fighter -22 -82 under
+	explode "tiny explosion" 70
+	explode "small explosion" 40
+	explode "medium explosion" 45
+	explode "large explosion" 30
+	explode "huge explosion" 8
+	"final explode" "final explosion medium"
+	description "The TF109 is designed almost solely for the purpose of carrying a fleet of Kor Sestor fighters and drones. Without them to serve as a protective screen, the ship itself is relatively helpless."
+
+// ship "Tek Far 109" WALKTHROUGH END //
+
