@@ -700,9 +700,8 @@
     },
     "variant": {
       "_value": 1,
-      "\"Marauder Raven (Weapons)\"": {
-        "\"Marauder Arrow\"": 2
-      },
+      "\"Marauder Raven (Weapons)\"": {},
+      "\"Marauder Arrow\"": 2,
       "\"Marauder Bounder\"": 2
     }
   },

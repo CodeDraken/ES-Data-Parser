@@ -37,10 +37,12 @@
         "\"X3700 Ion Thruster\"",
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-10 91"
+      ]
     },
-    "engine": "10 91",
+    "engine": [
+      "-10 91",
+      "10 91"
+    ],
     "gun": [
       "-13 -79 \"Heavy Laser\"",
       "13 -79 \"Heavy Laser\""
@@ -102,10 +104,12 @@
         "\"Greyhound Plasma Thruster\"",
         "\"Greyhound Plasma Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-20 91"
+      ]
     },
-    "engine": "20 91",
+    "engine": [
+      "-20 91",
+      "20 91"
+    ],
     "gun": [
       "-22 -37 \"Energy Blaster\"",
       "22 -37 \"Energy Blaster\"",
@@ -166,10 +170,12 @@
         "\"A250 Atomic Thruster\"",
         "\"A255 Atomic Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-10 60"
+      ]
     },
-    "engine": "10 60",
+    "engine": [
+      "-10 60",
+      "10 60"
+    ],
     "gun": [
       "-8 -34 \"Sidewinder Missile Launcher\"",
       "8 -34 \"Sidewinder Missile Launcher\""
@@ -225,10 +231,12 @@
         "\"X4700 Ion Thruster\"",
         "\"X5200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-18 230"
+      ]
     },
-    "engine": "18 230",
+    "engine": [
+      "-18 230",
+      "18 230"
+    ],
     "gun": [
       "-15 -226 \"Torpedo Launcher\"",
       "15 -226 \"Torpedo Launcher\"",
@@ -364,10 +372,12 @@
         "\"Impala Plasma Thruster\"",
         "\"Impala Plasma Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-28 85"
+      ]
     },
-    "engine": "28 85",
+    "engine": [
+      "-28 85",
+      "28 85"
+    ],
     "gun": [
       "-54 -14 \"Plasma Cannon\"",
       "54 -14 \"Plasma Cannon\"",
@@ -425,10 +435,12 @@
         "\"X3700 Ion Thruster\"",
         "\"X3200 Ion Steering\"",
         "\"Scram Drive\""
-      ],
-      "engine": "-34 154"
+      ]
     },
-    "engine": "34 154",
+    "engine": [
+      "-34 154",
+      "34 154"
+    ],
     "gun": [
       "-27 -83",
       "27 -83"
@@ -485,10 +497,12 @@
         "\"X2700 Ion Thruster\"",
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-10 45"
+      ]
     },
-    "engine": "10 45",
+    "engine": [
+      "-10 45",
+      "10 45"
+    ],
     "gun": [
       "-20 12",
       "20 12",
@@ -538,10 +552,12 @@
         "\"Impala Plasma Thruster\"",
         "\"Impala Plasma Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-40 55"
+      ]
     },
-    "engine": "40 55",
+    "engine": [
+      "-40 55",
+      "40 55"
+    ],
     "turret": [
       "-18 0 \"Heavy Laser Turret\"",
       "18 0 \"Heavy Laser Turret\""
@@ -590,10 +606,12 @@
         "\"X3700 Ion Thruster\"",
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-12 44"
+      ]
     },
-    "engine": "12 44",
+    "engine": [
+      "-12 44",
+      "12 44"
+    ],
     "turret": [
       "-37 4 \"Blaster Turret\"",
       "37 4 \"Blaster Turret\""
@@ -674,10 +692,12 @@
         "\"X3700 Ion Thruster\"",
         "\"X3200 Ion Steering\"",
         "\"Scram Drive\""
-      ],
-      "engine": "-22 198"
+      ]
     },
-    "engine": "22 198",
+    "engine": [
+      "-22 198",
+      "22 198"
+    ],
     "gun": [
       "-20 -175 \"Sidewinder Missile Launcher\"",
       "20 -175 \"Sidewinder Missile Launcher\""
@@ -745,10 +765,12 @@
         "\"X5700 Ion Thruster\"",
         "\"X4200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-35 200"
+      ]
     },
-    "engine": "35 200",
+    "engine": [
+      "-35 200",
+      "35 200"
+    ],
     "gun": [
       "-16 -176 \"Particle Cannon\"",
       "16 -176 \"Particle Cannon\"",
@@ -825,10 +847,12 @@
         "\"X3700 Ion Thruster\"",
         "\"X3200 Ion Steering\"",
         "\"Scram Drive\""
-      ],
-      "engine": "-22 198"
+      ]
     },
-    "engine": "22 198",
+    "engine": [
+      "-22 198",
+      "22 198"
+    ],
     "turret": [
       "-12 -155 \"Heavy Laser Turret\"",
       "12 -155 \"Heavy Anti-Missile Turret\"",
@@ -895,10 +919,12 @@
         "\"Greyhound Plasma Thruster\"",
         "\"Greyhound Plasma Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-20 45"
+      ]
     },
-    "engine": "20 45",
+    "engine": [
+      "-20 45",
+      "20 45"
+    ],
     "gun": [
       "-23 -19 \"Javelin Pod\"",
       "23 -19 \"Javelin Pod\"",
@@ -947,10 +973,12 @@
         "\"Supercapacitor\"",
         "\"X1700 Ion Thruster\"",
         "\"X1200 Ion Steering\""
-      ],
-      "engine": "-9 29"
+      ]
     },
-    "engine": "9 29",
+    "engine": [
+      "-9 29",
+      "9 29"
+    ],
     "gun": "0 -29 \"Beam Laser\"",
     "explode": "\"tiny explosion\" 15",
     "description": "\"Combat drones are pilotless attack ships used primarily by the Republic Navy. Although very weak and easy to destroy, they can be very effective in large numbers. Because drones do not need a cockpit, they can be filled entirely with equipment and solid metal, which makes their hulls stronger than other small ships.\""
@@ -992,10 +1020,12 @@
         "\"X3700 Ion Thruster\"",
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-11 118"
+      ]
     },
-    "engine": "11 118",
+    "engine": [
+      "-11 118",
+      "11 118"
+    ],
     "gun": [
       "-12 -68 \"Heavy Laser\"",
       "12 -68 \"Heavy Laser\"",
@@ -1062,10 +1092,12 @@
         "\"X4700 Ion Thruster\"",
         "\"X4200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-29 156"
+      ]
     },
-    "engine": "29 156",
+    "engine": [
+      "-29 156",
+      "29 156"
+    ],
     "gun": [
       "-31 -63 \"Particle Cannon\"",
       "31 -63 \"Particle Cannon\"",
@@ -1127,10 +1159,12 @@
         "\"D14-RN Shield Generator\"",
         "\"X1700 Ion Thruster\"",
         "\"X1200 Ion Steering\""
-      ],
-      "engine": "-15 30"
+      ]
     },
-    "engine": "15 30",
+    "engine": [
+      "-15 30",
+      "15 30"
+    ],
     "gun": [
       "-14 -10 \"Beam Laser\"",
       "14 -10 \"Beam Laser\""
@@ -1181,10 +1215,12 @@
         "\"Orca Plasma Thruster\"",
         "\"Orca Plasma Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-25 172"
+      ]
     },
-    "engine": "25 172",
+    "engine": [
+      "-25 172",
+      "25 172"
+    ],
     "gun": [
       "-10 -167 \"Meteor Missile Launcher\"",
       "10 -167 \"Meteor Missile Launcher\"",
@@ -1248,10 +1284,12 @@
         "\"Impala Plasma Thruster\"",
         "\"Impala Plasma Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-17 143"
+      ]
     },
-    "engine": "17 143",
+    "engine": [
+      "-17 143",
+      "17 143"
+    ],
     "gun": [
       "-17 -88 \"Plasma Cannon\"",
       "17 -88 \"Plasma Cannon\"",
@@ -1306,10 +1344,12 @@
         "\"D14-RN Shield Generator\"",
         "\"Chipmunk Plasma Thruster\"",
         "\"Chipmunk Plasma Steering\""
-      ],
-      "engine": "-5 32"
+      ]
     },
-    "engine": "5 32",
+    "engine": [
+      "-5 32",
+      "5 32"
+    ],
     "gun": [
       "-7 -14 \"Beam Laser\"",
       "7 -14 \"Beam Laser\""
@@ -1357,10 +1397,12 @@
         "\"X3700 Ion Thruster\"",
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-33 65"
+      ]
     },
-    "engine": "33 65",
+    "engine": [
+      "-33 65",
+      "33 65"
+    ],
     "gun": [
       "-28 -27 \"Heavy Laser\"",
       "28 -27 \"Heavy Laser\"",
@@ -1416,10 +1458,12 @@
         "\"A120 Atomic Thruster\"",
         "\"X1200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-16 27"
+      ]
     },
-    "engine": "16 27",
+    "engine": [
+      "-16 27",
+      "16 27"
+    ],
     "gun": [
       "-6 -31",
       "6 -31"
@@ -1466,10 +1510,12 @@
         "\"X2700 Ion Thruster\"",
         "\"X2200 Ion Steering\"",
         "\"Scram Drive\""
-      ],
-      "engine": "-9 97"
+      ]
     },
-    "engine": "9 97",
+    "engine": [
+      "-9 97",
+      "9 97"
+    ],
     "turret": [
       "0 -52 \"Blaster Turret\"",
       "0 65 \"Blaster Turret\"",
@@ -1529,10 +1575,12 @@
         "\"X3700 Ion Thruster\"",
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-26 92"
+      ]
     },
-    "engine": "26 92",
+    "engine": [
+      "-26 92",
+      "26 92"
+    ],
     "gun": [
       "-10 -83 \"Particle Cannon\"",
       "10 -83 \"Particle Cannon\"",
@@ -1589,10 +1637,12 @@
         "\"X2700 Ion Thruster\"",
         "\"X2200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-17 35"
+      ]
     },
-    "engine": "17 35",
+    "engine": [
+      "-17 35",
+      "17 35"
+    ],
     "gun": [
       "-10 -26",
       "10 -26",
@@ -1648,10 +1698,12 @@
         "\"X3700 Ion Thruster\"",
         "\"X2200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-12 57"
+      ]
     },
-    "engine": "12 57",
+    "engine": [
+      "-12 57",
+      "12 57"
+    ],
     "gun": [
       "-28 -28 \"Heavy Laser\"",
       "28 -28 \"Heavy Laser\""
@@ -1704,10 +1756,12 @@
         "\"Greyhound Plasma Thruster\"",
         "\"Impala Plasma Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-45 122"
+      ]
     },
-    "engine": "45 122",
+    "engine": [
+      "-45 122",
+      "45 122"
+    ],
     "gun": [
       "-15 -91",
       "15 -91"
@@ -1766,10 +1820,12 @@
         "\"Greyhound Plasma Thruster\"",
         "\"Impala Plasma Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-45 160"
+      ]
     },
-    "engine": "45 160",
+    "engine": [
+      "-45 160",
+      "45 160"
+    ],
     "gun": [
       "-15 -128",
       "15 -128"
@@ -1828,10 +1884,12 @@
         "\"Greyhound Plasma Thruster\"",
         "\"Impala Plasma Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-45 196"
+      ]
     },
-    "engine": "45 196",
+    "engine": [
+      "-45 196",
+      "45 196"
+    ],
     "gun": [
       "-15 -165",
       "15 -165"
@@ -1886,10 +1944,12 @@
         "\"Greyhound Plasma Thruster\"",
         "\"Greyhound Plasma Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-24 41"
+      ]
     },
-    "engine": "24 41",
+    "engine": [
+      "-24 41",
+      "24 41"
+    ],
     "gun": [
       "-9 -17",
       "9 -17"
@@ -1990,10 +2050,12 @@
         "\"X2700 Ion Thruster\"",
         "\"X2200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "6 30"
+      ]
     },
-    "engine": "-6 30",
+    "engine": [
+      "6 30",
+      "-6 30"
+    ],
     "gun": [
       "-7 -37",
       "7 -37"
@@ -2036,10 +2098,12 @@
         "\"D14-RN Shield Generator\"",
         "\"X1700 Ion Thruster\"",
         "\"X1200 Ion Steering\""
-      ],
-      "engine": "-15 30"
+      ]
     },
-    "engine": "15 30",
+    "engine": [
+      "-15 30",
+      "15 30"
+    ],
     "gun": [
       "-14 -10 \"Beam Laser\"",
       "14 -10 \"Beam Laser\""
@@ -2087,10 +2151,12 @@
         "\"X3700 Ion Thruster\"",
         "\"X4200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-25 125"
+      ]
     },
-    "engine": "25 125",
+    "engine": [
+      "-25 125",
+      "25 125"
+    ],
     "gun": [
       "-39 -33 \"Particle Cannon\"",
       "39 -33 \"Particle Cannon\"",
@@ -2149,10 +2215,12 @@
         "\"X3700 Ion Thruster\"",
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-33 38"
+      ]
     },
-    "engine": "33 38",
+    "engine": [
+      "-33 38",
+      "33 38"
+    ],
     "gun": [
       "-21 -35 \"Particle Cannon\"",
       "21 -35 \"Particle Cannon\"",
@@ -2207,10 +2275,12 @@
         "\"Greyhound Plasma Thruster\"",
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-20 91"
+      ]
     },
-    "engine": "20 91",
+    "engine": [
+      "-20 91",
+      "20 91"
+    ],
     "gun": [
       "-22 -37 \"Heavy Laser\"",
       "22 -37 \"Heavy Laser\"",
@@ -2270,10 +2340,12 @@
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
       ],
-      "\"Small Radar Jammer\"": 2,
-      "engine": "-12 123"
+      "\"Small Radar Jammer\"": 2
     },
-    "engine": "12 123",
+    "engine": [
+      "-12 123",
+      "12 123"
+    ],
     "gun": [
       "-9 -119 \"Sidewinder Missile Launcher\"",
       "9 -119 \"Sidewinder Missile Launcher\""
@@ -2332,10 +2404,12 @@
         "\"Impala Plasma Steering\"",
         "\"Hyperdrive\""
       ],
-      "\"D41-HY Shield Generator\"": 2,
-      "engine": "-45 122"
+      "\"D41-HY Shield Generator\"": 2
     },
-    "engine": "45 122",
+    "engine": [
+      "-45 122",
+      "45 122"
+    ],
     "gun": [
       "-15 -91",
       "15 -91"
@@ -2397,10 +2471,12 @@
         "\"Impala Plasma Steering\"",
         "\"Hyperdrive\""
       ],
-      "\"Small Radar Jammer\"": 2,
-      "engine": "-40 67"
+      "\"Small Radar Jammer\"": 2
     },
-    "engine": "40 67",
+    "engine": [
+      "-40 67",
+      "40 67"
+    ],
     "gun": [
       "-8 -100 \"Plasma Cannon\"",
       "8 -100 \"Plasma Cannon\"",
@@ -2459,10 +2535,12 @@
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
       ],
-      "\"Small Radar Jammer\"": 3,
-      "engine": "-11 125"
+      "\"Small Radar Jammer\"": 3
     },
-    "engine": "11 125",
+    "engine": [
+      "-11 125",
+      "11 125"
+    ],
     "gun": [
       "-15 -100 \"Torpedo Launcher\"",
       "15 -100 \"Torpedo Launcher\""
@@ -2520,10 +2598,12 @@
         "\"Greyhound Plasma Thruster\"",
         "\"Greyhound Plasma Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-17 54"
+      ]
     },
-    "engine": "17 54",
+    "engine": [
+      "-17 54",
+      "17 54"
+    ],
     "gun": [
       "-6 -38 \"Particle Cannon\"",
       "6 -38 \"Particle Cannon\""
@@ -2577,10 +2657,12 @@
         "\"X2700 Ion Thruster\"",
         "\"X2200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-8 46"
+      ]
     },
-    "engine": "8 46",
+    "engine": [
+      "-8 46",
+      "8 46"
+    ],
     "gun": [
       "-10 -30 \"Energy Blaster\"",
       "10 -30 \"Energy Blaster\"",
@@ -2632,10 +2714,12 @@
         "\"X3700 Ion Thruster\"",
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-12 43"
+      ]
     },
-    "engine": "12 43",
+    "engine": [
+      "-12 43",
+      "12 43"
+    ],
     "gun": [
       "-10 -33 \"Heavy Laser\"",
       "10 -33 \"Heavy Laser\"",
@@ -2690,10 +2774,12 @@
         "\"Impala Plasma Steering\"",
         "\"Hyperdrive\""
       ],
-      "\"D41-HY Shield Generator\"": 4,
-      "engine": "-45 159"
+      "\"D41-HY Shield Generator\"": 4
     },
-    "engine": "45 159",
+    "engine": [
+      "-45 159",
+      "45 159"
+    ],
     "gun": [
       "-15 -128",
       "15 -128"
@@ -2757,10 +2843,12 @@
         "\"X3700 Ion Thruster\"",
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-8 46"
+      ]
     },
-    "engine": "8 46",
+    "engine": [
+      "-8 46",
+      "8 46"
+    ],
     "gun": [
       "-20 -7 \"Energy Blaster\"",
       "20 -7 \"Energy Blaster\""
@@ -2815,10 +2903,12 @@
         "\"X2700 Ion Thruster\"",
         "\"X2200 Ion Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "6 30"
+      ]
     },
-    "engine": "-6 30",
+    "engine": [
+      "6 30",
+      "-6 30"
+    ],
     "gun": "0 -30",
     "explode": [
       "\"tiny explosion\" 10",
@@ -2873,10 +2963,12 @@
         "\"Impala Plasma Steering\"",
         "\"Hyperdrive\""
       ],
-      "\"D67-TM Shield Generator\"": 4,
-      "engine": "-45 197"
+      "\"D67-TM Shield Generator\"": 4
     },
-    "engine": "45 197",
+    "engine": [
+      "-45 197",
+      "45 197"
+    ],
     "gun": [
       "-15 -165",
       "15 -165"
@@ -2939,10 +3031,12 @@
         "\"Chipmunk Plasma Thruster\"",
         "\"Chipmunk Plasma Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-5 35"
+      ]
     },
-    "engine": "5 35",
+    "engine": [
+      "-5 35",
+      "5 35"
+    ],
     "gun": [
       "-7 -10",
       "7 -10"
@@ -2994,10 +3088,12 @@
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
       ],
-      "\"Small Radar Jammer\"": 2,
-      "engine": "-15 115"
+      "\"Small Radar Jammer\"": 2
     },
-    "engine": "15 115",
+    "engine": [
+      "-15 115",
+      "15 115"
+    ],
     "gun": [
       "-15 -80 \"Proton Gun\"",
       "15 -80 \"Proton Gun\""
@@ -3050,10 +3146,12 @@
         "\"Chipmunk Plasma Thruster\"",
         "\"Chipmunk Plasma Steering\"",
         "\"Hyperdrive\""
-      ],
-      "engine": "-9 38"
+      ]
     },
-    "engine": "9 38",
+    "engine": [
+      "-9 38",
+      "9 38"
+    ],
     "turret": "0 -8",
     "explode": [
       "\"tiny explosion\" 10",
@@ -3102,10 +3200,12 @@
         "\"X3200 Ion Steering\"",
         "\"Hyperdrive\""
       ],
-      "\"Small Radar Jammer\"": 3,
-      "engine": "-18 116"
+      "\"Small Radar Jammer\"": 3
     },
-    "engine": "18 116",
+    "engine": [
+      "-18 116",
+      "18 116"
+    ],
     "gun": [
       "0 -116 \"Sidewinder Missile Launcher\"",
       "-22 -80 \"Sidewinder Missile Launcher\"",
@@ -3157,10 +3257,12 @@
         "\"Surveillance Pod\"",
         "\"X1700 Ion Thruster\"",
         "\"X1200 Ion Steering\""
-      ],
-      "engine": "-5 29"
+      ]
     },
-    "engine": "5 29",
+    "engine": [
+      "-5 29",
+      "5 29"
+    ],
     "explode": "\"tiny explosion\" 15",
     "description": "\"Surveillance drones are unarmed drones used by the Republic navy to scan ships and planets in a star system.\""
   },

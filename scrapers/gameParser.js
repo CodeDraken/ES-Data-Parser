@@ -41,6 +41,7 @@ const spacedAttrVal = (line) => {
 
 const addAttr = (attr, value, parent, hasAttr) => {
   if (hasAttr) {
+    console.log('add normal attribute: ', attr, ' | ', value)
     // normal attribute
     parent[attr] = attr in parent
     ? Array.isArray(parent[attr])
@@ -48,6 +49,7 @@ const addAttr = (attr, value, parent, hasAttr) => {
       : [ parent[attr], value ]
     : value
   } else {
+    console.log('add single attribute: ', attr, value)
     // probably a single attribute no value i.e outfits like "blaster" ( no # after )
     parent.singles = parent.singles
       ? [ ...parent.singles, value ]
@@ -56,30 +58,35 @@ const addAttr = (attr, value, parent, hasAttr) => {
 }
 
 const parser = (fileStr, groupsToGrab, _path) => {
-  console.log(genericGroupRegex(groupsToGrab))
+  const debug = false
+
   const blocks = fileStr
     .match(genericGroupRegex(groupsToGrab))
     .filter(block => block.length > 0)
 
+  console.log(genericGroupRegex(groupsToGrab))
   console.log(`Found ${blocks.length} matches for ${groupsToGrab} in ${_path}`)
 
-  return blocks.map(block => {
+  if (!debug) console.log = () => null
+
+  return blocks.map((block, i) => {
+    if (i > 0) console.log = () => null
     const lines = block
       .split('\n')
       .filter(line => line.length > 0)
-    const populateObjects = []
+    const tree = []
 
     // initialize the first root object
     const typeName = spacedAttrVal(lines[0])
-    populateObjects.push({ _type: typeName.attr, _value: typeName.value })
+    tree.push({ _type: typeName.attr, _value: typeName.value })
 
     // use for loop so we can skip lines when needed
     for (let i = 1; i < lines.length; i++) {
       try {
         // the parent node
-        const parent = populateObjects[populateObjects.length - 1]
+        const parent = tree[tree.length - 1]
         // how many nodes deep we are
-        const expectedIndent = populateObjects.length
+        const expectedIndent = tree.length
 
         // list of objects we are currently populating
         const line = lines[i]
@@ -93,40 +100,49 @@ const parser = (fileStr, groupsToGrab, _path) => {
        // if next white is > white assume it's an object
         const nextIndent = nextLine
           ? nextLine.search(/\S|$/)
-          : true
+          : indent
 
         // get the attribute name and value
         const { attr, value } = spacedAttrVal(line)
         const hasAttr = !!attr
+
+        console.log('AV: ', attr, ' | ', value)
+        console.log('indent', indent, nextIndent, expectedIndent)
 
         if (indent === expectedIndent && nextIndent === expectedIndent) {
           addAttr(attr, value, parent, hasAttr)
         } else if (nextIndent > expectedIndent || indent > expectedIndent) {
            // it's a parent node i.e attributes
           if (hasAttr) {
+            console.log('create parent node with attribute', attr, ' | ', value, indent, nextIndent, expectedIndent)
             // some nodes have a value after it i.e sprite "..."
             parent[attr] = { _value: value }
-            populateObjects.push(parent[attr])
+            tree.push(parent[attr])
           } else {
             // just a name i.e "attributes"
             parent[value] = {}
-            populateObjects.push(parent[value])
+            tree.push(parent[value])
           }
-        } else if (indent === expectedIndent || nextIndent < expectedIndent) {
+        } else if (indent === expectedIndent && nextIndent < expectedIndent) {
+          console.log('add and go up: ', attr, value)
           // add then go up tree
           addAttr(attr, value, parent, hasAttr)
 
-          populateObjects.length = nextIndent
+          tree.length = nextIndent
         } else if (indent < expectedIndent) {
+          console.log('go up then add: ', attr, value)
           // go up the node tree
-          populateObjects.length = indent
+          tree.length = indent
+          // get the right parent and add to it
+          const newParent = tree[tree.length - 1]
+          addAttr(attr, value, newParent, hasAttr)
         }
       } catch (err) {
         console.log('ERROR: ', err)
         console.log(`failed at: I ${i}, line: ${lines[i]}`)
       }
     }
-    return populateObjects[0]
+    return tree[0]
   })
 }
 
@@ -141,15 +157,11 @@ const test = (_path, name, search) => {
   )
 }
 
-// test('/map', 'map-planets', 'planet')
-// test('/map', 'map-systems', 'system')
-// test('/governments', 'governments', 'government')
-// test('/sales', 'sales', 'outfitter')
-// test('/outfits/outfits', 'outfits-human', 'outfit')
-// test('/ships/humans', 'ships-human', 'ship')
-// test('/fleets/fleets', 'fleets', 'fleet')
-// test('/mix/drak', 'drak-ship', 'ship')
-
-// const testFile = fs.readFileSync(`${dataLocation}/map.txt`, 'utf-8')
-
-// jsonToFile(`${outputJSON}/test_parser.json`, parser(testFile, 'planet'))
+test('/map', 'map-planets', 'planet')
+test('/map', 'map-systems', 'system')
+test('/governments', 'governments', 'government')
+test('/sales', 'sales', 'outfitter')
+test('/outfits/outfits', 'outfits-human', 'outfit')
+test('/ships/humans', 'ships-human', 'ship')
+test('/fleets/fleets', 'fleets', 'fleet')
+test('/mix/drak', 'drak-ship', 'ship')
