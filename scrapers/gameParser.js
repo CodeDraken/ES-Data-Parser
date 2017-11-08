@@ -94,7 +94,7 @@ const firstNonQuotedSpace = (str) => {
     if (char === ' ' && quoteBalance % 2 === 0) return i
   }
 
-  return str.indexOf(' ')
+  return str.replace(' ', '_')
 }
 
 const spacedAttrVal = (line) => {
@@ -156,7 +156,6 @@ const parser = (useFileStrHereLater) => {
       } else if (nextIndent > expectedIndent || indent > expectedIndent) {
          // it's a parent node i.e attributes
         if (hasAttr) {
-          console.log('has attr', attr, value)
           // some nodes have a value after it i.e sprite "..."
           parent[attr] = { _name: value }
           populateObjects.push(parent[attr])

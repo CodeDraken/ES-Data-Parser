@@ -25,17 +25,18 @@
         "\"hull damage\"": 1600
       }
     },
-    "\"Korath": {
-      "_name": "Detainer\"",
+    "\"Korath Detainer\"": {
       "\"Korath Piercer Launcher\"": 2,
       "\"Korath Piercer\"": 62,
       "\"Korath Banisher\"": 2,
-      "\"Double": "Plasma Core\"",
-      "\"Systems": "Core (Medium)\"",
-      "\"Small Heat Shunt\"": 2,
-      "\"Control": "Transceiver\"",
-      "\"Thruster": "(Lunar Class)\"",
-      "\"Steering": "(Planetary Class)\""
+      "": [
+        "\"Double Plasma Core\"",
+        "\"Systems Core (Medium)\"",
+        "\"Control Transceiver\"",
+        "\"Thruster (Lunar Class)\"",
+        "\"Steering (Planetary Class)\""
+      ],
+      "\"Small Heat Shunt\"": 2
     },
     "engine": "9 205",
     "gun": [
