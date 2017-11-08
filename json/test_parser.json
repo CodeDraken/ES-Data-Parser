@@ -11,30 +11,28 @@
       "\"automaton\"": 1,
       "\"mass\"": 540,
       "\"drag\"": 9.1,
-      "\"heat": "dissipation\" .65",
-      "\"fuel": "capacity\" 400",
-      "\"cargo": "space\" 31",
-      "\"outfit": "space\" 491",
-      "\"weapon": "capacity\" 217",
-      "\"engine": "capacity\" 98",
-      "\"self": "destruct\" .7",
+      "\"heat dissipation\"": 0.65,
+      "\"fuel capacity\"": 400,
+      "\"cargo space\"": 31,
+      "\"outfit space\"": 491,
+      "\"weapon capacity\"": 217,
+      "\"engine capacity\"": 98,
+      "\"self destruct\"": 0.7,
       "\"ramscoop\"": 3,
       "weapon": {
-        "\"blast": "radius\" 280",
-        "\"shield": "damage\" 3200",
-        "\"hull": "damage\" 1600"
+        "\"blast radius\"": 280,
+        "\"shield damage\"": 3200,
+        "\"hull damage\"": 1600
       }
     },
     "\"Korath": {
       "_name": "Detainer\"",
-      "\"Korath": [
-        "Piercer Launcher\" 2",
-        "Piercer\" 62",
-        "Banisher\" 2"
-      ],
+      "\"Korath Piercer Launcher\"": 2,
+      "\"Korath Piercer\"": 62,
+      "\"Korath Banisher\"": 2,
       "\"Double": "Plasma Core\"",
       "\"Systems": "Core (Medium)\"",
-      "\"Small": "Heat Shunt\" 2",
+      "\"Small Heat Shunt\"": 2,
       "\"Control": "Transceiver\"",
       "\"Thruster": "(Lunar Class)\"",
       "\"Steering": "(Planetary Class)\""
@@ -76,6 +74,6 @@
       "\"large explosion\" 30",
       "\"huge explosion\" 8"
     ],
-    "\"final": "explode\" \"final explosion medium\""
+    "\"final explode\"": "\"final explosion medium\""
   }
 ]

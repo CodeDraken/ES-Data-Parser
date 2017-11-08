@@ -78,10 +78,31 @@ const fileStr = (
 	description "The TF109 is designed almost solely for the purpose of carrying a fleet of Kor Sestor fighters and drones. Without them to serve as a protective screen, the ship itself is relatively helpless."`
 )
 
+const firstNonQuotedSpace = (str) => {
+  str = str.trim()
+  const strArr = str
+  let quoteBalance = 0
+
+  // no quotes
+  if (!/"/g.test(str)) return str.indexOf(' ')
+
+  for (let i = 0; i < strArr.length; i++) {
+    const char = str[i]
+
+    if (char === '"') quoteBalance++
+
+    if (char === ' ' && quoteBalance % 2 === 0) return i
+  }
+
+  return str.indexOf(' ')
+}
+
 const spacedAttrVal = (line) => {
   line = line.trim()
-  const attr = line.substr(0, line.indexOf(' '))
-  const valStr = line.substr(line.indexOf(' ') + 1)
+  const firstSpace = firstNonQuotedSpace(line)
+  // line.indexOf(' ')
+  const attr = line.substr(0, firstSpace)
+  const valStr = line.substr(firstSpace + 1)
   const value = Number.isNaN(+valStr)
     ? valStr
     : +valStr
@@ -110,7 +131,6 @@ const parser = (useFileStrHereLater) => {
       // list of objects we are currently populating
       const line = lines[i]
       const nextLine = lines[i + 1]
-      // const chars = line.split('')
 
       // skip empty lines
       if (line === '\n' || line.trim().length < 1) continue
@@ -121,6 +141,7 @@ const parser = (useFileStrHereLater) => {
       const nextIndent = nextLine
         ? nextLine.search(/\S|$/)
         : true
+
       // get the attribute name and value
       const { attr, value } = spacedAttrVal(line)
       const hasAttr = !!attr
@@ -135,6 +156,7 @@ const parser = (useFileStrHereLater) => {
       } else if (nextIndent > expectedIndent || indent > expectedIndent) {
          // it's a parent node i.e attributes
         if (hasAttr) {
+          console.log('has attr', attr, value)
           // some nodes have a value after it i.e sprite "..."
           parent[attr] = { _name: value }
           populateObjects.push(parent[attr])
@@ -151,15 +173,6 @@ const parser = (useFileStrHereLater) => {
       console.log('ERROR: ', err)
       console.log(`failed at: I ${i}, line: ${lines[i]}`)
     }
-
-    // TODO: char looping or cleanup
-    // loop each char of a line
-    // for (let j = white; j < chars.length; j++) {
-    //   const char = chars[j]
-
-    //   // if it's a comment skip this line
-    //   if (char === '#') break
-    // }
   }
   return populateObjects
 }
