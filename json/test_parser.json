@@ -22,23 +22,29 @@
       "weapon": {
         "\"blast radius\"": 280,
         "\"shield damage\"": 3200,
-        "\"hull damage\"": 1600
+        "\"hull damage\"": 1600,
+        "\"hit force\"": 4800
       }
     },
-    "\"Korath Detainer\"": {
-      "\"Korath Piercer Launcher\"": 2,
-      "\"Korath Piercer\"": 62,
-      "\"Korath Banisher\"": 2,
-      "": [
+    "outfits": {
+      "singles": [
+        "\"Korath Detainer\"",
         "\"Double Plasma Core\"",
         "\"Systems Core (Medium)\"",
         "\"Control Transceiver\"",
         "\"Thruster (Lunar Class)\"",
-        "\"Steering (Planetary Class)\""
+        "\"Steering (Planetary Class)\"",
+        "Hyperdrive"
       ],
+      "\"Korath Piercer Launcher\"": 2,
+      "\"Korath Piercer\"": 62,
+      "\"Korath Banisher\"": 2,
       "\"Small Heat Shunt\"": 2
     },
-    "engine": "9 205",
+    "engine": [
+      "-9 205",
+      "9 205"
+    ],
     "gun": [
       "0 -214 \"Korath Detainer\"",
       "-14 -206 \"Korath Piercer Launcher\"",
@@ -75,6 +81,7 @@
       "\"large explosion\" 30",
       "\"huge explosion\" 8"
     ],
-    "\"final explode\"": "\"final explosion medium\""
+    "\"final explode\"": "\"final explosion medium\"",
+    "description": "\"The TF109 is designed almost solely for the purpose of carrying a fleet of Kor Sestor fighters and drones. Without them to serve as a protective screen, the ship itself is relatively helpless.\""
   }
 ]

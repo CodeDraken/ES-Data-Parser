@@ -1,6 +1,5 @@
-// TODO: try to do this the better way :D
-// regex scraper was only suppose to be a test but I got carried away
-// https://github.com/endless-sky/endless-sky/blob/master/source/DataFile.cpp
+// gameParser - a data parser similar to the game.
+// First step to cleaning up all these scrapers
 
 const fs = require('fs')
 
@@ -94,7 +93,7 @@ const firstNonQuotedSpace = (str) => {
     if (char === ' ' && quoteBalance % 2 === 0) return i
   }
 
-  return str.replace(' ', '_')
+  return -1
 }
 
 const spacedAttrVal = (line) => {
@@ -108,6 +107,22 @@ const spacedAttrVal = (line) => {
     : +valStr
 
   return { attr, value }
+}
+
+const addAttr = (attr, value, parent, hasAttr) => {
+  if (hasAttr) {
+    // normal attribute
+    parent[attr] = attr in parent
+    ? Array.isArray(parent[attr])
+      ? [ ...parent[attr], value ]
+      : [ parent[attr], value ]
+    : value
+  } else {
+    // probably a single attribute no value i.e outfits like "blaster" ( no # after )
+    parent.singles = parent.singles
+      ? [ ...parent.singles, value ]
+      : [ value ]
+  }
 }
 
 const parser = (useFileStrHereLater) => {
@@ -147,12 +162,7 @@ const parser = (useFileStrHereLater) => {
       const hasAttr = !!attr
 
       if (indent === expectedIndent && nextIndent === expectedIndent) {
-        // normal attribute
-        parent[attr] = attr in parent
-          ? Array.isArray(parent[attr])
-            ? [...parent[attr], value]
-            : [parent[attr], value]
-          : value
+        addAttr(attr, value, parent, hasAttr)
       } else if (nextIndent > expectedIndent || indent > expectedIndent) {
          // it's a parent node i.e attributes
         if (hasAttr) {
@@ -164,7 +174,12 @@ const parser = (useFileStrHereLater) => {
           parent[value] = {}
           populateObjects.push(parent[value])
         }
-      } else if (indent < expectedIndent || nextIndent < expectedIndent) {
+      } else if (indent === expectedIndent || nextIndent < expectedIndent) {
+        // add then go up tree
+        addAttr(attr, value, parent, hasAttr)
+
+        populateObjects.length = nextIndent
+      } else if (indent < expectedIndent) {
         // go up the node tree
         populateObjects.length = indent
       }

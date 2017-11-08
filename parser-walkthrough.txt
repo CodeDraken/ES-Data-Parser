@@ -1,3 +1,5 @@
+// walkthrough the parser implementation with examples
+
 // target object is last element in populateObjects
 // expected indent is always populateObjects.length?
 
