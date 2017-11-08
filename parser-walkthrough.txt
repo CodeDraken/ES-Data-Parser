@@ -1,0 +1,94 @@
+// target object is last element in populateObjects
+
+// PUG ZAPPER TURRET WALKTHROUGH //
+
+// index / indent is 0, expectedIndent is 1
+// initialize new object { _type: outfit, _name: "pug turret" }
+// push to populateObjects reference to object
+[ objGroup ]
+
+parent = [ populateObjects.length - 1 ]
+
+// indent is 1 set attributes as normal
+parent = {
+  category: "Turrets"
+	cost: 860000
+	thumbnail: "outfit/pug zapper turret"
+	"mass": 66
+	"outfit space": -66
+	"weapon capacity": -66
+	"turret mounts": -1
+	"required crew": 1
+}
+
+// weapon, next indent is 2 > expectedIndent of 1
+parent.weapon = {}
+populateObjects.push(parent.weapon)
+expectedIndent = 2
+
+// sprite, next indent is 3 > expectedIndent of 2
+parent.sprite = { _name: "projectile/lightning" }
+populateObjects.push(parent.sprite)
+expectedIndent = 3
+
+// added to weapon object
+{
+  "frame rate" 60
+	"random start frame"
+}
+
+// next indent is 2 < expectedIndent of 3
+populateObjects.pop()
+expectedIndent = 2
+
+// added to weapon
+{
+  "hardpoint sprite" "hardpoint/pug zapper turret"
+  "hardpoint offset" 7.
+  sound "zapper"
+  "hit effect" "skylance impact"
+  "inaccuracy" .3
+  "turret turn" 3
+  "velocity" 320
+  "lifetime" 1
+  "reload" 1
+  "firing energy" 5.4
+  "firing heat" 2.8
+  "shield damage" 7.4
+  "hull damage" 5.8
+}
+
+// description, next indent is 1 < expectedIndent of 2
+populateObjects.pop()
+expectedIndent = 1
+parent.description = '...'
+
+outfit "Pug Zapper Turret"
+	category "Turrets"
+	cost 860000
+	thumbnail "outfit/pug zapper turret"
+	"mass" 66
+	"outfit space" -66
+	"weapon capacity" -66
+	"turret mounts" -1
+	"required crew" 1
+	weapon
+		sprite "projectile/lightning"
+			"frame rate" 60
+			"random start frame"
+		"hardpoint sprite" "hardpoint/pug zapper turret"
+		"hardpoint offset" 7.
+		sound "zapper"
+		"hit effect" "skylance impact"
+		"inaccuracy" .3
+		"turret turn" 3
+		"velocity" 320
+		"lifetime" 1
+		"reload" 1
+		"firing energy" 5.4
+		"firing heat" 2.8
+		"shield damage" 7.4
+		"hull damage" 5.8
+	description "Mounted on a turret, this Pug weapon becomes even more devastatingly powerful. However, its energy requirements are higher than most human ships can support."
+
+// PUG ZAPPER TURRET WALKTHROUGH END //
