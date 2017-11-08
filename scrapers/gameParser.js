@@ -81,7 +81,10 @@ const fileStr = (
 const spacedAttrVal = (line) => {
   line = line.trim()
   const attr = line.substr(0, line.indexOf(' '))
-  const value = line.substr(line.indexOf(' ') + 1)
+  const valStr = line.substr(line.indexOf(' ') + 1)
+  const value = Number.isNaN(+valStr)
+    ? valStr
+    : +valStr
 
   return { attr, value }
 }
@@ -124,7 +127,11 @@ const parser = (useFileStrHereLater) => {
 
       if (indent === expectedIndent && nextIndent === expectedIndent) {
         // normal attribute
-        parent[attr] = value
+        parent[attr] = attr in parent
+          ? Array.isArray(parent[attr])
+            ? [...parent[attr], value]
+            : [parent[attr], value]
+          : value
       } else if (nextIndent > expectedIndent || indent > expectedIndent) {
          // it's a parent node i.e attributes
         if (hasAttr) {
