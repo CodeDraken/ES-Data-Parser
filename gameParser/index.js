@@ -1,10 +1,5 @@
 // gameParser - a data parser similar to the game.
-// First step to cleaning up all these scrapers
-
-const fs = require('fs')
-
-const { jsonToFile } = require('../util/jsonToFile')
-const { dataLocation, outputJSON } = require('../config/dataConfig')
+// TODO: refactor into multiple files / functions
 const { genericGroupRegex } = require('../config/regexConfig')
 
 const firstNonQuotedSpace = (str) => {
@@ -85,8 +80,6 @@ const addNode = (attr, value, parent, hasAttr, tree) => {
 }
 
 const parser = (fileStr, groupsToGrab, _path) => {
-  const debug = false
-
   const blocks = fileStr
     .match(genericGroupRegex(groupsToGrab))
     .filter(block => block.length > 0)
@@ -155,22 +148,4 @@ const parser = (fileStr, groupsToGrab, _path) => {
   })
 }
 
-// testing
-// console.log(parser())
-
-// parse file
-const test = (_path, name, search) => {
-  jsonToFile(
-    `${outputJSON}/parserJSON/${name}.json`,
-    parser(fs.readFileSync(`${dataLocation}${_path}.txt`, 'utf-8'), search, _path)
-  )
-}
-
-test('/map', 'map-planets', 'planet')
-test('/map', 'map-systems', 'system')
-test('/governments', 'governments', 'government')
-test('/sales', 'sales', 'outfitter')
-test('/outfits/outfits', 'outfits-human', 'outfit')
-test('/ships/humans', 'ships-human', 'ship')
-test('/fleets/fleets', 'fleets', 'fleet')
-test('/mix/drak', 'drak-ship', 'ship')
+module.exports = parser
