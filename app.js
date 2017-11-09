@@ -9,9 +9,7 @@ const attrEquationGen = require('./util/attr_equation_gen')
 const { filePrep } = require('./util/fileUtil')
 const { scrapeSystems, mapData } = require('./scrapers/map_scraper')
 
-// TODO: if END isn't at end of files then add it
-// prep files
-// filePrep()
+// TODO: EVERYTHING IS DEPRECATED EXCEPT THE GAME PARSER
 
 const scrapeWriteAll = (type) => {
   if (type === 'ships') {

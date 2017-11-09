@@ -41,7 +41,7 @@ expectedIndent = 3
 }
 
 // next indent is 2 < expectedIndent of 3
-populateObjects.pop()
+populateObjects.pop() // ( using .length instead like below example )
 expectedIndent = 2
 
 // added to weapon
