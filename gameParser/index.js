@@ -53,7 +53,6 @@ const addAttr = (attr, value, parent, hasAttr) => {
 const addNode = (attr, value, parent, hasAttr, tree) => {
   // it's a parent node i.e attributes
   if (hasAttr) {
-    console.log('add attribute node: ', attr, value)
     const node = { _value: value }
     // some nodes have a value after it i.e sprite "..."
     // can be an array of nodes
@@ -66,9 +65,7 @@ const addNode = (attr, value, parent, hasAttr, tree) => {
     tree.push(node)
   } else {
     const node = {}
-    console.log('add plain node: ', attr, value)
     // just a name i.e "attributes"
-
     parent[value] = value in parent
     ? Array.isArray(parent[value])
       ? [ ...parent[value], node ]
@@ -80,11 +77,10 @@ const addNode = (attr, value, parent, hasAttr, tree) => {
 }
 
 const parser = (fileStr, groupsToGrab, _path) => {
-  const blocks = fileStr
-    .match(genericGroupRegex(groupsToGrab))
+  const blocks = (fileStr
+    .match(genericGroupRegex(groupsToGrab)) || [])
     .filter(block => block.length > 0)
 
-  console.log(genericGroupRegex(groupsToGrab))
   console.log(`Found ${blocks.length} matches for ${groupsToGrab} in ${_path}`)
 
   return blocks.map((block, i) => {

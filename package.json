@@ -16,6 +16,7 @@
   "dependencies": {
     "datalib": "^1.8.0",
     "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1",
     "read-last-lines": "^1.2.0"
   },
   "devDependencies": {}

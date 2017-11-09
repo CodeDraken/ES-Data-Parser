@@ -7,14 +7,18 @@ const { dataLocation, outputJSON } = require('../config/dataConfig')
 const parser = require('../gameParser')
 
 // TODO: this is just for testing, refactor it later
-
 // files by species
+
+// humans are special
 const humanFiles = {
   ship: [ 'ships', 'marauders', 'kestrel' ],
   mission: [ 'jobs' ],
   fleet: [ 'fleets' ],
   outfit: [ 'engines', 'outfits', 'power', 'weapons' ]
 }
+
+// species
+const species = [ 'coalition', 'drak', 'hai', 'korath', 'indigenous', 'pug', 'remnant', 'wanderer' ]
 
 const assumeGenericSpecies = name => {
   return {
@@ -33,30 +37,41 @@ const parseSpecies = (name, filesObj) => {
   for (let dataType in filesObj) {
     for (let file of filesObj[dataType]) {
       try {
-        const dataFile = fs.readFileSync(`${dataLocation}${file}.txt`, 'utf-8')
+        const dataFile = fs.readFileSync(`${dataLocation}/${file}.txt`, 'utf-8')
         const dataObj = parser(dataFile, dataType, file)
 
-        jsonToFile(`${outputJSON}/name/${file}.json`, dataObj)
+        jsonToFile(`${outputJSON}/${name}/${file}.json`, dataObj)
       } catch (err) {
-        console.log(err)
-        continue
+        console.log(`${file} not found trying the main file ${name}`)
+        // try main file
+        const dataFile = fs.readFileSync(`${dataLocation}/${name}.txt`, 'utf-8')
+        const dataObj = parser(dataFile, dataType, name)
+
+        jsonToFile(`${outputJSON}/${name}/${file}.json`, dataObj)
       }
     }
   }
 }
 
-parseSpecies('human', humanFiles)
+const parseAllSpecies = () => {
+  parseSpecies('human', humanFiles)
 
-// parse file, data${_path}, fileName. what to grab
-// const grab = (_path, name, search) => {
-//   parser(fs.readFileSync(`${dataLocation}${_path}.txt`, 'utf-8'), search, _path)
-// }
+  species.forEach(spec => {
+    parseSpecies(spec)
+  })
 
-// grab('/map', 'map-planets', 'planet')
-// grab('/map', 'map-systems', 'system')
-// grab('/governments', 'governments', 'government')
-// grab('/sales', 'sales', 'outfitter')
-// grab('/outfits/outfits', 'outfits-human', 'outfit')
-// grab('/ships/humans', 'ships-human', 'ship')
-// grab('/fleets/fleets', 'fleets', 'fleet')
-// grab('/mix/drak', 'drak-ship', 'ship')
+  console.log('All species finished parsing!')
+}
+
+parseAllSpecies()
+
+module.exports = {
+  parseAllSpecies
+}
+
+// if no custom object passed in
+// read data dir
+// filter names => nameRegex.test(fileName)
+// look for everything
+// output json with same file name
+// or try new regex
