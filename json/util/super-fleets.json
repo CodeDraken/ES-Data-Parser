@@ -7608,5 +7608,39 @@
         "\"Flycatcher\"": 2
       }
     ]
+  },
+  {
+    "_type": "fleet",
+    "_value": "\"Void Sprites\"",
+    "government": "\"Indigenous Lifeform\"",
+    "cargo": 0,
+    "personality": {
+      "timid": "mining harvests mute"
+    },
+    "variant": [
+      {
+        "singles": [
+          "\"Void Sprite\""
+        ]
+      },
+      {
+        "singles": [
+          "\"Void Sprite\"",
+          "\"Void Sprite (Infant)\""
+        ]
+      },
+      {
+        "singles": [
+          "\"Void Sprite\""
+        ],
+        "\"Void Sprite (Infant)\"": 2
+      },
+      {
+        "singles": [
+          "\"Void Sprite\""
+        ],
+        "\"Void Sprite (Infant)\"": 3
+      }
+    ]
   }
 ]

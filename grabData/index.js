@@ -66,7 +66,7 @@ const parseAllSpecies = () => {
 // parseAllSpecies()
 
 // files with fleets in them
-const fleetFiles = ['fleets', 'coalition', 'hai', 'korath', 'remnant', 'wanderers']
+const fleetFiles = ['fleets', 'coalition', 'hai', 'korath', 'remnant', 'wanderers', 'indigenous']
 
 // parse a fleet file
 const parseFleet = (fileName) => {
@@ -91,6 +91,8 @@ const parseAllFleets = () => {
   console.log('All fleets finished parsing!')
   jsonToFile(`${outputJSON}/util/super-fleets.json`, superFleets)
 }
+
+parseAllFleets()
 
 module.exports = {
   parseAllSpecies,
