@@ -76,6 +76,7 @@ const addNode = (attr, value, parent, hasAttr, tree) => {
   }
 }
 
+// takes the data file as a string, what to grab i.e 'ship' and optionally _path for debugging  returns array of data
 const parser = (fileStr, groupsToGrab, _path) => {
   const blocks = (fileStr
     .match(genericGroupRegex(groupsToGrab)) || [])

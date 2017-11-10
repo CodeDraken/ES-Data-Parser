@@ -63,10 +63,38 @@ const parseAllSpecies = () => {
   console.log('All species finished parsing!')
 }
 
-parseAllSpecies()
+// parseAllSpecies()
+
+// files with fleets in them
+const fleetFiles = ['fleets', 'coalition', 'hai', 'korath', 'remnant', 'wanderers']
+
+// parse a fleet file
+const parseFleet = (fileName) => {
+  try {
+    const dataFile = fs.readFileSync(`${dataLocation}/${fileName}.txt`, 'utf-8')
+    const dataObj = parser(dataFile, 'fleet', fileName)
+
+    return dataObj
+  } catch (err) {
+    console.log(err)
+  }
+}
+
+// parse all files with fleets in them
+const parseAllFleets = () => {
+  let superFleets = []
+
+  fleetFiles.forEach(fleetFile => {
+    superFleets = [...superFleets, ...parseFleet(fleetFile)]
+  })
+
+  console.log('All fleets finished parsing!')
+  jsonToFile(`${outputJSON}/util/super-fleets.json`, superFleets)
+}
 
 module.exports = {
-  parseAllSpecies
+  parseAllSpecies,
+  parseAllFleets
 }
 
 // if no custom object passed in
