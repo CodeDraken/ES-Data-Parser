@@ -92,8 +92,6 @@ const parseAllFleets = () => {
   jsonToFile(`${outputJSON}/util/super-fleets.json`, superFleets)
 }
 
-parseAllFleets()
-
 module.exports = {
   parseAllSpecies,
   parseAllFleets

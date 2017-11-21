@@ -1,42 +1,11 @@
-const readLastLines = require('read-last-lines')
+const fs = require('fs')
 
-const shipScraper = require('./scrapers/ship_scraper')
-const outfitScraper = require('./scrapers/outfit_scraper')
-const { shipSalesJSON } = require('./scrapers/sales_scraper')
 const { jsonToFile } = require('./util/jsonToFile')
-const dataConfig = require('./config/dataConfig')
-const attrEquationGen = require('./util/attr_equation_gen')
-const { filePrep } = require('./util/fileUtil')
-const { scrapeSystems, mapData } = require('./scrapers/map_scraper')
+const { dataLocation, outputJSON } = require('./config/dataConfig')
+const parser = require('./gameParser/index.js')
 
-// TODO: EVERYTHING IS DEPRECATED EXCEPT THE GAME PARSER
+// grab planets and only keep the ones that have a landscape
+const planets = parser(fs.readFileSync(`${dataLocation}/map.txt`, 'utf-8'), 'planet')
+  .filter(planet => 'landscape' in planet)
 
-const scrapeWriteAll = (type) => {
-  if (type === 'ships') {
-    shipScraper.scrapeAllShips()
-    const ships = shipScraper.ships
-
-    // all ships, 1 file
-    jsonToFile(`${dataConfig.outputJSON}/ships/all_ships.json`, ships)
-
-    // individual faction files
-    for (var faction in ships) {
-      if (ships.hasOwnProperty(faction)) {
-        jsonToFile(`${dataConfig.outputJSON}/ships/${faction}.json`, ships[faction])
-      }
-    }
-  } else if (type === 'outfits') {
-    // scrape and write all outfits
-    outfitScraper.scrapeAllOutfits()
-    jsonToFile(`${dataConfig.outputJSON}/outfits/outfits.json`, outfitScraper.outfits)
-  }
-}
-
-// scrapeWriteAll('ships')
-// scrapeWriteAll('outfits')
-// attrEquationGen.generateAllEquations()
-
-// jsonToFile(`${dataConfig.outputJSON}/sales_ships.json`, shipSalesJSON)
-
-// scrapeSystems()
-// jsonToFile(`${dataConfig.outputJSON}/systems.json`, mapData.systems)
+jsonToFile(`${outputJSON}/map/map-planets.json`, planets)
