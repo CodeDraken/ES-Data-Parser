@@ -22,3 +22,4 @@ Explanation:
 'json/map/map-systems.json' // the file path inside the repo
 '?ref=v2' // the branch, currently the latest data is on the v2 branch
 ```
+Read more about GitHub's API [here](https://developer.github.com/v3/repos/contents/#get-contents)
