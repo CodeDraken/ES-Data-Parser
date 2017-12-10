@@ -1,4 +1,5 @@
-// gameParser - a data parser similar to the game.
+// gameParser - a data parser similar to the game's parser.
+
 // TODO: refactor into multiple files / functions
 const { genericGroupRegex } = require('../config/regexConfig')
 
